@@ -1,0 +1,9 @@
+{
+  "exclude": "/node_modules/",
+  "plugins": [
+    ["babel-plugin-root-import"],
+    ["styled-components", { "ssr": true }]
+    
+  ],
+  "presets": ["next/babel"]
+}
