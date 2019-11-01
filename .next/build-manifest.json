@@ -1,1 +1,24 @@
-{"pages":{},"css":["static/style.css"],"bundles/pages/index.js":["bundles/pages/index.js"],"bundles/pages/_error.js":["bundles/pages/_error.js"],"bundles/pages/_app.js":["bundles/pages/_app.js"],"main.js":["static/commons/main-de96e95cff5befe57c25.js"]}
+{
+  "devFiles": [
+    "static/development/dll/dll_90e8ea1802b868f0c448.js",
+    "static/development/dll/dll_90e8ea1802b868f0c448.js.map"
+  ],
+  "pages": {
+    "/": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/_app": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/_error": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/index": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ]
+  }
+}
