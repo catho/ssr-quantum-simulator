@@ -1,7 +1,7 @@
 {
   "devFiles": [
-    "static/development/dll/dll_90e8ea1802b868f0c448.js",
-    "static/development/dll/dll_90e8ea1802b868f0c448.js.map"
+    "static/development/dll/dll_01ec57fc9b90d43b98a8.js",
+    "static/development/dll/dll_01ec57fc9b90d43b98a8.js.map"
   ],
   "pages": {
     "/": [
@@ -17,6 +17,10 @@
       "static/runtime/main.js"
     ],
     "/index": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/quantum": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]
