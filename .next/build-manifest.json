@@ -16,11 +16,11 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/index": [
+    "/cathocomponents": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/quantum": [
+    "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]
