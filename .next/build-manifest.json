@@ -12,10 +12,6 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/cathocomponents": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
     "/quantum": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
