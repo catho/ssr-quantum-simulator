@@ -14,6 +14,9 @@ import {
   ProgressBar,
   CircularLoader,
   Skeleton,
+  Dropdown,
+  Input,
+  TextArea,
 } from '@catho/quantum';
 import ControlledPagination from '../components/ControlledPagination';
 import ControlledSnackBar from '../components/ControlledSnackBar';
@@ -23,6 +26,9 @@ import PopoverTopWithProps from '../components/PopoverTopWithProps';
 import TooltipWithProps from '../components/TooltipWithProps';
 import ControlledModal from '../components/ControlledModal';
 import ControlledCheckboxGroup from '../components/ControlledCheckboxGroup';
+import ControlledDropdown from '../components/ControlledDropdown';
+import RadioGroupWithPros from '../components/RadioGroupWithProps';
+import ToggleWithProps from '../components/ToggleWithProps';
 
 import Header from './shared/Header';
 
@@ -188,14 +194,64 @@ return (
       </Row>
     </Container>
     <Container>
+    <h4>Quantum form components</h4>
       <Row>
         <Col {...colsProps}>
-        <Card>
+          <Card>
             <Card.Content>
               <h5>Checkbox</h5>
               <ControlledCheckboxGroup />
             </Card.Content>
           </Card>
+          <Card>
+            <Card.Content>
+              <h5>Dropdown</h5>
+              <ControlledDropdown />
+              <Dropdown
+                autocomplete
+                label="Autocomplete"
+                placeholder="Start typing..."
+                items={['Lemon', 'Banana', 'Strawberry', 'Orange', 'Avocado']}
+              />
+            </Card.Content>
+          </Card>
+          <Card>
+            <Card.Content>
+              <h5>Input</h5>
+              <Input
+                label="With a description label"
+                descriptionLabel="Description here"
+                helperText="Helper here"
+              />
+              <Input.Phone label="Phone" />
+              <Input.CEP label="CEP" />
+              <Input.CPF label="CPF" />
+              <Input.Date label="Date" />
+              <Input.Password label="Password Type" />
+              <Input label="Searchable" type="search" />
+              <Input label="With an error" error="Error here" />
+              <Input label="Disabled" disabled />
+            </Card.Content>
+          </Card>
+          <Card>
+            <Card.Content>
+              <h5>Dropdown</h5>
+              <RadioGroupWithPros />
+            </Card.Content>
+          </Card>
+          <Card>
+            <Card.Content>
+              <h5>Toggle</h5>
+              <ToggleWithProps />
+            </Card.Content>
+          </Card>
+          <Card>
+            <Card.Content>
+              <h5>TextArea</h5>
+              <TextArea helperText="helper text" placeholder="placeholder" label="TextArea label" />
+            </Card.Content>
+          </Card>
+          
         </Col>
       </Row>
     </Container>
