@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, TabbedView, Card, RangeSlider, Button } from '@catho/quantum';
 import Link from './styles/style';
+import Header from './shared/Header';
 
 const colsProps = {
     medium: 12,
@@ -14,11 +15,7 @@ return (
     <Container>
       <Row>
         <Col {...colsProps}>
-          <div>
-            <Link href="/">Back to menu</Link>
-          </div>
-          <h2>Quantum: components simulator</h2>
-          <h3>Test your components below</h3>
+          <Header title="Quantum: components simulator" />
         </Col>
       </Row>
       <Row>
