@@ -1,38 +1,31 @@
 import React from 'react';
-import { Container, Row, Col, TabbedView, Card, RangeSlider, Button } from '@catho/quantum';
-import '../static/app.scss';
+import { Container, Row, Col } from '@catho/quantum';
+import Link from './styles/style';
+
 
 const colsProps = {
-  'medium-offset': 3,
-  medium: 6,
+  medium: 12,
 };
 
 export default () => (
-  <React.Fragment>
+  <>
     <Container>
       <Row>
         <Col {...colsProps}>
-          <h1>Quantum examples</h1>
-          <h2>Test your component below</h2>
+          <h2>SSR simulator</h2>
+          <h3>Choose your test</h3>
         </Col>
       </Row>
       <Row>
         <Col {...colsProps}>
-          <Card>
-            <Card.Content>
-              <TabbedView
-                activeTab="Slider">
-                <TabbedView.Tab title="Slider">
-                  <RangeSlider defaultValue={50} />
-                </TabbedView.Tab>
-                <TabbedView.Tab title="Button">
-                  <Button icon="close"> This is a Button</Button>
-                </TabbedView.Tab>
-              </TabbedView>
-            </Card.Content>
-          </Card>
+          <span>&rarr;</span><Link href="/quantum">Quantum</Link>
         </Col>
       </Row>
+      <Row>
+      <Col {...colsProps}>
+        <span>&rarr;</span><Link href="/cathocomponents">Catho components</Link>
+      </Col>
+      </Row>
     </Container>
-  </React.Fragment>
+  </>
 );
