@@ -1,7 +1,7 @@
 {
   "devFiles": [
-    "static/development/dll/dll_01ec57fc9b90d43b98a8.js",
-    "static/development/dll/dll_01ec57fc9b90d43b98a8.js.map"
+    "static/development/dll/dll_90e8ea1802b868f0c448.js",
+    "static/development/dll/dll_90e8ea1802b868f0c448.js.map"
   ],
   "pages": {
     "/_app": [
@@ -9,10 +9,6 @@
       "static/runtime/main.js"
     ],
     "/_error": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/cathocomponents": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
