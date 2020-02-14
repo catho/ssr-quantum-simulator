@@ -38,7 +38,7 @@ import Header from './shared/Header';
 const colsProps = {
     medium: 12,
   };
-  
+
 export default function Quantum() {
 
 return (
@@ -133,14 +133,11 @@ return (
                 <Button skind="secondary" > This is a Button</Button>
                 <Button icon="close" disabled> This is a disabled Button</Button>
               </Card.Content>
-            </Card>
-            {/* <Card>
               <Card.Content>
                 <h5>Pagination</h5>
                 <ControlledPagination />
               </Card.Content>
-            </Card> */}
-            
+            </Card>
           </Col>
       </Row>
     </Container>
