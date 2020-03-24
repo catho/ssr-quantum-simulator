@@ -17,6 +17,7 @@ import {
   Dropdown,
   Input,
   TextArea,
+  SocialButton,
 } from '@catho/quantum';
 
 import {
@@ -38,7 +39,7 @@ import Header from './shared/Header';
 const colsProps = {
     medium: 12,
   };
-  
+
 export default function Quantum() {
 
 return (
@@ -134,6 +135,9 @@ return (
                 <Button skind="secondary" > This is a Button</Button>
                 <Button icon="close" disabled> This is a disabled Button</Button>
                 <Button icon="close" size="large"> This is a large Button</Button>
+                <h5>Social Buttons</h5>
+                <SocialButton provider="google" />
+                <SocialButton provider="facebook" />
               </Card.Content>
             </Card>
             <Card>
@@ -142,7 +146,6 @@ return (
                 <ControlledPagination />
               </Card.Content>
             </Card>
-            
           </Col>
       </Row>
     </Container>

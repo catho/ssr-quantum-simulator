@@ -14,7 +14,7 @@ export default class MyDocument extends Document {
         enhanceApp: App => props => sheet.collectStyles (
           sheets.collect (
             <>
-              <GlobalStyle />
+              
               <App {...props} />
             </>
             ),
@@ -50,6 +50,7 @@ export default class MyDocument extends Document {
           {this.props.styleTags}
         </Head>
         <body>
+          <GlobalStyle />
           <Main />
           <NextScript />
         </body>

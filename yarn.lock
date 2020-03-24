@@ -795,12 +795,12 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@catho-private/catho-components@^0.0.6":
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@catho-private/catho-components/-/catho-components-0.0.6.tgz#40bd3561a52c9ce8e5e0a2793620d37535c2a942"
-  integrity sha512-MbSK6j/HZv7IbkELjw0NnHrYPWMRIYOICcUSxYmteV0Itdkt/FUPKV3QIaZliusWS3RQSCdCe+yNkDGMRA9oLQ==
+"@catho-private/catho-components@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@catho-private/catho-components/-/catho-components-0.2.3.tgz#7b3dec78028a90d95d3643031a3ddf6794ca16b4"
+  integrity sha512-QbaZ+t6AXXwSG2AYH7KzSiAoRot7zA3n0cZqeHYISa61huu98Ai3/f4OkcaJwH3ZRIo/EvHZnD3kXJnJjxNwZw==
   dependencies:
-    "@catho/quantum" "^3.5.0"
+    "@catho/quantum" "^3.8.0"
     "@catho/quantum-storybook-ui" "^1.0.5"
     "@material-ui/core" "^4.5.1"
     "@material-ui/icons" "^3.0.2"
@@ -857,10 +857,10 @@
     react-image "^1.5.1"
     react-text-mask "^5.4.3"
 
-"@catho/quantum@^3.5.0":
-  version "3.8.3"
-  resolved "https://registry.yarnpkg.com/@catho/quantum/-/quantum-3.8.3.tgz#800592ffe678be7994e0accdb0e9a534dfabb41c"
-  integrity sha512-AOz9l0GHkcUqjESPBJ1JHrGhG5OyELlCrJjEDt97yBibVHxUD3munq/oY6UFT6Y6zm3S8jjz5+2c6k+ZqUPOsw==
+"@catho/quantum@^3.8.0":
+  version "3.12.2"
+  resolved "https://registry.yarnpkg.com/@catho/quantum/-/quantum-3.12.2.tgz#1e7d702d2dcfd4cbca888bcf022f74733901756e"
+  integrity sha512-WR25e3y/yzsyriCeb2FKQOXirHHXsCq8dxwTV+ofaMKgYr5qjC7Ar1dYuXJWzIoBwFmqXF2MNp0ZLN1egRh+cw==
   dependencies:
     "@catho/quantum-storybook-ui" "^1.0.5"
     "@material-ui/core" "^4.5.1"
