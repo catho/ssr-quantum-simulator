@@ -823,14 +823,14 @@
     commitizen "^3.0.7"
     react-markdown "^4.0.6"
 
-"@catho/quantum@3.8.3", "@catho/quantum@^3.5.0":
-  version "3.8.3"
-  resolved "https://registry.yarnpkg.com/@catho/quantum/-/quantum-3.8.3.tgz#800592ffe678be7994e0accdb0e9a534dfabb41c"
-  integrity sha512-AOz9l0GHkcUqjESPBJ1JHrGhG5OyELlCrJjEDt97yBibVHxUD3munq/oY6UFT6Y6zm3S8jjz5+2c6k+ZqUPOsw==
+"@catho/quantum@4.1.1":
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/@catho/quantum/-/quantum-4.1.1.tgz#d4d25bc15346b0cf3f55ff1f4d64bec0d99b7713"
+  integrity sha512-bkgzDzbcob2xVN5RhH9//LLIy1WMxkF6r4EUm6KTFCl9f0WVTEhgMVjqgjy8haWRVbvWG/SztIW/zI/FnSLxkw==
   dependencies:
     "@catho/quantum-storybook-ui" "^1.0.5"
     "@material-ui/core" "^4.5.1"
-    "@material-ui/icons" "^3.0.2"
+    "@material-ui/icons" "^4.9.1"
     babel-polyfill "^6.26.0"
     datalist-polyfill "^1.23.1"
     downshift "^3.1.10"
@@ -856,6 +856,23 @@
     react-content-loader "^3.4.2"
     react-image "^1.5.1"
     react-text-mask "^5.4.3"
+
+"@catho/quantum@^3.5.0":
+  version "3.8.3"
+  resolved "https://registry.yarnpkg.com/@catho/quantum/-/quantum-3.8.3.tgz#800592ffe678be7994e0accdb0e9a534dfabb41c"
+  integrity sha512-AOz9l0GHkcUqjESPBJ1JHrGhG5OyELlCrJjEDt97yBibVHxUD3munq/oY6UFT6Y6zm3S8jjz5+2c6k+ZqUPOsw==
+  dependencies:
+    "@catho/quantum-storybook-ui" "^1.0.5"
+    "@material-ui/core" "^4.5.1"
+    "@material-ui/icons" "^3.0.2"
+    babel-polyfill "^6.26.0"
+    datalist-polyfill "^1.23.1"
+    downshift "^3.1.10"
+    prop-types "^15.6.2"
+    react-content-loader "^3.4.2"
+    react-image "^1.5.1"
+    react-text-mask "^5.4.3"
+    slugify "^1.3.6"
 
 "@csstools/convert-colors@^1.4.0":
   version "1.4.0"
@@ -968,6 +985,13 @@
   dependencies:
     "@babel/runtime" "^7.2.0"
     recompose "0.28.0 - 0.30.0"
+
+"@material-ui/icons@^4.9.1":
+  version "4.9.1"
+  resolved "https://registry.yarnpkg.com/@material-ui/icons/-/icons-4.9.1.tgz#fdeadf8cb3d89208945b33dbc50c7c616d0bd665"
+  integrity sha512-GBitL3oBWO0hzBhvA9KxqcowRUsA0qzwKkURyC8nppnC3fw54KPKZ+d4V1Eeg/UnDRSzDaI9nGCdel/eh9AQMg==
+  dependencies:
+    "@babel/runtime" "^7.4.4"
 
 "@material-ui/styles@^4.5.2":
   version "4.5.2"
