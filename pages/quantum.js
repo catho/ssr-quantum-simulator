@@ -17,6 +17,7 @@ import {
   Dropdown,
   Input,
   TextArea,
+  SocialButton,
 } from '@catho/quantum';
 
 import {
@@ -99,6 +100,7 @@ return (
                 <Tag skin="primary">Primary</Tag>
                 <Tag inverted skin="primary">Primary</Tag>
                 <Tag stroked skin="primary">Primary</Tag>
+                <Tag onClose={() => {}} skin="primary" size="large">Primary</Tag>
                 <Tag onClose={() => {}} skin="primary">Primary</Tag>
               </Card.Content>
               <Card.Content>
@@ -132,7 +134,13 @@ return (
                 <Button icon="close"> This is a Button</Button>
                 <Button skind="secondary" > This is a Button</Button>
                 <Button icon="close" disabled> This is a disabled Button</Button>
+                <Button icon="close" size="large"> This is a large Button</Button>
+                <h5>Social Buttons</h5>
+                <SocialButton provider="google" />
+                <SocialButton provider="facebook" />
               </Card.Content>
+            </Card>
+            <Card>
               <Card.Content>
                 <h5>Pagination</h5>
                 <ControlledPagination />
