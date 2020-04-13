@@ -1,7 +1,11 @@
 {
   "devFiles": [
-    "static/development/dll/dll_90e8ea1802b868f0c448.js",
-    "static/development/dll/dll_90e8ea1802b868f0c448.js.map"
+    "static/development/dll/dll_c041a01c855f27108fb0.js",
+    "static/development/dll/dll_c041a01c855f27108fb0.js.map"
+  ],
+  "lowPriorityFiles": [
+    "static/development/_buildManifest.js",
+    "static/development/_ssgManifest.js"
   ],
   "pages": {
     "/_app": [
@@ -12,15 +16,11 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
+    "/_polyfills": [
+      "static/runtime/polyfills.js",
+      "static/runtime/polyfills.js.map"
+    ],
     "/cathocomponents": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/next/dist/pages/_error": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/quantum": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

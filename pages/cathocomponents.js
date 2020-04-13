@@ -8,12 +8,6 @@ const colsProps = {
     medium: 12,
   };
 
-const Wrapper = styled.div`
-  > div { 
-    width: 100%;
-  }
-`;
-
 export default function CathoComponentsPage() {
   return (
     <>
@@ -30,9 +24,7 @@ export default function CathoComponentsPage() {
             <Row>
               <Col {...colsProps}>
                 <h4>Header</h4>
-                <Wrapper>
                   <HeaderResponsive type="B2C" isSubMenuOpen={false} gtmPrefix="next" hasSearch={false} />
-                </Wrapper>
               </Col>
             </Row>
           </Card.Content>
@@ -44,9 +36,7 @@ export default function CathoComponentsPage() {
             <Row>
               <Col {...colsProps}>
                 <h4>Footer</h4>
-                <Wrapper>
                   <FooterResponsive type="B2C" gtmPrefix="next" />
-                </Wrapper>
               </Col>
             </Row>
           </Card.Content>
