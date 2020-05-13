@@ -18,7 +18,9 @@ import {
   Input,
   TextArea,
   SocialButton,
+  Icon,
 } from '@catho/quantum';
+import { colors } from '@catho/quantum/shared/theme';
 
 import {
   ControlledPagination,
@@ -57,6 +59,23 @@ return (
       <Row>
           <Col {...colsProps}>
             <Card>
+            <Card.Content>
+              <Icon name="info" size="small" />
+              <Icon name="info" />
+              <Icon name="info" size="large" />
+              <Icon name="clear" />
+              <Icon name="search" />
+              <Icon name="error" />
+              <Icon name="visibility_off" />
+              <Icon name="visibility" />
+              <Icon name="check_box" />
+              <Icon name="emoji_people" skin={colors.primary['900']} />
+              <Icon name="emoji_people" skin={colors.secondary['900']} />
+              <Icon name="emoji_people" skin={colors.primary['700']} />
+              <Icon name="emoji_people" skin={colors.warning['900']} />
+              <Icon name="emoji_people" skin={colors.error['300']} />
+              <Icon name="emoji_people" skin={colors.error['300']} size="large" />
+              </Card.Content>
               <Card.Content>
                 <TabbedView
                   activeTab="Slider">
