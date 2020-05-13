@@ -1,5 +1,4 @@
 import Document, { Head, Main, NextScript } from 'next/document';
-import { GlobalStyle } from '@catho/quantum';
 import { ServerStyleSheet } from 'styled-components';
 
 export default class MyDocument extends Document {
