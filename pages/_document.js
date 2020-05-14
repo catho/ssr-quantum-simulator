@@ -1,24 +1,14 @@
 import Document, { Head, Main, NextScript } from 'next/document';
-import { GlobalStyle } from '@catho/quantum';
-import { ServerStyleSheets } from '@material-ui/core/styles';
 import { ServerStyleSheet } from 'styled-components';
 
 export default class MyDocument extends Document {
   static getInitialProps = async ctx => {
     const sheet = new ServerStyleSheet ();
-    const sheets = new ServerStyleSheets ();
     const originalRenderPage = ctx.renderPage;
 
     try {
       ctx.renderPage = () => originalRenderPage ({
-        enhanceApp: App => props => sheet.collectStyles (
-          sheets.collect (
-            <>
-              
-              <App {...props} />
-            </>
-            ),
-        ),
+        enhanceApp: App => props => sheet.collectStyles (<App {...props} />),
       });
 
       const initialProps = await Document.getInitialProps (ctx);
@@ -28,7 +18,6 @@ export default class MyDocument extends Document {
         styles: (
           <>
             {initialProps.styles}
-            {sheets.getStyleElement ()}
             {sheet.getStyleElement ()}
           </>
         ),
@@ -50,7 +39,6 @@ export default class MyDocument extends Document {
           {this.props.styleTags}
         </Head>
         <body>
-          <GlobalStyle />
           <Main />
           <NextScript />
         </body>
