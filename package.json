@@ -1,5 +1,5 @@
 {
-  "name": "ssr",
+  "name": "ssr-quantum-simulator",
   "version": "0.1.0",
   "description": "Server Side Rendering simulator for Catho Apps",
   "main": "index.js",
