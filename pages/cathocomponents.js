@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from '@catho/quantum';
-import { HeaderResponsive, FooterResponsive, HeaderSimple }from '@catho-private/catho-components';
+import { HeaderResponsive, FooterResponsive, HeaderSimple, HeaderLoggedResponsive }from '@catho-private/catho-components';
 import Header from './shared/Header';
 
 export default function CathoComponentsPage() {
@@ -19,6 +19,10 @@ export default function CathoComponentsPage() {
       <HeaderResponsive type="B2C" isSubMenuOpen={false} gtmPrefix="next-header-b2c" />
       <h4>Header Simple</h4>
       <HeaderSimple gtmPrefix="next" />
+      <h4>Header Simple logged</h4>
+      <HeaderLoggedResponsive gtmPrefix="next" />
+      <h4>Header Simple logged sem busca</h4>
+      <HeaderLoggedResponsive gtmPrefix="next" hasSearch={false} />
       <h4>Footer</h4>
       <FooterResponsive type="B2C" gtmPrefix="next-footer" />
     </>
