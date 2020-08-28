@@ -12,7 +12,7 @@ export default class HomePage extends App {
       <>
         <GlobalStyle />
         <Component {...pageProps} />
-        <ConsentWidget apiKey="MnFIV2VRvT85NAdNnoxKI5nAfAEnLTFe7XT15WmW" isDevelopment />
+        <ConsentWidget apiKey="MnFIV2VRvT85NAdNnoxKI5nAfAEnLTFe7XT15WmW" isDevelopment blockNavigation />
       </>
     );
   }
