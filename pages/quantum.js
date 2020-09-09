@@ -19,6 +19,7 @@ import {
   TextArea,
   SocialButton,
   Icon,
+  RadioGroup,
 } from '@catho/quantum';
 import { colors } from '@catho/quantum/shared/theme';
 
@@ -34,6 +35,7 @@ import {
   ControlledDropdown,
   RadioGroupWithPros,
   ToggleWithProps,
+  RadioGroupWithDefaultValue,
 } from '../components';
 
 import Header from './shared/Header';
@@ -52,7 +54,6 @@ return (
           <Header title="Quantum: components simulator" />
         </Col>
       </Row>
-
     </Container>
     <Container>
       <h4>Static components</h4>
@@ -229,8 +230,12 @@ return (
               <Input label="Disabled" disabled />
             </Card.Content>
             <Card.Content>
-              <h5>Dropdown</h5>
+              <h5>Radio with props</h5>
               <RadioGroupWithPros />
+            </Card.Content>
+            <Card.Content>
+              <h5>Radio with defaultValue</h5>
+              <RadioGroupWithDefaultValue />
             </Card.Content>
             <Card.Content>
               <h5>Toggle</h5>
