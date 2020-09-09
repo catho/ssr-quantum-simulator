@@ -1,6 +1,12 @@
 import React from 'react';
-import { Container, Row, Col } from '@catho/quantum';
-import { HeaderResponsive, FooterResponsive, HeaderSimple, HeaderLoggedResponsive }from '@catho-private/catho-components';
+import { Container, Row, Col, Card } from '@catho/quantum';
+import { 
+  HeaderResponsive, 
+  FooterResponsive, 
+  HeaderSimple, 
+  HeaderLoggedResponsive,
+  PasswordField,
+ }from '@catho-private/catho-components';
 import Header from './shared/Header';
 
 export default function CathoComponentsPage() {
@@ -25,6 +31,18 @@ export default function CathoComponentsPage() {
       <HeaderLoggedResponsive gtmPrefix="next" hasSearch={false} />
       <h4>Footer</h4>
       <FooterResponsive type="B2C" gtmPrefix="next-footer" />
+      <Container>
+        <h4>Password Field</h4>
+        <Card>
+          <Card.Content>
+            <PasswordField
+              password={{ label: 'Password'}}
+              onValidate={valid => {
+                console.log('valid', valid);
+              }} />
+          </Card.Content>
+        </Card>
+      </Container>
     </>
   );
 }
