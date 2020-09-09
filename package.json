@@ -1,6 +1,6 @@
 {
   "name": "ssr-quantum-simulator",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Server Side Rendering simulator for Catho Apps",
   "main": "index.js",
   "private": true,
