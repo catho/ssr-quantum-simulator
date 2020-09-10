@@ -9,6 +9,7 @@ import ControlledCheckboxGroup from './ControlledCheckboxGroup';
 import ControlledDropdown from './ControlledDropdown';
 import RadioGroupWithPros from './RadioGroupWithProps';
 import ToggleWithProps from './ToggleWithProps';
+import RadioGroupWithDefaultValue from './RadioGroupWithDefaultValue';
 
 export {
   ControlledPagination,
@@ -22,4 +23,5 @@ export {
   ControlledDropdown,
   RadioGroupWithPros,
   ToggleWithProps,
+  RadioGroupWithDefaultValue,
 }

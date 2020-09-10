@@ -1102,10 +1102,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@catho-private/catho-components@^1.9.1":
-  version "1.9.1"
-  resolved "https://registry.yarnpkg.com/@catho-private/catho-components/-/catho-components-1.9.1.tgz#8dacd0adffef8abed2f68299b8913b1e6f6ab383"
-  integrity sha512-qIVh2xdNtLAG7g7SA55vpfLKq/U5dV6U8e7DulD+oORO4yJnkcsHOgSIQQi3D6BTLSemmIODHi05BL8BOb/Eeg==
+"@catho-private/catho-components@^1.11.1":
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/@catho-private/catho-components/-/catho-components-1.11.1.tgz#98f94d1067db0aadafe57ceb86c961a17bda65ab"
+  integrity sha512-smk3u4zTa5SYmVA36p+f2nUMQCpnUrUjQo1CWGpCl5h5TBqh55rJFcA7iWFb66PCt5YFhCvOvnSvX8P1zpADQA==
   dependencies:
     "@catho/quantum" "^5.3.0"
     "@catho/quantum-storybook-ui" "^1.2.3"
@@ -1163,6 +1163,22 @@
   integrity sha512-CDIRkmwi7KfFg9CJQWa6uxDguRqjuVMSms6tX2U7iP+o+SuERdJS+gQM8CacOOc0N5tuVi3lIqLLp0DS8kRW+Q==
   dependencies:
     "@catho/quantum-storybook-ui" "^1.2.3"
+    "@material-ui/core" "^4.5.1"
+    "@material-ui/icons" "^4.9.1"
+    babel-polyfill "^6.26.0"
+    datalist-polyfill "^1.23.1"
+    downshift "^3.1.10"
+    prop-types "^15.6.2"
+    react-content-loader "^3.4.2"
+    react-image "^1.5.1"
+    react-text-mask "^5.4.3"
+    slugify "^1.3.6"
+
+"@catho/quantum@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@catho/quantum/-/quantum-6.0.0.tgz#ed1c640b20ce630f51a3ffbd26a5a827a8ddb195"
+  integrity sha512-opWQfVFUt5cNtDc0h4bSnwC25DCXDSXDMAn6sec0Dx7EsYxUBisN0h3dg5WLDiQcelpJNeXW6/MiZJBIE+o76g==
+  dependencies:
     "@material-ui/core" "^4.5.1"
     "@material-ui/icons" "^4.9.1"
     babel-polyfill "^6.26.0"
