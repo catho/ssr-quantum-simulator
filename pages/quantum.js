@@ -20,6 +20,7 @@ import {
   SocialButton,
   Icon,
   RadioGroup,
+  Avatar,
 } from '@catho/quantum';
 import { colors } from '@catho/quantum/shared/theme';
 
@@ -114,6 +115,9 @@ return (
               <Card.Content>
                 <h5>Badge</h5>
                   <Badge number={10} skin="primary" />This is a badge
+                  <Badge number={10} skin="primary" dot>
+                    <p>This is a badge</p>
+                  </Badge>
               </Card.Content>
               <Card.Content>
                 <h5>Tags</h5>
@@ -166,6 +170,17 @@ return (
                 <ControlledPagination />
               </Card.Content>
             </Card>
+            <Card>
+              <Card.Content>
+                <h5>Avatar</h5>
+                <Avatar
+                  text="Perfil"
+                  href="#user-profile"
+                  hasNotification
+                  hasToggle
+                />
+                </Card.Content>
+              </Card>
           </Col>
       </Row>
     </Container>
