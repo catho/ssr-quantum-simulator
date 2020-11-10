@@ -1140,6 +1140,22 @@
     commitizen "^3.0.7"
     react-markdown "^4.0.6"
 
+"@catho/quantum@6.4.9":
+  version "6.4.9"
+  resolved "https://registry.yarnpkg.com/@catho/quantum/-/quantum-6.4.9.tgz#5774984348e8c805a02e07f827c84474e179bbd6"
+  integrity sha512-HH3J7ia25dmPdGzmaXKuxyOfDoBpeCCdRP60HV/UBERrvLfAMPwXvYKJfweoXR9IaUxi9/cUVu4eBiswrtyyqw==
+  dependencies:
+    "@material-ui/core" "^4.5.1"
+    "@material-ui/icons" "^4.9.1"
+    babel-polyfill "^6.26.0"
+    datalist-polyfill "^1.23.1"
+    downshift "^3.1.10"
+    prop-types "^15.6.2"
+    react-content-loader "^3.4.2"
+    react-image "^1.5.1"
+    react-text-mask "^5.4.3"
+    slugify "^1.3.6"
+
 "@catho/quantum@^1.8.0":
   version "1.16.0"
   resolved "https://registry.yarnpkg.com/@catho/quantum/-/quantum-1.16.0.tgz#363c74f66a69bf0cbd15c117605afa9f6e80c48e"
@@ -1163,22 +1179,6 @@
   integrity sha512-CDIRkmwi7KfFg9CJQWa6uxDguRqjuVMSms6tX2U7iP+o+SuERdJS+gQM8CacOOc0N5tuVi3lIqLLp0DS8kRW+Q==
   dependencies:
     "@catho/quantum-storybook-ui" "^1.2.3"
-    "@material-ui/core" "^4.5.1"
-    "@material-ui/icons" "^4.9.1"
-    babel-polyfill "^6.26.0"
-    datalist-polyfill "^1.23.1"
-    downshift "^3.1.10"
-    prop-types "^15.6.2"
-    react-content-loader "^3.4.2"
-    react-image "^1.5.1"
-    react-text-mask "^5.4.3"
-    slugify "^1.3.6"
-
-"@catho/quantum@^6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@catho/quantum/-/quantum-6.0.0.tgz#ed1c640b20ce630f51a3ffbd26a5a827a8ddb195"
-  integrity sha512-opWQfVFUt5cNtDc0h4bSnwC25DCXDSXDMAn6sec0Dx7EsYxUBisN0h3dg5WLDiQcelpJNeXW6/MiZJBIE+o76g==
-  dependencies:
     "@material-ui/core" "^4.5.1"
     "@material-ui/icons" "^4.9.1"
     babel-polyfill "^6.26.0"

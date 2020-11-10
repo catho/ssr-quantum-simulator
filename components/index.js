@@ -10,6 +10,7 @@ import ControlledDropdown from './ControlledDropdown';
 import RadioGroupWithPros from './RadioGroupWithProps';
 import ToggleWithProps from './ToggleWithProps';
 import RadioGroupWithDefaultValue from './RadioGroupWithDefaultValue';
+import FormValidation from './FormValidation';
 
 export {
   ControlledPagination,
@@ -24,4 +25,5 @@ export {
   RadioGroupWithPros,
   ToggleWithProps,
   RadioGroupWithDefaultValue,
+  FormValidation,
 }
