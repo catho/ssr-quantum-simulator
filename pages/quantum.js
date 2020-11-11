@@ -19,10 +19,11 @@ import {
   TextArea,
   SocialButton,
   Icon,
-  RadioGroup,
   Avatar,
 } from '@catho/quantum';
+
 import { colors } from '@catho/quantum/shared/theme';
+
 
 import {
   ControlledPagination,
@@ -37,6 +38,7 @@ import {
   RadioGroupWithPros,
   ToggleWithProps,
   RadioGroupWithDefaultValue,
+  FormValidation,
 } from '../components';
 
 import Header from './shared/Header';
@@ -261,6 +263,18 @@ return (
               <TextArea helperText="helper text" placeholder="placeholder" label="TextArea label" />
             </Card.Content>
           </Card>
+        </Col>
+      </Row>
+    </Container>
+    <Container>
+      <Row>
+        <Col {...colsProps}>
+        <Card>
+            <Card.Content>
+              <h5>Form validations</h5>
+              <FormValidation />
+            </Card.Content>
+          </Card> 
         </Col>
       </Row>
     </Container>
