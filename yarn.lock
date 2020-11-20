@@ -1140,10 +1140,10 @@
     commitizen "^3.0.7"
     react-markdown "^4.0.6"
 
-"@catho/quantum@6.4.9":
-  version "6.4.9"
-  resolved "https://registry.yarnpkg.com/@catho/quantum/-/quantum-6.4.9.tgz#5774984348e8c805a02e07f827c84474e179bbd6"
-  integrity sha512-HH3J7ia25dmPdGzmaXKuxyOfDoBpeCCdRP60HV/UBERrvLfAMPwXvYKJfweoXR9IaUxi9/cUVu4eBiswrtyyqw==
+"@catho/quantum@6.4.11":
+  version "6.4.11"
+  resolved "https://registry.yarnpkg.com/@catho/quantum/-/quantum-6.4.11.tgz#cab790960e3d32aa2aec61a7d8b0f5bb0f1c0382"
+  integrity sha512-kZ+1KWurOlpA1TYdZYuzLiPpCgLb32wwBQh1LIvTvOZGxh56HZsTYW/YW0PvmdhwqtEwqiWUtW4QjhSnr6LGRQ==
   dependencies:
     "@material-ui/core" "^4.5.1"
     "@material-ui/icons" "^4.9.1"
