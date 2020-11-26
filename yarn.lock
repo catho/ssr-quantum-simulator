@@ -1102,12 +1102,12 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@catho-private/catho-components@^1.13.1":
-  version "1.13.1"
-  resolved "https://registry.yarnpkg.com/@catho-private/catho-components/-/catho-components-1.13.1.tgz#81fe963cb7c00e7e86be5260d8f623ff8703f7d6"
-  integrity sha512-/GD0Wd1q5noBRg2BRqvXPEyjVII7qy5Mu74jzK5UNgdMhvNGUUfuCNKjmdfMPS1xDWPXBVC+b8irDshIdDgdFg==
+"@catho-private/catho-components@^1.13.3":
+  version "1.13.3"
+  resolved "https://registry.yarnpkg.com/@catho-private/catho-components/-/catho-components-1.13.3.tgz#7ff24839d2c3233cd4980c38befc7c4fab8103ba"
+  integrity sha512-UUpJxfvudVjfgj2Bde/ofHU41+r+ZWuezOZbgwwu+UfPIFNqsHHklxXZddikVQxQ3B03p75T6sh6KGGhwie5RQ==
   dependencies:
-    "@catho/quantum" "^6.3.0"
+    "@catho/quantum" "^6.4.2"
     "@catho/quantum-storybook-ui" "^1.3.0"
     "@material-ui/core" "^4.5.1"
     "@material-ui/icons" "^4.9.1"
@@ -1130,7 +1130,7 @@
     "@catho/quantum" "^6.0.0"
     react-markdown "^4.0.6"
 
-"@catho/quantum@^6.0.0", "@catho/quantum@^6.3.0":
+"@catho/quantum@^6.0.0":
   version "6.4.1"
   resolved "https://registry.yarnpkg.com/@catho/quantum/-/quantum-6.4.1.tgz#7fdf0eaaa564b4d9f7c8904d12245cadd5450ae3"
   integrity sha512-8/7baZkyl9g6TW8XGQG33wqTjcGVb0X8IVeVyPN9RTiu+MhrSPI5G+MbZg6fXdTsY/f1+RHZoIGVy0Txcqex/w==
@@ -1146,10 +1146,10 @@
     react-text-mask "^5.4.3"
     slugify "^1.3.6"
 
-"@catho/quantum@^6.4.9":
-  version "6.4.9"
-  resolved "https://registry.yarnpkg.com/@catho/quantum/-/quantum-6.4.9.tgz#5774984348e8c805a02e07f827c84474e179bbd6"
-  integrity sha512-HH3J7ia25dmPdGzmaXKuxyOfDoBpeCCdRP60HV/UBERrvLfAMPwXvYKJfweoXR9IaUxi9/cUVu4eBiswrtyyqw==
+"@catho/quantum@^6.4.12", "@catho/quantum@^6.4.2":
+  version "6.4.12"
+  resolved "https://registry.yarnpkg.com/@catho/quantum/-/quantum-6.4.12.tgz#7881b7257188eb8b68c003f3b3a3424ccff261a3"
+  integrity sha512-pnzfZmWDSu2IshzAW9jqciLAbMF+IK75KnG538F/hKDPOGlLofWb+RLEGJobwxQS9Wd/quvAkBQ5ArbDGF4H1w==
   dependencies:
     "@material-ui/core" "^4.5.1"
     "@material-ui/icons" "^4.9.1"

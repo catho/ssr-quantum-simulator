@@ -39,6 +39,7 @@ import {
   ToggleWithProps,
   RadioGroupWithDefaultValue,
   FormValidation,
+  ButtonGroup,
 } from '../components';
 
 import Header from './shared/Header';
@@ -253,6 +254,10 @@ return (
             <Card.Content>
               <h5>Radio with defaultValue</h5>
               <RadioGroupWithDefaultValue />
+            </Card.Content>
+            <Card.Content>
+              <h5>Button groups</h5>
+              <ButtonGroup />
             </Card.Content>
             <Card.Content>
               <h5>Toggle</h5>

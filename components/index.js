@@ -11,6 +11,7 @@ import RadioGroupWithPros from './RadioGroupWithProps';
 import ToggleWithProps from './ToggleWithProps';
 import RadioGroupWithDefaultValue from './RadioGroupWithDefaultValue';
 import FormValidation from './FormValidation';
+import ButtonGroup from './ButtonGroup';
 
 export {
   ControlledPagination,
@@ -26,4 +27,5 @@ export {
   ToggleWithProps,
   RadioGroupWithDefaultValue,
   FormValidation,
+  ButtonGroup,
 }
