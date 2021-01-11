@@ -6,7 +6,7 @@
   "private": true,
   "dependencies": {
     "@babel/core": "^7.4.5",
-    "@catho-private/catho-components": "^1.14.0",
+    "@catho-private/catho-components": "^2.0.1",
     "@catho/quantum": "^6.4.12",
     "@material-ui/core": "^4.5.2",
     "babel-plugin-external-helpers": "^6.22.0",
