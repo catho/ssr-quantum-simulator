@@ -2,8 +2,8 @@
 
 | lib to simulate  | version | path builded in application                  |
 | ---------------- | ------- | -------------------------------------------- |
-| Quantum          | 6.4.12  | node_modules/@catho/Quantum                  |
-| Catho-components | 2.0.1   | node_modules/@catho-private/catho-components |
+| Quantum          | 6.4.14  | node_modules/@catho/Quantum                  |
+| Catho-components | 2.0.3   | node_modules/@catho-private/catho-components |
 
 ### What is it?
 
@@ -27,7 +27,7 @@
 
 ### Warning
 
-<p>Because this application is using a private package, catho-components, is necessary the npm login of @catho-private to install it.
+<p>Because this application is using a private package, catho-components, is necessary the npm TOKEN and export a env variable NPM_TOKEN.
 If this package is not necessary for your simulation, delete the line in <code>package.json</code></p>
 
 ```
