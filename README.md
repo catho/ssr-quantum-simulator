@@ -2,8 +2,8 @@
 
 | lib to simulate  | version | path builded in application                  |
 | ---------------- | ------- | -------------------------------------------- |
-| Quantum          | 6.4.14  | node_modules/@catho/Quantum                  |
-| Catho-components | 2.0.3   | node_modules/@catho-private/catho-components |
+| Quantum          | 6.5.1   | node_modules/@catho/Quantum                  |
+| Catho-components | 2.0.7   | node_modules/@catho-private/catho-components |
 
 ### What is it?
 
