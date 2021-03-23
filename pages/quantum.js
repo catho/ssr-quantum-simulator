@@ -41,6 +41,8 @@ import {
   RadioGroupWithDefaultValue,
   FormValidation,
   ButtonGroup,
+  CarouselExample,
+  SegmentedControlExample,
 } from '../components';
 
 import Header from './shared/Header';
@@ -82,16 +84,6 @@ return (
                 <Icon name="emoji_people" skin={colors.warning['900']} />
                 <Icon name="emoji_people" skin={colors.error['300']} />
                 <Icon name="emoji_people" skin={colors.error['300']} size="large" />
-              </Card.Content>
-              
-              <Card.Content>
-                <h5>Stepper</h5>
-                <Stepper
-                  index={5}
-                  total={6}
-                  currentStepText="Salários / benefícios"
-                  nextStepText="Contrato / Local"
-                />
               </Card.Content>
 
               <Card.Content>
@@ -304,6 +296,32 @@ return (
               <FormValidation />
             </Card.Content>
           </Card> 
+        </Col>
+      </Row>
+    </Container>
+    <Container>
+      <Row>
+        <Col {...colsProps}>
+        <Card>
+          <Card.Content>
+              <h5>Carousel</h5>
+              <CarouselExample />
+          </Card.Content>
+          <Card.Content>
+            <h5>Stepper</h5>
+            <Stepper
+              index={5}
+              total={6}
+              currentStepText="Salários / benefícios"
+              nextStepText="Contrato / Local"
+            />
+          </Card.Content>
+          <Card.Content>
+            <h5>Segmented control</h5>
+            <SegmentedControlExample />            />
+          </Card.Content>
+          
+        </Card> 
         </Col>
       </Row>
     </Container>
