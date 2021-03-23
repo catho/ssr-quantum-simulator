@@ -12,6 +12,9 @@ import ToggleWithProps from './ToggleWithProps';
 import RadioGroupWithDefaultValue from './RadioGroupWithDefaultValue';
 import FormValidation from './FormValidation';
 import ButtonGroup from './ButtonGroup';
+import CarouselExample from './CarouselExample';
+import SegmentedControlExample from './SegmentedControlExample';
+
 
 export {
   ControlledPagination,
@@ -28,4 +31,6 @@ export {
   RadioGroupWithDefaultValue,
   FormValidation,
   ButtonGroup,
+  CarouselExample,
+  SegmentedControlExample,
 }
