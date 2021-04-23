@@ -8,6 +8,7 @@ import {
   PasswordField,
  }from '@catho-private/catho-components';
 import Header from './shared/Header';
+import { FooterTagsList } from '../components';
 
 export default function CathoComponentsPage() {
   return (
@@ -23,6 +24,8 @@ export default function CathoComponentsPage() {
       <HeaderResponsive type="B2C" isSubMenuOpen={false} gtmPrefix="next-header-b2c-nosearch" hasSearch={false} />
       <h4>Header B2C </h4>
       <HeaderResponsive type="B2C" isSubMenuOpen={false} gtmPrefix="next-header-b2c" />
+      <h4>Header B2B </h4>
+      <HeaderResponsive type="B2B" isSubMenuOpen={false} gtmPrefix="next-header-b2b" loginRedirect={`https://google/com` }  />
       <h4>Header Logged B2C (with logged props) </h4>
       <HeaderResponsive 
         gtmPrefix="next-header-b2c"       
@@ -40,6 +43,7 @@ export default function CathoComponentsPage() {
       <DeprecatedHeaderLoggedResponsive gtmPrefix="next" hasSearch={false} />
       <h4>Footer</h4>
       <FooterResponsive type="B2C" gtmPrefix="next-footer" />
+      <FooterTagsList />
       <Container>
         <h4>Password Field</h4>
         <Card>

@@ -14,6 +14,7 @@ import FormValidation from './FormValidation';
 import ButtonGroup from './ButtonGroup';
 import CarouselExample from './CarouselExample';
 import SegmentedControlExample from './SegmentedControlExample';
+import FooterTagsList from './FooterTagsList';
 
 
 export {
@@ -33,4 +34,5 @@ export {
   ButtonGroup,
   CarouselExample,
   SegmentedControlExample,
+  FooterTagsList,
 }
