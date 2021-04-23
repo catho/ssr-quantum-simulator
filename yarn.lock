@@ -1102,12 +1102,12 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@catho-private/catho-components@^2.0.7":
-  version "2.0.7"
-  resolved "https://registry.yarnpkg.com/@catho-private/catho-components/-/catho-components-2.0.7.tgz#e103079396dd15c0bdb9776ed80e5a85f73ef43d"
-  integrity sha512-PMBQoJu/ZtZnlhfasaRep/CicSHnB8HyZkcHJDvF36PocJWgpgd5UHW2NoHaFOzf7oBOvXiRY8wpY3WmbNRNHw==
+"@catho-private/catho-components@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@catho-private/catho-components/-/catho-components-2.1.0.tgz#bcf07b0cbbd536f204cb53b9924bb3e7a22b4af4"
+  integrity sha512-wkPRRdksnxJOKLggpkh6wGe24Gtu/ETrtY4gzt1hop0kQ1DYm/5c+VpVmer2Vgu7XoD14yIIxLbbANcJa1HAGA==
   dependencies:
-    "@catho/quantum" "^6.4.13"
+    "@catho/quantum" "^6.6.3"
     "@catho/quantum-storybook-ui" "^1.3.0"
     "@material-ui/core" "^4.5.1"
     "@material-ui/icons" "^4.9.1"
@@ -1146,26 +1146,10 @@
     react-text-mask "^5.4.3"
     slugify "^1.3.6"
 
-"@catho/quantum@^6.4.13":
-  version "6.4.13"
-  resolved "https://registry.yarnpkg.com/@catho/quantum/-/quantum-6.4.13.tgz#fd810d49c898a5f5678d9b9019633f8c826c4673"
-  integrity sha512-l98EV1huNbRBUlEogqi8A9v+oKail6Ce1P1T910R1MjBw+EuxsE2NW+w//2FwLG/7PJ2ibd5tqWTbCrHUQoI+A==
-  dependencies:
-    "@material-ui/core" "^4.5.1"
-    "@material-ui/icons" "^4.9.1"
-    babel-polyfill "^6.26.0"
-    datalist-polyfill "^1.23.1"
-    downshift "^3.1.10"
-    prop-types "^15.6.2"
-    react-content-loader "^3.4.2"
-    react-image "^1.5.1"
-    react-text-mask "^5.4.3"
-    slugify "^1.3.6"
-
-"@catho/quantum@^6.6.0":
-  version "6.6.0"
-  resolved "https://registry.yarnpkg.com/@catho/quantum/-/quantum-6.6.0.tgz#805668b4a5274ca967b85060def6354e3fd127fe"
-  integrity sha512-+7sGfDwNzZpVCgmIGm79cfEpEGYc6ArMuQWvIRF1IJkm1qpASgJ+GmdN0PvcAO33me/oE4lFg+joI8FpD5QpbQ==
+"@catho/quantum@^6.6.3":
+  version "6.6.3"
+  resolved "https://registry.yarnpkg.com/@catho/quantum/-/quantum-6.6.3.tgz#08243fcd94fa9793ac178a78cafd7c3c9ca60017"
+  integrity sha512-UWOwsDempEv4DCEJK4oouqluENc4E6RWbWPVhwkYCFexzh4G2wjx4XAofoZ36FeBvgIasIG41Uf/bszegx3qDw==
   dependencies:
     "@material-ui/core" "^4.5.1"
     "@material-ui/icons" "^4.9.1"
