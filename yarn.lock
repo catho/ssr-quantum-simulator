@@ -1102,12 +1102,12 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@catho-private/catho-components@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@catho-private/catho-components/-/catho-components-2.1.0.tgz#bcf07b0cbbd536f204cb53b9924bb3e7a22b4af4"
-  integrity sha512-wkPRRdksnxJOKLggpkh6wGe24Gtu/ETrtY4gzt1hop0kQ1DYm/5c+VpVmer2Vgu7XoD14yIIxLbbANcJa1HAGA==
+"@catho-private/catho-components@^2.2.2":
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/@catho-private/catho-components/-/catho-components-2.2.2.tgz#6b29469dda699096543217bb0cfa73f88eb8711c"
+  integrity sha512-GFqKxhyw8pe4/gYevVhRr00ef25F0Jq2vWV2NRxKJQJG26igmDrqaEeV4zPMrmZ8GVIKxkLy8mEhqwMava1wMw==
   dependencies:
-    "@catho/quantum" "^6.6.3"
+    "@catho/quantum" "^6.6.6"
     "@catho/quantum-storybook-ui" "^1.3.0"
     "@material-ui/core" "^4.5.1"
     "@material-ui/icons" "^4.9.1"
@@ -1146,10 +1146,10 @@
     react-text-mask "^5.4.3"
     slugify "^1.3.6"
 
-"@catho/quantum@^6.6.3":
-  version "6.6.3"
-  resolved "https://registry.yarnpkg.com/@catho/quantum/-/quantum-6.6.3.tgz#08243fcd94fa9793ac178a78cafd7c3c9ca60017"
-  integrity sha512-UWOwsDempEv4DCEJK4oouqluENc4E6RWbWPVhwkYCFexzh4G2wjx4XAofoZ36FeBvgIasIG41Uf/bszegx3qDw==
+"@catho/quantum@^6.6.11", "@catho/quantum@^6.6.6":
+  version "6.6.11"
+  resolved "https://registry.yarnpkg.com/@catho/quantum/-/quantum-6.6.11.tgz#b62ef697e9be85a23e0d084d643a171f6e9e4d61"
+  integrity sha512-ot+nDvpKbAmVTbYJn0OZ0F0uTEysbT7y51oprXMbVkVcCHepOQxOR+g2mSYrpmk1eKWsK5v4Ag9AszfiJaTr6w==
   dependencies:
     "@material-ui/core" "^4.5.1"
     "@material-ui/icons" "^4.9.1"

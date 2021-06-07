@@ -21,11 +21,11 @@ export default function CathoComponentsPage() {
         </Row>
       </Container>
       <h4>Header B2C Sem busca</h4>
-      <HeaderResponsive type="B2C" isSubMenuOpen={false} gtmPrefix="next-header-b2c-nosearch" hasSearch={false} />
+      <HeaderResponsive type="B2C" isSubMenuOpen={false} gtmPrefix="next-header-b2c-nosearch" hasSearch />
       <h4>Header B2C </h4>
       <HeaderResponsive type="B2C" isSubMenuOpen={false} gtmPrefix="next-header-b2c" />
       <h4>Header B2B </h4>
-      <HeaderResponsive type="B2B" isSubMenuOpen={false} gtmPrefix="next-header-b2b" loginRedirect={`https://google/com` }  />
+      <HeaderResponsive type="B2B" isSubMenuOpen={false} gtmPrefix="next-header-b2b" loginRedirect={`https://google/com` } hasSearch searchFieldEvents={{onKeyPress: (e) => console.log('keypress: ', e) }}  />
       <h4>Header Logged B2C (with logged props) </h4>
       <HeaderResponsive 
         gtmPrefix="next-header-b2c"       
