@@ -318,7 +318,7 @@ return (
           </Card.Content>
           <Card.Content>
             <h5>Segmented control</h5>
-            <SegmentedControlExample />            />
+            <SegmentedControlExample />
           </Card.Content>
           
         </Card> 
