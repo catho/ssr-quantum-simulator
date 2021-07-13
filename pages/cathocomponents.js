@@ -11,35 +11,7 @@ import {
   CommentsBox,
  }from '@catho-private/catho-components';
 import Header from './shared/Header';
-import { FooterTagsList } from '../components';
-
-
-const itemsMock = [
-  {
-    name: 'Buscar Vagas',
-    url: 'https://google.com',
-    iconName: 'favorite_border',
-    isHighlighted: false,
-  },
-  {
-    name: 'Dados Pessoais',
-    url: 'https://google.com',
-    iconName: 'verified_user',
-    isHighlighted: true,
-  },
-  {
-    name: 'Editar meu CV',
-    url: 'https://google.com',
-    iconName: 'person',
-    isHighlighted: false,
-  },
-  {
-    name: 'Mais Vagas',
-    url: 'https://google.com',
-    iconName: 'favorite_border',
-    isHighlighted: false,
-  },
-];
+import { FooterTagsList, HorizontalMenuDefault, CommentsBoxWithForm } from '../components';
 
 export default function CathoComponentsPage() {
   return (
@@ -94,7 +66,7 @@ export default function CathoComponentsPage() {
         <h4>Horizontal Menu</h4>
         <Card>
           <Card.Content>
-            <HorizontalMenu items={itemsMock}  />
+            <HorizontalMenuDefault />
           </Card.Content>
         </Card>
       </Container>
@@ -103,43 +75,7 @@ export default function CathoComponentsPage() {
         <h4>Comments box (with form)</h4>
         <Card>
           <Card.Content>
-            <CommentsBox
-              formProps={{
-                onSubmit: ({ value, showFeedback }) => {
-                  try {
-                    // do something with value
-                    console.log(value);
-
-                    // in case of success call showFeedback
-                    // message is only prop required
-                    showFeedback({
-                      message: 'Agradecemos o seu comentário!',
-                      type: 'success',
-                      secondsToClose: 3,
-                      disableTimer: true,
-                    });
-                  } catch {
-                    // in case of error call showFeedback
-                    // message is only prop required
-                    showFeedback({
-                      message: 'Ops! Algo deu errado. Tente de novo.',
-                      type: 'error',
-                      secondsToClose: 3,
-                      disableTimer: true,
-                    });
-                  }
-                },
-                placeholder: 'Queremos te ouvir :)',
-                confirmButtonText: 'Enviar',
-              }}
-            >
-              <>
-                <h5>Olá, Roger :)</h5>
-                <p>
-                  <strong>Como está sendo a sua experiência com o nosso site?</strong>
-                </p>
-              </>
-            </CommentsBox>
+            <CommentsBoxWithForm />
           </Card.Content>
         </Card>
       </Container>
