@@ -6,9 +6,12 @@ import {
   HeaderSimple, 
   DeprecatedHeaderLoggedResponsive,
   PasswordField,
+  HeaderLoggedResponsive,
+  HorizontalMenu,
+  CommentsBox,
  }from '@catho-private/catho-components';
 import Header from './shared/Header';
-import { FooterTagsList } from '../components';
+import { FooterTagsList, HorizontalMenuDefault, CommentsBoxWithForm } from '../components';
 
 export default function CathoComponentsPage() {
   return (
@@ -35,14 +38,16 @@ export default function CathoComponentsPage() {
         userEvents={3}
         hasSearch={false}
       />
+      <HeaderLoggedResponsive userProfile="STATUS_I_PROFISSIONAL" hasSearch />
       <h4>[cadastro candidato] Header Simple (implementado pelo área 51)</h4>
       <HeaderSimple gtmPrefix="next" />
       <h4>[/ajuda] Header Simple logged (implementado pela Transformers)</h4>
       <DeprecatedHeaderLoggedResponsive gtmPrefix="next" />
       <h4>[/ajuda] Header Simple logged sem busca (implementado pela Transformers)</h4>
       <DeprecatedHeaderLoggedResponsive gtmPrefix="next" hasSearch={false} />
-      <h4>Footer</h4>
+      <h4>Footer B2C</h4>
       <FooterResponsive type="B2C" gtmPrefix="next-footer" />
+      <h4>Footer with Tagslist</h4>
       <FooterTagsList />
       <Container>
         <h4>Password Field</h4>
@@ -53,6 +58,24 @@ export default function CathoComponentsPage() {
               onValidate={valid => {
                 console.log('valid', valid);
               }} />
+          </Card.Content>
+        </Card>
+        
+      </Container>
+      <Container>
+        <h4>Horizontal Menu</h4>
+        <Card>
+          <Card.Content>
+            <HorizontalMenuDefault />
+          </Card.Content>
+        </Card>
+      </Container>
+
+      <Container>
+        <h4>Comments box (with form)</h4>
+        <Card>
+          <Card.Content>
+            <CommentsBoxWithForm />
           </Card.Content>
         </Card>
       </Container>
