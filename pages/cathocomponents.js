@@ -7,8 +7,6 @@ import {
   DeprecatedHeaderLoggedResponsive,
   PasswordField,
   HeaderLoggedResponsive,
-  HorizontalMenu,
-  CommentsBox,
  }from '@catho-private/catho-components';
 import Header from './shared/Header';
 import { FooterTagsList, HorizontalMenuDefault, CommentsBoxWithForm } from '../components';
