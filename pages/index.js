@@ -26,6 +26,11 @@ export default () => (
         <span>&rarr;</span><Link href="/cathocomponents">Catho components</Link>
       </Col>
       </Row>
+      <Row>
+      <Col {...colsProps}>
+        <span>&rarr;</span><Link href="/render">Simulates renders</Link>
+      </Col>
+      </Row>
     </Container>
   </>
 );

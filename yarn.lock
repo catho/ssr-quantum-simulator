@@ -1102,10 +1102,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@catho-private/catho-components@^2.5.1":
-  version "2.5.1"
-  resolved "https://registry.yarnpkg.com/@catho-private/catho-components/-/catho-components-2.5.1.tgz#b836c5bd0d7efd48a46ef4d63e8afb0136a73f24"
-  integrity sha512-3uZemYbdn27XA6nJib4M+vTqzZeYmWsjBARZkOm8xPPphHbSMA5NDUUo47vRcB4MqGijHCR+kCh/+n38KPLZIg==
+"@catho-private/catho-components@^2.5.3":
+  version "2.5.3"
+  resolved "https://registry.yarnpkg.com/@catho-private/catho-components/-/catho-components-2.5.3.tgz#d294f33509a940ee716baccb84b4da19dbb291a0"
+  integrity sha512-xmdgLCtb0h4xT/IkOZCywa7KA9kiLswMsZVJolfVSoNMFREC7xBV2WEpD/W8wVKZf2HT9+x9lbFy/VXgMrnJ1A==
   dependencies:
     "@catho/quantum" "^6.6.6"
     "@catho/quantum-storybook-ui" "^1.3.1"
