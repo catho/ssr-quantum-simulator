@@ -37,6 +37,14 @@ export default function CathoComponentsPage() {
         hasSearch={false}
       />
       <HeaderLoggedResponsive userProfile="STATUS_I_PROFISSIONAL" hasSearch />
+      <h4>Header B2B logged</h4>
+      <HeaderLoggedResponsive
+        type="B2B"
+        userProfile="STATUS_LOGGED_HIRER"
+        hasSearch
+        userMessages={9999}
+        userEvents={10}
+      />
       <h4>[cadastro candidato] Header Simple (implementado pelo área 51)</h4>
       <HeaderSimple gtmPrefix="next" />
       <h4>[/ajuda] Header Simple logged (implementado pela Transformers)</h4>
