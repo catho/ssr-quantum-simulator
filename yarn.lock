@@ -2054,16 +2054,16 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@catho-private/catho-components@^2.8.2":
-  version "2.8.2"
-  resolved "https://registry.yarnpkg.com/@catho-private/catho-components/-/catho-components-2.8.2.tgz#be37e828de29d3817d5de216b4a759fb17b2b90d"
-  integrity sha512-pgc+cgqpaYuUAKR1TrKa1MM5mFpYEcBYG5qp3CkjV7FoF5TBCPixPcLFKuoxaPQ864D78MMcB8wfu0y4Z4mymA==
+"@catho-private/catho-components@^2.10.0":
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/@catho-private/catho-components/-/catho-components-2.10.0.tgz#8b08a3546d705f7cb55b351ee34d6863de47747b"
+  integrity sha512-z8h/J/ycdF1DF87IUqZTBhjxrv7dDMhyPFoSibyJknIqRU7tOdRepsXAXP6bXl63N0qingW+YqRxxF6wwgj27g==
   dependencies:
     "@catho/quantum" "^6.8.0"
     "@catho/quantum-storybook-ui" "^1.3.1"
     "@material-ui/core" "^4.5.1"
     "@material-ui/icons" "^4.9.1"
-    axios "^0.21.1"
+    axios "^0.21.2"
     babel-polyfill "^6.26.0"
     core-js "2.5.7"
     datalist-polyfill "^1.23.1"
@@ -2100,7 +2100,7 @@
     react-text-mask "^5.4.3"
     slugify "^1.3.6"
 
-"@catho/quantum@^6.8.0", "@catho/quantum@^6.8.2":
+"@catho/quantum@^6.8.0":
   version "6.8.2"
   resolved "https://registry.yarnpkg.com/@catho/quantum/-/quantum-6.8.2.tgz#9486f31f77e190e20886e4b232fd90e97f1dfbee"
   integrity sha512-JHIeDadoKZqVn4oSF6eo8ooHlvgMJbA8FhSb9wwrq1odfJDGA1imWhhfY9KEyCXQgxLV1sJsf9rACdDmfVVnsA==
@@ -2117,6 +2117,24 @@
     react-text-mask "^5.4.3"
     slugify "^1.3.6"
     storybook "^6.3.4"
+
+"@catho/quantum@^6.8.3":
+  version "6.8.3"
+  resolved "https://registry.yarnpkg.com/@catho/quantum/-/quantum-6.8.3.tgz#4b1763345421a7a177fe77dbbbb1c61821d87931"
+  integrity sha512-JoveddWxk8wWzpqGd1G60bFm5qYqAs/Al2Fkw4bu/fSPfJpqqdzCHzJNKgoANlYmBJgaxo+vQPMeKE5JtxpUIA==
+  dependencies:
+    "@material-ui/core" "^4.5.1"
+    "@material-ui/icons" "^4.9.1"
+    babel-polyfill "^6.26.0"
+    datalist-polyfill "^1.23.1"
+    downshift "^3.1.10"
+    prop-types "^15.6.2"
+    react-content-loader "^3.4.2"
+    react-image "^1.5.1"
+    react-slick "^0.28.0"
+    react-text-mask "^5.4.3"
+    slugify "^1.3.6"
+    storybook "^6.3.7"
 
 "@csstools/convert-colors@^1.4.0":
   version "1.4.0"
@@ -2410,6 +2428,38 @@
     ts-dedent "^2.0.0"
     update-notifier "^5.0.1"
 
+"@storybook/cli@6.3.9":
+  version "6.3.9"
+  resolved "https://registry.yarnpkg.com/@storybook/cli/-/cli-6.3.9.tgz#e963ce5a6bf44523d3c49182d5644807263e4223"
+  integrity sha512-NWGECWdYD938eA0gHaGg7jJwJkaO0Ea44aj/7msiwaW0QUkIPDsdTmUKYBzv+ViyMtEqvs1txCGZnVw/RR6zXQ==
+  dependencies:
+    "@babel/core" "^7.12.10"
+    "@babel/preset-env" "^7.12.11"
+    "@storybook/codemod" "6.3.9"
+    "@storybook/node-logger" "6.3.9"
+    "@storybook/semver" "^7.3.2"
+    boxen "^4.2.0"
+    chalk "^4.1.0"
+    commander "^6.2.1"
+    core-js "^3.8.2"
+    cross-spawn "^7.0.3"
+    envinfo "^7.7.3"
+    express "^4.17.1"
+    find-up "^5.0.0"
+    fs-extra "^9.0.1"
+    get-port "^5.1.1"
+    globby "^11.0.2"
+    jscodeshift "^0.11.0"
+    json5 "^2.1.3"
+    leven "^3.1.0"
+    prompts "^2.4.0"
+    puppeteer-core "^2.1.1"
+    read-pkg-up "^7.0.1"
+    shelljs "^0.8.4"
+    strip-json-comments "^3.0.1"
+    ts-dedent "^2.0.0"
+    update-notifier "^5.0.1"
+
 "@storybook/codemod@6.3.7":
   version "6.3.7"
   resolved "https://registry.yarnpkg.com/@storybook/codemod/-/codemod-6.3.7.tgz#9af1e7551c63aeb90a5952b5a743aa6cfb2521db"
@@ -2420,6 +2470,25 @@
     "@storybook/csf" "0.0.1"
     "@storybook/csf-tools" "6.3.7"
     "@storybook/node-logger" "6.3.7"
+    core-js "^3.8.2"
+    cross-spawn "^7.0.3"
+    globby "^11.0.2"
+    jscodeshift "^0.7.0"
+    lodash "^4.17.20"
+    prettier "~2.2.1"
+    recast "^0.19.0"
+    regenerator-runtime "^0.13.7"
+
+"@storybook/codemod@6.3.9":
+  version "6.3.9"
+  resolved "https://registry.yarnpkg.com/@storybook/codemod/-/codemod-6.3.9.tgz#c46142937c69615831e0067cf8737e10806a82b5"
+  integrity sha512-c4V7lNyCZTxoaQbPa69rKRt4BuUFrTQRIi+vTBTIOus0JdikZeB9URoCOI4tozGd3AWOb+6enZim9Kc9nZwUcw==
+  dependencies:
+    "@babel/types" "^7.12.11"
+    "@mdx-js/mdx" "^1.6.22"
+    "@storybook/csf" "0.0.1"
+    "@storybook/csf-tools" "6.3.9"
+    "@storybook/node-logger" "6.3.9"
     core-js "^3.8.2"
     cross-spawn "^7.0.3"
     globby "^11.0.2"
@@ -2449,6 +2518,26 @@
     prettier "~2.2.1"
     regenerator-runtime "^0.13.7"
 
+"@storybook/csf-tools@6.3.9":
+  version "6.3.9"
+  resolved "https://registry.yarnpkg.com/@storybook/csf-tools/-/csf-tools-6.3.9.tgz#3f47725bf4108fd08a2350c39cf4eb5755d96c12"
+  integrity sha512-rgAcq/3x8HEIRJdEqw21YT6zDdvEoCUZOMS2XYISJstFZp3weK+PbQr5tsMefAoVjpsNCi9ypYSXMT6dxnNbPw==
+  dependencies:
+    "@babel/generator" "^7.12.11"
+    "@babel/parser" "^7.12.11"
+    "@babel/plugin-transform-react-jsx" "^7.12.12"
+    "@babel/preset-env" "^7.12.11"
+    "@babel/traverse" "^7.12.11"
+    "@babel/types" "^7.12.11"
+    "@mdx-js/mdx" "^1.6.22"
+    "@storybook/csf" "^0.0.1"
+    core-js "^3.8.2"
+    fs-extra "^9.0.1"
+    js-string-escape "^1.0.1"
+    lodash "^4.17.20"
+    prettier "~2.2.1"
+    regenerator-runtime "^0.13.7"
+
 "@storybook/csf@0.0.1", "@storybook/csf@^0.0.1":
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/@storybook/csf/-/csf-0.0.1.tgz#95901507dc02f0bc6f9ac8ee1983e2fc5bb98ce6"
@@ -2460,6 +2549,17 @@
   version "6.3.7"
   resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-6.3.7.tgz#492469ea4749de8d984af144976961589a1ac382"
   integrity sha512-YXHCblruRe6HcNefDOpuXJoaybHnnSryIVP9Z+gDv6OgLAMkyxccTIaQL9dbc/eI4ywgzAz4kD8t1RfVwXNVXw==
+  dependencies:
+    "@types/npmlog" "^4.1.2"
+    chalk "^4.1.0"
+    core-js "^3.8.2"
+    npmlog "^4.1.2"
+    pretty-hrtime "^1.0.3"
+
+"@storybook/node-logger@6.3.9":
+  version "6.3.9"
+  resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-6.3.9.tgz#01ba480ad9199838b76017b7454985798323a808"
+  integrity sha512-tAo7sLNDGkL20NNGjwFgsywrl5rf/ImJaD6DnhSJDncaMcDy5xOA5Fn1IbkQuWUoKexE+nCkTiiynoP4Nzcp4w==
   dependencies:
     "@types/npmlog" "^4.1.2"
     chalk "^4.1.0"
@@ -3061,12 +3161,12 @@ aws4@^1.8.0:
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.8.0.tgz#f0e003d9ca9e7f59c7a508945d7b2ef9a04a542f"
   integrity sha512-ReZxvNHIOv88FlT7rxcXIIC0fPt4KZqZbOlivyWtXLt8ESx84zd3kMC6iK5jVeS2qt+g7ftS7ye4fi06X5rtRQ==
 
-axios@^0.21.1:
-  version "0.21.1"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.1.tgz#22563481962f4d6bde9a76d516ef0e5d3c09b2b8"
-  integrity sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==
+axios@^0.21.2:
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.4.tgz#c67b90dc0568e5c1cf2b0b858c43ba28e2eda575"
+  integrity sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==
   dependencies:
-    follow-redirects "^1.10.0"
+    follow-redirects "^1.14.0"
 
 babel-code-frame@^6.22.0, babel-code-frame@^6.26.0:
   version "6.26.0"
@@ -5621,10 +5721,10 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
 
-follow-redirects@^1.10.0:
-  version "1.13.1"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.1.tgz#5f69b813376cee4fd0474a3aba835df04ab763b7"
-  integrity sha512-SSG5xmZh1mkPGyKzjZP8zLjltIfpW32Y5QpdNJyjcfGxK3qo3NDDkZOZSFiGn1A6SclQxY9GzEwAHQ3dmYRWpg==
+follow-redirects@^1.14.0:
+  version "1.14.4"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.4.tgz#838fdf48a8bbdd79e52ee51fb1c94e3ed98b9379"
+  integrity sha512-zwGkiSXC1MUJG/qmeIFH2HBJx9u0V46QGUe3YR1fXG8bXQxq7fLj0RjLZQ5nubr9qNJUZrH+xUcwXEoXNpfS+g==
 
 for-in@^1.0.2:
   version "1.0.2"
@@ -10243,6 +10343,13 @@ storybook@^6.3.4:
   integrity sha512-SO1NPg7bl9/88TjGBCVGPaNcWur9MPjmJzDI/fg949uBT0+zNI3+Bz/7r5L90slsifNVlXrk4DmU5g60sqZPvQ==
   dependencies:
     "@storybook/cli" "6.3.7"
+
+storybook@^6.3.7:
+  version "6.3.9"
+  resolved "https://registry.yarnpkg.com/storybook/-/storybook-6.3.9.tgz#77943b5c7d0a1f54ad31b626d21cfcbb8dde8f60"
+  integrity sha512-UIHzMTAWTp35VJxxqt07sIIeM5KBXfwsw/hOggr3Hv1QJ68WVlqPY7ZenXC8U/GHQNvYsqotD/nYtmRq8hBEXw==
+  dependencies:
+    "@storybook/cli" "6.3.9"
 
 stream-browserify@^2.0.1:
   version "2.0.2"
