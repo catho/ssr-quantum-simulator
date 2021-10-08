@@ -1,15 +1,15 @@
 import React from 'react';
 import { Container, Row, Col, Card } from '@catho/quantum';
-import { 
-  HeaderResponsive, 
-  FooterResponsive, 
-  HeaderSimple, 
+import {
+  HeaderResponsive,
+  FooterResponsive,
+  HeaderSimple,
   DeprecatedHeaderLoggedResponsive,
   PasswordField,
   HeaderLoggedResponsive,
- }from '@catho-private/catho-components';
+} from '@catho-private/catho-components';
 import Header from './shared/Header';
-import { FooterTagsList, HorizontalMenuDefault, CommentsBoxWithForm } from '../components';
+import { FooterTagsList, HorizontalMenuDefault, CommentsBoxWithForm, BarChartExample } from '../components';
 
 export default function CathoComponentsPage() {
   return (
@@ -26,10 +26,10 @@ export default function CathoComponentsPage() {
       <h4>Header B2C </h4>
       <HeaderResponsive type="B2C" isSubMenuOpen={false} gtmPrefix="next-header-b2c" />
       <h4>Header B2B </h4>
-      <HeaderResponsive type="B2B" isSubMenuOpen={false} gtmPrefix="next-header-b2b" loginRedirect={`https://google/com` } hasSearch searchFieldEvents={{onKeyPress: (e) => console.log('keypress: ', e) }}  />
+      <HeaderResponsive type="B2B" isSubMenuOpen={false} gtmPrefix="next-header-b2b" loginRedirect={`https://google/com`} hasSearch searchFieldEvents={{ onKeyPress: (e) => console.log('keypress: ', e) }} />
       <h4>Header Logged B2C (with logged props) </h4>
-      <HeaderResponsive 
-        gtmPrefix="next-header-b2c"       
+      <HeaderResponsive
+        gtmPrefix="next-header-b2c"
         userProfile="STATUS_A_PROFISSIONAL"
         userThumbnail="https://picsum.photos/24"
         userMessages={1000}
@@ -60,13 +60,13 @@ export default function CathoComponentsPage() {
         <Card>
           <Card.Content>
             <PasswordField
-              password={{ label: 'Password'}}
+              password={{ label: 'Password' }}
               onValidate={valid => {
                 console.log('valid', valid);
               }} />
           </Card.Content>
         </Card>
-        
+
       </Container>
       <Container>
         <h4>Horizontal Menu</h4>
@@ -84,6 +84,10 @@ export default function CathoComponentsPage() {
             <CommentsBoxWithForm />
           </Card.Content>
         </Card>
+      </Container>
+
+      <Container>
+        <BarChartExample />
       </Container>
     </>
   );

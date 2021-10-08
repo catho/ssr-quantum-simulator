@@ -17,6 +17,7 @@ import SegmentedControlExample from './SegmentedControlExample';
 import FooterTagsList from './FooterTagsList';
 import HorizontalMenuDefault from './HorizontalMenuDefault'
 import CommentsBoxWithForm from './CommentsBoxWithForm'
+import BarChartExample from './BarChartExample';
 
 
 export {
@@ -39,4 +40,5 @@ export {
   FooterTagsList,
   HorizontalMenuDefault,
   CommentsBoxWithForm,
+  BarChartExample,
 }
