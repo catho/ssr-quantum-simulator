@@ -20,8 +20,6 @@ import {
   DeprecatedConsentWidget,
 } from "@catho-private/catho-components";
 
-//eZqa0tglwM1TZeiKFpRX9Jekl1cv2iD3iJpeJqV9
-
 export default function CathoComponentsPage() {
   return (
     <>
