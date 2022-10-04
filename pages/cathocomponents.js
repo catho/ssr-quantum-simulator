@@ -19,6 +19,9 @@ import {
   TagsList,
   DeprecatedConsentWidget,
 } from "@catho-private/catho-components";
+
+//eZqa0tglwM1TZeiKFpRX9Jekl1cv2iD3iJpeJqV9
+
 export default function CathoComponentsPage() {
   return (
     <>
@@ -48,7 +51,7 @@ export default function CathoComponentsPage() {
         ]}
       />
       <CommentsBox>Teste</CommentsBox>
-      <ConsentWidget apiKey="eZqa0tglwM1TZeiKFpRX9Jekl1cv2iD3iJpeJqV9" />
+      <ConsentWidget apiKey="" />
       <DayPicker />
       <FooterSimple />
       <HorizontalMenu
