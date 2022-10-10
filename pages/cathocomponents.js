@@ -7,13 +7,16 @@ import {
   DeprecatedHeaderLoggedResponsive,
   PasswordField,
   HeaderLoggedResponsive,
+  ConsentWidget,
  }from '@catho-private/catho-components';
+ 
 import Header from './shared/Header';
 import { FooterTagsList, HorizontalMenuDefault, CommentsBoxWithForm } from '../components';
 
 export default function CathoComponentsPage() {
   return (
     <>
+      <ConsentWidget apiKey="eZqa0tglwM1TZeiKFpRX9Jekl1cv2iD3iJpeJqV9" />
       <Container>
         <Row>
           <Col>
