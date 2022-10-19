@@ -46,7 +46,8 @@ import Carousel from '@catho/quantum/Carousel';
 
 import {
   ControlledModal,
-  ControlledSnackBar
+  ControlledSnackBar,
+  ControlledDialog
 } from '../components';
 
 
@@ -75,7 +76,7 @@ export default function Quantum() {
         ]}
       />
       <ChargeBar />
-      <Dialog>Dialog</Dialog>
+      <ControlledDialog />
       <TabbedView activeTab="TabTest">
         <Tab title="TabTest">Tab with TabbedView</Tab>
       </TabbedView>

@@ -2,7 +2,7 @@
 
 | lib to simulate  | version | path builded in application                  |
 | ---------------- | ------- | -------------------------------------------- |
-| Quantum          | 9.2.0   | node_modules/@catho/Quantum                  |
+| Quantum          | 9.1.1   | node_modules/@catho/Quantum                  |
 | Catho-components | 5.10.0  | node_modules/@catho-private/catho-components |
 
 ### What is it?

@@ -273,10 +273,10 @@
     react-text-mask "^5.4.3"
     slugify "^1.3.6"
 
-"@catho/quantum@^9.2.0":
-  version "9.2.0"
-  resolved "https://registry.yarnpkg.com/@catho/quantum/-/quantum-9.2.0.tgz#f7ad329b6076228f952246b1332b2c3cf5b27cdc"
-  integrity sha512-JDJFcBF36ukbzsVoTrZ5yn8Pl85Rntepb3R17Lcj4E4bmhVqiLG1CeD9RyCiHIHhEocqHCXxCcegCaZME9QWwQ==
+"@catho/quantum@^9.1.1":
+  version "9.4.0"
+  resolved "https://registry.yarnpkg.com/@catho/quantum/-/quantum-9.4.0.tgz#b86e88be95109f4678c3b4fb36a45d7e440c0f0b"
+  integrity sha512-4cC08lNFoRjseyzxQHTZJW/6T5VNQUQEaDUqbTYYAV2iTU0itafifnwTQokcoBMxNse7t8BkozcvvzGuk9PQ/w==
   dependencies:
     "@material-ui/core" "^4.5.1"
     "@material-ui/icons" "^4.9.1"
