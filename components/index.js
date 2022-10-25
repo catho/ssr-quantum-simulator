@@ -15,8 +15,9 @@ import ButtonGroup from './ButtonGroup';
 import CarouselExample from './CarouselExample';
 import SegmentedControlExample from './SegmentedControlExample';
 import FooterTagsList from './FooterTagsList';
-import HorizontalMenuDefault from './HorizontalMenuDefault'
-import CommentsBoxWithForm from './CommentsBoxWithForm'
+import HorizontalMenuDefault from './HorizontalMenuDefault';
+import CommentsBoxWithForm from './CommentsBoxWithForm';
+import ControlledDialog from './ControlledDialog'
 
 
 export {
@@ -29,6 +30,7 @@ export {
   ControlledModal,
   ControlledCheckboxGroup,
   ControlledDropdown,
+  ControlledDialog,
   RadioGroupWithPros,
   ToggleWithProps,
   RadioGroupWithDefaultValue,
