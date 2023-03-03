@@ -218,6 +218,13 @@
     react-image "^1.5.1"
     recharts "2.1.12"
 
+"@catho-private/catho-pay@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@catho-private/catho-pay/-/catho-pay-0.1.1.tgz#8ad6f970afedca36b57357d29c20801f381b75ed"
+  integrity sha512-gcWnl4Rq0adiZJ2qOiXGPoMCuXPS3JVzoZs6lc/dg3TVODBYfhzQJHDFdM3VF5haOWaUeqyWUlT11iupeebfAQ==
+  dependencies:
+    "@catho/quantum" "^9.1.1"
+
 "@catho/quantum@^9.1.0":
   version "9.1.1"
   resolved "https://registry.yarnpkg.com/@catho/quantum/-/quantum-9.1.1.tgz#8a77fe367d67503fe0075e8d98cd824a545c0c83"
