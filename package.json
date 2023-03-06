@@ -6,7 +6,6 @@
   "private": true,
   "dependencies": {
     "@babel/core": "^7.4.5",
-
     "@catho-private/catho-components": "^6.4.0",
     "@catho/quantum": "^9.9.1",
     "@catho-private/catho-pay": "^0.1.1",

@@ -24,7 +24,7 @@ export default function CathoComponentsPage() {
         gtmPrefix="next-header-b2c-nosearch"
         hasSearch
       />
-
+      <HeaderLoggedResponsive userProfile="STATUS_I_PROFISSIONAL" hasSearch />
       <HeaderSimple gtmPrefix="next" />
 
       <FooterResponsive type="B2C" gtmPrefix="next-footer" />
