@@ -3,6 +3,7 @@ import {
   HeaderResponsive,
   FooterResponsive,
   HeaderSimple,
+  HeaderLoggedResponsive,
   PasswordField,
   BarChart,
   CommentsBox,

@@ -7,7 +7,6 @@ import Header from './shared/Header'
 export default function RenderPage() {
   return (
     <>
-      <ConsentWidget apiKey="eZqa0tglwM1TZeiKFpRX9Jekl1cv2iD3iJpeJqV9" />
       <HeaderResponsive type="B2C" />
       <Container>
         <Row>
