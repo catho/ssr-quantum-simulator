@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from '@catho/quantum';
-import { ConsentWidget, HeaderResponsive } from  '@catho-private/catho-components'
+import { HeaderResponsive } from  '@catho-private/catho-components'
 import { FooterTagsList } from '../components';
 import Header from './shared/Header'
 
