@@ -3,21 +3,17 @@ import {
   HeaderResponsive,
   FooterResponsive,
   HeaderSimple,
-  DeprecatedHeaderLoggedResponsive,
-  PasswordField,
   HeaderLoggedResponsive,
+  PasswordField,
   BarChart,
   CommentsBox,
   DayPicker,
-  ConsentWidget,
   FooterSimple,
   HorizontalMenu,
   JobCard,
   JobNotificationList,
-  MessageBox,
   NotificationIcon,
   TagsList,
-  DeprecatedConsentWidget,
 } from "@catho-private/catho-components";
 
 export default function CathoComponentsPage() {
@@ -31,7 +27,7 @@ export default function CathoComponentsPage() {
       />
       <HeaderLoggedResponsive userProfile="STATUS_I_PROFISSIONAL" hasSearch />
       <HeaderSimple gtmPrefix="next" />
-      <DeprecatedHeaderLoggedResponsive gtmPrefix="next" hasSearch={false} />
+
       <FooterResponsive type="B2C" gtmPrefix="next-footer" />
       <PasswordField
         password={{ label: "Password" }}
@@ -49,7 +45,6 @@ export default function CathoComponentsPage() {
         ]}
       />
       <CommentsBox><p>Teste</p></CommentsBox>
-      <ConsentWidget apiKey="eZqa0tglwM1TZeiKFpRX9Jekl1cv2iD3iJpeJqV9" />
       <DayPicker />
       <FooterSimple />
       <HorizontalMenu
@@ -123,7 +118,6 @@ export default function CathoComponentsPage() {
           },
         ]}
       />
-      <MessageBox />
       <NotificationIcon type="folder" />
       <TagsList
         contents={[
@@ -142,7 +136,6 @@ export default function CathoComponentsPage() {
           },
         ]}
       />
-      <DeprecatedConsentWidget apiKey="eZqa0tglwM1TZeiKFpRX9Jekl1cv2iD3iJpeJqV9"/>
     </>
   );
 }
