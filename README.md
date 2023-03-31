@@ -1,9 +1,9 @@
 ### Libs information
 
-| lib to simulate  | version | path builded in application                  |
+| lib to simulate  | version | path built in application                  |
 | ---------------- | ------- | -------------------------------------------- |
-| Quantum          | 9.1.1   | node_modules/@catho/Quantum                  |
-| Catho-components | 5.10.0  | node_modules/@catho-private/catho-components |
+| Quantum          | 9.9.1   | node_modules/@catho/Quantum                  |
+| Catho-components | 6.4.0   | node_modules/@catho-private/catho-components |
 
 ### What is it?
 
