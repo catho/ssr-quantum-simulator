@@ -1,0 +1,61 @@
+
+/* background settings */
+
+.background-img {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    z-index: -999999;
+    background-attachment: fixed;
+
+}
+.background-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+  }
+
+/* body general settings */
+
+  @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
+
+body{
+      font-family: "Dongle", sans-serif;
+  }
+
+/* header and navbar */
+.header{
+
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+}
+
+.logo{
+    position: relative;
+    display: inline-block;
+    top: 50%;
+
+}
+
+.nav {
+
+  position: relative;
+  display: inline-block;
+  right: 0%;
+}
+
+/* footer*/
+
+/* main body content */
+
+
