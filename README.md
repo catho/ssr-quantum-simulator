@@ -21,7 +21,7 @@
     <li><code>yarn dev</code> to start the application</li>
 </ol>
 
-### building
+### Building
 
 <p>To simulate, build the lib (Quantum or catho-components) in your branch, copy and paste in path builded in this application, to overwrite. And start it.</p>
 
