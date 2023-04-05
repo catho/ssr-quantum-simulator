@@ -6,6 +6,12 @@ html {
     background-position: center center;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
+body{
+    font-family: "Dongle", sans-serif;
+}
+
 
 /* ul, li{
 float:left;
