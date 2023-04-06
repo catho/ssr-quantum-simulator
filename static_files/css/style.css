@@ -1,0 +1,13 @@
+html {
+    min-height: 100%;
+    background-image: url(../imgs/background-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
+body{
+    font-family: "Dongle", sans-serif;
+}
