@@ -11,3 +11,22 @@ html {
 body{
     font-family: "Dongle", sans-serif;
 }
+
+.Footer {
+
+    text-align: center;
+    color: #CCCCCC;
+    font-size: small;
+    width: auto;
+    border: 1px solid #D0D1D2;
+    padding: 2% 0;
+    line-height: 1.5;
+}
+
+.Main {
+
+    height: 400px;
+    width: auto;
+    position: relative;
+    border: 1px solid #bb11b2;
+}
