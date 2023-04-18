@@ -6,16 +6,14 @@ html {
     background-position: center center;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Chenla&family=Dongle:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Nunito&display=swap');
+
+
+
 
 body{
     font-family: "Dongle", sans-serif;
     min-height: 100vh;
-}
-
-header{
-    min-height: 50px;
 }
 
 body{
@@ -29,12 +27,12 @@ main{
 
 .Footer {
     min-height: 50px;
-    font-family: "Nunito", sans-serif;;
+    font-family: "Nunito", sans-serif;
     text-align: center;
     color: #CCCCCC;
-    font-size: small;
-    padding: 2% 0;
-    line-height: 1.5;
+    font-size: 12px;
+    padding: 20px 0;
+    line-height: 22px;
 }
 
 
