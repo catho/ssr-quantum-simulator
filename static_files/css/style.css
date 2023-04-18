@@ -26,12 +26,13 @@ main{
 }
 
 .Footer {
-    min-height: 50px;
+    min-height: 66px;
     font-family: "Nunito", sans-serif;
     text-align: center;
     color: #CCCCCC;
     font-size: 12px;
-    padding: 20px 0;
+    padding-top: 29px;
+    padding-bottom: 37px;
     line-height: 22px;
 }
 
