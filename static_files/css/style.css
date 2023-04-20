@@ -6,8 +6,34 @@ html {
     background-position: center center;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Nunito&display=swap');
+
+
+
 
 body{
     font-family: "Dongle", sans-serif;
+    min-height: 100vh;
 }
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1;
+}
+
+.Footer {
+    min-height: 66px;
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    color: #CCCCCC;
+    font-size: 12px;
+    padding-top: 29px;
+    padding-bottom: 37px;
+    line-height: 22px;
+}
+
+
