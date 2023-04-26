@@ -16,37 +16,33 @@
     <!-- Header -->
 
     <header>
-      <div>
-
-        <!-- Logo -->
-
-        <div>
+<!-- Always Visible Header -->
+      <div class="HeaderContainer">
+        <div class="CathoLogo">
           <a href="#"
             ><img
               src="../static_files/imgs/cathoLogo.svg"
               alt="Logotipo da Catho"
           /></a>
         </div>
-        <!-- Main Navigation Menu -->
-        <nav>
+        <nav class="VisibleMenu">
           <ul>
             <li><a href="#">Catho Components</a></li>
             <li><a href="#">Quantum</a></li>
-          </ul>
-        </nav>
-
-        <!-- Hidden Navigation Menu -->
-
-        <nav>
-          <ul>
-            <li><a href="#">Fale Conosco</a></li>
-            <li><a href="#">Conheça</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">...</a></li>
-            <li><a href="#">...</a></li>
+            <li>&#x2630;</li>
           </ul>
         </nav>
       </div>
+
+<!-- Hidden Navbar -->
+
+      <nav class="HiddenMenu">
+        <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Repositories</a></li>
+        </ul>
+      </nav>
+
     </header>
 
     <!-- Main Content -->

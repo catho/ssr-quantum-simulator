@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Nunito&display=swap');
+
+/* HTML tags */
+
 html {
     min-height: 100%;
     background-image: url(../imgs/background-image.png);
@@ -6,23 +10,40 @@ html {
     background-position: center center;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Nunito&display=swap');
-
-
-
 
 body{
     font-family: "Dongle", sans-serif;
     min-height: 100vh;
-}
-
-body{
     display: flex;
     flex-direction: column;
 }
 
+header{
+    font-size: 32px;
+
+}
+
 main{
     flex: 1;
+    font-size: 30px;
+}
+
+li {
+    float:left;
+    margin-right: 136px;
+}
+
+
+
+/* Classes */
+
+.HeaderContainer{
+
+    display: flex;
+    justify-content: space-between;
+    height: 77px;
+    padding: 24px 72px;
+
 }
 
 .Footer {
@@ -36,4 +57,43 @@ main{
     line-height: 22px;
 }
 
+.CathoLogo {
+
+    align-self: center;
+}
+
+
+
+.VisibleMenu {
+
+    color: #CCCCCC;
+    font-weight: bold;
+}
+
+.VisibleMenu a {
+    color: #BCBF12;
+}
+
+.HiddenMenu{
+
+    font-weight: bold;
+    height: 46px;
+    padding-right: 72px;
+
+}
+
+.HiddenMenu li{
+    float: right;
+}
+
+.HiddenMenu a{
+
+    color: #CCCCCC;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #B83870;
+    text-decoration: none;
+}
 
