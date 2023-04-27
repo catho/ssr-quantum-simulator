@@ -66,12 +66,25 @@ li {
 
 .VisibleMenu {
 
-    color: #CCCCCC;
+    color: #BCBF12;
     font-weight: bold;
+    display: flex;
+    align-items: center;
 }
 
+
 .VisibleMenu a {
+
     color: #BCBF12;
+}
+
+.sandwich-button {
+    padding-top: 6px;
+}
+
+.sandwich-button:hover{
+    color: #B83870;
+
 }
 
 .HiddenMenu{
@@ -79,11 +92,15 @@ li {
     font-weight: bold;
     height: 46px;
     padding-right: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 
 }
 
 .HiddenMenu li{
     float: right;
+    
 }
 
 .HiddenMenu a{
