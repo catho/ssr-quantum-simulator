@@ -31,8 +31,13 @@ main{
 li {
     float:left;
     margin-right: 136px;
+    display: flex;
 }
 
+ul {
+    display: flex;
+    align-items: center;
+}
 
 
 /* Classes */
@@ -41,6 +46,7 @@ li {
 
     display: flex;
     justify-content: space-between;
+
     height: 77px;
     padding: 24px 72px;
 
@@ -78,11 +84,17 @@ li {
     color: #BCBF12;
 }
 
-.sandwich-button {
-    padding-top: 6px;
+.SandwichButton {
+
+    border: none;
+    background-color: transparent;
+    color: #BCBF12;
+    font-size: 32px;
+    font-family: 'Nunito', sans-serif;
+
 }
 
-.sandwich-button:hover{
+.SandwichButton:hover{
     color: #B83870;
 
 }
@@ -100,7 +112,7 @@ li {
 
 .HiddenMenu li{
     float: right;
-    
+
 }
 
 .HiddenMenu a{
