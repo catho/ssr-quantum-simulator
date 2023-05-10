@@ -26,6 +26,7 @@ header{
 main{
     flex: 1;
     font-size: 30px;
+
 }
 
 li {
@@ -124,5 +125,11 @@ ul {
 a:hover {
     color: #B83870;
     text-decoration: none;
+}
+
+.MainContent{
+
+    background-color: white;
+    margin: 24px;
 }
 
