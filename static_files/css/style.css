@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Nunito&display=swap');
 
-/* HTML tags */
-
 html {
     min-height: 100%;
     background-image: url(../imgs/background-image.png);
@@ -9,7 +7,6 @@ html {
     background-repeat: no-repeat;
     background-position: center center;
 }
-
 
 body{
     font-family: "Dongle", sans-serif;
@@ -26,7 +23,6 @@ header{
 main{
     flex: 1;
     font-size: 30px;
-
 }
 
 li {
@@ -40,17 +36,11 @@ ul {
     align-items: center;
 }
 
-
-/* Classes */
-
 .HeaderContainer{
-
     display: flex;
     justify-content: space-between;
-
     height: 77px;
     padding: 24px 72px;
-
 }
 
 .Footer {
@@ -65,34 +55,26 @@ ul {
 }
 
 .CathoLogo {
-
     align-self: center;
 }
 
-
-
 .VisibleMenu {
-
     color: #BCBF12;
     font-weight: bold;
     display: flex;
     align-items: center;
 }
 
-
 .VisibleMenu a {
-
     color: #BCBF12;
 }
 
 .SandwichButton {
-
     border: none;
     background-color: transparent;
     color: #BCBF12;
     font-size: 32px;
     font-family: 'Nunito', sans-serif;
-
 }
 
 .SandwichButton:hover{
@@ -100,26 +82,31 @@ ul {
 
 }
 
-.HiddenMenu{
+.HideMenu{
+    display: none;
+}
 
+.ShowMenu{
+    display: flex;
+}
+
+.HiddenMenu{
     font-weight: bold;
     height: 46px;
     padding-right: 72px;
-    display: flex;
     align-items: center;
     justify-content: flex-end;
-
 }
 
 .HiddenMenu li{
     float: right;
-
 }
 
 .HiddenMenu a{
 
     color: #CCCCCC;
     text-decoration: underline;
+
 }
 
 a:hover {
