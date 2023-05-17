@@ -75,10 +75,12 @@ ul {
     color: #BCBF12;
     font-size: 32px;
     font-family: 'Nunito', sans-serif;
+    
 }
 
 .SandwichButton:hover{
     color: #B83870;
+    cursor: pointer;
 
 }
 

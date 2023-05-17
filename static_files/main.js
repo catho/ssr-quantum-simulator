@@ -1,21 +1,23 @@
 
-const  Menu = document.getElementById("HiddenMenu");
+const  hiddenMenu = document.getElementById("hiddenMenu");
 
 document
-  .querySelector("#ShowMenuButton")
-  .addEventListener("click", MakeVisible);
+  .getElementById("menuButton")
+  .addEventListener("click", showMenu);
 
 
-function MakeVisible (){
+function showMenu (){
 
-  if (Menu.classList.contains('HideMenu')) {
+  const { classList } = hiddenMenu;
 
-    Menu.classList.add("ShowMenu");
-    Menu.classList.remove("HideMenu");
+  if (classList.contains('HideMenu')) {
+
+    classList.add("ShowMenu");
+    classList.remove("HideMenu");
 
   } else {
-    Menu.classList.remove("ShowMenu");
-    Menu.classList.add("HideMenu");
+    classList.remove("ShowMenu");
+    classList.add("HideMenu");
 
   }
 }
