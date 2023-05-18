@@ -32,17 +32,27 @@ export default class MyDocument extends Document {
       <html>
         <Head>
           <link rel="stylesheet" href="/static/quantum.css" />
+          <link rel="stylesheet" href="/static/styles_reset.css" />
+          <link rel="stylesheet" href="/static/style.css" />
           <meta
             name="viewport"
             content="width=device-width, initial-scale = 1.0"
           />
           {this.props.styleTags}
         </Head>
+
         <body>
-          <Main />
-          <NextScript />
+
+        <main>
+
+            <Main />
+            <NextScript />
+
+        </main>
+
         </body>
       </html>
     );
   }
 }
+
