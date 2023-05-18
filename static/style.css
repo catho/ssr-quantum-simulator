@@ -2,36 +2,34 @@
 
 html {
     min-height: 100%;
-    background-image: url(../imgs/background-image.png);
+    background-image: url(/pages/imgs/background-image.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+
 }
 
 body{
     font-family: "Dongle", sans-serif;
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
-}
-
-header{
+    flex-direction: column;    
     font-size: 32px;
-
 }
+
 
 main{
     flex: 1;
     font-size: 30px;
 }
 
-li {
+.navItem {
     float:left;
     margin-right: 136px;
     display: flex;
 }
 
-ul {
+.navList {
     display: flex;
     align-items: center;
 }
