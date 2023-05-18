@@ -44,12 +44,11 @@ export default class MyDocument extends Document {
         <body>
 
         <main>
-          <div class="MainContent">
+
             <Main />
             <NextScript />
-          </div>
-        </main>
 
+        </main>
 
         </body>
       </html>
