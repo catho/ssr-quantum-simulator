@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300display=swap');
 
 html {
     min-height: 100%;
@@ -13,7 +13,7 @@ body{
     font-family: "Dongle", sans-serif;
     min-height: 100vh;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     font-size: 32px;
     position: relative;
 }
@@ -28,10 +28,10 @@ body{
 
 .NavList {
 
-        margin: 0;
-        padding-left: 18px;
-        width: 50%;
-        display: contents;
+    margin: 0;
+    padding-left: 18px;
+    width: 50%;
+    display: contents;
 }
 
 
@@ -44,7 +44,6 @@ body{
 
 .Footer {
     min-height: 66px;
-    font-family: "Nunito", sans-serif;
     text-align: center;
     color: #CCCCCC;
     font-size: 12px;
@@ -83,13 +82,11 @@ body{
     color: #BCBF12;
     font-size: 32px;
     font-family: 'Nunito', sans-serif;
-    
 }
 
 .SandwichButton:hover{
     color: #B83870;
     cursor: pointer;
-
 }
 
 .HideMenu{
@@ -113,10 +110,8 @@ body{
 }
 
 .HiddenMenu a{
-
     color: #CCCCCC;
     text-decoration: underline;
-
 }
 
 a:hover {
@@ -129,6 +124,5 @@ a:hover {
     margin: 24px;
     flex: 1;
     margin-bottom: 10em;
-
 }
 

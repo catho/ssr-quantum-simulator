@@ -1,56 +1,42 @@
 import App from 'next/app';
-import Head from 'next/head';
-import React, { useEffect } from 'react';
+import React from 'react';
 import { GlobalStyle } from '@catho/quantum';
-import Image from 'next/image'
-import logoImage from '../static/imgs/cathoLogo.png'
-import backgroundImg from '../static/imgs/background-image.png'
+
+
 
 
 
 export default class HomePage extends App {
 
   componentDidMount() {
-
     const  hiddenMenu = document.getElementById("hiddenMenu");
-
     document
       .getElementById("menuButton")
       .addEventListener("click", showMenu);
-    
-    
     function showMenu (){
-    
       const { classList } = hiddenMenu;
-    
       if (classList.contains('HideMenu')) {
-    
         classList.add("ShowMenu");
         classList.remove("HideMenu");
-    
       } else {
         classList.remove("ShowMenu");
         classList.add("HideMenu");
-    
       }
     }
-    
   };
 
   render() {
-
-
 
     const { Component, pageProps } = this.props;
 
     return (
       <>
-
+      <GlobalStyle />
       <header>
       <div class="HeaderContainer">
         <div class="CathoLogo">
-          <a href="/"
-            ><Image src={logoImage} alt="Logotipo Catho" />
+          <a href="/">
+            <img src='../static/imgs/cathoLogo.png' alt="Logotipo Catho"></img>
               </a>
         </div>
         <nav class="VisibleMenu">
@@ -69,10 +55,8 @@ export default class HomePage extends App {
       </nav>
     </header>
     <div  class="MainContent">
-        <GlobalStyle />
         <Component {...pageProps} />
         </div>
-
         <footer class="Footer">
           <p>
             Essa tela foi especialmente desenvolvida para a dev.Ela maravilhosa da
