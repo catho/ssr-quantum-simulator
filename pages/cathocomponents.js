@@ -19,34 +19,63 @@ import {
 export default function CathoComponentsPage() {
   return (
     <>
-      <HeaderResponsive
-        type="B2C"
-        isSubMenuOpen={false}
-        gtmPrefix="next-header-b2c-nosearch"
-        hasSearch
-      />
-      <HeaderLoggedResponsive userProfile="STATUS_I_PROFISSIONAL" hasSearch />
-      <HeaderSimple gtmPrefix="next" />
+      <div class="HeadersContainer">
+        <h4>Headers</h4>
+        <h6>
+          These are responsive Headers for all Catho applications. They follow
+          Catho's style guide and their needs.
+        </h6>
 
-      <FooterResponsive type="B2C" gtmPrefix="next-footer" />
-      <PasswordField
-        password={{ label: "Password" }}
-        onValidate={(valid) => {
-          console.log("valid", valid);
-        }}
-      />
-      <BarChart
-        data={[
-          {
-            name: "Jan",
-            value: 4000,
-            tooltip: "R$ 4000",
-          },
-        ]}
-      />
-      <CommentsBox><p>Teste</p></CommentsBox>
+        <h5>Header Responsive</h5>
+        <HeaderResponsive
+          type="B2C"
+          isSubMenuOpen={false}
+          gtmPrefix="next-header-b2c-nosearch"
+          hasSearch
+        />
+        <h5>Logged Header Responsive</h5>
+        <HeaderLoggedResponsive userProfile="STATUS_I_PROFISSIONAL" hasSearch />
+        <h5>Simple Header</h5>
+        <HeaderSimple gtmPrefix="next" />
+      </div>
+      <div class="PasswordAndBarChartContainer">
+        <div>
+          <h4>Password Field</h4>
+          <h6>
+            Password Field is a component used when a passwoord input with
+            validations is needed.
+          </h6>
+          <PasswordField
+            password={{ label: "Password" }}
+            onValidate={(valid) => {
+              console.log("valid", valid);
+            }}
+          />
+        </div>
+        <div>
+        <h4>BarChart</h4>
+        <h6>
+          A simplebar chart component. Used to show sorted data in columns.
+        </h6>
+        <BarChart
+          data={[
+            {
+              name: "Jan",
+              value: 4000,
+              tooltip: "R$ 4000",
+            },
+          ]}
+        />
+        </div>
+      </div>
+      <hr />
+      <CommentsBox>
+        <p>Teste</p>
+      </CommentsBox>
+      <hr />
       <DayPicker />
-      <FooterSimple />
+      <hr />
+
       <HorizontalMenu
         items={[
           {
@@ -57,6 +86,7 @@ export default function CathoComponentsPage() {
           },
         ]}
       />
+      <hr />
       <JobCard
         jobID="123"
         jobURL="https://www.catho.com.br"
@@ -101,6 +131,7 @@ export default function CathoComponentsPage() {
           subscribeLink: "https://www.catho.com.br",
         }}
       />
+      <hr />
       <JobNotificationList
         data={[
           {
@@ -118,7 +149,9 @@ export default function CathoComponentsPage() {
           },
         ]}
       />
+      <hr />
       <NotificationIcon type="folder" />
+      <hr />
       <TagsList
         contents={[
           {
@@ -136,6 +169,8 @@ export default function CathoComponentsPage() {
           },
         ]}
       />
+      <FooterResponsive type="B2C" gtmPrefix="next-footer" />
+      <FooterSimple />
     </>
   );
 }

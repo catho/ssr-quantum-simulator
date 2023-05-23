@@ -124,5 +124,21 @@ a:hover {
     margin: 24px;
     flex: 1;
     margin-bottom: 10em;
+    padding-top: 10px;
+}
+
+.HeadersContainer{
+    margin: 5px;
+    border: solid;
+    padding: 2px;
+}
+
+.PasswordAndBarChartContainer{
+
+    margin: 5px;
+    border: solid;
+    padding: 2px;
+    display:flex;
+    justify-content: space-evenly;
 }
 
