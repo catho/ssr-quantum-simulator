@@ -9,6 +9,7 @@ const colsProps = {
 
 export default () => (
   <>
+
     <Container>
       <Row>
         <Col {...colsProps}>
@@ -32,5 +33,6 @@ export default () => (
       </Col>
       </Row>
     </Container>
+    
   </>
 );
