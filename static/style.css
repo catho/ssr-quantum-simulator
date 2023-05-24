@@ -127,18 +127,34 @@ a:hover {
     padding-top: 10px;
 }
 
-.HeadersContainer{
-    margin: 5px;
-    border: solid;
-    padding: 2px;
+.ComponentsContainer{
+
+    padding: 5px;
+    border-radius: 8px;
+    margin: 3px;
+    background-color:rgb(240, 241, 247);
 }
 
 .PasswordAndBarChartContainer{
 
     margin: 5px;
-    border: solid;
     padding: 2px;
+    display:flex;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
+.CommentsBoxContainer{
+    margin: 15px;
+}
+
+
+
+.nametest{
     display:flex;
     justify-content: space-evenly;
 }
 
+.HorizontalMenuContainer{
+    margin: 10px;
+}

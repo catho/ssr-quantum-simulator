@@ -15,15 +15,16 @@ import {
   NotificationIcon,
   TagsList,
 } from "@catho-private/catho-components";
+import { color } from "d3-color";
 
 export default function CathoComponentsPage() {
   return (
     <>
-      <div class="HeadersContainer">
+      <div class="ComponentsContainer" style={{}}>
         <h4>Headers</h4>
         <h6>
           These are responsive Headers for all Catho applications. They follow
-          Catho's style guide and their needs.
+          Catho's style guide and its needs.
         </h6>
 
         <h5>Header Responsive</h5>
@@ -38,12 +39,11 @@ export default function CathoComponentsPage() {
         <h5>Simple Header</h5>
         <HeaderSimple gtmPrefix="next" />
       </div>
-      <div class="PasswordAndBarChartContainer">
-        <div>
+      <div class="PasswordAndBarChartContainer ComponentsContainer  ">
+        <div class="ComponentsContainer">
           <h4>Password Field</h4>
           <h6>
-            Password Field is a component used when a passwoord input with
-            validations is needed.
+            Password Field is a component used when a password input with validations is needed.
           </h6>
           <PasswordField
             password={{ label: "Password" }}
@@ -52,7 +52,7 @@ export default function CathoComponentsPage() {
             }}
           />
         </div>
-        <div>
+        <div class="ComponentsContainer">
         <h4>BarChart</h4>
         <h6>
           A simplebar chart component. Used to show sorted data in columns.
@@ -68,25 +68,17 @@ export default function CathoComponentsPage() {
         />
         </div>
       </div>
-      <hr />
-      <CommentsBox>
-        <p>Teste</p>
-      </CommentsBox>
-      <hr />
-      <DayPicker />
-      <hr />
 
-      <HorizontalMenu
-        items={[
-          {
-            name: "Buscar Vagas",
-            url: "https://google.com",
-            iconName: "favorite_border",
-            isHighlighted: false,
-          },
-        ]}
-      />
-      <hr />
+
+        <div class="CommentsBoxContainer">
+      <CommentsBox>
+        <p>This is a test message for the CommentsBox component</p>
+      </CommentsBox>
+      </div>
+
+
+
+<div class="nametest">
       <JobCard
         jobID="123"
         jobURL="https://www.catho.com.br"
@@ -131,7 +123,9 @@ export default function CathoComponentsPage() {
           subscribeLink: "https://www.catho.com.br",
         }}
       />
-      <hr />
+
+<div>
+<div>
       <JobNotificationList
         data={[
           {
@@ -147,11 +141,55 @@ export default function CathoComponentsPage() {
             state: [],
             url: "https://www.catho.com.br/vagas/ux-designer/?q=ux%20designer",
           },
+          {
+            id: "123",
+            title: "Designer de Produtos, UX Design",
+            qtde: 290,
+            city: [
+              {
+                name: "São Paulo",
+                uf: "SP",
+              },
+            ],
+            state: [],
+            url: "https://www.catho.com.br/vagas/ux-designer/?q=ux%20designer",
+          },
+          {
+            id: "123",
+            title: "Designer de Produtos, UX Design",
+            qtde: 290,
+            city: [
+              {
+                name: "São Paulo",
+                uf: "SP",
+              },
+            ],
+            state: [],
+            url: "https://www.catho.com.br/vagas/ux-designer/?q=ux%20designer",
+          },
         ]}
       />
-      <hr />
-      <NotificationIcon type="folder" />
-      <hr />
+      </div>
+      <div>
+      <DayPicker />
+      </div>
+      <div class="HorizontalMenuContainer">
+      <HorizontalMenu
+        items={[
+          {
+            name: "Buscar Vagas",
+            url: "https://google.com",
+            iconName: "favorite_border",
+            isHighlighted: false,
+          },
+        ]}
+      />
+            <NotificationIcon type="folder" />
+      </div>
+      </div>
+      </div>
+
+    
       <TagsList
         contents={[
           {
@@ -169,6 +207,7 @@ export default function CathoComponentsPage() {
           },
         ]}
       />
+      
       <FooterResponsive type="B2C" gtmPrefix="next-footer" />
       <FooterSimple />
     </>
