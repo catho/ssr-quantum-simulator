@@ -1,7 +1,7 @@
-import React from 'react';
-import { Container, Row, Col } from '@catho/quantum';
-import Link from './styles/style';
-
+import React from "react";
+import { Container, Row, Col } from "@catho/quantum";
+import Link from "./styles/style";
+import Head from "next/head"; 
 
 const colsProps = {
   medium: 12,
@@ -9,8 +9,10 @@ const colsProps = {
 
 export default () => (
   <>
-
     <Container>
+      <Head>
+        <title>SSR-Simulator</title>
+      </Head>
       <Row>
         <Col {...colsProps}>
           <h2>SSR simulator</h2>
@@ -19,20 +21,22 @@ export default () => (
       </Row>
       <Row>
         <Col {...colsProps}>
-          <span>&rarr;</span><Link href="/quantum">Quantum</Link>
+          <span>&rarr;</span>
+          <Link href="/quantum">Quantum</Link>
         </Col>
       </Row>
       <Row>
-      <Col {...colsProps}>
-        <span>&rarr;</span><Link href="/cathocomponents">Catho components</Link>
-      </Col>
+        <Col {...colsProps}>
+          <span>&rarr;</span>
+          <Link href="/cathocomponents">Catho components</Link>
+        </Col>
       </Row>
       <Row>
-      <Col {...colsProps}>
-        <span>&rarr;</span><Link href="/render">Simulates renders</Link>
-      </Col>
+        <Col {...colsProps}>
+          <span>&rarr;</span>
+          <Link href="/render">Simulates renders</Link>
+        </Col>
       </Row>
     </Container>
-    
   </>
 );

@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import {
   Container,
   Row,
@@ -42,18 +43,20 @@ import {
   SegmentedControl,
 } from "@catho/quantum";
 
-import Carousel from '@catho/quantum/Carousel';
+import Carousel from "@catho/quantum/Carousel";
 
 import {
   ControlledModal,
   ControlledSnackBar,
-  ControlledDialog
-} from '../components';
-
+  ControlledDialog,
+} from "../components";
 
 export default function Quantum() {
   return (
     <Container>
+      <Head>
+        <title>Quantum - SSR-Simulator</title>
+      </Head>
       <GlobalStyle />
       <Row>
         <Col>
@@ -158,7 +161,9 @@ export default function Quantum() {
         ]}
       />
       <Toggle id="right" />
-      <Form><input /></Form>
+      <Form>
+        <input />
+      </Form>
       <Carousel
         cards={[
           {
@@ -179,8 +184,8 @@ export default function Quantum() {
           },
         ]}
       />
-      <ControlledModal/>
-      <ControlledSnackBar/>
+      <ControlledModal />
+      <ControlledSnackBar />
     </Container>
   );
 }
