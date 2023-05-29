@@ -239,7 +239,7 @@ export default function CathoComponentsPage() {
                     dataGtmEventLabel: "link:zhaopin",
                     dataGtmEventName: "interaction:normal-metric",
                     label: "Vagas de home office",
-                    url: "http://google.com",
+                    url: "https://google.com",
                   },
                   {
                     dataGtmEventAction: "novo-footer:parceiros-internacionais",
@@ -247,7 +247,7 @@ export default function CathoComponentsPage() {
                     dataGtmEventLabel: "link:zhaopin",
                     dataGtmEventName: "interaction:normal-metric",
                     label: "O que é home office?",
-                    url: "http://google.com",
+                    url: "https://google.com",
                   },
                 ],
                 label: "Candidates",
@@ -260,7 +260,7 @@ export default function CathoComponentsPage() {
                     dataGtmEventLabel: "link:zhaopin",
                     dataGtmEventName: "interaction:normal-metric",
                     label: "O que é home office?",
-                    url: "http://google.com",
+                    url: "https://google.com",
                   },
                   {
                     dataGtmEventAction: "novo-footer:parceiros-internacionais",
@@ -268,7 +268,7 @@ export default function CathoComponentsPage() {
                     dataGtmEventLabel: "link:zhaopin",
                     dataGtmEventName: "interaction:normal-metric",
                     label: "Como fazer uma carta de demissão?",
-                    url: "http://google.com",
+                    url: "https://google.com",
                   },
                 ],
                 label: "Companies",
@@ -282,7 +282,7 @@ export default function CathoComponentsPage() {
                     dataGtmEventName: "interaction:normal-metric",
                     label:
                       "Estresse no trabalho: por que acontece e como lidar",
-                    url: "http://google.com",
+                    url: "https://google.com",
                   },
                   {
                     dataGtmEventAction: "novo-footer:parceiros-internacionais",
@@ -290,7 +290,7 @@ export default function CathoComponentsPage() {
                     dataGtmEventLabel: "link:zhaopin",
                     dataGtmEventName: "interaction:normal-metric",
                     label: "5 característica de um bom líder",
-                    url: "http://google.com",
+                    url: "https://google.com",
                   },
                   {
                     dataGtmEventAction: "novo-footer:parceiros-internacionais",
@@ -299,7 +299,7 @@ export default function CathoComponentsPage() {
                     dataGtmEventName: "interaction:normal-metric",
                     label:
                       "O que falar e o que não falar em uma entrevista de emprego",
-                    url: "http://google.com",
+                    url: "https://google.com",
                   },
                 ],
                 label: "Education",
@@ -312,7 +312,7 @@ export default function CathoComponentsPage() {
                     dataGtmEventLabel: "link:zhaopin",
                     dataGtmEventName: "interaction:normal-metric",
                     label: "Vagas de home office",
-                    url: "http://google.com",
+                    url: "https://google.com",
                   },
                   {
                     dataGtmEventAction: "novo-footer:parceiros-internacionais",
@@ -320,7 +320,7 @@ export default function CathoComponentsPage() {
                     dataGtmEventLabel: "link:zhaopin",
                     dataGtmEventName: "interaction:normal-metric",
                     label: "O que é home office?",
-                    url: "http://google.com",
+                    url: "https://google.com",
                   },
                 ],
                 label: "Privates",
@@ -333,7 +333,7 @@ export default function CathoComponentsPage() {
                     dataGtmEventLabel: "link:zhaopin",
                     dataGtmEventName: "interaction:normal-metric",
                     label: "Vagas de home office",
-                    url: "http://google.com",
+                    url: "https://google.com",
                   },
                   {
                     dataGtmEventAction: "novo-footer:parceiros-internacionais",
@@ -341,7 +341,7 @@ export default function CathoComponentsPage() {
                     dataGtmEventLabel: "link:zhaopin",
                     dataGtmEventName: "interaction:normal-metric",
                     label: "O que é home office?",
-                    url: "http://google.com",
+                    url: "https://google.com",
                   },
                   {
                     dataGtmEventAction: "novo-footer:parceiros-internacionais",
@@ -349,7 +349,7 @@ export default function CathoComponentsPage() {
                     dataGtmEventLabel: "link:zhaopin",
                     dataGtmEventName: "interaction:normal-metric",
                     label: "Como fazer uma carta de demissão?",
-                    url: "http://google.com",
+                    url: "https://google.com",
                   },
                   {
                     dataGtmEventAction: "novo-footer:parceiros-internacionais",
@@ -358,7 +358,7 @@ export default function CathoComponentsPage() {
                     dataGtmEventName: "interaction:normal-metric",
                     label:
                       "Como fazer um currículo sem experiência e sem ensino superior",
-                    url: "http://google.com",
+                    url: "https://google.com",
                   },
                 ],
                 label: "Extra",
@@ -371,7 +371,7 @@ export default function CathoComponentsPage() {
                     dataGtmEventLabel: "link:zhaopin",
                     dataGtmEventName: "interaction:normal-metric",
                     label: "Vagas de home office",
-                    url: "http://google.com",
+                    url: "https://google.com",
                   },
                   {
                     dataGtmEventAction: "novo-footer:parceiros-internacionais",
@@ -379,7 +379,7 @@ export default function CathoComponentsPage() {
                     dataGtmEventLabel: "link:zhaopin",
                     dataGtmEventName: "interaction:normal-metric",
                     label: "O que é home office?",
-                    url: "http://google.com",
+                    url: "https://google.com",
                   },
                 ],
                 label: "Others",
