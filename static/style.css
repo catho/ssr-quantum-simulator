@@ -178,8 +178,12 @@ a:hover {
 }
 
 
-.TextFormatting{
-    text-decoration: underline;
-    color: #0428a4;
+.TextFormattingH4{
+    color: #be056b;
     font-weight: 900;
+}
+
+.TextFormattingH5{
+    color: #d4388e;
+    font-weight: 600;
 }

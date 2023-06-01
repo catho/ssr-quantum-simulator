@@ -75,12 +75,3 @@ export default class HomePage extends App {
     );
   }
 }
-export async function getServerSideProps({query}) {
-  const { id } = query
-
-  return {
-    props: {
-      id
-    },
-  };
-}
