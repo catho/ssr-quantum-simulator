@@ -43,6 +43,13 @@ import {
   SegmentedControl,
 } from "@catho/quantum";
 
+import {
+  breadcrumbsMockItems,
+  accordionMock,
+  segmentedControlMock,
+  socialMocks,
+} from "../simulateddata/mocks";
+
 import Carousel from "@catho/quantum/Carousel";
 
 import {
@@ -58,96 +65,307 @@ export default function Quantum() {
         <title>Quantum - SSR-Simulator</title>
       </Head>
       <GlobalStyle />
-      <Row>
-        <Col>
-          <Hide>Hide</Hide>
-        </Col>
-      </Row>
-      <List>
-        <List.Header>List Header</List.Header>
-        <List.SubHeader>List Subheaders</List.SubHeader>
-        <List.Content>
-          <List.Item>List</List.Item>
-        </List.Content>
-      </List>
-      <Link href="www.catho.com.br">Link</Link>
-      <AutoComplete suggestions={["AutoComplete suggestion"]}></AutoComplete>
-      <Breadcrumbs
-        items={[
-          { label: "Breadcrumbs", url: "catho.com" },
-          { label: "Breadcrumbs 2", url: "catho.com" },
-        ]}
-      />
-      <ChargeBar />
-      <ControlledDialog />
-      <TabbedView activeTab="TabTest">
-        <Tab title="TabTest">Tab with TabbedView</Tab>
-      </TabbedView>
-      <Card>
-        <Card.Header>
-          <Card.HeaderText>
-            <Card.Title>Card Title</Card.Title>
-            <Card.Description>Card.Description</Card.Description>
-          </Card.HeaderText>
-          <Card.Thumbnail src="#" alt="alt test"></Card.Thumbnail>
-        </Card.Header>
-        <Card.Content>Content Card</Card.Content>
-        <Card.Footer>Card.Footer</Card.Footer>
-      </Card>
-      <RangeSlider />
-      <Button>Button</Button>
-      <Hamburger />
-      <Alert>Alert Test</Alert>
-      <Badge>Badge</Badge>
-      <Tag>Tag</Tag>
-      <ProgressBar />
-      <CircularLoader />
-      <Skeleton />
-      <Dropdown items={["ItemTest"]} />
-      <Input />
-      <TextArea />
+      <div class="MarginTopBottom ColoredBackground PaddingTopBotttom">
+        <h4 class="TextFormattingH4 PaddingLeftRight">Breadcrumbs</h4>
+        <h6 class="TextFormattingH6 PaddingLeftRight">
+          Breadcrumbs creates a trail of links to help the user to locate the
+          current page within the website's hierarchy.
+        </h6>
+
+        <Breadcrumbs items={breadcrumbsMockItems} />
+
+        <div class="MarginTopBottom PaddingLeftRight">
+          <h4 class="TextFormattingH4">TabbedView</h4>
+          <h6 class="TextFormattingH6">
+            TabbedView and Tab are components created to organize content into
+            separate views where only one view can be visible at a time.
+          </h6>
+          <TabbedView activeTab="TabTest">
+            <Tab title="TabTest">Tab with TabbedView</Tab>
+            <Tab title="TabTest 2">Second tab with TabbedView</Tab>
+            <Tab title="TabTest 3">Third tab with TabbedView</Tab>
+          </TabbedView>
+        </div>
+      </div>
+
+      <div class="FlexContainer MarginTopBottom ColoredBackground PaddingTopBotttom">
+        <div class="WhiteBackground PaddingLeftRight RoundedEdges MarginLeftRight">
+          <div>
+            <h4 class="TextFormattingH4">Rows and Colums</h4>
+          </div>
+          <Row>
+            <Col>
+              <Hide>Hide</Hide>
+            </Col>
+          </Row>
+        </div>
+        <div class="WhiteBackground PaddingLeftRight RoundedEdges MarginLeftRight">
+          <div>
+            <h4 class="TextFormattingH4">Lists</h4>
+            <h6 class="TextFormattingH6">
+              Styled items and subitems of a list.
+            </h6>
+          </div>
+          <List>
+            <List.Header>List Header</List.Header>
+            <br />
+            <List.SubHeader>List Subheaders</List.SubHeader>
+            <br />
+            <List.Content>
+              <List.Item>List</List.Item>
+              <br />
+            </List.Content>
+          </List>
+        </div>
+        <div class="WhiteBackground PaddingLeftRight RoundedEdges MarginLeftRight">
+          <h4 class="TextFormattingH4">Styled Link</h4>
+          <h6 class="TextFormattingH6">
+            Link styled according to Catho's Style Guide.
+          </h6>
+          <Link href="www.catho.com.br">Link</Link>
+        </div>
+      </div>
+
+      <div class="FlexContainer MarginTopBottom ColoredBackground PaddingTopBotttom">
+        <div class="MaxWidth PaddingLeftRight">
+          <div class="PaddingTopBotttom ">
+            <h4 class="TextFormattingH4">Autocomplete</h4>
+            <h6 class="TextFormattingH6">
+              Styled input component with autocomplete suggestions
+            </h6>
+            <AutoComplete
+              suggestions={["AutoComplete suggestion"]}
+            ></AutoComplete>
+          </div>
+          <div class="PaddingTopBotttom">
+            <h4 class="TextFormattingH4">Dropdown</h4>
+            <h6 class="TextFormattingH6">
+              Styled dropwdown menu component following Catho's Style Guide.
+            </h6>
+            <Dropdown items={["ItemTest"]} />
+          </div>
+          <div class="PaddingTopBotttom">
+            <h4 class="TextFormattingH4">Input</h4>
+            <h6 class="TextFormattingH6">
+              Styled input component following Catho's Style Guide.
+            </h6>
+            <Input />
+          </div>
+          <div class="PaddingTopBotttom">
+            <h4 class="TextFormattingH4">TextArea</h4>
+            <h6 class="TextFormattingH6">
+              Styled text area component following Catho's Style Guide.
+            </h6>
+            <TextArea />
+          </div>
+        </div>
+        <div class="MaxWidth RoundedEdges WhiteBackground PaddingLeftRight">
+          <h4 class="TextFormattingH4">Card</h4>
+          <h6 class="TextFormattingH6">
+            Cards contain a content and actions about a single subject.
+          </h6>
+          <div class="MarginTopBottom">
+            <Card>
+              <Card.Header>
+                <Card.HeaderText>
+                  <Card.Title>Card Title</Card.Title>
+                  <Card.Description>
+                    Card Description: Proin massa nulla, rhoncus nec lectus
+                    vitae, interdum pharetra est. Etiam sed quam nec nulla
+                    lobortis ultrices.
+                  </Card.Description>
+                </Card.HeaderText>
+                <Card.Thumbnail src="#" alt="Alternative"></Card.Thumbnail>
+              </Card.Header>
+              <Card.Content>Content of the Card</Card.Content>
+              <Card.Footer>Footer of the Card</Card.Footer>
+            </Card>
+          </div>
+          <div class="MarginTopBottom">
+            <h4 class="TextFormattingH4">Alert</h4>
+            <h6 class="TextFormattingH6">
+              Alerts are used for items that need to be labeled, categorized, or
+              organized using keywords.
+            </h6>
+            <Alert>Alert Test</Alert>
+          </div>
+          <div class="MarginTopBottom">
+            <h4 class="TextFormattingH4">Accordion</h4>
+            <h6 class="TextFormattingH6">
+              An accordion is a vertical stack of interactive headings used to
+              toggle the display of further information; each item can be
+              'collapsed', with just a short label visible, or 'expanded' to
+              show the complete content.
+            </h6>
+            <Accordion items={accordionMock} />
+          </div>
+        </div>
+      </div>
+      <div class="FlexContainer ColoredBackground PaddingTopBotttom RoundedEdges">
+        <div class="WhiteBackground PaddingTopBotttom PaddingLeftRight MaxWidth RoundedEdges MarginLeftRight">
+          <div class="PaddingTopBotttom">
+            <h4 class="TextFormattingH4">ChargeBar</h4>
+            <h6 class="TextFormattingH6">
+              ChargeBar shows the level the user is to be able to complete their
+              stats to the maximum.
+            </h6>
+            <ChargeBar />
+          </div>
+          <div class="PaddingTopBotttom">
+            <h4 class="TextFormattingH4">RangeSlider</h4>
+            <h6 class="TextFormattingH6">
+              RangeSlider is a component to select a value from a predefined
+              range. Chaneging the component's props, it's possible to set the
+              minimum and maximum values, format the tooltip and labels, or
+              disable the component itself.
+            </h6>
+            <RangeSlider />
+          </div>
+          <div class="PaddingTopBotttom">
+            <h4 class="TextFormattingH4">ProgressBar</h4>
+            <h6 class="TextFormattingH6">
+              Progress bars are used to give the user a feedback on the progress
+              of a process or an action.
+            </h6>
+            <ProgressBar />
+          </div>
+          <div class="PaddingTopBotttom">
+            <h4 class="TextFormattingH4">Stepper</h4>
+            <h6 class="TextFormattingH6">
+              The Stepper component is a visual tool to show progress using
+              logical and numbered steps.
+            </h6>
+            <Stepper />
+          </div>
+          <div>
+            <div class="PaddingTopBotttom">
+              <h4 class="TextFormattingH4">CircularLoader</h4>
+              <h6 class="TextFormattingH6">
+                The Stepper component is a visual tool to show progress using
+                logical and numbered steps.
+              </h6>
+              <CircularLoader />
+            </div>
+            <div class="PaddingTopBotttom">
+              <h4 class="TextFormattingH4">Skeleton</h4>
+              <h6 class="TextFormattingH6">
+                The Skeleton is a component that replaces others while they are
+                loading or not ready to render.
+              </h6>
+              <Skeleton />
+            </div>
+          </div>
+          <div class="PaddingTopBotttom">
+            <h4 class="TextFormattingH4">Pagination</h4>
+            <h6 class="TextFormattingH6">
+              Add pagination buttons to help splitting up long contents into
+              shorter, easy to understand blocks.
+            </h6>
+            <Pagination totalPages={4} activePage={1} />
+          </div>
+        </div>
+        <div class="WhiteBackground MaxWidth RoundedEdges PaddingLeftRight MarginLeftRight">
+          <div class="PaddingTopBotttom">
+            <h4 class="TextFormattingH4">Button</h4>
+            <h6 class="TextFormattingH6">
+              Buttons express what will happen when the user clicks or touches
+              it.
+            </h6>
+            <Button>Simple Button</Button>
+          </div>
+          <div class="PaddingTopBotttom">
+            <h4 class="TextFormattingH4">ControlledDialog</h4>
+            <h6 class="TextFormattingH6">
+              ControlledDialog is a button that activates a dialog window in
+              front of all content. It is commonly used to provide an important
+              information or ask for some user interaciont.
+            </h6>
+            <ControlledDialog />
+          </div>
+          <div class="PaddingTopBotttom">
+            <h4 class="TextFormattingH4">Hamburger</h4>
+            <h6 class="TextFormattingH6">
+              Hamburger component is used for opening mobile menu. You can also
+              pass a aria-label description to inform screen readers that there
+              are new notifications.
+            </h6>
+            <Hamburger inverted />
+          </div>
+          <div class="PaddingTopBotttom">
+            <h4 class="TextFormattingH4">SegmentedControl</h4>
+            <h6 class="TextFormattingH6">
+              The Segmented control component is a linear set of two or more
+              alternation buttons, with all segments with same width.
+            </h6>
+            <SegmentedControl name="items-text" items={segmentedControlMock} />
+          </div>
+          <div class="PaddingTopBotttom">
+            <h4 class="TextFormattingH4">ControlledModal</h4>
+            <h6 class="TextFormattingH6">
+              Modals inform users about a task and can contain critical
+              information, require decisions, or involve multiple tasks. A
+              ControlledModal contains control buttons, such as "Cancel" and
+              "Delete".
+            </h6>
+            <ControlledModal />
+          </div>
+          <div class="PaddingTopBotttom">
+            <h4 class="TextFormattingH4">ControlledSnackBar</h4>
+            <h6 class="TextFormattingH6">
+              SnackBars are used to show an alert about the action that have
+              just been made: delete or archive content by accident (undo),
+              resend messages that not been sent for some reason, or try to
+              reconnect to internet (retry). A ControlledSnackBar has control
+              buttons.
+            </h6>
+            <ControlledSnackBar />
+          </div>
+        </div>
+      </div>
+      <div class="FlexContainer ColoredBackground PaddingTopBotttom RoundedEdges MarginTopBottom">
+        <div class="PaddingTopBotttom WhiteBackground MaxWidth RoundedEdges PaddingLeftRight MarginLeftRight">
+          <h4 class="TextFormattingH4">Badge</h4>
+          <h6 class="TextFormattingH6">
+            Badges are used for showing the quantity of something, such as
+            warnings, inbox messages and others.
+          </h6>
+          <Badge>Example Badge</Badge>
+        </div>
+        <div class="PaddingTopBotttom WhiteBackground MaxWidth RoundedEdges PaddingLeftRight MarginLeftRight">
+          <h4 class="TextFormattingH4">Tag</h4>
+          <h6 class="TextFormattingH6">
+            Tags are used for items that need to be labeled, categorized, or
+            organized using keywords that describe them.
+          </h6>
+          <Tag>Example Tag</Tag>
+        </div>
+        <div class=" PaddingTopBotttom WhiteBackground MaxWidth RoundedEdges PaddingLeftRight MarginLeftRight">
+        <h4 class="TextFormattingH4">Popover</h4>
+          <h6 class="TextFormattingH6">
+            Tags are used for items that need to be labeled, categorized, or
+            organized using keywords that describe them.
+          </h6>
+          <Popover trigger="Click Me" onClose={() => {}}>
+            Example PopOver Trigger
+          </Popover>
+        </div>
+        <div class="PaddingTopBotttom WhiteBackground MaxWidth RoundedEdges PaddingLeftRight MarginLeftRight">
+        <h4 class="TextFormattingH4">Tooltip</h4>
+          <h6 class="TextFormattingH6">
+            Tags are used for items that need to be labeled, categorized, or
+            organized using keywords that describe them.
+          </h6>
+          <Tooltip placement="top" text="Example Tooltip Text">
+            Hoove the pointer over me
+          </Tooltip>
+        </div>
+      </div>
       <SocialButton provider="facebook" />
       <Icon name="info" />
       <Avatar />
-      <Stepper />
-      <Pagination totalPages={1} activePage={1} />
-      <Socials
-        items={[
-          {
-            name: "facebook",
-            url: "https://facebook.com",
-            title: "facebook title of the purpose of this icon",
-          },
-          {
-            name: "twitter",
-            url: "https://twitter.com",
-            title: "twitter title of the purpose of this icon",
-          },
-          {
-            name: "youtube",
-            url: "https://youtube.com",
-            title: "youtube title of the purpose of this icon",
-          },
-        ]}
-      />
-      <Accordion
-        items={[
-          {
-            title: "Test 1",
-            content: "Content Text...",
-          },
-          {
-            title: "Test 2",
-            content: "Content Text...",
-          },
-        ]}
-      />
-      <Popover trigger="Popover Trigger" onClose={() => {}}>
-        Popover test
-      </Popover>
-      <Tooltip placement="top" text="Tooltip Text">
-        Tooltip Trigger
-      </Tooltip>
+
+      <Socials items={socialMocks} />
+
       <CheckboxGroup
         options={[{ checked: false, label: "Test", name: "Test" }]}
       />
@@ -174,18 +392,6 @@ export default function Quantum() {
           },
         ]}
       />
-      <SegmentedControl
-        name="items-text"
-        items={[
-          {
-            label: "Test",
-            value: "Test ",
-            checked: true,
-          },
-        ]}
-      />
-      <ControlledModal />
-      <ControlledSnackBar />
     </Container>
   );
 }

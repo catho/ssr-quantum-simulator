@@ -175,6 +175,7 @@ a:hover {
     font-weight: 900;
 }
 
+
 .TextFormattingH5{
     color: #d4388e;
     font-weight: 600;
@@ -182,4 +183,16 @@ a:hover {
 
 .Width {
     width: 500px;
+}
+
+
+
+.MaxWidth {
+
+    max-width: 500px;
+}
+
+.MarginLeftRight {
+    margin-left: 10px;
+    margin-right: 10px;
 }
