@@ -48,6 +48,7 @@ import {
   accordionMock,
   segmentedControlMock,
   socialMocks,
+  cardsMock,
 } from "../simulateddata/mocks";
 
 import Carousel from "@catho/quantum/Carousel";
@@ -201,7 +202,7 @@ export default function Quantum() {
           </div>
         </div>
       </div>
-      <div class="FlexContainer ColoredBackground PaddingTopBotttom RoundedEdges">
+      <div class="FlexContainer ColoredBackground PaddingTopBotttom">
         <div class="WhiteBackground PaddingTopBotttom PaddingLeftRight MaxWidth RoundedEdges MarginLeftRight">
           <div class="PaddingTopBotttom">
             <h4 class="TextFormattingH4">ChargeBar</h4>
@@ -322,7 +323,7 @@ export default function Quantum() {
           </div>
         </div>
       </div>
-      <div class="FlexContainer ColoredBackground PaddingTopBotttom RoundedEdges MarginTopBottom">
+      <div class="FlexContainer ColoredBackground PaddingTopBotttom MarginTopBottom">
         <div class="PaddingTopBotttom WhiteBackground MaxWidth RoundedEdges PaddingLeftRight MarginLeftRight">
           <h4 class="TextFormattingH4">Badge</h4>
           <h6 class="TextFormattingH6">
@@ -340,7 +341,7 @@ export default function Quantum() {
           <Tag>Example Tag</Tag>
         </div>
         <div class=" PaddingTopBotttom WhiteBackground MaxWidth RoundedEdges PaddingLeftRight MarginLeftRight">
-        <h4 class="TextFormattingH4">Popover</h4>
+          <h4 class="TextFormattingH4">Popover</h4>
           <h6 class="TextFormattingH6">
             Tags are used for items that need to be labeled, categorized, or
             organized using keywords that describe them.
@@ -350,7 +351,7 @@ export default function Quantum() {
           </Popover>
         </div>
         <div class="PaddingTopBotttom WhiteBackground MaxWidth RoundedEdges PaddingLeftRight MarginLeftRight">
-        <h4 class="TextFormattingH4">Tooltip</h4>
+          <h4 class="TextFormattingH4">Tooltip</h4>
           <h6 class="TextFormattingH6">
             Tags are used for items that need to be labeled, categorized, or
             organized using keywords that describe them.
@@ -360,38 +361,99 @@ export default function Quantum() {
           </Tooltip>
         </div>
       </div>
-      <SocialButton provider="facebook" />
-      <Icon name="info" />
-      <Avatar />
-
-      <Socials items={socialMocks} />
-
-      <CheckboxGroup
-        options={[{ checked: false, label: "Test", name: "Test" }]}
-      />
-      <RadioGroup
-        name="test"
-        options={[
-          {
-            value: "Test",
-            label: "Test",
-          },
-        ]}
-      />
-      <Toggle id="right" />
-      <Form>
-        <input />
-      </Form>
-      <Carousel
-        cards={[
-          {
-            imagePath: "https://assets.catho.com.br/logo/svg/blue.svg",
-            imageDescription: "test",
-            title: "title",
-            description: "description...",
-          },
-        ]}
-      />
+      <div class="ColoredBackground PaddingTopBottom PaddingLeftRight">
+        <h4 class="TextFormattingH4">Carousel</h4>
+        <h6 class="TextFormattingH6">
+          Carousel is a component that align cards with a series of content.
+          Works with images, texts, or custom markups. Also includes support for
+          indicators and previous/next controls.
+        </h6>
+        <Carousel cards={cardsMock} />
+      </div>
+      <div class="FlexContainer ColoredBackground PaddingLeftRight MarginTopBottom">
+        <div class="MaxWidth MarginTopBottom MarginLeftRight">
+          <h4 class="TextFormattingH4">Social Button</h4>
+          <h6 class="TextFormattingH6">
+            These buttons are used to run actions related to their respective
+            providers. Example: login with OAuth API from Google.
+          </h6>
+          <SocialButton provider="facebook" />
+        </div>
+        <div class="MaxWidth MarginTopBottom MarginLeftRight">
+          <h4 class="TextFormattingH4">Info Icon</h4>
+          <Icon name="info" />
+        </div>
+        <div class="MaxWidth MarginTopBottom MarginLeftRight">
+          <h4 class="TextFormattingH4">Avatar</h4>
+          <h6 class="TextFormattingH6">
+            Avatars are used to display a thumbnail of the user's profile
+            picture or an user icon if the picture is not defined. It can also
+            display a dot to alert that there is some notification.
+          </h6>
+          <Avatar />
+        </div>
+        <div class="MaxWidth MarginTopBottom  MarginLeftRight">
+          <h4 class="TextFormattingH4">Socials</h4>
+          <h6 class="TextFormattingH6">
+            Socials show the icons of respective Social Medias{" "}
+          </h6>
+          <Socials items={socialMocks} />
+        </div>
+      </div>
+      <div class="FlexContainer ColoredBackground PaddingLeftRight MarginTopBottom Overflow">
+        <div class="MaxWidth MarginLeftRight MarginTopBottom">
+          <h4 class="TextFormattingH4">Checkbox Group</h4>
+          <h6 class="TextFormattingH6">
+            Gets values from a single onChange callback prop and apply a single
+            error message to a group of checkboxes.
+          </h6>
+          <CheckboxGroup
+            options={[{ checked: false, label: "Test", name: "Test" }]}
+          />
+        </div>
+        <div class="MaxWidth MarginLeftRight MarginTopBottom">
+          <h4 class="TextFormattingH4">Radio Group</h4>
+          <h6 class="TextFormattingH6">
+            Radio group is a list of radio buttons that are used when a list of
+            two or more options are mutually exclusive, meaning the user must
+            select only one option.
+          </h6>
+          <RadioGroup
+            name="test"
+            options={[
+              {
+                value: "Test",
+                label: "Test",
+              },
+            ]}
+          />
+        </div>
+        <div class="MaxWidth MarginLeftRight MarginTopBottom">
+          <h4 class="TextFormattingH4">Toggle</h4>
+          <h6 class="TextFormattingH6">
+            Toggle is a control that is used to quickly switch between two
+            possible states.
+          </h6>
+          <Toggle id="right" />
+        </div>
+        <div class="MaxWidth MarginLeftRight MarginTopBottom">
+          <h4 class="TextFormattingH4">Form</h4>
+          <h6 class="TextFormattingH6">
+            A Form displays a set of related user input fields in a structured
+            way, some other components like validation adds check behavior of
+            the data against a set of criteria before passing it along to the
+            server.{" "}
+          </h6>
+          <Form>
+            <label>Name: </label>
+            <input />
+            <br />
+            <label>E-Mail: </label>
+            <input />
+            <br />
+          </Form>
+        </div>
+      </div>
     </Container>
   );
 }
