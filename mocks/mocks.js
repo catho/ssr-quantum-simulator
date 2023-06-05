@@ -226,6 +226,59 @@ const horizontalMenuItems = [
   },
 ];
 
+const jobCardProps = {
+  jobID: "123",
+  jobURL: "https://www.catho.com.br",
+  name: "JobCard",
+  company: {
+    name: "This is a JobCard",
+    avatar: undefined,
+    isConfidential: false,
+    stamps: [
+      {
+        icon: "person",
+        description: "",
+      },
+    ],
+  },
+  salaryRange: "R$0-R$99999",
+  benefits: [
+    {
+      name: "Alimentação",
+      icon: "receipt",
+    },
+  ],
+  publishDate: new Date(2023, 5, 25, 13).getTime(),
+  updateDate: new Date(2023, 4, 25, 13).getTime(),
+  locations: [
+    {
+      name: "Remote",
+      quantity: 15,
+      url: "https://www.catho.com.br",
+    },
+  ],
+  quantityTotal: 10,
+  description: "Job Card is a component to standardise Catho's job posting.",
+  isPCD: false,
+  isExtended: false,
+  isCompatible: false,
+  isFavorite: false,
+  cta: {
+    type: "DEFAULT",
+    dateSent: new Date(2022, 6, 10, 13).getTime(),
+    timeToUmblock: new Date(2022, 6, 10, 14).getTime(),
+    subscribeLink: "https://www.catho.com.br",
+  },
+};
+
+
+const passwordProps = {
+  password: { label: "Password" },
+  onValidate:  (valid) => {
+    console.log("valid", valid);
+  },
+}
+
 export {
   barCharData,
   candidatesMockContent,
@@ -236,4 +289,6 @@ export {
   othersMockContent,
   jobNotificationListMock,
   horizontalMenuItems,
+  jobCardProps,
+  passwordProps,
 };
