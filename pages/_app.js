@@ -5,8 +5,8 @@ import { GlobalStyle } from '@catho/quantum';
 
 
 
-
 export default class HomePage extends App {
+  
 
   componentDidMount() {
     const  hiddenMenu = document.getElementById("hiddenMenu");
@@ -31,6 +31,7 @@ export default class HomePage extends App {
 
     return (
       <>
+
       <GlobalStyle />
       <header>
       <div class="HeaderContainer">
@@ -54,7 +55,7 @@ export default class HomePage extends App {
         </ul>
       </nav>
     </header>
-    <div  class="MainContent">
+    <div  class="MainContent WhiteBackground">
         <Component {...pageProps} />
         </div>
         <footer class="Footer">

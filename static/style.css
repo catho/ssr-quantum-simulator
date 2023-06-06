@@ -120,9 +120,66 @@ a:hover {
 }
 
 .MainContent{
-    background-color: white;
     margin: 24px;
     flex: 1;
-    margin-bottom: 10em;
+    margin-bottom: 8em;
+    padding-top: 8px;
 }
 
+.ComponentsContainer{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.FlexContainer{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.RoundedEdges {
+    border-radius: 8px;
+}
+
+.ColoredBackground{
+    background-color:rgb(240, 241, 247);
+}
+
+.WhiteBackground{
+    background-color: white;
+}
+
+
+.PaddingTopBotttom{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.PaddingLeftRight{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.MarginTopBottom{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+
+.TextFormattingH4{
+    color: #be056b;
+    font-weight: 900;
+}
+
+.TextFormattingH5{
+    color: #d4388e;
+    font-weight: 600;
+}
+
+.Width {
+    width: 500px;
+}

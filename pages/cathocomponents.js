@@ -1,4 +1,14 @@
 import React from "react";
+import Head from "next/head";
+import {
+  barCharData,
+  jobNotificationListMock,
+  horizontalMenuItems,
+  jobCardProps,
+  passwordProps,
+  tagListMocks,
+} from "../mocks/mocks.js";
+
 import {
   HeaderResponsive,
   FooterResponsive,
@@ -12,130 +22,97 @@ import {
   HorizontalMenu,
   JobCard,
   JobNotificationList,
-  NotificationIcon,
-  TagsList,
 } from "@catho-private/catho-components";
 
 export default function CathoComponentsPage() {
   return (
     <>
-      <HeaderResponsive
-        type="B2C"
-        isSubMenuOpen={false}
-        gtmPrefix="next-header-b2c-nosearch"
-        hasSearch
-      />
-      <HeaderLoggedResponsive userProfile="STATUS_I_PROFISSIONAL" hasSearch />
-      <HeaderSimple gtmPrefix="next" />
+      <Head>
+        <title>Catho Components - SSR-Simulator</title>
+      </Head>
+      <div class="ComponentsContainer ColoredBackground">
+        <h4 class="TextFormattingH4">Headers</h4>
+        <h6>
+          These are responsive Headers for all Catho applications. They follow
+          Catho's style guide and its needs.
+        </h6>
+        <h5 class="TextFormattingH5">Header Responsive</h5>
+        <HeaderResponsive
+          type="B2C"
+          isSubMenuOpen={false}
+          gtmPrefix="next-header-b2c-nosearch"
+          hasSearch
+        />
+        <h5 class="TextFormattingH5">Logged Header Responsive</h5>
+        <HeaderLoggedResponsive userProfile="STATUS_I_PROFISSIONAL" hasSearch />
+        <h5 class="TextFormattingH5">Simple Header</h5>
+        <HeaderSimple gtmPrefix="next" />
+      </div>
+      <div class="ComponentsContainer FlexContainer ColoredBackground ">
+        <div class="ComponentsContainer RoundedEdges WhiteBackground Width">
+          <h4 class="TextFormattingH4">Password Field</h4>
+          <h6>
+            Password Field is a component used when a password input with
+            validations is needed.
+          </h6>
+          <PasswordField {...passwordProps} />
+        </div>
+        <div class="ComponentsContainer RoundedEdges WhiteBackground Width">
+          <h4 class="TextFormattingH4">BarChart</h4>
+          <h6>
+            A simplebar chart component. Used to show sorted data in columns.
+          </h6>
+          <BarChart data={barCharData} />
+        </div>
+      </div>
+      <div class="ComponentsContainer ColoredBackground">
+        <h4 class="TextFormattingH4">CommentsBox</h4>
+        <h6>A simple way of displaying a form or alert.</h6>
+        <CommentsBox>
+          <p>This is a test message for the CommentsBox component.</p>
+        </CommentsBox>
+      </div>
+      <div class="FlexContainer ComponentsContainer ColoredBackground ">
+        <div class="WhiteBackground PaddingLeftRight RoundedEdges Width">
+          <h4 class="TextFormattingH4">JobCard</h4>
+          <JobCard {...jobCardProps} />
+        </div>
+        <div>
+          <div class="WhiteBackground RoundedEdges ComponentsContainer Width">
+            <h4 class="TextFormattingH4">JobNotificationList</h4>
+            <h6>A simple list of cards of job notifications.</h6>
+            <JobNotificationList data={jobNotificationListMock} />
+          </div>
+          <div class="WhiteBackground RoundedEdges ComponentsContainer Width">
+            <h4 class="TextFormattingH4">DayPicker</h4>
+            <h6>DayPicker allows the user to select a day or a set of days.</h6>
+            <DayPicker />
+          </div>
+          <div class="WhiteBackground RoundedEdges ComponentsContainer Width">
+            <h4 class="TextFormattingH4">HorizontalMenu</h4>
+            <h6>A mobile navigation bar with a text and an icon.</h6>
+            <HorizontalMenu items={horizontalMenuItems} />
+          </div>
+        </div>
+      </div>
 
-      <FooterResponsive type="B2C" gtmPrefix="next-footer" />
-      <PasswordField
-        password={{ label: "Password" }}
-        onValidate={(valid) => {
-          console.log("valid", valid);
-        }}
-      />
-      <BarChart
-        data={[
-          {
-            name: "Jan",
-            value: 4000,
-            tooltip: "R$ 4000",
-          },
-        ]}
-      />
-      <CommentsBox><p>Teste</p></CommentsBox>
-      <DayPicker />
-      <FooterSimple />
-      <HorizontalMenu
-        items={[
-          {
-            name: "Buscar Vagas",
-            url: "https://google.com",
-            iconName: "favorite_border",
-            isHighlighted: false,
-          },
-        ]}
-      />
-      <JobCard
-        jobID="123"
-        jobURL="https://www.catho.com.br"
-        name="Test"
-        company={{
-          name: "Catho",
-          avatar: undefined,
-          isConfidential: false,
-          stamps: [
-            {
-              icon: "person",
-              description: "",
-            },
-          ],
-        }}
-        salaryRange="test"
-        benefits={[
-          {
-            name: "Alimentação",
-            icon: "receipt",
-          },
-        ]}
-        publishDate={new Date(2022, 4, 10, 13).getTime()}
-        updateDate={new Date(2022, 5, 10, 13).getTime()}
-        locations={[
-          {
-            name: "test",
-            quantity: 15,
-            url: "https://www.catho.com.br",
-          },
-        ]}
-        quantityTotal={10}
-        description="test"
-        isPCD={false}
-        isExtended={false}
-        isCompatible={false}
-        isFavorite={false}
-        cta={{
-          type: "DEFAULT",
-          dateSent: new Date(2022, 6, 10, 13).getTime(),
-          timeToUmblock: new Date(2022, 6, 10, 14).getTime(),
-          subscribeLink: "https://www.catho.com.br",
-        }}
-      />
-      <JobNotificationList
-        data={[
-          {
-            id: "123",
-            title: "Designer de Produtos, UX Design",
-            qtde: 290,
-            city: [
-              {
-                name: "São Paulo",
-                uf: "SP",
-              },
-            ],
-            state: [],
-            url: "https://www.catho.com.br/vagas/ux-designer/?q=ux%20designer",
-          },
-        ]}
-      />
-      <NotificationIcon type="folder" />
-      <TagsList
-        contents={[
-          {
-            label: "Candidates",
-            items: [
-              {
-                url: "http://google.com",
-                label: "Vagas de home office",
-                dataGtmEventName: "interaction:normal-metric",
-                dataGtmEventCategory: "catho",
-                dataGtmEventLabel: "link:zhaopin",
-                dataGtmEventAction: "novo-footer:parceiros-internacionais",
-              },
-            ],
-          },
-        ]}
-      />
+      <div class="ColoredBackground ComponentsContainer">
+        <div>
+          <h4 class="TextFormattingH4">Footers</h4>
+          <h6>These are footers for all Catho applications.</h6>
+        </div>
+        <div class="MarginTopBottom">
+          <h5 class="TextFormattingH5">Complete Footer Version with TagList</h5>
+          <FooterResponsive
+            gtmPrefix="B2C-google-tag-prefix"
+            tagsListContent={tagListMocks}
+          />
+        </div>
+        <div class="MarginTopBottom">
+          <h5 class="TextFormattingH5">Simple Footer Version</h5>
+          <FooterSimple />
+        </div>
+      </div>
     </>
   );
 }
