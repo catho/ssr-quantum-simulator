@@ -171,7 +171,7 @@ const othersMockContent = [
 
 const jobNotificationListMock = [
   {
-    id: "123",
+    id: "001",
     title: "Designer de Produtos, UX Design",
     qtde: 290,
     city: [
@@ -184,7 +184,7 @@ const jobNotificationListMock = [
     url: "https://www.catho.com.br/vagas/ux-designer/?q=ux%20designer",
   },
   {
-    id: "123",
+    id: "002",
     title: "Designer de Produtos, UX Design",
     qtde: 130,
     city: [
@@ -197,7 +197,7 @@ const jobNotificationListMock = [
     url: "https://www.catho.com.br/vagas/ux-designer/?q=ux%20designer",
   },
   {
-    id: "123",
+    id: "003",
     title: "Designer de Produtos, UX Design",
     qtde: 98,
     city: [
@@ -279,6 +279,34 @@ const passwordProps = {
   },
 }
 
+
+const tagListMocks = [
+  {
+    items: candidatesMockContent,
+    label: "Candidates",
+  },
+  {
+    items: companiesMockContent,
+    label: "Companies",
+  },
+  {
+    items: educationMockContent,
+    label: "Education",
+  },
+  {
+    items: privateMockContent,
+    label: "Privates",
+  },
+  {
+    items: extraMockContent,
+    label: "Extra",
+  },
+  {
+    items: othersMockContent,
+    label: "Others",
+  },
+]
+
 export {
   barCharData,
   candidatesMockContent,
@@ -291,4 +319,5 @@ export {
   horizontalMenuItems,
   jobCardProps,
   passwordProps,
+  tagListMocks,
 };

@@ -2,16 +2,11 @@ import React from "react";
 import Head from "next/head";
 import {
   barCharData,
-  candidatesMockContent,
-  companiesMockContent,
-  educationMockContent,
-  privateMockContent,
-  extraMockContent,
-  othersMockContent,
   jobNotificationListMock,
   horizontalMenuItems,
   jobCardProps,
   passwordProps,
+  tagListMocks,
 } from "../mocks/mocks.js";
 
 import {
@@ -110,32 +105,7 @@ export default function CathoComponentsPage() {
           <h5 class="TextFormattingH5">Complete Footer Version with TagList</h5>
           <FooterResponsive
             gtmPrefix="B2C-google-tag-prefix"
-            tagsListContent={[
-              {
-                items: candidatesMockContent,
-                label: "Candidates",
-              },
-              {
-                items: companiesMockContent,
-                label: "Companies",
-              },
-              {
-                items: educationMockContent,
-                label: "Education",
-              },
-              {
-                items: privateMockContent,
-                label: "Privates",
-              },
-              {
-                items: extraMockContent,
-                label: "Extra",
-              },
-              {
-                items: othersMockContent,
-                label: "Others",
-              },
-            ]}
+            tagsListContent={tagListMocks}
           />
         </div>
         <div class="MarginTopBottom">
