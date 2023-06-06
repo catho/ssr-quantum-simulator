@@ -49,7 +49,7 @@ import {
   segmentedControlMock,
   socialMocks,
   cardsMock,
-} from "../simulateddata/mocks";
+} from "../mocks/mocks";
 
 import Carousel from "@catho/quantum/Carousel";
 
@@ -89,24 +89,47 @@ export default function Quantum() {
         </div>
       </div>
 
-      <div class="FlexContainer MarginTopBottom ColoredBackground PaddingTopBotttom">
-        <div class="WhiteBackground PaddingLeftRight RoundedEdges MarginLeftRight">
+      <div class="FlexContainer  ColoredBackground RoundedEdges ComponentsContainer">
+        <div class="WhiteBackground  RoundedEdges ComponentsContainer Width">
           <div>
             <h4 class="TextFormattingH4">Rows and Colums</h4>
+            <h6 class="TextFormattingH6">
+              Rows are wrappers for columns. Each column has horizontal space
+              column gap (called a gutter) for controlling the space between
+              them.
+            </h6>
           </div>
-          <Row>
-            <Col>
-              <Hide>Hide</Hide>
+          <Row className="Borders">
+            <Col className="Borders" xsmall={2} small={12}>
+              Column Width 12
+            </Col>
+          </Row>
+          <Row className="Borders">
+            <Col className="Borders" xsmall={2} small={6}>
+              Column Width 6
+            </Col>
+            <Col className="Borders" xsmall={2} small={6}>
+              Column Width 6
+            </Col>
+          </Row>
+          <Row className="Borders">
+            <Col className="Borders" xsmall={4} small={4}>
+              Column Width 4
+            </Col>
+            <Col className="Borders" xsmall={4} small={4}>
+              Column Width 4
+            </Col>
+            <Col className="Borders" xsmall={4} small={4}>
+              Column Width 4
             </Col>
           </Row>
         </div>
-        <div class="WhiteBackground PaddingLeftRight RoundedEdges MarginLeftRight">
-          <div>
+        <div class="RoundedEdges ComponentsContainer Width">
+          <div class=" WhiteBackground  RoundedEdges ComponentsContainer Width">
             <h4 class="TextFormattingH4">Lists</h4>
             <h6 class="TextFormattingH6">
-              Styled items and subitems of a list.
+            List is a component with continuous, vertical indexes of texts or icons.
             </h6>
-          </div>
           <List>
             <List.Header>List Header</List.Header>
             <br />
@@ -117,19 +140,19 @@ export default function Quantum() {
               <br />
             </List.Content>
           </List>
-        </div>
-        <div class="WhiteBackground PaddingLeftRight RoundedEdges MarginLeftRight">
-          <h4 class="TextFormattingH4">Styled Link</h4>
+          </div>
+        <div class="WhiteBackground  RoundedEdges ComponentsContainer Width">
+          <h4 class="TextFormattingH4">Link</h4>
           <h6 class="TextFormattingH6">
-            Link styled according to Catho's Style Guide.
+            Link styled according to Catho's Style Guide. Makes it easier to style an anchor tag.
           </h6>
           <Link href="www.catho.com.br">Link</Link>
         </div>
+        </div>
       </div>
-
-      <div class="FlexContainer MarginTopBottom ColoredBackground PaddingTopBotttom">
-        <div class="MaxWidth PaddingLeftRight">
-          <div class="PaddingTopBotttom ">
+      <div class="FlexContainer  ColoredBackground ComponentsContainer">
+        <div class="Width PaddingLeftRight">
+          <div class="PaddingTopBotttom  ComponentsContainer WhiteBackground RoundedEdges">
             <h4 class="TextFormattingH4">Autocomplete</h4>
             <h6 class="TextFormattingH6">
               Styled input component with autocomplete suggestions
@@ -138,21 +161,21 @@ export default function Quantum() {
               suggestions={["AutoComplete suggestion"]}
             ></AutoComplete>
           </div>
-          <div class="PaddingTopBotttom">
+          <div class="PaddingTopBotttom ComponentsContainer WhiteBackground RoundedEdges">
             <h4 class="TextFormattingH4">Dropdown</h4>
             <h6 class="TextFormattingH6">
               Styled dropwdown menu component following Catho's Style Guide.
             </h6>
             <Dropdown items={["ItemTest"]} />
           </div>
-          <div class="PaddingTopBotttom">
+          <div class="PaddingTopBotttom ComponentsContainer WhiteBackground RoundedEdges">
             <h4 class="TextFormattingH4">Input</h4>
             <h6 class="TextFormattingH6">
               Styled input component following Catho's Style Guide.
             </h6>
             <Input />
           </div>
-          <div class="PaddingTopBotttom">
+          <div class="PaddingTopBotttom ComponentsContainer WhiteBackground RoundedEdges">
             <h4 class="TextFormattingH4">TextArea</h4>
             <h6 class="TextFormattingH6">
               Styled text area component following Catho's Style Guide.
@@ -160,12 +183,12 @@ export default function Quantum() {
             <TextArea />
           </div>
         </div>
-        <div class="MaxWidth RoundedEdges WhiteBackground PaddingLeftRight">
-          <h4 class="TextFormattingH4">Card</h4>
-          <h6 class="TextFormattingH6">
-            Cards contain a content and actions about a single subject.
-          </h6>
-          <div class="MarginTopBottom">
+        <div class="Width   PaddingLeftRight ">
+          <div class="MarginTopBottom  RoundedEdges WhiteBackground ComponentsContainer">
+            <h4 class="TextFormattingH4">Card</h4>
+            <h6 class="TextFormattingH6">
+              Cards contain a content and actions about a single subject.
+            </h6>
             <Card>
               <Card.Header>
                 <Card.HeaderText>
@@ -182,7 +205,7 @@ export default function Quantum() {
               <Card.Footer>Footer of the Card</Card.Footer>
             </Card>
           </div>
-          <div class="MarginTopBottom">
+          <div class="MarginTopBottom ComponentsContainer RoundedEdges WhiteBackground">
             <h4 class="TextFormattingH4">Alert</h4>
             <h6 class="TextFormattingH6">
               Alerts are used for items that need to be labeled, categorized, or
@@ -190,7 +213,7 @@ export default function Quantum() {
             </h6>
             <Alert>Alert Test</Alert>
           </div>
-          <div class="MarginTopBottom">
+          <div class="MarginTopBottom ComponentsContainer RoundedEdges WhiteBackground">
             <h4 class="TextFormattingH4">Accordion</h4>
             <h6 class="TextFormattingH6">
               An accordion is a vertical stack of interactive headings used to
@@ -203,16 +226,16 @@ export default function Quantum() {
         </div>
       </div>
       <div class="FlexContainer ColoredBackground PaddingTopBotttom">
-        <div class="WhiteBackground PaddingTopBotttom PaddingLeftRight MaxWidth RoundedEdges MarginLeftRight">
-          <div class="PaddingTopBotttom">
+        <div class=" Width RoundedEdges ComponentsContainer">
+          <div class="PaddingTopBotttom ComponentsContainer WhiteBackground RoundedEdges">
             <h4 class="TextFormattingH4">ChargeBar</h4>
-            <h6 class="TextFormattingH6">
+            <h6 class="TextFormattingH6 ComponentsContainer WhiteBackground">
               ChargeBar shows the level the user is to be able to complete their
               stats to the maximum.
             </h6>
             <ChargeBar />
           </div>
-          <div class="PaddingTopBotttom">
+          <div class="PaddingTopBotttom ComponentsContainer WhiteBackground RoundedEdges">
             <h4 class="TextFormattingH4">RangeSlider</h4>
             <h6 class="TextFormattingH6">
               RangeSlider is a component to select a value from a predefined
@@ -222,7 +245,7 @@ export default function Quantum() {
             </h6>
             <RangeSlider />
           </div>
-          <div class="PaddingTopBotttom">
+          <div class="PaddingTopBotttom ComponentsContainer WhiteBackground RoundedEdges">
             <h4 class="TextFormattingH4">ProgressBar</h4>
             <h6 class="TextFormattingH6">
               Progress bars are used to give the user a feedback on the progress
@@ -230,7 +253,7 @@ export default function Quantum() {
             </h6>
             <ProgressBar />
           </div>
-          <div class="PaddingTopBotttom">
+          <div class="PaddingTopBotttom ComponentsContainer WhiteBackground RoundedEdges">
             <h4 class="TextFormattingH4">Stepper</h4>
             <h6 class="TextFormattingH6">
               The Stepper component is a visual tool to show progress using
@@ -239,7 +262,7 @@ export default function Quantum() {
             <Stepper />
           </div>
           <div>
-            <div class="PaddingTopBotttom">
+            <div class="PaddingTopBotttom ComponentsContainer WhiteBackground RoundedEdges">
               <h4 class="TextFormattingH4">CircularLoader</h4>
               <h6 class="TextFormattingH6">
                 The Stepper component is a visual tool to show progress using
@@ -247,7 +270,7 @@ export default function Quantum() {
               </h6>
               <CircularLoader />
             </div>
-            <div class="PaddingTopBotttom">
+            <div class="PaddingTopBotttom ComponentsContainer WhiteBackground RoundedEdges">
               <h4 class="TextFormattingH4">Skeleton</h4>
               <h6 class="TextFormattingH6">
                 The Skeleton is a component that replaces others while they are
@@ -256,7 +279,7 @@ export default function Quantum() {
               <Skeleton />
             </div>
           </div>
-          <div class="PaddingTopBotttom">
+          <div class="PaddingTopBotttom ComponentsContainer WhiteBackground RoundedEdges">
             <h4 class="TextFormattingH4">Pagination</h4>
             <h6 class="TextFormattingH6">
               Add pagination buttons to help splitting up long contents into
@@ -265,8 +288,8 @@ export default function Quantum() {
             <Pagination totalPages={4} activePage={1} />
           </div>
         </div>
-        <div class="WhiteBackground MaxWidth RoundedEdges PaddingLeftRight MarginLeftRight">
-          <div class="PaddingTopBotttom">
+        <div class="Width RoundedEdges ComponentsContainer">
+          <div class="PaddingTopBotttom ComponentsContainer WhiteBackground RoundedEdges">
             <h4 class="TextFormattingH4">Button</h4>
             <h6 class="TextFormattingH6">
               Buttons express what will happen when the user clicks or touches
@@ -274,7 +297,7 @@ export default function Quantum() {
             </h6>
             <Button>Simple Button</Button>
           </div>
-          <div class="PaddingTopBotttom">
+          <div class="PaddingTopBotttom ComponentsContainer WhiteBackground RoundedEdges">
             <h4 class="TextFormattingH4">ControlledDialog</h4>
             <h6 class="TextFormattingH6">
               ControlledDialog is a button that activates a dialog window in
@@ -283,7 +306,7 @@ export default function Quantum() {
             </h6>
             <ControlledDialog />
           </div>
-          <div class="PaddingTopBotttom">
+          <div class="PaddingTopBotttom ComponentsContainer WhiteBackground RoundedEdges">
             <h4 class="TextFormattingH4">Hamburger</h4>
             <h6 class="TextFormattingH6">
               Hamburger component is used for opening mobile menu. You can also
@@ -292,7 +315,7 @@ export default function Quantum() {
             </h6>
             <Hamburger inverted />
           </div>
-          <div class="PaddingTopBotttom">
+          <div class="PaddingTopBotttom ComponentsContainer WhiteBackground RoundedEdges">
             <h4 class="TextFormattingH4">SegmentedControl</h4>
             <h6 class="TextFormattingH6">
               The Segmented control component is a linear set of two or more
@@ -300,7 +323,7 @@ export default function Quantum() {
             </h6>
             <SegmentedControl name="items-text" items={segmentedControlMock} />
           </div>
-          <div class="PaddingTopBotttom">
+          <div class="PaddingTopBotttom ComponentsContainer WhiteBackground RoundedEdges">
             <h4 class="TextFormattingH4">ControlledModal</h4>
             <h6 class="TextFormattingH6">
               Modals inform users about a task and can contain critical
@@ -310,7 +333,7 @@ export default function Quantum() {
             </h6>
             <ControlledModal />
           </div>
-          <div class="PaddingTopBotttom">
+          <div class="PaddingTopBotttom ComponentsContainer WhiteBackground RoundedEdges">
             <h4 class="TextFormattingH4">ControlledSnackBar</h4>
             <h6 class="TextFormattingH6">
               SnackBars are used to show an alert about the action that have
@@ -323,45 +346,49 @@ export default function Quantum() {
           </div>
         </div>
       </div>
-      <div class="FlexContainer ColoredBackground PaddingTopBotttom MarginTopBottom">
-        <div class="PaddingTopBotttom WhiteBackground MaxWidth RoundedEdges PaddingLeftRight MarginLeftRight">
-          <h4 class="TextFormattingH4">Badge</h4>
-          <h6 class="TextFormattingH6">
-            Badges are used for showing the quantity of something, such as
-            warnings, inbox messages and others.
-          </h6>
-          <Badge>Example Badge</Badge>
+      <div class="FlexContainer ColoredBackground ComponentsContainer">
+        <div class="Width">
+          <div class=" WhiteBackground  RoundedEdges ComponentsContainer">
+            <h4 class="TextFormattingH4">Badge</h4>
+            <h6 class="TextFormattingH6">
+              Badges are used for showing the quantity of something, such as
+              warnings, inbox messages and others.
+            </h6>
+            <Badge>Example Badge</Badge>
+          </div>
+          <div class=" WhiteBackground  RoundedEdges   ComponentsContainer">
+            <h4 class="TextFormattingH4">Tag</h4>
+            <h6 class="TextFormattingH6">
+              Tags are used for items that need to be labeled, categorized, or
+              organized using keywords that describe them.
+            </h6>
+            <Tag>Example Tag</Tag>
+          </div>
         </div>
-        <div class="PaddingTopBotttom WhiteBackground MaxWidth RoundedEdges PaddingLeftRight MarginLeftRight">
-          <h4 class="TextFormattingH4">Tag</h4>
-          <h6 class="TextFormattingH6">
-            Tags are used for items that need to be labeled, categorized, or
-            organized using keywords that describe them.
-          </h6>
-          <Tag>Example Tag</Tag>
-        </div>
-        <div class=" PaddingTopBotttom WhiteBackground MaxWidth RoundedEdges PaddingLeftRight MarginLeftRight">
-          <h4 class="TextFormattingH4">Popover</h4>
-          <h6 class="TextFormattingH6">
-            Tags are used for items that need to be labeled, categorized, or
-            organized using keywords that describe them.
-          </h6>
-          <Popover trigger="Click Me" onClose={() => {}}>
-            Example PopOver Trigger
-          </Popover>
-        </div>
-        <div class="PaddingTopBotttom WhiteBackground MaxWidth RoundedEdges PaddingLeftRight MarginLeftRight">
-          <h4 class="TextFormattingH4">Tooltip</h4>
-          <h6 class="TextFormattingH6">
-            Tags are used for items that need to be labeled, categorized, or
-            organized using keywords that describe them.
-          </h6>
-          <Tooltip placement="top" text="Example Tooltip Text">
-            Hoove the pointer over me
-          </Tooltip>
+        <div class="Width">
+          <div class="  WhiteBackground Width RoundedEdges   ComponentsContainer">
+            <h4 class="TextFormattingH4">Popover</h4>
+            <h6 class="TextFormattingH6">
+              Tags are used for items that need to be labeled, categorized, or
+              organized using keywords that describe them.
+            </h6>
+            <Popover trigger="Click Me" onClose={() => {}}>
+              Example PopOver Trigger
+            </Popover>
+          </div>
+          <div class=" WhiteBackground Width RoundedEdges   ComponentsContainer">
+            <h4 class="TextFormattingH4">Tooltip</h4>
+            <h6 class="TextFormattingH6">
+              Tooltips provide additional information upon hover or focus. They
+              often contain helper text that is contextual to an element.
+            </h6>
+            <Tooltip placement="top" text="Example Tooltip Text">
+              Pass the pointer over me
+            </Tooltip>
+          </div>
         </div>
       </div>
-      <div class="ColoredBackground PaddingTopBottom PaddingLeftRight">
+      <div class="ColoredBackground ComponentsContainer">
         <h4 class="TextFormattingH4">Carousel</h4>
         <h6 class="TextFormattingH6">
           Carousel is a component that align cards with a series of content.
@@ -371,7 +398,7 @@ export default function Quantum() {
         <Carousel cards={cardsMock} />
       </div>
       <div class="FlexContainer ColoredBackground PaddingLeftRight MarginTopBottom">
-        <div class="MaxWidth MarginTopBottom MarginLeftRight">
+        <div class="Width  ComponentsContainer WhiteBackground RoundedEdges">
           <h4 class="TextFormattingH4">Social Button</h4>
           <h6 class="TextFormattingH6">
             These buttons are used to run actions related to their respective
@@ -379,11 +406,11 @@ export default function Quantum() {
           </h6>
           <SocialButton provider="facebook" />
         </div>
-        <div class="MaxWidth MarginTopBottom MarginLeftRight">
+        <div class="Width  ComponentsContainer WhiteBackground RoundedEdges">
           <h4 class="TextFormattingH4">Info Icon</h4>
           <Icon name="info" />
         </div>
-        <div class="MaxWidth MarginTopBottom MarginLeftRight">
+        <div class="Width  ComponentsContainer WhiteBackground RoundedEdges">
           <h4 class="TextFormattingH4">Avatar</h4>
           <h6 class="TextFormattingH6">
             Avatars are used to display a thumbnail of the user's profile
@@ -392,7 +419,7 @@ export default function Quantum() {
           </h6>
           <Avatar />
         </div>
-        <div class="MaxWidth MarginTopBottom  MarginLeftRight">
+        <div class="Width   ComponentsContainer WhiteBackground RoundedEdges">
           <h4 class="TextFormattingH4">Socials</h4>
           <h6 class="TextFormattingH6">
             Socials show the icons of respective Social Medias{" "}
@@ -400,8 +427,8 @@ export default function Quantum() {
           <Socials items={socialMocks} />
         </div>
       </div>
-      <div class="FlexContainer ColoredBackground PaddingLeftRight MarginTopBottom Overflow">
-        <div class="MaxWidth MarginLeftRight MarginTopBottom">
+      <div class="FlexContainer ColoredBackground PaddingLeftRight MarginTopBottom Overflow ">
+        <div class="Width  ComponentsContainer WhiteBackground RoundedEdges">
           <h4 class="TextFormattingH4">Checkbox Group</h4>
           <h6 class="TextFormattingH6">
             Gets values from a single onChange callback prop and apply a single
@@ -411,7 +438,7 @@ export default function Quantum() {
             options={[{ checked: false, label: "Test", name: "Test" }]}
           />
         </div>
-        <div class="MaxWidth MarginLeftRight MarginTopBottom">
+        <div class="Width  ComponentsContainer WhiteBackground RoundedEdges">
           <h4 class="TextFormattingH4">Radio Group</h4>
           <h6 class="TextFormattingH6">
             Radio group is a list of radio buttons that are used when a list of
@@ -428,7 +455,7 @@ export default function Quantum() {
             ]}
           />
         </div>
-        <div class="MaxWidth MarginLeftRight MarginTopBottom">
+        <div class="Width   WhiteBackground RoundedEdges ComponentsContainer">
           <h4 class="TextFormattingH4">Toggle</h4>
           <h6 class="TextFormattingH6">
             Toggle is a control that is used to quickly switch between two
@@ -436,7 +463,7 @@ export default function Quantum() {
           </h6>
           <Toggle id="right" />
         </div>
-        <div class="MaxWidth MarginLeftRight MarginTopBottom">
+        <div class="Width   WhiteBackground RoundedEdges ComponentsContainer">
           <h4 class="TextFormattingH4">Form</h4>
           <h6 class="TextFormattingH6">
             A Form displays a set of related user input fields in a structured

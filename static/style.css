@@ -182,14 +182,7 @@ a:hover {
 }
 
 .Width {
-    width: 500px;
-}
-
-
-
-.MaxWidth {
-
-    max-width: 500px;
+    width: 600px;
 }
 
 .MarginLeftRight {
@@ -200,3 +193,15 @@ a:hover {
 .Overflow {
     overflow: auto;
 }
+
+.Height {
+    height: 138px;
+}
+
+.Borders {
+    border-style: solid;
+    border-color: #d4388e;
+    border-width: 2px;
+    text-align: center;
+}
+

@@ -1,31 +1,33 @@
-import Document, { Head, Main, NextScript } from 'next/document';
-import { ServerStyleSheet } from 'styled-components';
+import Document, { Head, Main, NextScript } from "next/document";
+import { ServerStyleSheet } from "styled-components";
 
 export default class MyDocument extends Document {
-  static getInitialProps = async ctx => {
-    const sheet = new ServerStyleSheet ();
+  static getInitialProps = async (ctx) => {
+    const sheet = new ServerStyleSheet();
     const originalRenderPage = ctx.renderPage;
 
     try {
-      ctx.renderPage = () => originalRenderPage ({
-        enhanceApp: App => props => sheet.collectStyles (<App {...props} />),
-      });
+      ctx.renderPage = () =>
+        originalRenderPage({
+          enhanceApp: (App) => (props) =>
+            sheet.collectStyles(<App {...props} />),
+        });
 
-      const initialProps = await Document.getInitialProps (ctx);
+      const initialProps = await Document.getInitialProps(ctx);
 
       return {
         ...initialProps,
         styles: (
           <>
             {initialProps.styles}
-            {sheet.getStyleElement ()}
+            {sheet.getStyleElement()}
           </>
         ),
       };
     } finally {
-      sheet.seal ();
+      sheet.seal();
     }
-  }
+  };
 
   render() {
     return (
@@ -34,21 +36,16 @@ export default class MyDocument extends Document {
           <link rel="stylesheet" href="/static/quantum.css" />
           <link rel="stylesheet" href="/static/styles_reset.css" />
           <link rel="stylesheet" href="/static/style.css" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale = 1.0"
-          />
           {this.props.styleTags}
         </Head>
 
         <body>
-        <main>
+          <main>
             <Main />
             <NextScript />
-        </main>
+          </main>
         </body>
       </html>
     );
   }
 }
-
