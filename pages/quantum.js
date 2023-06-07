@@ -99,6 +99,7 @@ export default function Quantum() {
               them.
             </h6>
           </div>
+          <div class="ComponentsContainer">
           <Row className="Borders">
             <Col className="Borders" xsmall={2} small={12}>
               12 Columns Width
@@ -123,6 +124,7 @@ export default function Quantum() {
               4 Columns Width
             </Col>
           </Row>
+          </div>
         </div>
         <div class="RoundedEdges ComponentsContainer Width">
           <div class=" WhiteBackground  RoundedEdges ComponentsContainer Width">
