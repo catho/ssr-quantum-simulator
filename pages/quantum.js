@@ -101,26 +101,26 @@ export default function Quantum() {
           </div>
           <Row className="Borders">
             <Col className="Borders" xsmall={2} small={12}>
-              Column Width 12
+              12 Columns Width
             </Col>
           </Row>
           <Row className="Borders">
             <Col className="Borders" xsmall={2} small={6}>
-              Column Width 6
+              6 Columns Width
             </Col>
             <Col className="Borders" xsmall={2} small={6}>
-              Column Width 6
+              6 Columns Width
             </Col>
           </Row>
           <Row className="Borders">
             <Col className="Borders" xsmall={4} small={4}>
-              Column Width 4
+              4 Columns Width
             </Col>
             <Col className="Borders" xsmall={4} small={4}>
-              Column Width 4
+              4 Columns Width
             </Col>
             <Col className="Borders" xsmall={4} small={4}>
-              Column Width 4
+              4 Columns Width
             </Col>
           </Row>
         </div>
@@ -128,26 +128,28 @@ export default function Quantum() {
           <div class=" WhiteBackground  RoundedEdges ComponentsContainer Width">
             <h4 class="TextFormattingH4">Lists</h4>
             <h6 class="TextFormattingH6">
-            List is a component with continuous, vertical indexes of texts or icons.
+              List is a component with continuous, vertical indexes of texts or
+              icons.
             </h6>
-          <List>
-            <List.Header>List Header</List.Header>
-            <br />
-            <List.SubHeader>List Subheaders</List.SubHeader>
-            <br />
-            <List.Content>
-              <List.Item>List</List.Item>
+            <List>
+              <List.Header>List Header</List.Header>
               <br />
-            </List.Content>
-          </List>
+              <List.SubHeader>List Subheaders</List.SubHeader>
+              <br />
+              <List.Content>
+                <List.Item>List</List.Item>
+                <br />
+              </List.Content>
+            </List>
           </div>
-        <div class="WhiteBackground  RoundedEdges ComponentsContainer Width">
-          <h4 class="TextFormattingH4">Link</h4>
-          <h6 class="TextFormattingH6">
-            Link styled according to Catho's Style Guide. Makes it easier to style an anchor tag.
-          </h6>
-          <Link href="www.catho.com.br">Link</Link>
-        </div>
+          <div class="WhiteBackground  RoundedEdges ComponentsContainer Width">
+            <h4 class="TextFormattingH4">Link</h4>
+            <h6 class="TextFormattingH6">
+              Link styled according to Catho's Style Guide. Makes it easier to
+              style an anchor tag.
+            </h6>
+            <Link href="www.catho.com.br">Link</Link>
+          </div>
         </div>
       </div>
       <div class="FlexContainer  ColoredBackground ComponentsContainer">
@@ -376,7 +378,7 @@ export default function Quantum() {
               Example PopOver Trigger
             </Popover>
           </div>
-          <div class=" WhiteBackground Width RoundedEdges   ComponentsContainer">
+          <div class=" WhiteBackground Width RoundedEdges  InlineBlock ComponentsContainer">
             <h4 class="TextFormattingH4">Tooltip</h4>
             <h6 class="TextFormattingH6">
               Tooltips provide additional information upon hover or focus. They

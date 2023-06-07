@@ -205,3 +205,6 @@ a:hover {
     text-align: center;
 }
 
+.InlineBlock {
+    display: inline-block;
+}
