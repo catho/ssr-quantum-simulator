@@ -61,7 +61,7 @@ import {
 
 export default function Quantum() {
   return (
-    <Container>
+    <div class="ComponentsContainer ">
       <Head>
         <title>Quantum - SSR-Simulator</title>
       </Head>
@@ -89,60 +89,26 @@ export default function Quantum() {
         </div>
       </div>
 
-      <div class="FlexContainer  ColoredBackground RoundedEdges ComponentsContainer">
-        <div class="WhiteBackground  RoundedEdges ComponentsContainer Width">
-          <div>
-            <h4 class="TextFormattingH4">Rows and Colums</h4>
+      <div class="FlexContainer  ColoredBackground  ComponentsContainer">
+        <div>
+          <div class="WhiteBackground  RoundedEdges ComponentsContainer Width">
+            <h4 class="TextFormattingH4">Container</h4>
             <h6 class="TextFormattingH6">
-              Rows are wrappers for columns. Each column has horizontal space
-              column gap (called a gutter) for controlling the space between
-              them.
+              Containers wrap around contents and can be used in different ways.
             </h6>
+            <Container>This is a container.</Container>
           </div>
-          <div class="ComponentsContainer">
-          <Row className="Borders">
-            <Col className="Borders" xsmall={2} small={12}>
-              12 Columns Width
-            </Col>
-          </Row>
-          <Row className="Borders">
-            <Col className="Borders" xsmall={2} small={6}>
-              6 Columns Width
-            </Col>
-            <Col className="Borders" xsmall={2} small={6}>
-              6 Columns Width
-            </Col>
-          </Row>
-          <Row className="Borders">
-            <Col className="Borders" xsmall={4} small={4}>
-              4 Columns Width
-            </Col>
-            <Col className="Borders" xsmall={4} small={4}>
-              4 Columns Width
-            </Col>
-            <Col className="Borders" xsmall={4} small={4}>
-              4 Columns Width
-            </Col>
-          </Row>
-          </div>
-        </div>
-        <div class="RoundedEdges ComponentsContainer Width">
-          <div class=" WhiteBackground  RoundedEdges ComponentsContainer Width">
-            <h4 class="TextFormattingH4">Lists</h4>
+          <div class="WhiteBackground  RoundedEdges ComponentsContainer Width">
+            <h4 class="TextFormattingH4">Hide</h4>
             <h6 class="TextFormattingH6">
-              List is a component with continuous, vertical indexes of texts or
-              icons.
+              Hide will suppress an element in small devices.
             </h6>
-            <List>
-              <List.Header>List Header</List.Header>
-              <br />
-              <List.SubHeader>List Subheaders</List.SubHeader>
-              <br />
-              <List.Content>
-                <List.Item>List</List.Item>
-                <br />
-              </List.Content>
-            </List>
+            <Hide xsmall>
+              <Row>
+                <Col className="Borders">Reduce the screen size</Col>
+                <Col className="Borders">to see Hide working</Col>
+              </Row>
+            </Hide>
           </div>
           <div class="WhiteBackground  RoundedEdges ComponentsContainer Width">
             <h4 class="TextFormattingH4">Link</h4>
@@ -151,6 +117,63 @@ export default function Quantum() {
               style an anchor tag.
             </h6>
             <Link href="www.catho.com.br">Link</Link>
+          </div>
+        </div>
+        <div>
+          <div class="WhiteBackground  RoundedEdges ComponentsContainer Width">
+            <div>
+              <h4 class="TextFormattingH4">Rows and Colums</h4>
+              <h6 class="TextFormattingH6">
+                Rows are wrappers for columns. Each column has horizontal space
+                column gap (called a gutter) for controlling the space between
+                them.
+              </h6>
+            </div>
+            <div class="ComponentsContainer">
+              <Row className="Borders">
+                <Col className="Borders" xsmall={2} small={12}>
+                  12 Columns Width
+                </Col>
+              </Row>
+              <Row className="Borders">
+                <Col className="Borders" xsmall={2} small={6}>
+                  6 Columns Width
+                </Col>
+                <Col className="Borders" xsmall={2} small={6}>
+                  6 Columns Width
+                </Col>
+              </Row>
+              <Row className="Borders">
+                <Col className="Borders" xsmall={4} small={4}>
+                  4 Columns Width
+                </Col>
+                <Col className="Borders" xsmall={4} small={4}>
+                  4 Columns Width
+                </Col>
+                <Col className="Borders" xsmall={4} small={4}>
+                  4 Columns Width
+                </Col>
+              </Row>
+            </div>
+          </div>
+          <div class="RoundedEdges ComponentsContainer Width">
+            <div class=" WhiteBackground  RoundedEdges ComponentsContainer Width">
+              <h4 class="TextFormattingH4">Lists</h4>
+              <h6 class="TextFormattingH6">
+                List is a component with continuous, vertical indexes of texts
+                or icons.
+              </h6>
+              <List>
+                <List.Header>List Header</List.Header>
+                <br />
+                <List.SubHeader>List Subheaders</List.SubHeader>
+                <br />
+                <List.Content>
+                  <List.Item>List</List.Item>
+                  <br />
+                </List.Content>
+              </List>
+            </div>
           </div>
         </div>
       </div>
@@ -485,6 +508,6 @@ export default function Quantum() {
           </Form>
         </div>
       </div>
-    </Container>
+    </div>
   );
 }
