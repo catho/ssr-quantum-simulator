@@ -37,6 +37,12 @@ export default () => (
           <Link href="/render">Simulates renders</Link>
         </Col>
       </Row>
+      <Row>
+        <Col {...colsProps}>
+          <span>&rarr;</span>
+          <Link href="/ccmonitoring">Collects catho components metrics</Link>
+        </Col>
+      </Row>
     </Container>
   </>
 );
