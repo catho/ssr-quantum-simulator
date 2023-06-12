@@ -45,11 +45,9 @@ import {
 
 import Carousel from "@catho/quantum/Carousel";
 
-import {
-  ControlledModal,
-  ControlledSnackBar,
-  ControlledDialog,
-} from "../components";
+import ControlledModal from "../components/ControlledModal";
+import ControlledSnackBar from "../components/ControlledSnackBar";
+import ControlledDialog from "../components/ControlledDialog";
 
 export default function Quantum() {
   return (
