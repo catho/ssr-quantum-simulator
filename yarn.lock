@@ -203,12 +203,12 @@
     "@babel/helper-validator-identifier" "^7.18.6"
     to-fast-properties "^2.0.0"
 
-"@catho-private/catho-components@^6.6.2":
-  version "6.6.2"
-  resolved "https://registry.yarnpkg.com/@catho-private/catho-components/-/catho-components-6.6.2.tgz#c2544892adf3a327624f5ca760dfcbb01c3672a0"
-  integrity sha512-L2xnsZi3sEgGX+zxOV7Gdi61UffVFipeiVuVAVZO4LfvKF16xPh4W5mkcHsl8meHW6xEGd6DOqsWq64jsSo3xQ==
+"@catho-private/catho-components@6.6.3":
+  version "6.6.3"
+  resolved "https://registry.yarnpkg.com/@catho-private/catho-components/-/catho-components-6.6.3.tgz#61207267b5a4b6b9d31ceaa5f868aca14af491f0"
+  integrity sha512-SqpnTrexd8K5I2edJc4FCwJrofKSRPyadXz05clSNYSxTZVE1N8bEZsYjuJ3SCGvEKflruAyseFmvvA3/nZBpw==
   dependencies:
-    "@catho/quantum" "^9.1.0"
+    "@catho/quantum" "^9.13.2"
     prop-types "^15.6.2"
     recharts "2.5.0"
 
@@ -219,19 +219,16 @@
   dependencies:
     "@catho/quantum" "^9.1.1"
 
-"@catho/quantum@^9.1.0":
-  version "9.1.1"
-  resolved "https://registry.yarnpkg.com/@catho/quantum/-/quantum-9.1.1.tgz#8a77fe367d67503fe0075e8d98cd824a545c0c83"
-  integrity sha512-Frn5O4CYlgIt89BlpcEeJBX4VIUrO3ZQTjqYFPWby39PnMoqqkgIzolRKALyg3VqoQ56nFQ4cfk5E/LRLoEpTw==
+"@catho/quantum@9.13.1":
+  version "9.13.1"
+  resolved "https://registry.yarnpkg.com/@catho/quantum/-/quantum-9.13.1.tgz#de4a77cb29e42f5dcce98c9bcfcb8155f0d09825"
+  integrity sha512-oyqLW9eSBzOaCNl9JMOwaBcvHhtfJhviK5EiYVunifQCzCiYCOrAC1RWL2AAw7iA9a6nRnVlO8YiyLST7auVqQ==
   dependencies:
     "@material-ui/core" "^4.5.1"
     "@material-ui/icons" "^4.9.1"
     babel-polyfill "^6.26.0"
-    datalist-polyfill "^1.23.1"
     downshift "^3.1.10"
     prop-types "^15.6.2"
-    react-content-loader "^3.4.2"
-    react-image "^1.5.1"
     react-slick "^0.28.0"
     react-text-mask "^5.4.3"
     slugify "^1.3.6"
@@ -253,10 +250,10 @@
     react-text-mask "^5.4.3"
     slugify "^1.3.6"
 
-"@catho/quantum@^9.13.1":
-  version "9.13.1"
-  resolved "https://registry.yarnpkg.com/@catho/quantum/-/quantum-9.13.1.tgz#de4a77cb29e42f5dcce98c9bcfcb8155f0d09825"
-  integrity sha512-oyqLW9eSBzOaCNl9JMOwaBcvHhtfJhviK5EiYVunifQCzCiYCOrAC1RWL2AAw7iA9a6nRnVlO8YiyLST7auVqQ==
+"@catho/quantum@^9.13.2":
+  version "9.13.2"
+  resolved "https://registry.yarnpkg.com/@catho/quantum/-/quantum-9.13.2.tgz#fb10f23d88f0281d2e3717cd77f7f9753377e9a7"
+  integrity sha512-6Q6LFkn/JcS3dPI+2Bo3igvJogh+6nuscq3zOcRtYLZnzZaKnpSgXWkZlVdg5ECiBCONpc5pEpKD3YX6Un9+ug==
   dependencies:
     "@material-ui/core" "^4.5.1"
     "@material-ui/icons" "^4.9.1"
@@ -405,12 +402,12 @@
     prop-types "^15.7.2"
     react-is "^16.8.0 || ^17.0.0"
 
-"@next/bundle-analyzer@^12.3.1":
-  version "12.3.1"
-  resolved "https://registry.yarnpkg.com/@next/bundle-analyzer/-/bundle-analyzer-12.3.1.tgz#df168652c43ed0dc3e91a5108e34cdcc8fc7f05a"
-  integrity sha512-2f/eei0YqZZBMTs4g1+HbgHyAFH5MbI/w9wLXmE8ly9SFze2D40sRH46JcC//EFVM/TIynVBh5sxn9CVO/vtxg==
+"@next/bundle-analyzer@13.4.4":
+  version "13.4.4"
+  resolved "https://registry.yarnpkg.com/@next/bundle-analyzer/-/bundle-analyzer-13.4.4.tgz#629f318007291203645a335e5387f50053223a98"
+  integrity sha512-OxdqGfzElMjcLDw3XkUTqpEjyB/R2n3sOjiWuOGm414j5hAD2AIcXWv4q6FTN9rERgojrkw+g3z5yeLZgJ3YKg==
   dependencies:
-    webpack-bundle-analyzer "4.3.0"
+    webpack-bundle-analyzer "4.7.0"
 
 "@next/env@12.1.0":
   version "12.1.0"
@@ -1358,10 +1355,10 @@ color-name@~1.1.4:
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
 
-commander@^6.2.0:
-  version "6.2.1"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-6.2.1.tgz#0792eb682dfbc325999bb2b84fddddba110ac73c"
-  integrity sha512-U7VdrJFnJgo4xjrHpTzu0yrHPGImdsmD95ZlgYSEajAn2JKzDhDTPG9kBTefmObL2w/ngeZnilk+OV9CG3d7UA==
+commander@^7.2.0:
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-7.2.0.tgz#a36cb57d0b501ce108e4d20559a150a391d97ab7"
+  integrity sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw==
 
 compute-scroll-into-view@^1.0.9:
   version "1.0.17"
@@ -2523,15 +2520,15 @@ victory-vendor@^36.6.8:
     d3-time "^3.0.0"
     d3-timer "^3.0.1"
 
-webpack-bundle-analyzer@4.3.0:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/webpack-bundle-analyzer/-/webpack-bundle-analyzer-4.3.0.tgz#2f3c0ca9041d5ee47fa418693cf56b4a518b578b"
-  integrity sha512-J3TPm54bPARx6QG8z4cKBszahnUglcv70+N+8gUqv2I5KOFHJbzBiLx+pAp606so0X004fxM7hqRu10MLjJifA==
+webpack-bundle-analyzer@4.7.0:
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/webpack-bundle-analyzer/-/webpack-bundle-analyzer-4.7.0.tgz#33c1c485a7fcae8627c547b5c3328b46de733c66"
+  integrity sha512-j9b8ynpJS4K+zfO5GGwsAcQX4ZHpWV+yRiHDiL+bE0XHJ8NiPYLTNVQdlFYWxtpg9lfAQNlwJg16J9AJtFSXRg==
   dependencies:
     acorn "^8.0.4"
     acorn-walk "^8.0.0"
     chalk "^4.1.0"
-    commander "^6.2.0"
+    commander "^7.2.0"
     gzip-size "^6.0.0"
     lodash "^4.17.20"
     opener "^1.5.2"

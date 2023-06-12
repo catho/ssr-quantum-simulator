@@ -43,6 +43,12 @@ export default () => (
           <Link href="/ccmonitoring">Collects catho components metrics</Link>
         </Col>
       </Row>
+      <Row>
+        <Col {...colsProps}>
+          <span>&rarr;</span>
+          <Link href="/quantummonitoring">Collects Quantum metrics</Link>
+        </Col>
+      </Row>
     </Container>
   </>
 );
