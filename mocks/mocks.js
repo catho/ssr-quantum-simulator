@@ -227,7 +227,7 @@ const horizontalMenuItems = [
 ];
 
 const jobCardProps = {
-  jobID: "123",
+  jobID: "004",
   jobURL: "https://www.catho.com.br",
   name: "JobCard",
   company: {
@@ -271,14 +271,12 @@ const jobCardProps = {
   },
 };
 
-
 const passwordProps = {
   password: { label: "Password" },
-  onValidate:  (valid) => {
+  onValidate: (valid) => {
     console.log("valid", valid);
   },
-}
-
+};
 
 const tagListMocks = [
   {
@@ -305,7 +303,140 @@ const tagListMocks = [
     items: othersMockContent,
     label: "Others",
   },
+];
+
+
+const breadcrumbsMockItems = [
+  { label: "Breadcrumbs - Home", url: "/quantum" },
+  { label: "Breadcrumbs 2 - A Different Page", url: "/" },
+  { label: "Breadcrumbs 3 - Another Page", url: "/" },
+];
+
+const accordionMock = [
+  {
+    title: "Test 1",
+    content: "Content Text...",
+  },
+  {
+    title: "Test 2",
+    content: "Content Text...",
+  },
 ]
+
+const segmentedControlMock = [
+  {
+    label: "Test",
+    value: "Test ",
+    checked: false,
+  },
+  {
+    label: "Test 2",
+    value: "Test 2",
+    checked: true,
+  },
+  {
+    label: "Test 3",
+    value: "Test 3",
+    checked: false,
+  },
+]
+
+const socialMocks = [
+  {
+    name: "facebook",
+    url: "https://facebook.com",
+    title: "facebook title of the purpose of this icon",
+  },
+  {
+    name: "twitter",
+    url: "https://twitter.com",
+    title: "twitter title of the purpose of this icon",
+  },
+  {
+    name: "youtube",
+    url: "https://youtube.com",
+    title: "youtube title of the purpose of this icon",
+  },
+]
+
+const cardsMock = [
+  {
+    imagePath: "https://assets.catho.com.br/logo/svg/blue.svg",
+    imageDescription: "test",
+    title: "title",
+    description: "description...",
+  },
+  {
+    imagePath: "https://assets.catho.com.br/logo/svg/blue.svg",
+    imageDescription: "test",
+    title: "title",
+    description: "description...",
+  },
+  {
+    imagePath: "https://assets.catho.com.br/logo/svg/blue.svg",
+    imageDescription: "test",
+    title: "title",
+    description: "description...",
+  },
+]
+
+
+const checkBoxMocks = [
+  {
+    key: 'banana',
+    label: 'Banana',
+    name: 'banana'
+  },
+  {
+    checked: true,
+    key: 'orange',
+    label: 'Orange',
+    name: 'orange'
+  },
+  {
+    checked: true,
+    disabled: true,
+    key: 'lemon',
+    label: 'Lemon',
+    name: 'lemon'
+  },
+  {
+    key: 'strawberry',
+    label: 'Strawberry',
+    name: 'strawberry'
+  },
+  {
+    key: 'blueberry',
+    label: 'Blueberry',
+    name: 'blueberry'
+  }
+]
+
+const radioGroupMocks = [
+  {
+    disabled: true,
+    label: 'Tomato sauce',
+    value: 'Tomato sauce'
+  },
+  {
+    label: 'Mustard',
+    value: 'Mustard'
+  },
+  {
+    label: 'Barbecue sauce',
+    value: 'Barbecue sauce'
+  },
+  {
+    label: 'Tartar',
+    value: 'Tartar'
+  },
+  {
+    label: 'Honey Mustard',
+    value: 'Honey Mustard'
+  }
+
+]
+
 
 export {
   barCharData,
@@ -320,4 +451,11 @@ export {
   jobCardProps,
   passwordProps,
   tagListMocks,
+  breadcrumbsMockItems,
+  accordionMock,
+  segmentedControlMock,
+  socialMocks,
+  cardsMock,
+  checkBoxMocks,
+  radioGroupMocks
 };
