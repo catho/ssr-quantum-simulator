@@ -39,6 +39,7 @@ import {
   Toggle,
   Form,
   SegmentedControl,
+  Tab,
 } from "@catho/quantum";
 
 import {

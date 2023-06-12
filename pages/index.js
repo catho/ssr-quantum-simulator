@@ -11,6 +11,27 @@ const colsProps = {
 
 export default () => (
   <>
+  <Container>
+    <Row>
+        <Col {...colsProps}>
+          <h3>To monitoring page ...</h3>
+          <p>Here the instructions to collect the payload in Browser and the bundle size:</p>
+
+          <ol>
+            <li>You should be here via task runner <code>yarn analyzer</code></li>
+            <li>the libs version must be inserted without "^" signal in package.json. We must test the real version of the package</li>
+            <li>keep the yarn lock from master</li>
+            <li>choose the page do you want to collect, Quantum or Catho Components</li>
+            <li>pages will open, find the corresponding library in its chunk (with same name)</li>
+            <li>reloads the page do you want to collect</li>
+            <li>point the mouse in node_modules of the page (quantum or cathocomponents)</li>
+            <li>collect the bundle size by the <strong>"Parsed size"</strong> item </li>
+            <li>collect the lib payload in browser by the <strong>"Gziped size"</strong> item </li>
+          </ol>
+        </Col>
+    </Row>
+    </Container>
+
     <Container>
       <Head>
         <title>SSR-Simulator</title>
