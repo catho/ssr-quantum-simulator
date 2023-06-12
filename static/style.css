@@ -175,11 +175,37 @@ a:hover {
     font-weight: 900;
 }
 
+
 .TextFormattingH5{
     color: #d4388e;
     font-weight: 600;
 }
 
 .Width {
-    width: 500px;
+    width: 600px;
 }
+
+.MarginLeftRight {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.Overflow {
+    overflow: auto;
+}
+
+.Height {
+    height: 138px;
+}
+
+.Borders {
+    border-style: solid;
+    border-color: #d4388e;
+    border-width: 2px;
+    text-align: center;
+}
+
+.InlineBlock {
+    display: inline-block;
+}
+
