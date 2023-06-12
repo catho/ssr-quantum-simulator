@@ -42,7 +42,7 @@ export default class HomePage extends App {
           <ul className="NavList">
             <li className="navItem"><a href="/cathocomponents">Catho Components</a></li>
             <li className="navItem"><a href="/quantum">Quantum</a></li>
-            <li className="navItem"><button class="SandwichButton" id="menuButton">&#x2630;</button></li>
+            <li className="navItem"><button className="SandwichButton" id="menuButton">&#x2630;</button></li>
           </ul>
         </nav>
       </div>
