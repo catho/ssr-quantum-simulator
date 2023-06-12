@@ -33,6 +33,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "analyzer": "ANALYZE=true next"
+    "analyzer": "ANALYZE=true next",
+    "collect": "git checkout yarn.lock && rm -rf node_modules && yarn && yarn analyzer"
   }
 }
