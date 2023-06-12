@@ -1,8 +1,6 @@
 import App from 'next/app';
 import React from 'react';
-import { GlobalStyle } from '@catho/quantum';
-
-
+import GlobalStyle from '@catho/quantum/GlobalStyle';
 
 
 export default class HomePage extends App {

@@ -1,5 +1,7 @@
 import React from "react";
-import { Container, Row, Col } from "@catho/quantum";
+import Container from "@catho/quantum/Grid/sub-components/Container";
+import Col from "@catho/quantum/Grid/sub-components/Col";
+import Row from "@catho/quantum/Grid/sub-components/Row";
 import Link from "./styles/style";
 import Head from "next/head"; 
 
