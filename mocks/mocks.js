@@ -379,6 +379,65 @@ const cardsMock = [
     description: "description...",
   },
 ]
+
+
+const checkBoxMocks = [
+  {
+    key: 'banana',
+    label: 'Banana',
+    name: 'banana'
+  },
+  {
+    checked: true,
+    key: 'orange',
+    label: 'Orange',
+    name: 'orange'
+  },
+  {
+    checked: true,
+    disabled: true,
+    key: 'lemon',
+    label: 'Lemon',
+    name: 'lemon'
+  },
+  {
+    key: 'strawberry',
+    label: 'Strawberry',
+    name: 'strawberry'
+  },
+  {
+    key: 'blueberry',
+    label: 'Blueberry',
+    name: 'blueberry'
+  }
+]
+
+const radioGroupMocks = [
+  {
+    disabled: true,
+    label: 'Tomato sauce',
+    value: 'Tomato sauce'
+  },
+  {
+    label: 'Mustard',
+    value: 'Mustard'
+  },
+  {
+    label: 'Barbecue sauce',
+    value: 'Barbecue sauce'
+  },
+  {
+    label: 'Tartar',
+    value: 'Tartar'
+  },
+  {
+    label: 'Honey Mustard',
+    value: 'Honey Mustard'
+  }
+
+]
+
+
 export {
   barCharData,
   candidatesMockContent,
@@ -397,4 +456,6 @@ export {
   segmentedControlMock,
   socialMocks,
   cardsMock,
+  checkBoxMocks,
+  radioGroupMocks
 };
