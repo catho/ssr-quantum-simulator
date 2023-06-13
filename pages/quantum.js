@@ -50,6 +50,7 @@ import {
   cardsMock,
   checkBoxMocks,
   radioGroupMocks,
+  dropdownMenuMocks,
 } from "../mocks/mocks";
 
 import Carousel from "@catho/quantum/Carousel";
@@ -57,6 +58,8 @@ import Carousel from "@catho/quantum/Carousel";
 import ControlledModal from "../components/ControlledModal";
 import ControlledSnackBar from "../components/ControlledSnackBar";
 import ControlledDialog from "../components/ControlledDialog";
+
+import  DropdownLight  from "@catho/quantum/DropdownLight";
 
 export default function Quantum() {
   return (
@@ -192,7 +195,14 @@ export default function Quantum() {
             <h6 className="TextFormattingH6">
               Styled dropwdown menu component following Catho's Style Guide.
             </h6>
-            <Dropdown items={["ItemTest"]} />
+            <Dropdown items={dropdownMenuMocks} />
+          </div>
+          <div className="PaddingTopBotttom ComponentsContainer WhiteBackground RoundedEdges">
+            <h4 className="TextFormattingH4">DropdownLight</h4>
+            <h6 className="TextFormattingH6">
+              Styled dropwdown menu component without the external lib Downshift; therefore it is lighter than the usual Dropdown.
+            </h6>
+            <DropdownLight items={dropdownMenuMocks} />
           </div>
           <div className="PaddingTopBotttom ComponentsContainer WhiteBackground RoundedEdges">
             <h4 className="TextFormattingH4">TextArea</h4>

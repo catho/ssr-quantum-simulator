@@ -438,6 +438,29 @@ const radioGroupMocks = [
 ]
 
 
+const dropdownMenuMocks = [
+  {
+    label: 'Lemon',
+    value: 'Lemon'
+  },
+  {
+    label: 'Banana',
+    value: 'Banana'
+  },
+  {
+    label: 'Strawberry',
+    value: 'Strawberry'
+  },
+  {
+    label: 'Orange',
+    value: 'Orange'
+  },
+  {
+    label: 'Avocado',
+    value: 'Avocado'
+  }
+]
+
 export {
   barCharData,
   candidatesMockContent,
@@ -457,5 +480,6 @@ export {
   socialMocks,
   cardsMock,
   checkBoxMocks,
-  radioGroupMocks
+  radioGroupMocks,
+  dropdownMenuMocks,
 };
