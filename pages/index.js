@@ -29,7 +29,7 @@ export default () => (
         <Col {...colsProps}>
           <h3>To monitoring page ...</h3>
           <p>Here the instructions to collect the payload in Browser and the bundle size:</p>
-          <List items={itemsList} ordered />
+          <List bullet="•" items={itemsList} />
         </Col>
     </Row>
     </Container>
