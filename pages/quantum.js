@@ -11,9 +11,7 @@ import {
   AutoComplete,
   Breadcrumbs,
   ChargeBar,
-  Dialog,
   TabbedView,
-  Tab,
   Card,
   RangeSlider,
   Button,
@@ -41,6 +39,7 @@ import {
   Toggle,
   Form,
   SegmentedControl,
+  Tab,
 } from "@catho/quantum";
 
 import {
@@ -56,11 +55,9 @@ import {
 
 import Carousel from "@catho/quantum/Carousel";
 
-import {
-  ControlledModal,
-  ControlledSnackBar,
-  ControlledDialog,
-} from "../components";
+import ControlledModal from "../components/ControlledModal";
+import ControlledSnackBar from "../components/ControlledSnackBar";
+import ControlledDialog from "../components/ControlledDialog";
 
 import  DropdownLight  from "@catho/quantum/DropdownLight";
 
