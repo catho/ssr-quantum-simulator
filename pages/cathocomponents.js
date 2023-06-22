@@ -1,14 +1,8 @@
-import React from "react";
-import Head from "next/head";
-import {
-  barCharData,
-  jobNotificationListMock,
-  horizontalMenuItems,
-  jobCardProps,
-  passwordProps,
-  tagListMocks,
-} from "../mocks/mocks.js";
-
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/jsx-props-no-spreading */
+// eslint-disable-next-line default-case-last
+import React from 'react';
+import Head from 'next/head';
 import {
   HeaderResponsive,
   FooterResponsive,
@@ -22,7 +16,15 @@ import {
   HorizontalMenu,
   JobCard,
   JobNotificationList,
-} from "@catho-private/catho-components";
+} from '@catho-private/catho-components';
+import {
+  barCharData,
+  jobNotificationListMock,
+  horizontalMenuItems,
+  jobCardProps,
+  passwordProps,
+  tagListMocks,
+} from '../mocks/mocks';
 
 export default function CathoComponentsPage() {
   return (
@@ -88,7 +90,7 @@ export default function CathoComponentsPage() {
             <h6>DayPicker allows the user to select a day or a set of days.</h6>
             <DayPicker />
           </div>
-          <div className="WhiteBackground RoundedEdges ComponentsContainer Width">
+          <div className=" WhiteBackground RoundedEdges ComponentsContainer Width ">
             <h4 className="TextFormattingH4">HorizontalMenu</h4>
             <h6>A mobile navigation bar with a text and an icon.</h6>
             <HorizontalMenu items={horizontalMenuItems} />
@@ -102,7 +104,9 @@ export default function CathoComponentsPage() {
           <h6>These are footers for all Catho applications.</h6>
         </div>
         <div className="MarginTopBottom">
-          <h5 className="TextFormattingH5">Complete Footer Version with TagList</h5>
+          <h5 className="TextFormattingH5">
+            Complete Footer Version with TagList
+          </h5>
           <FooterResponsive
             gtmPrefix="B2C-google-tag-prefix"
             tagsListContent={tagListMocks}

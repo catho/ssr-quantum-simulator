@@ -1,5 +1,6 @@
-import React from "react";
-import Head from "next/head";
+/* eslint-disable react/jsx-filename-extension */
+import React from 'react';
+import Head from 'next/head';
 import {
   Container,
   Row,
@@ -40,8 +41,10 @@ import {
   Form,
   SegmentedControl,
   Tab,
-} from "@catho/quantum";
+} from '@catho/quantum';
 
+import Carousel from '@catho/quantum/Carousel';
+import DropdownLight from '@catho/quantum/DropdownLight';
 import {
   breadcrumbsMockItems,
   accordionMock,
@@ -51,15 +54,11 @@ import {
   checkBoxMocks,
   radioGroupMocks,
   dropdownMenuMocks,
-} from "../mocks/mocks";
+} from '../mocks/mocks';
 
-import Carousel from "@catho/quantum/Carousel";
-
-import ControlledModal from "../components/ControlledModal";
-import ControlledSnackBar from "../components/ControlledSnackBar";
-import ControlledDialog from "../components/ControlledDialog";
-
-import  DropdownLight  from "@catho/quantum/DropdownLight";
+import ControlledModal from '../components/ControlledModal';
+import ControlledSnackBar from '../components/ControlledSnackBar';
+import ControlledDialog from '../components/ControlledDialog';
 
 export default function Quantum() {
   return (
@@ -72,7 +71,7 @@ export default function Quantum() {
         <h4 className="TextFormattingH4 PaddingLeftRight">Breadcrumbs</h4>
         <h6 className="TextFormattingH6 PaddingLeftRight">
           Breadcrumbs creates a trail of links to help the user to locate the
-          current page within the website's hierarchy.
+          current page within the websites hierarchy.
         </h6>
 
         <Breadcrumbs items={breadcrumbsMockItems} />
@@ -187,8 +186,8 @@ export default function Quantum() {
               Styled input component with autocomplete suggestions
             </h6>
             <AutoComplete
-              suggestions={["AutoComplete suggestion"]}
-            ></AutoComplete>
+              suggestions={['AutoComplete suggestion']}
+            />
           </div>
           <div className="PaddingTopBotttom ComponentsContainer WhiteBackground RoundedEdges">
             <h4 className="TextFormattingH4">Dropdown</h4>
@@ -228,7 +227,7 @@ export default function Quantum() {
                     lobortis ultrices.
                   </Card.Description>
                 </Card.HeaderText>
-                <Card.Thumbnail src="#" alt="Alternative"></Card.Thumbnail>
+                <Card.Thumbnail src="#" alt="Alternative" />
               </Card.Header>
               <Card.Content>Content of the Card</Card.Content>
               <Card.Footer>Footer of the Card</Card.Footer>
@@ -434,8 +433,8 @@ export default function Quantum() {
             providers. Example: login with OAuth API from Google.
           </h6>
           <div className="FlexContainer">
-          <SocialButton provider="facebook" />
-          <SocialButton provider="google" />
+            <SocialButton provider="facebook" />
+            <SocialButton provider="google" />
           </div>
         </div>
         <div className="Width  ComponentsContainer WhiteBackground RoundedEdges">
@@ -454,38 +453,39 @@ export default function Quantum() {
         <div className="Width   ComponentsContainer WhiteBackground RoundedEdges">
           <h4 className="TextFormattingH4">Socials</h4>
           <h6 className="TextFormattingH6">
-            Socials show the icons of respective Social Medias{" "}
+            Socials show the icons of respective Social Medias
+            {' '}
           </h6>
           <Socials items={socialMocks} />
         </div>
       </div>
       <div className="FlexContainer ColoredBackground PaddingLeftRight MarginTopBottom Overflow ">
         <div>
-        <div className="Width  ComponentsContainer WhiteBackground RoundedEdges">
-          <h4 className="TextFormattingH4">Checkbox Group</h4>
-          <h6 className="TextFormattingH6">
-            Gets values from a single onChange callback prop and apply a single
-            error message to a group of checkboxes.
-          </h6>
-          <CheckboxGroup error="Some error" options={checkBoxMocks} />
-        </div>
-        <div className="Width  ComponentsContainer WhiteBackground RoundedEdges">
-          <h4 className="TextFormattingH4">Radio Group</h4>
-          <h6 className="TextFormattingH6">
-            Radio group is a list of radio buttons that are used when a list of
-            two or more options are mutually exclusive, meaning the user must
-            select only one option.
-          </h6>
-          <RadioGroup name="Radio Group Example" options={radioGroupMocks} />
-        </div>
-        <div className="Width   WhiteBackground RoundedEdges ComponentsContainer">
-          <h4 className="TextFormattingH4">Toggle</h4>
-          <h6 className="TextFormattingH6">
-            Toggle is a control that is used to quickly switch between two
-            possible states.
-          </h6>
-          <Toggle id="right" />
-        </div>
+          <div className="Width  ComponentsContainer WhiteBackground RoundedEdges">
+            <h4 className="TextFormattingH4">Checkbox Group</h4>
+            <h6 className="TextFormattingH6">
+              Gets values from a single onChange callback prop and apply a single
+              error message to a group of checkboxes.
+            </h6>
+            <CheckboxGroup error="Some error" options={checkBoxMocks} />
+          </div>
+          <div className="Width  ComponentsContainer WhiteBackground RoundedEdges">
+            <h4 className="TextFormattingH4">Radio Group</h4>
+            <h6 className="TextFormattingH6">
+              Radio group is a list of radio buttons that are used when a list of
+              two or more options are mutually exclusive, meaning the user must
+              select only one option.
+            </h6>
+            <RadioGroup name="Radio Group Example" options={radioGroupMocks} />
+          </div>
+          <div className="Width   WhiteBackground RoundedEdges ComponentsContainer">
+            <h4 className="TextFormattingH4">Toggle</h4>
+            <h6 className="TextFormattingH6">
+              Toggle is a control that is used to quickly switch between two
+              possible states.
+            </h6>
+            <Toggle id="right" />
+          </div>
         </div>
         <div className="Width   WhiteBackground RoundedEdges ComponentsContainer">
           <h4 className="TextFormattingH4">Form</h4>
@@ -493,21 +493,22 @@ export default function Quantum() {
             A Form displays a set of related user input fields in a structured
             way, some other components like validation adds check behavior of
             the data against a set of criteria before passing it along to the
-            server.{" "}
+            server.
+            {' '}
           </h6>
           <Form>
             <Input label="Input With Generic Label" />
-            <Input label="Input With Error Message"  error="Some error"/>
+            <Input label="Input With Error Message" error="Some error" />
             <Input label="Disabled Input" disabled />
             <Input label="Input With Description Label" descriptionLabel="Some Description Label" />
             <Input label="Input With Helper Text" helperText="Some Helper Text" />
             <Input type="search" label="Searchable Input" />
-            <Input.CEP label="CEP"/>
-            <Input.CNPJ label="CNPJ"/>
-            <Input.CPF label="CPF"/>
-            <Input.Date label="Date"/>
+            <Input.CEP label="CEP" />
+            <Input.CNPJ label="CNPJ" />
+            <Input.CPF label="CPF" />
+            <Input.Date label="Date" />
             <Input.Phone label="Phone Number" />
-            <Input.Password label="Password"/>
+            <Input.Password label="Password" />
 
           </Form>
         </div>

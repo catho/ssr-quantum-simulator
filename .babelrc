@@ -1,9 +1,24 @@
 {
-  "exclude": "/node_modules/",
-  "plugins": [
-    ["babel-plugin-root-import"],
-    ["styled-components", { "ssr": true }]
-    
+  "presets": [
+    "@babel/preset-env", 
+    [
+      "@babel/preset-react",
+      {
+        "runtime": "automatic"
+      }
+    ]
   ],
-  "presets": ["next/babel"]
+  "plugins": [
+    "transform-class-properties",
+    "transform-modern-regexp",
+    "babel-plugin-styled-components"
+  ],
+  "env": {
+    "production": {
+      "ignore": [
+        "./components/**/*.test.jsx",
+        "./components/**/*/__snapshots__"
+      ]
+    }
+  }
 }
