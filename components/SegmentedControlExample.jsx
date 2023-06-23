@@ -1,57 +1,57 @@
-import React from "react";
-import { SegmentedControl } from "@catho/quantum";
+import React from 'react';
+import { SegmentedControl } from '@catho/quantum';
 
 const fiveContentsWithFirstChecked = [
   {
-    label: "Profissional",
-    value: "profissional",
-    checked: true
+    label: 'Profissional',
+    value: 'profissional',
+    checked: true,
   },
   {
-    label: "Operacional",
-    value: "operacional"
+    label: 'Operacional',
+    value: 'operacional',
   },
   {
-    label: "Estagiário",
-    value: "estagiário"
+    label: 'Estagiário',
+    value: 'estagiário',
   },
   {
-    label: "Maquinário",
-    value: "maquinário"
+    label: 'Maquinário',
+    value: 'maquinário',
   },
   {
-    label: "Favorito",
-    value: "favorito"
-  }
+    label: 'Favorito',
+    value: 'favorito',
+  },
 ];
 
 const fiveContentsWithIcon = [
   {
-    label: "Profissional",
-    value: "profissional",
-    icon: "info"
+    label: 'Profissional',
+    value: 'profissional',
+    icon: 'info',
   },
   {
-    label: "Operacional",
-    value: "operacional",
+    label: 'Operacional',
+    value: 'operacional',
     checked: true,
-    icon: "block"
+    icon: 'block',
   },
   {
-    label: "Estagiário",
-    value: "estagiário",
-    icon: "date_range"
+    label: 'Estagiário',
+    value: 'estagiário',
+    icon: 'date_range',
   },
   {
-    label: "Maquinário",
-    value: "maquinário",
-    icon: "error"
+    label: 'Maquinário',
+    value: 'maquinário',
+    icon: 'error',
   },
   {
-    label: "Favorito",
-    value: "favorito",
-    icon: "favorite_border"
-  }
+    label: 'Favorito',
+    value: 'favorito',
+    icon: 'favorite_border',
+  },
 ];
 
 const SegmentedControlExample = () => (

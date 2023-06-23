@@ -1,16 +1,16 @@
-import React from "react";
-import { RadioGroup } from "@catho/quantum";
+import React from 'react';
+import { RadioGroup } from '@catho/quantum';
 
 const options = [
   {
-    value: "with-icon",
-    label: "With an Icon",
-    icon: "info"
+    value: 'with-icon',
+    label: 'With an Icon',
+    icon: 'info',
   },
   {
-    value: "default",
-    label: "Default"
-  }
+    value: 'default',
+    label: 'Default',
+  },
 ];
 
 const ButtonGroup = () => (

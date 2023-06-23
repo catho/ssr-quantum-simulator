@@ -1,6 +1,6 @@
-import React from "react";
-import { Form, Validations } from "@catho/quantum/Form";
-import { Input, Button } from "@catho/quantum";
+import React from 'react';
+import { Form, Validations } from '@catho/quantum/Form';
+import { Input, Button } from '@catho/quantum';
 
 const FormValidation = () => (
   <Form>
@@ -11,14 +11,14 @@ const FormValidation = () => (
         Validations.Required,
         {
           validate: Validations.Email,
-          error: "We need a valid e-mail"
-        }
+          error: 'We need a valid e-mail',
+        },
       ]}
     />
     <Input
       name="catho"
       label="This field only accepts Catho as a value"
-      validate={({ value }) => (value === "Catho" ? "" : "Catho, please")}
+      validate={({ value }) => (value === 'Catho' ? '' : 'Catho, please')}
     />
     <div>
       <Input

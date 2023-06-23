@@ -1,5 +1,5 @@
-import React from "react";
-import { Tooltip, Button } from "@catho/quantum";
+import React from 'react';
+import { Tooltip, Button } from '@catho/quantum';
 
 const TooltipWithProps = () => (
   <Tooltip placement="top" text="This is a hint.">

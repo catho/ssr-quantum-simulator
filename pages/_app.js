@@ -1,19 +1,19 @@
-import App from "next/app";
-import React from "react";
-import GlobalStyle from "@catho/quantum/GlobalStyle";
+import App from 'next/app';
+import React from 'react';
+import GlobalStyle from '@catho/quantum/GlobalStyle';
 
 export default class HomePage extends App {
   componentDidMount() {
-    const hiddenMenu = document.getElementById("hiddenMenu");
-    document.getElementById("menuButton").addEventListener("click", showMenu);
+    const hiddenMenu = document.getElementById('hiddenMenu');
+    document.getElementById('menuButton').addEventListener('click', showMenu);
     function showMenu() {
       const { classList } = hiddenMenu;
-      if (classList.contains("HideMenu")) {
-        classList.add("ShowMenu");
-        classList.remove("HideMenu");
+      if (classList.contains('HideMenu')) {
+        classList.add('ShowMenu');
+        classList.remove('HideMenu');
       } else {
-        classList.remove("ShowMenu");
-        classList.add("HideMenu");
+        classList.remove('ShowMenu');
+        classList.add('HideMenu');
       }
     }
   }

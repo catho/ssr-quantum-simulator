@@ -1,5 +1,5 @@
-import React from "react";
-import Link from "../styles/style";
+import React from 'react';
+import Link from '../styles/style';
 
 const Header = ({ title }) => (
   <>

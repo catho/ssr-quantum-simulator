@@ -1,5 +1,5 @@
-import React from "react";
-import Head from "next/head";
+import React from 'react';
+import Head from 'next/head';
 import {
   Container,
   Row,
@@ -39,8 +39,8 @@ import {
   Toggle,
   Form,
   SegmentedControl,
-  Tab
-} from "@catho/quantum";
+  Tab,
+} from '@catho/quantum';
 
 import {
   breadcrumbsMockItems,
@@ -50,16 +50,16 @@ import {
   cardsMock,
   checkBoxMocks,
   radioGroupMocks,
-  dropdownMenuMocks
-} from "../mocks/mocks";
+  dropdownMenuMocks,
+} from '../mocks/mocks';
 
-import Carousel from "@catho/quantum/Carousel";
+import Carousel from '@catho/quantum/Carousel';
 
-import ControlledModal from "../components/ControlledModal";
-import ControlledSnackBar from "../components/ControlledSnackBar";
-import ControlledDialog from "../components/ControlledDialog";
+import ControlledModal from '../components/ControlledModal';
+import ControlledSnackBar from '../components/ControlledSnackBar';
+import ControlledDialog from '../components/ControlledDialog';
 
-import DropdownLight from "@catho/quantum/DropdownLight";
+import DropdownLight from '@catho/quantum/DropdownLight';
 
 export default function Quantum() {
   return (
@@ -187,7 +187,7 @@ export default function Quantum() {
               Styled input component with autocomplete suggestions
             </h6>
             <AutoComplete
-              suggestions={["AutoComplete suggestion"]}
+              suggestions={['AutoComplete suggestion']}
             ></AutoComplete>
           </div>
           <div className="PaddingTopBotttom ComponentsContainer WhiteBackground RoundedEdges">
@@ -461,7 +461,7 @@ export default function Quantum() {
         <div className="Width   ComponentsContainer WhiteBackground RoundedEdges">
           <h4 className="TextFormattingH4">Socials</h4>
           <h6 className="TextFormattingH6">
-            Socials show the icons of respective Social Medias{" "}
+            Socials show the icons of respective Social Medias{' '}
           </h6>
           <Socials items={socialMocks} />
         </div>
@@ -500,7 +500,7 @@ export default function Quantum() {
             A Form displays a set of related user input fields in a structured
             way, some other components like validation adds check behavior of
             the data against a set of criteria before passing it along to the
-            server.{" "}
+            server.{' '}
           </h6>
           <Form>
             <Input label="Input With Generic Label" />

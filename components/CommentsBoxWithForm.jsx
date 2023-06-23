@@ -1,5 +1,5 @@
-import React from "react";
-import CommentsBox from "@catho-private/catho-components/CommentsBox";
+import React from 'react';
+import CommentsBox from '@catho-private/catho-components/CommentsBox';
 
 const CommentsBoxWithForm = () => (
   <CommentsBox
@@ -12,24 +12,24 @@ const CommentsBoxWithForm = () => (
           // in case of success call showFeedback
           // message is only prop required
           showFeedback({
-            message: "Agradecemos o seu comentário!",
-            type: "success",
+            message: 'Agradecemos o seu comentário!',
+            type: 'success',
             secondsToClose: 3,
-            disableTimer: true
+            disableTimer: true,
           });
         } catch {
           // in case of error call showFeedback
           // message is only prop required
           showFeedback({
-            message: "Ops! Algo deu errado. Tente de novo.",
-            type: "error",
+            message: 'Ops! Algo deu errado. Tente de novo.',
+            type: 'error',
             secondsToClose: 3,
-            disableTimer: true
+            disableTimer: true,
           });
         }
       },
-      placeholder: "Queremos te ouvir :)",
-      confirmButtonText: "Enviar"
+      placeholder: 'Queremos te ouvir :)',
+      confirmButtonText: 'Enviar',
     }}
   >
     <>

@@ -1,37 +1,37 @@
-import React from "react";
-import Container from "@catho/quantum/Grid/sub-components/Container";
-import Col from "@catho/quantum/Grid/sub-components/Col";
-import Row from "@catho/quantum/Grid/sub-components/Row";
-import Link from "./styles/style";
-import Alert from "@catho/quantum/Alert";
-import List from "@catho/quantum/List";
-import Head from "next/head";
+import React from 'react';
+import Container from '@catho/quantum/Grid/sub-components/Container';
+import Col from '@catho/quantum/Grid/sub-components/Col';
+import Row from '@catho/quantum/Grid/sub-components/Row';
+import Link from './styles/style';
+import Alert from '@catho/quantum/Alert';
+import List from '@catho/quantum/List';
+import Head from 'next/head';
 
 const colsProps = {
-  medium: 12
+  medium: 12,
 };
 
 const itemsList = [
-  { content: "You should be here via task runner yarn analyzer" },
+  { content: 'You should be here via task runner yarn analyzer' },
   {
     content:
-      'the libs version must be inserted without "^" signal in package.json. We must test the real version of the package'
+      'the libs version must be inserted without "^" signal in package.json. We must test the real version of the package',
   },
   {
     content:
-      "choose the page do you want to collect, Quantum or Catho Components"
+      'choose the page do you want to collect, Quantum or Catho Components',
   },
   {
     content:
-      "pages will open, find the corresponding library in its chunk (with same name)"
+      'pages will open, find the corresponding library in its chunk (with same name)',
   },
-  { content: "reloads the page do you want to collect" },
+  { content: 'reloads the page do you want to collect' },
   {
     content:
-      "point the mouse in node_modules of the page (quantum or cathocomponents)"
+      'point the mouse in node_modules of the page (quantum or cathocomponents)',
   },
   { content: 'collect the bundle size by the "Parsed size" item ' },
-  { content: 'collect the lib payload in browser by the "Gziped size" item ' }
+  { content: 'collect the lib payload in browser by the "Gziped size" item ' },
 ];
 
 export default () => (

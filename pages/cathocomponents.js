@@ -1,13 +1,13 @@
-import React from "react";
-import Head from "next/head";
+import React from 'react';
+import Head from 'next/head';
 import {
   barCharData,
   jobNotificationListMock,
   horizontalMenuItems,
   jobCardProps,
   passwordProps,
-  tagListMocks
-} from "../mocks/mocks.js";
+  tagListMocks,
+} from '../mocks/mocks.js';
 
 import {
   HeaderResponsive,
@@ -21,8 +21,8 @@ import {
   FooterSimple,
   HorizontalMenu,
   JobCard,
-  JobNotificationList
-} from "@catho-private/catho-components";
+  JobNotificationList,
+} from '@catho-private/catho-components';
 
 export default function CathoComponentsPage() {
   return (

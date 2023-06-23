@@ -1,5 +1,5 @@
-import React from "react";
-import { CheckboxGroup } from "@catho/quantum/Checkbox";
+import React from 'react';
+import { CheckboxGroup } from '@catho/quantum/Checkbox';
 
 class ControlledCheckboxGroup extends React.Component {
   constructor(props) {
@@ -7,10 +7,10 @@ class ControlledCheckboxGroup extends React.Component {
 
     this.state = {
       items: [
-        { checked: false, label: "Banana", name: "banana" },
-        { checked: true, label: "Orange", name: "orange" },
-        { checked: false, label: "Lemon", name: "lemon" }
-      ]
+        { checked: false, label: 'Banana', name: 'banana' },
+        { checked: true, label: 'Orange', name: 'orange' },
+        { checked: false, label: 'Lemon', name: 'lemon' },
+      ],
     };
   }
 

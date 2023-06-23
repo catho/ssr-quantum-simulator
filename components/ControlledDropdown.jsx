@@ -1,11 +1,11 @@
-import React from "react";
-import Dropdown from "@catho/quantum/Dropdown";
+import React from 'react';
+import Dropdown from '@catho/quantum/Dropdown';
 
 class ControlledDropdown extends React.Component {
   constructor(props) {
     super(props);
 
-    const { selectedItem = "" } = props;
+    const { selectedItem = '' } = props;
 
     this.state = { selectedItem };
   }
@@ -20,17 +20,17 @@ class ControlledDropdown extends React.Component {
         selectedItem={selectedItem}
         onChange={item => this.setState({ selectedItem: item })}
         items={[
-          { label: "Amazonas", value: "AM" },
-          { label: "Bahia", value: "BA" },
-          { label: "Ceará", value: "CE" },
-          { label: "Goiás", value: "GO" },
-          { label: "Minas Gerais", value: "MG" },
-          { label: "Paraná", value: "PR" },
-          { label: "Pernambuco", value: "PE" },
-          { label: "Rio de Janeiro", value: "RJ" },
-          { label: "Rio Grande do Sul", value: "RS" },
-          { label: "Santa Catarina", value: "SC" },
-          { label: "São Paulo", value: "SP" }
+          { label: 'Amazonas', value: 'AM' },
+          { label: 'Bahia', value: 'BA' },
+          { label: 'Ceará', value: 'CE' },
+          { label: 'Goiás', value: 'GO' },
+          { label: 'Minas Gerais', value: 'MG' },
+          { label: 'Paraná', value: 'PR' },
+          { label: 'Pernambuco', value: 'PE' },
+          { label: 'Rio de Janeiro', value: 'RJ' },
+          { label: 'Rio Grande do Sul', value: 'RS' },
+          { label: 'Santa Catarina', value: 'SC' },
+          { label: 'São Paulo', value: 'SP' },
         ]}
       />
     );
