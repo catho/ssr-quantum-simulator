@@ -22,7 +22,7 @@ import {
   passwordProps,
   tagListMocks,
 } from '../mocks/mocks';
-import 123;
+import 1234;
 
 export default function CathoComponentsPage() {
   return (
