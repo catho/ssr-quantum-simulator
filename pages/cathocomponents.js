@@ -1,6 +1,3 @@
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable react/jsx-props-no-spreading */
-// eslint-disable-next-line default-case-last
 import React from 'react';
 import Head from 'next/head';
 import {
@@ -32,6 +29,7 @@ export default function CathoComponentsPage() {
       <Head>
         <title>Catho Components - SSR-Simulator</title>
       </Head>
+      <label>123</label>
       <div className="ComponentsContainer ColoredBackground">
         <h4 className="TextFormattingH4">Headers</h4>
         <h6>
