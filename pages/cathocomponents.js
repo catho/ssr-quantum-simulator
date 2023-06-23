@@ -22,6 +22,7 @@ import {
   passwordProps,
   tagListMocks,
 } from '../mocks/mocks';
+import 123;
 
 export default function CathoComponentsPage() {
   return (
@@ -29,7 +30,6 @@ export default function CathoComponentsPage() {
       <Head>
         <title>Catho Components - SSR-Simulator</title>
       </Head>
-      <label>123</label>
       <div className="ComponentsContainer ColoredBackground">
         <h4 className="TextFormattingH4">Headers</h4>
         <h6>
