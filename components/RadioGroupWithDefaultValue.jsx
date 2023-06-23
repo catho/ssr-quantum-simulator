@@ -17,7 +17,11 @@ const options = [
 ];
 
 const RadioGroupWithDefaultValue = () => (
-  <RadioGroup name="groceries" options={options} defaultValue="Barbecue sauce" />
+  <RadioGroup
+    name="groceries"
+    options={options}
+    defaultValue="Barbecue sauce"
+  />
 );
 
 export default RadioGroupWithDefaultValue;

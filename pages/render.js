@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 import Container from "@catho/quantum/Grid/sub-components/Container";
 import Col from "@catho/quantum/Grid/sub-components/Col";
 import Row from "@catho/quantum/Grid/sub-components/Row";
-import HeaderResponsive from  '@catho-private/catho-components/HeaderResponsive'
-import { FooterTagsList } from '../components';
-import Header from './shared/Header'
+import HeaderResponsive from "@catho-private/catho-components/HeaderResponsive";
+import { FooterTagsList } from "../components";
+import Header from "./shared/Header";
 
 export default function RenderPage() {
   return (

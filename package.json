@@ -27,13 +27,36 @@
     "yarn": "^1.22.0"
   },
   "devDependencies": {
-    "babel-plugin-root-import": "^6.4.1"
+    "babel-plugin-root-import": "^6.4.1",
+    "eslint": "^5.15.3",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.3",
+    "prettier": "^1.15.3",
+    "babel-eslint": "^10.0.1"
   },
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start",
     "analyzer": "ANALYZE=true next",
-    "collect": "git checkout yarn.lock && rm -rf node_modules && yarn && yarn analyzer"
+    "collect": "git checkout yarn.lock && rm -rf node_modules && yarn && yarn analyzer",
+    "precommit": "lint-staged",
+    "lint:components": "yarn lint ./components",
+    "lint:stories": "yarn lint ./stories",
+    "lint:js": "yarn lint ./*.js",
+    "lint:all": "yarn lint:components && yarn lint:stories && yarn lint:js",
+    "lint": "eslint --ext js,jsx --quiet",
+    "prepush": "yarn lint:all && yarn test:components",
+    "format": "prettier --write ./**/*.{js,jsx,json}"
+  },
+  "lint-staged": {
+    "*.{js,jsx,json}": [
+      "yarn format",
+      "git add"
+    ]
   }
 }

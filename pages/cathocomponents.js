@@ -6,7 +6,7 @@ import {
   horizontalMenuItems,
   jobCardProps,
   passwordProps,
-  tagListMocks,
+  tagListMocks
 } from "../mocks/mocks.js";
 
 import {
@@ -21,7 +21,7 @@ import {
   FooterSimple,
   HorizontalMenu,
   JobCard,
-  JobNotificationList,
+  JobNotificationList
 } from "@catho-private/catho-components";
 
 export default function CathoComponentsPage() {
@@ -102,7 +102,9 @@ export default function CathoComponentsPage() {
           <h6>These are footers for all Catho applications.</h6>
         </div>
         <div className="MarginTopBottom">
-          <h5 className="TextFormattingH5">Complete Footer Version with TagList</h5>
+          <h5 className="TextFormattingH5">
+            Complete Footer Version with TagList
+          </h5>
           <FooterResponsive
             gtmPrefix="B2C-google-tag-prefix"
             tagsListContent={tagListMocks}

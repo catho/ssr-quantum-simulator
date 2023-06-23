@@ -39,7 +39,7 @@ import {
   Toggle,
   Form,
   SegmentedControl,
-  Tab,
+  Tab
 } from "@catho/quantum";
 
 import {
@@ -50,7 +50,7 @@ import {
   cardsMock,
   checkBoxMocks,
   radioGroupMocks,
-  dropdownMenuMocks,
+  dropdownMenuMocks
 } from "../mocks/mocks";
 
 import Carousel from "@catho/quantum/Carousel";
@@ -59,7 +59,7 @@ import ControlledModal from "../components/ControlledModal";
 import ControlledSnackBar from "../components/ControlledSnackBar";
 import ControlledDialog from "../components/ControlledDialog";
 
-import  DropdownLight  from "@catho/quantum/DropdownLight";
+import DropdownLight from "@catho/quantum/DropdownLight";
 
 export default function Quantum() {
   return (
@@ -200,7 +200,8 @@ export default function Quantum() {
           <div className="PaddingTopBotttom ComponentsContainer WhiteBackground RoundedEdges">
             <h4 className="TextFormattingH4">DropdownLight</h4>
             <h6 className="TextFormattingH6">
-              Styled dropwdown menu component without the external lib Downshift; therefore it is lighter than the usual Dropdown.
+              Styled dropwdown menu component without the external lib
+              Downshift; therefore it is lighter than the usual Dropdown.
             </h6>
             <DropdownLight items={dropdownMenuMocks} />
           </div>
@@ -209,7 +210,11 @@ export default function Quantum() {
             <h6 className="TextFormattingH6">
               Styled text area component following Catho's Style Guide.
             </h6>
-            <TextArea helperText="Some Helper Text" label="TextArea Label" error="Error message" />
+            <TextArea
+              helperText="Some Helper Text"
+              label="TextArea Label"
+              error="Error message"
+            />
           </div>
         </div>
         <div className="Width   PaddingLeftRight ">
@@ -383,7 +388,9 @@ export default function Quantum() {
               Badges are used for showing the quantity of something, such as
               warnings, inbox messages and others.
             </h6>
-            <Badge><Tag>Example Badge</Tag></Badge>
+            <Badge>
+              <Tag>Example Badge</Tag>
+            </Badge>
           </div>
           <div className=" WhiteBackground  RoundedEdges   ComponentsContainer">
             <h4 className="TextFormattingH4">Tag</h4>
@@ -434,8 +441,8 @@ export default function Quantum() {
             providers. Example: login with OAuth API from Google.
           </h6>
           <div className="FlexContainer">
-          <SocialButton provider="facebook" />
-          <SocialButton provider="google" />
+            <SocialButton provider="facebook" />
+            <SocialButton provider="google" />
           </div>
         </div>
         <div className="Width  ComponentsContainer WhiteBackground RoundedEdges">
@@ -461,31 +468,31 @@ export default function Quantum() {
       </div>
       <div className="FlexContainer ColoredBackground PaddingLeftRight MarginTopBottom Overflow ">
         <div>
-        <div className="Width  ComponentsContainer WhiteBackground RoundedEdges">
-          <h4 className="TextFormattingH4">Checkbox Group</h4>
-          <h6 className="TextFormattingH6">
-            Gets values from a single onChange callback prop and apply a single
-            error message to a group of checkboxes.
-          </h6>
-          <CheckboxGroup error="Some error" options={checkBoxMocks} />
-        </div>
-        <div className="Width  ComponentsContainer WhiteBackground RoundedEdges">
-          <h4 className="TextFormattingH4">Radio Group</h4>
-          <h6 className="TextFormattingH6">
-            Radio group is a list of radio buttons that are used when a list of
-            two or more options are mutually exclusive, meaning the user must
-            select only one option.
-          </h6>
-          <RadioGroup name="Radio Group Example" options={radioGroupMocks} />
-        </div>
-        <div className="Width   WhiteBackground RoundedEdges ComponentsContainer">
-          <h4 className="TextFormattingH4">Toggle</h4>
-          <h6 className="TextFormattingH6">
-            Toggle is a control that is used to quickly switch between two
-            possible states.
-          </h6>
-          <Toggle id="right" />
-        </div>
+          <div className="Width  ComponentsContainer WhiteBackground RoundedEdges">
+            <h4 className="TextFormattingH4">Checkbox Group</h4>
+            <h6 className="TextFormattingH6">
+              Gets values from a single onChange callback prop and apply a
+              single error message to a group of checkboxes.
+            </h6>
+            <CheckboxGroup error="Some error" options={checkBoxMocks} />
+          </div>
+          <div className="Width  ComponentsContainer WhiteBackground RoundedEdges">
+            <h4 className="TextFormattingH4">Radio Group</h4>
+            <h6 className="TextFormattingH6">
+              Radio group is a list of radio buttons that are used when a list
+              of two or more options are mutually exclusive, meaning the user
+              must select only one option.
+            </h6>
+            <RadioGroup name="Radio Group Example" options={radioGroupMocks} />
+          </div>
+          <div className="Width   WhiteBackground RoundedEdges ComponentsContainer">
+            <h4 className="TextFormattingH4">Toggle</h4>
+            <h6 className="TextFormattingH6">
+              Toggle is a control that is used to quickly switch between two
+              possible states.
+            </h6>
+            <Toggle id="right" />
+          </div>
         </div>
         <div className="Width   WhiteBackground RoundedEdges ComponentsContainer">
           <h4 className="TextFormattingH4">Form</h4>
@@ -497,18 +504,23 @@ export default function Quantum() {
           </h6>
           <Form>
             <Input label="Input With Generic Label" />
-            <Input label="Input With Error Message"  error="Some error"/>
+            <Input label="Input With Error Message" error="Some error" />
             <Input label="Disabled Input" disabled />
-            <Input label="Input With Description Label" descriptionLabel="Some Description Label" />
-            <Input label="Input With Helper Text" helperText="Some Helper Text" />
+            <Input
+              label="Input With Description Label"
+              descriptionLabel="Some Description Label"
+            />
+            <Input
+              label="Input With Helper Text"
+              helperText="Some Helper Text"
+            />
             <Input type="search" label="Searchable Input" />
-            <Input.CEP label="CEP"/>
-            <Input.CNPJ label="CNPJ"/>
-            <Input.CPF label="CPF"/>
-            <Input.Date label="Date"/>
+            <Input.CEP label="CEP" />
+            <Input.CNPJ label="CNPJ" />
+            <Input.CPF label="CPF" />
+            <Input.Date label="Date" />
             <Input.Phone label="Phone Number" />
-            <Input.Password label="Password"/>
-
+            <Input.Password label="Password" />
           </Form>
         </div>
       </div>
