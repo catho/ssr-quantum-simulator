@@ -9,8 +9,6 @@ import {
   tagListMocks,
 } from '../mocks/mocks.js';
 
-import 'app.js';
-
 import {
   HeaderResponsive,
   FooterResponsive,
