@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-filename-extension */
 import Document, { Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
@@ -30,7 +31,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <html>
+      <html lang="en">
         <Head>
           <link rel="stylesheet" href="/static/quantum.css" />
           <link rel="stylesheet" href="/static/styles_reset.css" />

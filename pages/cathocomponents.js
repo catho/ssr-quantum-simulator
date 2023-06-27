@@ -1,14 +1,6 @@
-import React from 'react';
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/jsx-filename-extension */
 import Head from 'next/head';
-import {
-  barCharData,
-  jobNotificationListMock,
-  horizontalMenuItems,
-  jobCardProps,
-  passwordProps,
-  tagListMocks,
-} from '../mocks/mocks.js';
-
 import {
   HeaderResponsive,
   FooterResponsive,
@@ -23,6 +15,14 @@ import {
   JobCard,
   JobNotificationList,
 } from '@catho-private/catho-components';
+import {
+  barCharData,
+  jobNotificationListMock,
+  horizontalMenuItems,
+  jobCardProps,
+  passwordProps,
+  tagListMocks,
+} from '../mocks/mocks';
 
 export default function CathoComponentsPage() {
   return (

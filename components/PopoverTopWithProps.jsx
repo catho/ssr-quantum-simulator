@@ -1,4 +1,3 @@
-import React from 'react';
 import { Popover, Button } from '@catho/quantum';
 
 const PopoverTopWithProps = () => (

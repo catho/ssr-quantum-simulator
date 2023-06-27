@@ -1,5 +1,7 @@
+/* eslint-disable no-use-before-define */
+/* eslint-disable react/button-has-type */
+/* eslint-disable react/jsx-filename-extension */
 import App from 'next/app';
-import React from 'react';
 import GlobalStyle from '@catho/quantum/GlobalStyle';
 
 export default class HomePage extends App {
@@ -28,10 +30,7 @@ export default class HomePage extends App {
           <div className="HeaderContainer">
             <div className="CathoLogo">
               <a href="/">
-                <img
-                  src="../static/imgs/cathoLogo.png"
-                  alt="Logotipo Catho"
-                ></img>
+                <img src="../static/imgs/cathoLogo.png" alt="Logotipo Catho" />
               </a>
             </div>
             <nav className="VisibleMenu">
@@ -53,10 +52,10 @@ export default class HomePage extends App {
           <nav id="hiddenMenu" className="HiddenMenu HideMenu">
             <ul>
               <li className="navItem">
-                <a href="#">Contact us</a>
+                <a href="/render">Simulates renders</a>
               </li>
               <li className="navItem">
-                <a href="#">Repositories</a>
+                <a href="https://github.com/catho">Repositories</a>
               </li>
             </ul>
           </nav>

@@ -1,4 +1,4 @@
-import React from 'react';
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import Accordion from '@catho/quantum/Accordion';
 
 const accordionItems = [

@@ -1,4 +1,3 @@
-import React from 'react';
 import { FooterResponsive } from '@catho-private/catho-components';
 
 const contract = [

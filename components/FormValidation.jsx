@@ -1,4 +1,3 @@
-import React from 'react';
 import { Form, Validations } from '@catho/quantum/Form';
 import { Input, Button } from '@catho/quantum';
 

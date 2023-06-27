@@ -1,4 +1,3 @@
-import React from 'react';
 import Socials from '@catho/quantum/Socials';
 
 const socialList = [

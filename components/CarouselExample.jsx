@@ -1,4 +1,3 @@
-import React from 'react';
 import Carousel from '@catho/quantum/Carousel';
 
 const content = [

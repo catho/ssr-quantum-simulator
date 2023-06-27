@@ -1,4 +1,3 @@
-import React from 'react';
 import { Tooltip, Button } from '@catho/quantum';
 
 const TooltipWithProps = () => (

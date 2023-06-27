@@ -1,4 +1,3 @@
-import React from 'react';
 import CommentsBox from '@catho-private/catho-components/CommentsBox';
 
 const CommentsBoxWithForm = () => (

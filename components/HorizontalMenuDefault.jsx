@@ -1,4 +1,3 @@
-import React from 'react';
 import HorizontalMenu from '@catho-private/catho-components/HorizontalMenu';
 
 const itemsMock = [

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { Button, Modal } from '@catho/quantum';
 
 class ControlledModal extends Component {

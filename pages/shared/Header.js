@@ -1,4 +1,4 @@
-import React from 'react';
+/* eslint-disable react/jsx-filename-extension */
 import Link from '../styles/style';
 
 const Header = ({ title }) => (

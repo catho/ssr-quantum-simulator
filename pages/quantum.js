@@ -1,4 +1,4 @@
-import React from 'react';
+/* eslint-disable react/jsx-filename-extension */
 import Head from 'next/head';
 import {
   Container,
@@ -42,6 +42,8 @@ import {
   Tab,
 } from '@catho/quantum';
 
+import Carousel from '@catho/quantum/Carousel';
+import DropdownLight from '@catho/quantum/DropdownLight';
 import {
   breadcrumbsMockItems,
   accordionMock,
@@ -53,13 +55,9 @@ import {
   dropdownMenuMocks,
 } from '../mocks/mocks';
 
-import Carousel from '@catho/quantum/Carousel';
-
 import ControlledModal from '../components/ControlledModal';
 import ControlledSnackBar from '../components/ControlledSnackBar';
 import ControlledDialog from '../components/ControlledDialog';
-
-import DropdownLight from '@catho/quantum/DropdownLight';
 
 export default function Quantum() {
   return (
@@ -72,7 +70,7 @@ export default function Quantum() {
         <h4 className="TextFormattingH4 PaddingLeftRight">Breadcrumbs</h4>
         <h6 className="TextFormattingH6 PaddingLeftRight">
           Breadcrumbs creates a trail of links to help the user to locate the
-          current page within the website's hierarchy.
+          current page within the website&apos;s hierarchy.
         </h6>
 
         <Breadcrumbs items={breadcrumbsMockItems} />
@@ -115,8 +113,8 @@ export default function Quantum() {
           <div className="WhiteBackground  RoundedEdges ComponentsContainer Width">
             <h4 className="TextFormattingH4">Link</h4>
             <h6 className="TextFormattingH6">
-              Link styled according to Catho's Style Guide. Makes it easier to
-              style an anchor tag.
+              Link styled according to Catho&apos;s Style Guide. Makes it easier
+              to style an anchor tag.
             </h6>
             <Link href="https://www.catho.com.br">Link</Link>
           </div>
@@ -186,14 +184,13 @@ export default function Quantum() {
             <h6 className="TextFormattingH6">
               Styled input component with autocomplete suggestions
             </h6>
-            <AutoComplete
-              suggestions={['AutoComplete suggestion']}
-            ></AutoComplete>
+            <AutoComplete suggestions={['AutoComplete suggestion']} />
           </div>
           <div className="PaddingTopBotttom ComponentsContainer WhiteBackground RoundedEdges">
             <h4 className="TextFormattingH4">Dropdown</h4>
             <h6 className="TextFormattingH6">
-              Styled dropwdown menu component following Catho's Style Guide.
+              Styled dropwdown menu component following Catho&apos;s Style
+              Guide.
             </h6>
             <Dropdown items={dropdownMenuMocks} />
           </div>
@@ -208,7 +205,7 @@ export default function Quantum() {
           <div className="PaddingTopBotttom ComponentsContainer WhiteBackground RoundedEdges">
             <h4 className="TextFormattingH4">TextArea</h4>
             <h6 className="TextFormattingH6">
-              Styled text area component following Catho's Style Guide.
+              Styled text area component following Catho&apos;s Style Guide.
             </h6>
             <TextArea
               helperText="Some Helper Text"
@@ -233,7 +230,7 @@ export default function Quantum() {
                     lobortis ultrices.
                   </Card.Description>
                 </Card.HeaderText>
-                <Card.Thumbnail src="#" alt="Alternative"></Card.Thumbnail>
+                <Card.Thumbnail src="#" alt="Alternative" />
               </Card.Header>
               <Card.Content>Content of the Card</Card.Content>
               <Card.Footer>Footer of the Card</Card.Footer>
@@ -252,8 +249,8 @@ export default function Quantum() {
             <h6 className="TextFormattingH6">
               An accordion is a vertical stack of interactive headings used to
               toggle the display of further information; each item can be
-              'collapsed', with just a short label visible, or 'expanded' to
-              show the complete content.
+              &lsquo;collapsed&rsquo;, with just a short label visible, or
+              &lsquo;expanded&rsquo; to show the complete content.
             </h6>
             <Accordion items={accordionMock} />
           </div>
@@ -273,9 +270,9 @@ export default function Quantum() {
             <h4 className="TextFormattingH4">RangeSlider</h4>
             <h6 className="TextFormattingH6">
               RangeSlider is a component to select a value from a predefined
-              range. Chaneging the component's props, it's possible to set the
-              minimum and maximum values, format the tooltip and labels, or
-              disable the component itself.
+              range. Chaneging the component&apos;s props, it&apos;s possible to
+              set the minimum and maximum values, format the tooltip and labels,
+              or disable the component itself.
             </h6>
             <RangeSlider />
           </div>
@@ -362,8 +359,8 @@ export default function Quantum() {
             <h6 className="TextFormattingH6">
               Modals inform users about a task and can contain critical
               information, require decisions, or involve multiple tasks. A
-              ControlledModal contains control buttons, such as "Cancel" and
-              "Delete".
+              ControlledModal contains control buttons, such as
+              &lsquo;Cancel&rsquo; and &lsquo;Delete&rsquo;.
             </h6>
             <ControlledModal />
           </div>
@@ -452,7 +449,7 @@ export default function Quantum() {
         <div className="Width  ComponentsContainer WhiteBackground RoundedEdges">
           <h4 className="TextFormattingH4">Avatar</h4>
           <h6 className="TextFormattingH6">
-            Avatars are used to display a thumbnail of the user's profile
+            Avatars are used to display a thumbnail of the user&apos;s profile
             picture or an user icon if the picture is not defined. It can also
             display a dot to alert that there is some notification.
           </h6>

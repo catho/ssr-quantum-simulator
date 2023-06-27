@@ -1,11 +1,11 @@
-import React from 'react';
+/* eslint-disable react/jsx-filename-extension */
 import Container from '@catho/quantum/Grid/sub-components/Container';
 import Col from '@catho/quantum/Grid/sub-components/Col';
 import Row from '@catho/quantum/Grid/sub-components/Row';
-import Link from './styles/style';
 import Alert from '@catho/quantum/Alert';
 import List from '@catho/quantum/List';
 import Head from 'next/head';
+import Link from './styles/style';
 
 const colsProps = {
   medium: 12,
