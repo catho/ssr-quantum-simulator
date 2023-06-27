@@ -1,6 +1,3 @@
-/* eslint-disable no-use-before-define */
-/* eslint-disable react/button-has-type */
-/* eslint-disable react/jsx-filename-extension */
 import App from 'next/app';
 import GlobalStyle from '@catho/quantum/GlobalStyle';
 

@@ -8,6 +8,9 @@
   "rules": {
     "strict": 0,
     "import/no-extraneous-dependencies": 0,
+    "react/jsx-filename-extension": 0,
+    "no-use-before-define": 0,
+    "react/button-has-type": 0,
     "jsx-a11y/label-has-for": [
       2,
       {
@@ -49,3 +52,5 @@
     "document": true
   }
 }
+
+/* eslint-disable react/no-unescaped-entities */

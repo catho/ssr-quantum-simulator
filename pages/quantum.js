@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-filename-extension */
 import Head from 'next/head';
 import {
   Container,

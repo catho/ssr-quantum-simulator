@@ -1,5 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable react/jsx-filename-extension */
 import Head from 'next/head';
 import {
   HeaderResponsive,
@@ -34,7 +32,7 @@ export default function CathoComponentsPage() {
         <h4 className="TextFormattingH4">Headers</h4>
         <h6>
           These are responsive Headers for all Catho applications. They follow
-          Catho's style guide and its needs.
+          Catho&apos;s style guide and its needs.
         </h6>
         <h5 className="TextFormattingH5">Header Responsive</h5>
         <HeaderResponsive

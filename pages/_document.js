@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-filename-extension */
 import Document, { Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
