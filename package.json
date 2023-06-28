@@ -52,7 +52,8 @@
     "lint:js": "yarn lint ./*.js",
     "lint:all": "yarn lint:components && yarn lint:js && yarn lint:pages",
     "lint": "eslint --ext js,jsx --quiet",
-    "format": "prettier --write ./**/*.{js,jsx,json}"
+    "format": "prettier --write ./**/*.{js,jsx,json}",
+    "prepush": "yarn lint:all"
   },
   "lint-staged": {
     "*.{js,jsx,json}": [
