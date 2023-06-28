@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import 'index.css';
 import {
   Container,
   Row,
