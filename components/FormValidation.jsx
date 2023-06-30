@@ -1,9 +1,8 @@
-import React from 'react';
-import { Form, Validations } from '@catho/quantum/Form'
-import { Input, Button } from '@catho/quantum'
+import { Form, Validations } from '@catho/quantum/Form';
+import { Input, Button } from '@catho/quantum';
 
 const FormValidation = () => (
-    <Form>
+  <Form>
     <Input
       name="email"
       label="Required"
@@ -24,15 +23,13 @@ const FormValidation = () => (
       <Input
         name="required"
         label="this field is required (nested)"
-        validate={[
-          Validations.Required,
-        ]}
+        validate={[Validations.Required]}
       />
     </div>
     <Button name="submit" type="submit">
       Submit
     </Button>
   </Form>
-)
+);
 
 export default FormValidation;

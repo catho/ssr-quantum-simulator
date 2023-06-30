@@ -1,5 +1,4 @@
-import React from 'react'
-import CommentsBox from '@catho-private/catho-components/CommentsBox'
+import CommentsBox from '@catho-private/catho-components/CommentsBox';
 
 const CommentsBoxWithForm = () => (
   <CommentsBox
@@ -38,7 +37,7 @@ const CommentsBoxWithForm = () => (
         <strong>Como está sendo a sua experiência com o nosso site?</strong>
       </p>
     </>
-  </CommentsBox>    
-)
+  </CommentsBox>
+);
 
 export default CommentsBoxWithForm;

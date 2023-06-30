@@ -1,0 +1,55 @@
+{
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "plugins": ["prettier", "jsx-a11y", "import"],
+  "env": {
+    "jest": true
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "strict": 0,
+    "import/no-extraneous-dependencies": 0,
+    "react/jsx-filename-extension": 0,
+    "no-use-before-define": 0,
+    "react/button-has-type": 0,
+    "jsx-a11y/label-has-for": [
+      2,
+      {
+        "components": ["Label"],
+        "required": {
+          "some": ["nesting", "id"]
+        },
+        "allowChildren": false
+      }
+    ],
+    "jsx-a11y/label-has-associated-control": [
+      2,
+      {
+        "controlComponents": ["Toggle"],
+        "depth": 3
+      }
+    ],
+    "no-underscore-dangle": 0,
+    "no-unused-expressions": [
+      "error",
+      {
+        "allowTaggedTemplates": true
+      }
+    ],
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": ["*.unit.jsx", "off"]
+  },
+  "overrides": [
+    {
+      "files": ["**/subcomponents/**/*"],
+      "rules": {
+        "import/prefer-default-export": "off"
+      }
+    }
+  ],
+  "globals": {
+    "window": true,
+    "document": true
+  }
+}
+

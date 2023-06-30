@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import { Button, Modal } from "@catho/quantum";
+import { Component } from 'react';
+import { Button, Modal } from '@catho/quantum';
 
 class ControlledModal extends Component {
   constructor() {
     super();
 
     this.state = {
-      showModal: false
+      showModal: false,
     };
   }
 
@@ -35,8 +35,8 @@ class ControlledModal extends Component {
             <Modal.Footer>
               <div
                 style={{
-                  display: "flex",
-                  justifyContent: "flex-end"
+                  display: 'flex',
+                  justifyContent: 'flex-end',
                 }}
               >
                 <Button style={{ marginRight: 24 }} onClick={this.closeModal}>

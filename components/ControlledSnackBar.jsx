@@ -1,12 +1,12 @@
-import React from "react";
-import { Button, SnackBar } from "@catho/quantum";
+import React from 'react';
+import { Button, SnackBar } from '@catho/quantum';
 
 class ControledSnackBar extends React.Component {
   constructor() {
     super();
 
     this.state = {
-      showSnackBar: false
+      showSnackBar: false,
     };
   }
 
@@ -20,8 +20,8 @@ class ControledSnackBar extends React.Component {
     const { showSnackBar } = this.state;
 
     const actions = {
-      title: "HIDE",
-      callbackFn: this.actionCallback
+      title: 'HIDE',
+      callbackFn: this.actionCallback,
     };
 
     return (

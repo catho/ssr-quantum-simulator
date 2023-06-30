@@ -1,9 +1,8 @@
-import React from "react";
-import Accordion from "@catho/quantum/Accordion";
+import Accordion from '@catho/quantum/Accordion';
 
 const accordionItems = [
   {
-    title: "List",
+    title: 'List',
     content: (
       <ul>
         <li>
@@ -16,10 +15,10 @@ const accordionItems = [
           <a href="#">Certificação</a>
         </li>
       </ul>
-    )
+    ),
   },
   {
-    title: "Paragraph ",
+    title: 'Paragraph ',
     content: (
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -29,10 +28,10 @@ const accordionItems = [
         fringilla non nisi. Proin in pharetra tellus.
       </p>
     ),
-    opened: true
+    opened: true,
   },
   {
-    title: "Paragraph 2",
+    title: 'Paragraph 2',
     content: (
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -41,8 +40,8 @@ const accordionItems = [
         <br />
         fringilla non nisi. Proin in pharetra tellus.
       </p>
-    )
-  }
+    ),
+  },
 ];
 
 const AccordionWithProps = () => <Accordion items={accordionItems} />;

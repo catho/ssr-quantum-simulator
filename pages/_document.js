@@ -1,16 +1,15 @@
-import Document, { Head, Main, NextScript } from "next/document";
-import { ServerStyleSheet } from "styled-components";
+import Document, { Head, Main, NextScript } from 'next/document';
+import { ServerStyleSheet } from 'styled-components';
 
 export default class MyDocument extends Document {
-  static getInitialProps = async (ctx) => {
+  static getInitialProps = async ctx => {
     const sheet = new ServerStyleSheet();
     const originalRenderPage = ctx.renderPage;
 
     try {
       ctx.renderPage = () =>
         originalRenderPage({
-          enhanceApp: (App) => (props) =>
-            sheet.collectStyles(<App {...props} />),
+          enhanceApp: App => props => sheet.collectStyles(<App {...props} />),
         });
 
       const initialProps = await Document.getInitialProps(ctx);
@@ -31,7 +30,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <html>
+      <html lang="en">
         <Head>
           <link rel="stylesheet" href="/static/quantum.css" />
           <link rel="stylesheet" href="/static/styles_reset.css" />

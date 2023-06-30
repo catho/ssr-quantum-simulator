@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Button, Dialog } from "@catho/quantum";
+import { useState } from 'react';
+import { Button, Dialog } from '@catho/quantum';
 
 const ControlledDialog = () => {
   const [showDialog, setShowDialog] = useState(false);

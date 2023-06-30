@@ -17,8 +17,7 @@ import SegmentedControlExample from './SegmentedControlExample';
 import FooterTagsList from './FooterTagsList';
 import HorizontalMenuDefault from './HorizontalMenuDefault';
 import CommentsBoxWithForm from './CommentsBoxWithForm';
-import ControlledDialog from './ControlledDialog'
-
+import ControlledDialog from './ControlledDialog';
 
 export {
   ControlledPagination,
@@ -41,4 +40,4 @@ export {
   FooterTagsList,
   HorizontalMenuDefault,
   CommentsBoxWithForm,
-}
+};

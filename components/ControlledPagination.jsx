@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { Pagination } from "@catho/quantum";
+import { Component } from 'react';
+import { Pagination } from '@catho/quantum';
 
 class ControlledPagination extends Component {
   constructor(props) {
@@ -7,7 +7,7 @@ class ControlledPagination extends Component {
 
     this.state = {
       activePage: 1,
-      totalPages: 10
+      totalPages: 10,
     };
   }
 
