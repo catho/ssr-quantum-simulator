@@ -37,6 +37,7 @@ export default class MyDocument extends Document {
           <link rel="stylesheet" href="/static/style.css" />
           {this.props.styleTags}
         </Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <body>
           <main>
