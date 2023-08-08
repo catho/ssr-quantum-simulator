@@ -1,4 +1,5 @@
 import App from 'next/app';
+import Head from 'next/head';
 import GlobalStyle from '@catho/quantum/GlobalStyle';
 
 export default class HomePage extends App {
@@ -22,6 +23,13 @@ export default class HomePage extends App {
 
     return (
       <>
+        {' '}
+        <Head>
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+        </Head>
         <GlobalStyle />
         <header>
           <div className="HeaderContainer">

@@ -37,7 +37,6 @@ export default class MyDocument extends Document {
           <link rel="stylesheet" href="/static/style.css" />
           {this.props.styleTags}
         </Head>
-
         <body>
           <main>
             <Main />
