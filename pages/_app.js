@@ -1,18 +1,38 @@
 import App from 'next/app';
 import GlobalStyle from '@catho/quantum/GlobalStyle';
+import { Hide } from '@catho/quantum';
 
 export default class HomePage extends App {
   componentDidMount() {
     const hiddenMenu = document.getElementById('hiddenMenu');
     document.getElementById('menuButton').addEventListener('click', showMenu);
+    const mobileMenu = document.getElementById('MobileMenu');
     function showMenu() {
-      const { classList } = hiddenMenu;
-      if (classList.contains('HideMenu')) {
-        classList.add('ShowMenu');
-        classList.remove('HideMenu');
+      // const hiddenMenuclasses = hiddenMenu.classList;
+      // const mobileMenuclasses = mobileMenu.classList;
+      if (
+        hiddenMenu.classList.contains('HideMenu') &&
+        window.innerWidth > 1023
+      ) {
+        hiddenMenu.classList.add('ShowMenu');
+        hiddenMenu.classList.remove('HideMenu');
       } else {
-        classList.remove('ShowMenu');
-        classList.add('HideMenu');
+        hiddenMenu.classList.remove('ShowMenu');
+        hiddenMenu.classList.add('HideMenu');
+      }
+
+      if (
+        mobileMenu.classList.contains('HideMenu') &&
+        window.innerWidth < 1024
+      ) {
+        mobileMenu.classList.add('ShowMenu');
+        mobileMenu.classList.remove('HideMenu');
+      } else if (
+        mobileMenu.classList.contains('ShowMenu') &&
+        window.innerWidth < 1024
+      ) {
+        mobileMenu.classList.add('HideMenu');
+        mobileMenu.classList.remove('ShowMenu');
       }
     }
   }
@@ -30,15 +50,20 @@ export default class HomePage extends App {
                 <img src="../static/imgs/cathoLogo.png" alt="Logotipo Catho" />
               </a>
             </div>
-            <nav className="VisibleMenu">
+
+            <nav id="visibleMenu" className="VisibleMenu">
               <ul className="NavList">
-                <li className="navItem">
-                  <a href="/cathocomponents">Catho Components</a>
-                </li>
-                <li className="navItem">
-                  <a href="/quantum">Quantum</a>
-                </li>
-                <li className="navItem">
+                <Hide small xsmall>
+                  <div className="VisibleMenu">
+                    <li className="navItemVisible">
+                      <a href="/cathocomponents">Catho Components</a>
+                    </li>
+                    <li className="navItemVisible">
+                      <a href="/quantum">Quantum</a>
+                    </li>
+                  </div>
+                </Hide>
+                <li>
                   <button className="SandwichButton" id="menuButton">
                     &#x2630;
                   </button>
@@ -48,10 +73,27 @@ export default class HomePage extends App {
           </div>
           <nav id="hiddenMenu" className="HiddenMenu HideMenu">
             <ul>
-              <li className="navItem">
+              <li className="navItemHidden">
                 <a href="/render">Simulates renders</a>
               </li>
-              <li className="navItem">
+              <li className="navItemHidden">
+                <a href="https://github.com/catho">Repositories</a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav id="MobileMenu" className="MobileMenu HideMenu">
+            <ul>
+              <li className="navItemHidden">
+                <a href="/cathocomponents">Catho Components</a>
+              </li>
+              <li className="navItemHidden">
+                <a href="/quantum">Quantum</a>
+              </li>
+              <li className="navItemHidden">
+                <a href="/render">Simulates renders</a>
+              </li>
+              <li className="navItemHidden">
                 <a href="https://github.com/catho">Repositories</a>
               </li>
             </ul>
