@@ -183,7 +183,6 @@ a:hover {
 
 .Width {
     max-width: 600px;
-    min-width: none;
 }
 
 .MarginLeftRight {
@@ -210,7 +209,7 @@ a:hover {
     display: inline-block;
 }
 
-.navItemHidden {
+.NavItemHidden {
     display: flex;
     font-weight: bold;
     justify-content: space-between;
@@ -237,6 +236,7 @@ a:hover {
         top: 72px;
         width: 100%;
         transition: 0.3s; 
+        justify-content: end;
     }
     .MobileMenu ul {
         display: flex;

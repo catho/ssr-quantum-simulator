@@ -53,10 +53,10 @@ export default class HomePage extends App {
               <ul className="NavList">
                 <Hide small xsmall>
                   <div className="VisibleMenu">
-                    <li className="navItemVisible">
+                    <li>
                       <a href="/cathocomponents">Catho Components</a>
                     </li>
-                    <li className="navItemVisible">
+                    <li>
                       <a href="/quantum">Quantum</a>
                     </li>
                   </div>
@@ -71,10 +71,10 @@ export default class HomePage extends App {
           </div>
           <nav id="hiddenMenu" className="HiddenMenu HideMenu">
             <ul>
-              <li className="navItemHidden">
+              <li className="NavItemHidden">
                 <a href="/render">Simulates renders</a>
               </li>
-              <li className="navItemHidden">
+              <li className="NavItemHidden">
                 <a href="https://github.com/catho">Repositories</a>
               </li>
             </ul>
@@ -82,16 +82,16 @@ export default class HomePage extends App {
 
           <nav id="MobileMenu" className="MobileMenu HideMenu">
             <ul>
-              <li className="navItemHidden">
+              <li className="NavItemHidden">
                 <a href="/cathocomponents">Catho Components</a>
               </li>
-              <li className="navItemHidden">
+              <li className="NavItemHidden">
                 <a href="/quantum">Quantum</a>
               </li>
-              <li className="navItemHidden">
+              <li className="NavItemHidden">
                 <a href="/render">Simulates renders</a>
               </li>
-              <li className="navItemHidden">
+              <li className="NavItemHidden">
                 <a href="https://github.com/catho">Repositories</a>
               </li>
             </ul>
