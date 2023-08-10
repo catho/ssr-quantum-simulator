@@ -213,7 +213,6 @@ a:hover {
 .navItemHidden {
     display: flex;
     text-align: right;
-    color: #BCBF12;
     font-weight: bold;
     justify-content: space-between;
     align-items: center;
