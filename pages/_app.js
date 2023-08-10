@@ -8,8 +8,6 @@ export default class HomePage extends App {
     document.getElementById('menuButton').addEventListener('click', showMenu);
     const mobileMenu = document.getElementById('MobileMenu');
     function showMenu() {
-      // const hiddenMenuclasses = hiddenMenu.classList;
-      // const mobileMenuclasses = mobileMenu.classList;
       if (
         hiddenMenu.classList.contains('HideMenu') &&
         window.innerWidth > 1023
