@@ -239,7 +239,6 @@ a:hover {
         top: 72px;
         width: 100%;
         transition: 0.3s; 
-        justify-content: end;
     }
     .MobileMenu ul {
         display: flex;
