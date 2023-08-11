@@ -209,19 +209,19 @@ a:hover {
     display: inline-block;
 }
 
-.NavItemHidden {
+.HiddenMenuNavigationItem {
     display: flex;
     font-weight: bold;
     justify-content: space-between;
     align-items: center;
 }
 
-.navItemHidden a {
+.HiddenMenuNavigationItem a {
     color: #BCBF12;
 
 }
 
-.navItemHidden a:hover {
+.HiddenMenuNavigationItem a:hover {
     color: #B83870;
 
 }
