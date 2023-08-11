@@ -5,8 +5,10 @@ import { Hide } from '@catho/quantum';
 export default class HomePage extends App {
   componentDidMount() {
     const hiddenMenu = document.getElementById('hiddenMenu');
-    document.getElementById('menuButton').addEventListener('click', showMenu);
     const mobileMenu = document.getElementById('MobileMenu');
+    const menuButton = document.getElementById('menuButton');
+
+    menuButton.addEventListener('click', showMenu);
     function showMenu() {
       const showHiddenMenu = window.innerWidth > 1023;
       if (
