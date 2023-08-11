@@ -11,10 +11,8 @@ export default class HomePage extends App {
     menuButton.addEventListener('click', showMenu);
     function showMenu() {
       const showHiddenMenu = window.innerWidth > 1023;
-      if (
-        hiddenMenu.classList.contains('HideMenu') &&
-        showHiddenMenu
-      ) {
+      const showMobileMenu = window.innerWidth < 1024;
+      if (hiddenMenu.classList.contains('HideMenu') && showHiddenMenu) {
         hiddenMenu.classList.add('ShowMenu');
         hiddenMenu.classList.remove('HideMenu');
       } else {
@@ -22,10 +20,7 @@ export default class HomePage extends App {
         hiddenMenu.classList.add('HideMenu');
       }
 
-      if (
-        mobileMenu.classList.contains('HideMenu') &&
-        window.innerWidth < 1024
-      ) {
+      if (mobileMenu.classList.contains('HideMenu') && showMobileMenu) {
         mobileMenu.classList.add('ShowMenu');
         mobileMenu.classList.remove('HideMenu');
       } else {
