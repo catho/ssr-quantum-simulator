@@ -25,10 +25,7 @@ export default class HomePage extends App {
       ) {
         mobileMenu.classList.add('ShowMenu');
         mobileMenu.classList.remove('HideMenu');
-      } else if (
-        mobileMenu.classList.contains('ShowMenu') &&
-        window.innerWidth < 1024
-      ) {
+      } else {
         mobileMenu.classList.add('HideMenu');
         mobileMenu.classList.remove('ShowMenu');
       }
