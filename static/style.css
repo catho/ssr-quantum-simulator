@@ -20,16 +20,12 @@ body{
 
 
 
-.navItem {
-    float:left;
-    margin-right: 136px;
-    display: flex;
-}
+
 
 .NavList {
 
     margin: 0;
-    padding-left: 18px;
+    padding-left: 16px;
     width: 50%;
     display: contents;
 }
@@ -69,6 +65,8 @@ body{
     color: #BCBF12;
     font-weight: bold;
     display: flex;
+    justify-content: space-between;
+    gap: 50px;
     align-items: center;
 }
 
@@ -102,11 +100,13 @@ body{
     height: 46px;
     padding-right: 72px;
     align-items: center;
+    gap: 50px;
     justify-content: flex-end;
 }
 
 .HiddenMenu li{
     float: right;
+    padding-right: 24px;
 }
 
 .HiddenMenu a{
@@ -182,7 +182,7 @@ a:hover {
 }
 
 .Width {
-    width: 600px;
+    max-width: 600px;
 }
 
 .MarginLeftRight {
@@ -209,3 +209,49 @@ a:hover {
     display: inline-block;
 }
 
+.HiddenMenuNavigationItem {
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.HiddenMenuNavigationItem a {
+    color: #BCBF12;
+
+}
+
+.HiddenMenuNavigationItem a:hover {
+    color: #B83870;
+
+}
+
+
+
+
+
+@media(max-width: 1023px) {
+
+    .MobileMenu {
+        top: 72px;
+        width: 100%;
+        transition: 0.3s; 
+        justify-content: end;
+    }
+    .MobileMenu ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: end;
+        padding-right: 24px;
+    }
+    .HiddenMenu {
+        display: none;
+    }
+}
+
+@media(min-width: 1024px) {
+    .MobileMenu{
+        display: none;
+    }
+}

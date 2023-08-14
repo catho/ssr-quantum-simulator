@@ -1,19 +1,32 @@
 import App from 'next/app';
 import Head from 'next/head';
 import GlobalStyle from '@catho/quantum/GlobalStyle';
+import { Hide } from '@catho/quantum';
 
 export default class HomePage extends App {
   componentDidMount() {
-    const hiddenMenu = document.getElementById('hiddenMenu');
-    document.getElementById('menuButton').addEventListener('click', showMenu);
+    const hiddenMenu = document.getElementById('hiddenDesktopMenu');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuButton = document.getElementById('menuSandwichButton');
+
+    menuButton.addEventListener('click', showMenu);
     function showMenu() {
-      const { classList } = hiddenMenu;
-      if (classList.contains('HideMenu')) {
-        classList.add('ShowMenu');
-        classList.remove('HideMenu');
+      const showHiddenMenu = window.innerWidth > 1023;
+      const showMobileMenu = window.innerWidth < 1024;
+      if (hiddenMenu.classList.contains('HideMenu') && showHiddenMenu) {
+        hiddenMenu.classList.add('ShowMenu');
+        hiddenMenu.classList.remove('HideMenu');
       } else {
-        classList.remove('ShowMenu');
-        classList.add('HideMenu');
+        hiddenMenu.classList.remove('ShowMenu');
+        hiddenMenu.classList.add('HideMenu');
+      }
+
+      if (mobileMenu.classList.contains('HideMenu') && showMobileMenu) {
+        mobileMenu.classList.add('ShowMenu');
+        mobileMenu.classList.remove('HideMenu');
+      } else {
+        mobileMenu.classList.add('HideMenu');
+        mobileMenu.classList.remove('ShowMenu');
       }
     }
   }
@@ -38,28 +51,50 @@ export default class HomePage extends App {
                 <img src="../static/imgs/cathoLogo.png" alt="Logotipo Catho" />
               </a>
             </div>
-            <nav className="VisibleMenu">
+
+            <nav id="visibleDesktopMenu" className="VisibleMenu">
               <ul className="NavList">
-                <li className="navItem">
-                  <a href="/cathocomponents">Catho Components</a>
-                </li>
-                <li className="navItem">
-                  <a href="/quantum">Quantum</a>
-                </li>
-                <li className="navItem">
-                  <button className="SandwichButton" id="menuButton">
+                <Hide small xsmall>
+                  <div className="VisibleMenu">
+                    <li>
+                      <a href="/cathocomponents">Catho Components</a>
+                    </li>
+                    <li>
+                      <a href="/quantum">Quantum</a>
+                    </li>
+                  </div>
+                </Hide>
+                <li>
+                  <button className="SandwichButton" id="menuSandwichButton">
                     &#x2630;
                   </button>
                 </li>
               </ul>
             </nav>
           </div>
-          <nav id="hiddenMenu" className="HiddenMenu HideMenu">
+          <nav id="hiddenDesktopMenu" className="HiddenMenu HideMenu">
             <ul>
-              <li className="navItem">
+              <li className="HiddenMenuNavigationItem">
                 <a href="/render">Simulates renders</a>
               </li>
-              <li className="navItem">
+              <li className="HiddenMenuNavigationItem">
+                <a href="https://github.com/catho">Repositories</a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav id="mobileMenu" className="MobileMenu HideMenu">
+            <ul>
+              <li className="HiddenMenuNavigationItem">
+                <a href="/cathocomponents">Catho Components</a>
+              </li>
+              <li className="HiddenMenuNavigationItem">
+                <a href="/quantum">Quantum</a>
+              </li>
+              <li className="HiddenMenuNavigationItem">
+                <a href="/render">Simulates renders</a>
+              </li>
+              <li className="HiddenMenuNavigationItem">
                 <a href="https://github.com/catho">Repositories</a>
               </li>
             </ul>
