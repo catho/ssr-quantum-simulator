@@ -104,8 +104,13 @@ body{
     justify-content: flex-end;
 }
 
+.HiddenMenu ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
 .HiddenMenu li{
-    float: right;
     padding-right: 24px;
 }
 
