@@ -106,8 +106,6 @@ body{
 
 .HiddenMenu ul {
     display: flex;
-    justify-content: flex-end;
-
 }
 
 .HiddenMenu li{
