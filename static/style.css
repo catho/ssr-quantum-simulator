@@ -104,8 +104,11 @@ body{
     justify-content: flex-end;
 }
 
+.HiddenMenu ul {
+    display: flex;
+}
+
 .HiddenMenu li{
-    float: right;
     padding-right: 24px;
 }
 
