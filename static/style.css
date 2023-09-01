@@ -57,12 +57,16 @@ body{
 
 }
 
+.FlexEndPositioning {
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+}
+
 .VisibleMenu {
     color: #BCBF12;
     font-weight: bold;
     display: flex;
-    justify-content: flex-end;
-    gap: 50px;
     align-items: center;
 }
 
@@ -78,8 +82,6 @@ body{
     color: #BCBF12;
     font-size: 32px;
     font-family: 'Nunito', sans-serif;
-    display: flex;
-    align-items: end;
 }
 
 .SandwichButton:hover{
@@ -98,7 +100,6 @@ body{
 .HiddenMenu{
     font-weight: bold;
     align-items: center;
-    gap: 50px;
     justify-content: flex-end;
 }
 
@@ -106,7 +107,7 @@ body{
     display: flex;
     justify-content: start;
     gap: 50px;
-    padding-right: 72px;
+    padding-right: 12px;
 }
 
 
@@ -254,6 +255,10 @@ a:hover {
         padding-right: 32px;
     }
     .HiddenMenu {
+        display: none;
+    }
+
+    .DisplayNoneOnSmallScreen {
         display: none;
     }
 

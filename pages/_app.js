@@ -45,10 +45,10 @@ export default class HomePage extends App {
         </Head>
         <GlobalStyle />
         <header>
-          <Container withBreakpoints>
+          <Container>
             <Row>
               <Col
-                medium={6}
+                medium={4}
                 small={4}
                 xsmall={2}
                 large={4}
@@ -61,17 +61,18 @@ export default class HomePage extends App {
                   />
                 </a>
               </Col>
-              <Col medium={6} small={4} xsmall={2} large={8}>
-                <nav id="visibleDesktopMenu" className="VisibleMenu ">
+              <Col medium={8} small={4} xsmall={2} large={8}>
+                <nav
+                  id="visibleDesktopMenu"
+                  className="VisibleMenu  FlexEndPositioning"
+                >
                   <ul className="NavList">
-                    <Hide small xsmall className="VisibleMenu">
-                      <li>
-                        <a href="/cathocomponents">Catho Components</a>
-                      </li>
-                      <li>
-                        <a href="/quantum">Quantum</a>
-                      </li>
-                    </Hide>
+                    <li className="DisplayNoneOnSmallScreen">
+                      <a href="/cathocomponents">Catho Components</a>
+                    </li>
+                    <li className="DisplayNoneOnSmallScreen">
+                      <a href="/quantum">Quantum</a>
+                    </li>
                     <li>
                       <button
                         className="SandwichButton"
