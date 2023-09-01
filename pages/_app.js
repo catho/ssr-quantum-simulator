@@ -1,7 +1,7 @@
 import App from 'next/app';
 import Head from 'next/head';
 import GlobalStyle from '@catho/quantum/GlobalStyle';
-import { Container, Hide, Col, Row } from '@catho/quantum';
+import { Container, Col, Row } from '@catho/quantum';
 
 export default class HomePage extends App {
   componentDidMount() {
