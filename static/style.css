@@ -105,7 +105,6 @@ body{
 
 .HiddenMenu ul {
     display: flex;
-    justify-content: start;
     gap: 50px;
     padding-right: 12px;
 }
