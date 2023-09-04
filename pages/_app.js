@@ -1,7 +1,7 @@
 import App from 'next/app';
 import Head from 'next/head';
 import GlobalStyle from '@catho/quantum/GlobalStyle';
-import { Hide } from '@catho/quantum';
+import { Container, Col, Row } from '@catho/quantum';
 
 export default class HomePage extends App {
   componentDidMount() {
@@ -45,43 +45,57 @@ export default class HomePage extends App {
         </Head>
         <GlobalStyle />
         <header>
-          <div className="HeaderContainer">
-            <div className="CathoLogo">
-              <a href="/">
-                <img src="../static/imgs/cathoLogo.png" alt="Logotipo Catho" />
-              </a>
-            </div>
-
-            <nav id="visibleDesktopMenu" className="VisibleMenu">
-              <ul className="NavList">
-                <Hide small xsmall>
-                  <div className="VisibleMenu">
-                    <li>
+          <Container>
+            <Row>
+              <Col
+                medium={4}
+                small={4}
+                xsmall={2}
+                large={4}
+                className="CathoLogo"
+              >
+                <a href="/">
+                  <img
+                    src="../static/imgs/cathoLogo.png"
+                    alt="Logotipo Catho"
+                  />
+                </a>
+              </Col>
+              <Col medium={8} small={4} xsmall={2} large={8}>
+                <nav
+                  id="visibleDesktopMenu"
+                  className="VisibleMenu  FlexEndPositioning"
+                >
+                  <ul className="NavList">
+                    <li className="DisplayNoneOnSmallScreen">
                       <a href="/cathocomponents">Catho Components</a>
                     </li>
-                    <li>
+                    <li className="DisplayNoneOnSmallScreen">
                       <a href="/quantum">Quantum</a>
                     </li>
-                  </div>
-                </Hide>
+                    <li>
+                      <button
+                        className="SandwichButton"
+                        id="menuSandwichButton"
+                      >
+                        &#x2630;
+                      </button>
+                    </li>
+                  </ul>
+                </nav>
+              </Col>
+            </Row>
+            <nav id="hiddenDesktopMenu" className="HiddenMenu HideMenu">
+              <ul>
                 <li>
-                  <button className="SandwichButton" id="menuSandwichButton">
-                    &#x2630;
-                  </button>
+                  <a href="/render">Simulates renders</a>
+                </li>
+                <li>
+                  <a href="https://github.com/catho">Repositories</a>
                 </li>
               </ul>
             </nav>
-          </div>
-          <nav id="hiddenDesktopMenu" className="HiddenMenu HideMenu">
-            <ul>
-              <li className="HiddenMenuNavigationItem">
-                <a href="/render">Simulates renders</a>
-              </li>
-              <li className="HiddenMenuNavigationItem">
-                <a href="https://github.com/catho">Repositories</a>
-              </li>
-            </ul>
-          </nav>
+          </Container>
 
           <nav id="mobileMenu" className="MobileMenu HideMenu">
             <ul>

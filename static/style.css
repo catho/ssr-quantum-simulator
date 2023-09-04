@@ -31,12 +31,6 @@ body{
 }
 
 
-.HeaderContainer{
-    display: flex;
-    justify-content: space-between;
-    height: 77px;
-    padding: 24px 72px;
-}
 
 .Footer {
     min-height: 66px;
@@ -58,17 +52,25 @@ body{
 }
 
 .CathoLogo {
-    align-self: center;
+    display: flex; 
+    align-items: center;
+
+}
+
+.FlexEndPositioning {
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
 }
 
 .VisibleMenu {
     color: #BCBF12;
     font-weight: bold;
     display: flex;
-    justify-content: space-between;
-    gap: 50px;
     align-items: center;
 }
+
+
 
 .VisibleMenu a {
     color: #BCBF12;
@@ -97,20 +99,17 @@ body{
 
 .HiddenMenu{
     font-weight: bold;
-    height: 46px;
-    padding-right: 72px;
     align-items: center;
-    gap: 50px;
     justify-content: flex-end;
 }
 
 .HiddenMenu ul {
     display: flex;
+    gap: 50px;
+    padding-right: 12px;
 }
 
-.HiddenMenu li{
-    padding-right: 24px;
-}
+
 
 .HiddenMenu a{
     color: #CCCCCC;
@@ -213,21 +212,24 @@ a:hover {
 }
 
 .HiddenMenuNavigationItem {
+    
     display: flex;
     font-weight: bold;
     justify-content: space-between;
     align-items: center;
 }
 
-.HiddenMenuNavigationItem a {
-    color: #BCBF12;
-
+.HiddenMenuNavigationItem a{
+    color: #CCCCCC;
 }
 
 .HiddenMenuNavigationItem a:hover {
     color: #B83870;
-
+    text-decoration: underline;
 }
+
+
+
 
 
 
@@ -240,21 +242,31 @@ a:hover {
         width: 100%;
         transition: 0.3s; 
         justify-content: end;
+
+        text-decoration: none;
     }
     .MobileMenu ul {
+        color: #CCCCCC;
         display: flex;
         flex-direction: column;
         width: 100%;
         align-items: end;
-        padding-right: 24px;
+        padding-right: 32px;
     }
     .HiddenMenu {
         display: none;
     }
+
+    .DisplayNoneOnSmallScreen {
+        display: none;
+    }
+
 }
 
 @media(min-width: 1024px) {
     .MobileMenu{
         display: none;
     }
+    
+
 }
