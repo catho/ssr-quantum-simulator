@@ -65,7 +65,7 @@ export default function Quantum() {
         <title>Quantum - SSR-Simulator</title>
       </Head>
       <GlobalStyle />
-      <div className="MarginTopBottom ColoredBackground PaddingTopBotttom">
+      <Container className="Margins ColoredBackground PaddingTopBotttom">
         <h4 className="TextFormattingH4 PaddingLeftRight">Breadcrumbs</h4>
         <h6 className="TextFormattingH6 PaddingLeftRight">
           Breadcrumbs creates a trail of links to help the user to locate the
@@ -74,7 +74,7 @@ export default function Quantum() {
 
         <Breadcrumbs items={breadcrumbsMockItems} />
 
-        <div className="MarginTopBottom PaddingLeftRight">
+        <Container className="Margins PaddingLeftRight">
           <h4 className="TextFormattingH4">TabbedView</h4>
           <h6 className="TextFormattingH6">
             TabbedView and Tab are components created to organize content into
@@ -85,10 +85,10 @@ export default function Quantum() {
             <Tab title="TabTest 2">Second tab with TabbedView</Tab>
             <Tab title="TabTest 3">Third tab with TabbedView</Tab>
           </TabbedView>
-        </div>
-      </div>
+        </Container>
+      </Container>
 
-      <div className="FlexContainer  ColoredBackground  ComponentsContainer">
+      <Container className="FlexContainer  ColoredBackground  ComponentsContainer">
         <div>
           <div className="WhiteBackground  RoundedEdges ComponentsContainer Width">
             <h4 className="TextFormattingH4">Container</h4>
@@ -175,8 +175,8 @@ export default function Quantum() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="FlexContainer  ColoredBackground ComponentsContainer">
+      </Container>
+      <Container className="FlexContainer  ColoredBackground ComponentsContainer Margins">
         <div className="Width PaddingLeftRight">
           <div className="PaddingTopBotttom  ComponentsContainer WhiteBackground RoundedEdges">
             <h4 className="TextFormattingH4">Autocomplete</h4>
@@ -214,7 +214,7 @@ export default function Quantum() {
           </div>
         </div>
         <div className="Width   PaddingLeftRight ">
-          <div className="MarginTopBottom  RoundedEdges WhiteBackground ComponentsContainer">
+          <div className="Margins  RoundedEdges WhiteBackground ComponentsContainer">
             <h4 className="TextFormattingH4">Card</h4>
             <h6 className="TextFormattingH6">
               Cards contain a content and actions about a single subject.
@@ -235,7 +235,7 @@ export default function Quantum() {
               <Card.Footer>Footer of the Card</Card.Footer>
             </Card>
           </div>
-          <div className="MarginTopBottom ComponentsContainer RoundedEdges WhiteBackground">
+          <div className="Margins ComponentsContainer RoundedEdges WhiteBackground">
             <h4 className="TextFormattingH4">Alert</h4>
             <h6 className="TextFormattingH6">
               Alerts are used for items that need to be labeled, categorized, or
@@ -243,7 +243,7 @@ export default function Quantum() {
             </h6>
             <Alert>Alert Test</Alert>
           </div>
-          <div className="MarginTopBottom ComponentsContainer RoundedEdges WhiteBackground">
+          <div className="Margins ComponentsContainer RoundedEdges WhiteBackground">
             <h4 className="TextFormattingH4">Accordion</h4>
             <h6 className="TextFormattingH6">
               An accordion is a vertical stack of interactive headings used to
@@ -254,8 +254,8 @@ export default function Quantum() {
             <Accordion items={accordionMock} />
           </div>
         </div>
-      </div>
-      <div className="FlexContainer ColoredBackground PaddingTopBotttom">
+      </Container>
+      <Container className="FlexContainer ColoredBackground PaddingTopBotttom Margins">
         <div className=" Width RoundedEdges ComponentsContainer">
           <div className="PaddingTopBotttom ComponentsContainer WhiteBackground RoundedEdges">
             <h4 className="TextFormattingH4">ChargeBar</h4>
@@ -375,8 +375,8 @@ export default function Quantum() {
             <ControlledSnackBar />
           </div>
         </div>
-      </div>
-      <div className="FlexContainer ColoredBackground ComponentsContainer">
+      </Container>
+      <Container className="FlexContainer ColoredBackground ComponentsContainer">
         <div className="Width">
           <div className=" WhiteBackground  RoundedEdges ComponentsContainer">
             <h4 className="TextFormattingH4">Badge</h4>
@@ -419,8 +419,8 @@ export default function Quantum() {
             </Tooltip>
           </div>
         </div>
-      </div>
-      <div className="ColoredBackground ComponentsContainer">
+      </Container>
+      <Container className="ColoredBackground ComponentsContainer Margins">
         <h4 className="TextFormattingH4">Carousel</h4>
         <h6 className="TextFormattingH6">
           Carousel is a component that align cards with a series of content.
@@ -428,8 +428,8 @@ export default function Quantum() {
           indicators and previous/next controls.
         </h6>
         <Carousel cards={cardsMock} />
-      </div>
-      <div className="FlexContainer ColoredBackground PaddingLeftRight MarginTopBottom">
+      </Container>
+      <Container className="FlexContainer ColoredBackground PaddingLeftRight Margins">
         <div className="Width  ComponentsContainer WhiteBackground RoundedEdges">
           <h4 className="TextFormattingH4">Social Button</h4>
           <h6 className="TextFormattingH6">
@@ -461,8 +461,8 @@ export default function Quantum() {
           </h6>
           <Socials items={socialMocks} />
         </div>
-      </div>
-      <div className="FlexContainer ColoredBackground PaddingLeftRight MarginTopBottom Overflow ">
+      </Container>
+      <Container className="FlexContainer ColoredBackground PaddingLeftRight Margins Overflow ">
         <div>
           <div className="Width  ComponentsContainer WhiteBackground RoundedEdges">
             <h4 className="TextFormattingH4">Checkbox Group</h4>
@@ -519,7 +519,7 @@ export default function Quantum() {
             <Input.Password label="Password" />
           </Form>
         </div>
-      </div>
+      </Container>
     </div>
   );
 }
