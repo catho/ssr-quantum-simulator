@@ -85,12 +85,12 @@ export default function CathoComponentsPage() {
           </div>
         </Container>
         <Container large={4} medium={4} xsmall={4} small={4}>
-          <div className="WhiteBackground RoundedEdges  ">
+          <div className="WhiteBackground RoundedEdges  Margins">
             <h4 className="TextFormattingH4">JobNotificationList</h4>
             <h6>A simple list of cards of job notifications.</h6>
             <JobNotificationList data={jobNotificationListMock} />
           </div>
-          <div className="WhiteBackground RoundedEdges  ">
+          <div className="WhiteBackground RoundedEdges  Margins">
             <h4 className="TextFormattingH4">DayPicker</h4>
             <h6>DayPicker allows the user to select a day or a set of days.</h6>
             <DayPicker />
@@ -108,7 +108,7 @@ export default function CathoComponentsPage() {
           <h4 className="TextFormattingH4">Footers</h4>
           <h6>These are footers for all Catho applications.</h6>
         </div>
-        <div className="MarginTopBottom">
+        <div className="Margins">
           <h5 className="TextFormattingH5">
             Complete Footer Version with TagList
           </h5>
@@ -117,7 +117,7 @@ export default function CathoComponentsPage() {
             tagsListContent={tagListMocks}
           />
         </div>
-        <div className="MarginTopBottom">
+        <div className="Margins">
           <h5 className="TextFormattingH5">Simple Footer Version</h5>
           <FooterSimple />
         </div>
