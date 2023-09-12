@@ -60,7 +60,7 @@ import ControlledDialog from '../components/ControlledDialog';
 
 export default function Quantum() {
   return (
-    <div className="">
+    <>
       <Head>
         <title>Quantum - SSR-Simulator</title>
       </Head>
