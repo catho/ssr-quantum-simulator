@@ -114,7 +114,6 @@ export default class HomePage extends App {
             </ul>
           </nav>
         </header>
-        <main>
           <Container className="MainContent WhiteBackground">
             <Component {...pageProps} />
           </Container>
