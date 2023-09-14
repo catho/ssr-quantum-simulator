@@ -13,7 +13,7 @@ import {
   JobCard,
   JobNotificationList,
 } from '@catho-private/catho-components';
-import { Container } from '@catho/quantum';
+import { Container, Row, Col } from '@catho/quantum';
 import {
   barCharData,
   jobNotificationListMock,
@@ -48,21 +48,35 @@ export default function CathoComponentsPage() {
         <HeaderSimple gtmPrefix="next" />
       </Container>
       <Container className=" FlexContainer ColoredBackground Margins">
-        <div className=" RoundedEdges WhiteBackground Width">
-          <h4 className="TextFormattingH4">Password Field</h4>
-          <h6>
-            Password Field is a component used when a password input with
-            validations is needed.
-          </h6>
-          <PasswordField {...passwordProps} />
-        </div>
-        <div className=" RoundedEdges WhiteBackground Width">
-          <h4 className="TextFormattingH4">BarChart</h4>
-          <h6>
-            A simplebar chart component. Used to show sorted data in columns.
-          </h6>
-          <BarChart data={barCharData} />
-        </div>
+        <Row>
+          <Col
+            large={6}
+            medium={4}
+            small={4}
+            xmall={2}
+            className=" RoundedEdges WhiteBackground  PaddingLeftRight"
+          >
+            <h4 className="TextFormattingH4">Password Field</h4>
+            <h6>
+              Password Field is a component used when a password input with
+              validations is needed.
+            </h6>
+            <PasswordField {...passwordProps} />
+          </Col>
+          <Col
+            large={6}
+            medium={4}
+            small={4}
+            xmall={2}
+            className=" RoundedEdges WhiteBackground  Margins PaddingLeftRight"
+          >
+            <h4 className="TextFormattingH4">BarChart</h4>
+            <h6>
+              A simplebar chart component. Used to show sorted data in columns.
+            </h6>
+            <BarChart data={barCharData} />
+          </Col>
+        </Row>
       </Container>
       <Container className=" ColoredBackground Margins">
         <h4 className="TextFormattingH4">CommentsBox</h4>
@@ -71,38 +85,41 @@ export default function CathoComponentsPage() {
           <p>This is a test message for the CommentsBox component.</p>
         </CommentsBox>
       </Container>
-      <Container className=" ColoredBackground FlexContainer Margins">
-        <Container
-          large={4}
-          medium={4}
-          xsmall={4}
-          small={4}
-          className="AlignCenter"
-        >
-          <div className="WhiteBackground PaddingLeftRight RoundedEdges Width">
+      <Container className=" ColoredBackground FlexContainer">
+        <Row>
+          <Col
+            large={6}
+            medium={4}
+            small={4}
+            xmall={2}
+            className="WhiteBackground PaddingLeftRight RoundedEdges "
+          >
             <h4 className="TextFormattingH4">JobCard</h4>
             <JobCard {...jobCardProps} />
-          </div>
-        </Container>
-        <Container large={4} medium={4} xsmall={4} small={4}>
-          <div className="WhiteBackground RoundedEdges  Margins">
-            <h4 className="TextFormattingH4">JobNotificationList</h4>
-            <h6>A simple list of cards of job notifications.</h6>
-            <JobNotificationList data={jobNotificationListMock} />
-          </div>
-          <div className="WhiteBackground RoundedEdges  Margins">
-            <h4 className="TextFormattingH4">DayPicker</h4>
-            <h6>DayPicker allows the user to select a day or a set of days.</h6>
-            <DayPicker />
-          </div>
-          <div className="WhiteBackground RoundedEdges  ">
-            <h4 className="TextFormattingH4">HorizontalMenu</h4>
-            <h6>A mobile navigation bar with a text and an icon.</h6>
-            <HorizontalMenu items={horizontalMenuItems} />
-          </div>
-        </Container>
-      </Container>
+          </Col>
+          <Col large={6} medium={4} small={4} xmall={2}>
+            <Container className="WhiteBackground RoundedEdges  Margins PaddingTopBotttom PaddingLeftRight">
+              <h4 className="TextFormattingH4">JobNotificationList</h4>
+              <h6>A simple list of cards of job notifications.</h6>
+              <JobNotificationList data={jobNotificationListMock} />
+            </Container>
 
+            <Container className="WhiteBackground RoundedEdges PaddingLeftRight  PaddingTopBotttom Margins">
+              <h4 className="TextFormattingH4">DayPicker</h4>
+              <h6>
+                DayPicker allows the user to select a day or a set of days.
+              </h6>
+              <DayPicker />
+            </Container>
+
+            <Container className="WhiteBackground RoundedEdges PaddingLeftRight PaddingTopBotttom ">
+              <h4 className="TextFormattingH4">HorizontalMenu</h4>
+              <h6>A mobile navigation bar with a text and an icon.</h6>
+              <HorizontalMenu items={horizontalMenuItems} />
+            </Container>
+          </Col>
+        </Row>
+      </Container>
       <Container className="ColoredBackground Margins">
         <div>
           <h4 className="TextFormattingH4">Footers</h4>

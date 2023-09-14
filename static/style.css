@@ -135,7 +135,6 @@ a:hover {
 .FlexContainer{
     display:flex;
     justify-content: space-evenly;
-    gap: 16px;
     flex-wrap: wrap;
 }
 
@@ -179,6 +178,7 @@ a:hover {
 
 .Width {
     max-width: 600px;
+    min-width: 400px;
 }
 
 .MarginLeftRight {
