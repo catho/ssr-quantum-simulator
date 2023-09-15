@@ -42,6 +42,11 @@ export default class HomePage extends App {
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
+          <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="../static/imgs/favicon.ico"
+          />
         </Head>
         <GlobalStyle />
         <header>
