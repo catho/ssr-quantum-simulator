@@ -128,13 +128,8 @@ a:hover {
     padding-top: 8px;
 }
 
-.ComponentsContainer{
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 8px;
-    padding-right: 8px;
-    margin-top: 8px;
-    margin-bottom: 8px;
+.Margins {
+    margin: 16px 0;
 }
 
 .FlexContainer{
@@ -143,6 +138,11 @@ a:hover {
     flex-wrap: wrap;
 }
 
+
+.AlignCenter {
+    display:flex;
+    align-items: center;
+}
 .RoundedEdges {
     border-radius: 8px;
 }
@@ -157,18 +157,11 @@ a:hover {
 
 
 .PaddingTopBotttom{
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding: 8px ;
 }
 
 .PaddingLeftRight{
-    padding-left: 8px;
-    padding-right: 8px;
-}
-
-.MarginTopBottom{
-    margin-top: 8px;
-    margin-bottom: 8px;
+    padding: 0 8px;
 }
 
 
@@ -185,6 +178,7 @@ a:hover {
 
 .Width {
     max-width: 600px;
+    min-width: 400px;
 }
 
 .MarginLeftRight {

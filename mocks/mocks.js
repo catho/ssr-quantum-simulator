@@ -29,6 +29,36 @@ const barCharData = [
     value: 4100,
     tooltip: 'R$ 4100',
   },
+  {
+    name: 'Jul',
+    value: 4000,
+    tooltip: 'R$ 4000',
+  },
+  {
+    name: 'Aug',
+    value: 3500,
+    tooltip: 'R$ 3500',
+  },
+  {
+    name: 'Sep',
+    value: 2000,
+    tooltip: 'R$ 2000',
+  },
+  {
+    name: 'Oct',
+    value: 3000,
+    tooltip: 'R$ 3000',
+  },
+  {
+    name: 'Nov',
+    value: 3880,
+    tooltip: 'R$ 3800',
+  },
+  {
+    name: 'Dec',
+    value: 4100,
+    tooltip: 'R$ 4100',
+  },
 ];
 
 const candidatesMockContent = [
