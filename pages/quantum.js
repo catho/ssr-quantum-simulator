@@ -65,27 +65,41 @@ export default function Quantum() {
         <title>Quantum - SSR-Simulator</title>
       </Head>
       <GlobalStyle />
-      <Container className="Margins ColoredBackground PaddingTopBotttom">
-        <h4 className="TextFormattingH4 PaddingLeftRight">Breadcrumbs</h4>
-        <h6 className="TextFormattingH6 PaddingLeftRight">
-          Breadcrumbs creates a trail of links to help the user to locate the
-          current page within the website&apos;s hierarchy.
-        </h6>
+      <Container className="Margins ColoredBackground PaddingTopBotttom ">
+        <Row>
+          <Col className=" RoundedEdges  PaddingLeftRight">
+            <div className=" PaddingLeftRight Margins">
+              <div className="WhiteBackground  RoundedEdges   PaddingLeftRight">
+                <h4 className="TextFormattingH4 ">Breadcrumbs</h4>
+                <h6 className="TextFormattingH6 ">
+                  Breadcrumbs creates a trail of links to help the user to
+                  locate the current page within the website&apos;s hierarchy.
+                </h6>
 
-        <Breadcrumbs items={breadcrumbsMockItems} />
-
-        <Container className="Margins PaddingLeftRight">
-          <h4 className="TextFormattingH4">TabbedView</h4>
-          <h6 className="TextFormattingH6">
-            TabbedView and Tab are components created to organize content into
-            separate views where only one view can be visible at a time.
-          </h6>
-          <TabbedView activeTab="TabTest">
-            <Tab title="TabTest">Tab with TabbedView</Tab>
-            <Tab title="TabTest 2">Second tab with TabbedView</Tab>
-            <Tab title="TabTest 3">Third tab with TabbedView</Tab>
-          </TabbedView>
-        </Container>
+                <Breadcrumbs items={breadcrumbsMockItems} />
+              </div>
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col className=" RoundedEdges  PaddingLeftRight">
+            <div className=" PaddingLeftRight Margins">
+              <div className="WhiteBackground  RoundedEdges   PaddingLeftRight">
+                <h4 className="TextFormattingH4">TabbedView</h4>
+                <h6 className="TextFormattingH6">
+                  TabbedView and Tab are components created to organize content
+                  into separate views where only one view can be visible at a
+                  time.
+                </h6>
+                <TabbedView activeTab="TabTest">
+                  <Tab title="TabTest">Tab with TabbedView</Tab>
+                  <Tab title="TabTest 2">Second tab with TabbedView</Tab>
+                  <Tab title="TabTest 3">Third tab with TabbedView</Tab>
+                </TabbedView>
+              </div>
+            </div>
+          </Col>
+        </Row>
       </Container>
       <Container className="FlexContainer  ColoredBackground  Margins ">
         <Row>
@@ -495,13 +509,17 @@ export default function Quantum() {
         </Row>
       </Container>
       <Container className="ColoredBackground  Margins">
-        <h4 className="TextFormattingH4">Carousel</h4>
-        <h6 className="TextFormattingH6">
-          Carousel is a component that align cards with a series of content.
-          Works with images, texts, or custom markups. Also includes support for
-          indicators and previous/next controls.
-        </h6>
-        <Carousel cards={cardsMock} />
+        <div className=" PaddingLeftRight Margins">
+          <div className="WhiteBackground  RoundedEdges   PaddingLeftRight">
+            <h4 className="TextFormattingH4">Carousel</h4>
+            <h6 className="TextFormattingH6">
+              Carousel is a component that align cards with a series of content.
+              Works with images, texts, or custom markups. Also includes support
+              for indicators and previous/next controls.
+            </h6>
+            <Carousel cards={cardsMock} />
+          </div>
+        </div>
       </Container>
       <Container className="FlexContainer ColoredBackground PaddingTopBotttom Margins">
         <Row>
