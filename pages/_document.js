@@ -36,6 +36,11 @@ export default class MyDocument extends Document {
           <link rel="stylesheet" href="/static/styles_reset.css" />
           <link rel="stylesheet" href="/static/style.css" />
           {this.props.styleTags}
+          <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="https://assets.catho.com.br/ico/favicon.ico"
+          />
         </Head>
         <body>
           <main>
