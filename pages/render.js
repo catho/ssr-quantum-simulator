@@ -18,8 +18,8 @@ export default function RenderPage() {
             </Col>
           </Row>
         </Container>
-        <FooterTagsList />
       </section>
+      <FooterTagsList />
     </>
   );
 }
