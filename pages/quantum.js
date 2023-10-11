@@ -69,8 +69,8 @@ export default function Quantum() {
         <section>
           <Container className="Margins ColoredBackground PaddingTopBotttom ">
             <Row>
-              <article>
-                <Col className=" RoundedEdges  PaddingLeftRight">
+              <Col className=" RoundedEdges  PaddingLeftRight">
+                <article>
                   <div className=" PaddingLeftRight Margins">
                     <div className="WhiteBackground  RoundedEdges   PaddingLeftRight">
                       <h4 className="TextFormattingH4 ">Breadcrumbs</h4>
@@ -82,8 +82,8 @@ export default function Quantum() {
                       <Breadcrumbs items={breadcrumbsMockItems} />
                     </div>
                   </div>
-                </Col>
-              </article>
+                </article>
+              </Col>
             </Row>
             <Row>
               <Col className=" RoundedEdges  PaddingLeftRight">
@@ -111,14 +111,14 @@ export default function Quantum() {
         <section>
           <Container className="FlexContainer  ColoredBackground  Margins ">
             <Row>
-              <article>
-                <Col
-                  large={6}
-                  medium={4}
-                  small={4}
-                  xmall={2}
-                  className=" RoundedEdges  PaddingLeftRight"
-                >
+              <Col
+                large={6}
+                medium={4}
+                small={4}
+                xmall={2}
+                className=" RoundedEdges  PaddingLeftRight"
+              >
+                <article>
                   <div className=" PaddingLeftRight Margins">
                     <div className="WhiteBackground  RoundedEdges   PaddingLeftRight">
                       <h4 className="TextFormattingH4">Container</h4>
@@ -149,16 +149,16 @@ export default function Quantum() {
                       <Link href="https://www.catho.com.br">Link</Link>
                     </div>
                   </div>
-                </Col>
-              </article>
-              <article>
-                <Col
-                  large={6}
-                  medium={4}
-                  small={4}
-                  xmall={2}
-                  className=" RoundedEdges  PaddingLeftRight"
-                >
+                </article>
+              </Col>
+              <Col
+                large={6}
+                medium={4}
+                small={4}
+                xmall={2}
+                className=" RoundedEdges  PaddingLeftRight"
+              >
+                <article>
                   <div className=" PaddingLeftRight Margins">
                     <div className="WhiteBackground  RoundedEdges   PaddingLeftRight">
                       <div>
@@ -214,22 +214,22 @@ export default function Quantum() {
                       </div>
                     </div>
                   </div>
-                </Col>
-              </article>
+                </article>
+              </Col>
             </Row>
           </Container>
         </section>
         <section>
           <Container className="FlexContainer  ColoredBackground  Margins">
             <Row>
-              <article>
-                <Col
-                  large={6}
-                  medium={4}
-                  small={4}
-                  xmall={2}
-                  className=" RoundedEdges  PaddingLeftRight"
-                >
+              <Col
+                large={6}
+                medium={4}
+                small={4}
+                xmall={2}
+                className=" RoundedEdges  PaddingLeftRight"
+              >
+                <article>
                   <div className="PaddingLeftRight">
                     <div className="PaddingTopBotttom   WhiteBackground RoundedEdges Margins">
                       <h4 className="TextFormattingH4">Autocomplete</h4>
@@ -268,16 +268,16 @@ export default function Quantum() {
                       />
                     </div>
                   </div>
-                </Col>
-              </article>
-              <article>
-                <Col
-                  large={6}
-                  medium={4}
-                  small={4}
-                  xmall={2}
-                  className=" RoundedEdges  PaddingLeftRight"
-                >
+                </article>
+              </Col>
+              <Col
+                large={6}
+                medium={4}
+                small={4}
+                xmall={2}
+                className=" RoundedEdges  PaddingLeftRight"
+              >
+                <article>
                   <div className="PaddingLeftRight ">
                     <div className="Margins  RoundedEdges WhiteBackground PaddingLeftRight">
                       <h4 className="TextFormattingH4">Card</h4>
@@ -321,22 +321,22 @@ export default function Quantum() {
                       <Accordion items={accordionMock} />
                     </div>
                   </div>
-                </Col>
-              </article>
+                </article>
+              </Col>
             </Row>
           </Container>
         </section>
         <section>
           <Container className="FlexContainer ColoredBackground PaddingTopBotttom Margins">
             <Row>
-              <article>
-                <Col
-                  large={6}
-                  medium={4}
-                  small={4}
-                  xmall={2}
-                  className=" RoundedEdges  PaddingLeftRight"
-                >
+              <Col
+                large={6}
+                medium={4}
+                small={4}
+                xmall={2}
+                className=" RoundedEdges  PaddingLeftRight"
+              >
+                <article>
                   <div className="PaddingLeftRight">
                     <div className="PaddingTopBotttom   WhiteBackground RoundedEdges Margins">
                       <h4 className="TextFormattingH4">ChargeBar</h4>
@@ -400,16 +400,16 @@ export default function Quantum() {
                       <Pagination totalPages={4} activePage={1} />
                     </div>
                   </div>
-                </Col>
-              </article>
-              <article>
-                <Col
-                  large={6}
-                  medium={4}
-                  small={4}
-                  xmall={2}
-                  className=" RoundedEdges  PaddingLeftRight"
-                >
+                </article>
+              </Col>
+              <Col
+                large={6}
+                medium={4}
+                small={4}
+                xmall={2}
+                className=" RoundedEdges  PaddingLeftRight"
+              >
+                <article>
                   <div className="PaddingLeftRight">
                     <div className="PaddingTopBotttom   WhiteBackground RoundedEdges Margins">
                       <h4 className="TextFormattingH4">Button</h4>
@@ -473,22 +473,22 @@ export default function Quantum() {
                       <ControlledSnackBar />
                     </div>
                   </div>
-                </Col>
-              </article>
+                </article>
+              </Col>
             </Row>
           </Container>
         </section>
         <section>
           <Container className="FlexContainer ColoredBackground PaddingTopBotttom Margins">
             <Row>
-              <article>
-                <Col
-                  large={6}
-                  medium={4}
-                  small={4}
-                  xmall={2}
-                  className=" RoundedEdges  PaddingLeftRight"
-                >
+              <Col
+                large={6}
+                medium={4}
+                small={4}
+                xmall={2}
+                className=" RoundedEdges  PaddingLeftRight"
+              >
+                <article>
                   <div className="PaddingLeftRight">
                     <div className="PaddingTopBotttom   WhiteBackground RoundedEdges Margins">
                       <h4 className="TextFormattingH4">Badge</h4>
@@ -510,16 +510,16 @@ export default function Quantum() {
                       <Tag>Example Tag</Tag>
                     </div>
                   </div>
-                </Col>
-              </article>
-              <article>
-                <Col
-                  large={6}
-                  medium={4}
-                  small={4}
-                  xmall={2}
-                  className=" RoundedEdges  PaddingLeftRight"
-                >
+                </article>
+              </Col>
+              <Col
+                large={6}
+                medium={4}
+                small={4}
+                xmall={2}
+                className=" RoundedEdges  PaddingLeftRight"
+              >
+                <article>
                   <div className="PaddingLeftRight">
                     <div className="  WhiteBackground  RoundedEdges    Margins PaddingLeftRight">
                       <h4 className="TextFormattingH4">Popover</h4>
@@ -544,8 +544,8 @@ export default function Quantum() {
                       </Tooltip>
                     </div>
                   </div>
-                </Col>
-              </article>
+                </article>
+              </Col>
             </Row>
           </Container>
         </section>
@@ -569,14 +569,14 @@ export default function Quantum() {
         <section>
           <Container className="FlexContainer ColoredBackground PaddingTopBotttom Margins">
             <Row>
-              <article>
-                <Col
-                  large={6}
-                  medium={4}
-                  small={4}
-                  xmall={2}
-                  className=" RoundedEdges  PaddingLeftRight"
-                >
+              <Col
+                large={6}
+                medium={4}
+                small={4}
+                xmall={2}
+                className=" RoundedEdges  PaddingLeftRight"
+              >
+                <article>
                   <div className="PaddingLeftRight">
                     <div className="PaddingTopBotttom   WhiteBackground RoundedEdges Margins">
                       <h4 className="TextFormattingH4">Social Button</h4>
@@ -595,16 +595,16 @@ export default function Quantum() {
                       <Icon name="info" />
                     </div>
                   </div>
-                </Col>
-              </article>
-              <article>
-                <Col
-                  large={6}
-                  medium={4}
-                  small={4}
-                  xmall={2}
-                  className=" RoundedEdges  PaddingLeftRight"
-                >
+                </article>
+              </Col>
+              <Col
+                large={6}
+                medium={4}
+                small={4}
+                xmall={2}
+                className=" RoundedEdges  PaddingLeftRight"
+              >
+                <article>
                   <div className="PaddingTopBotttom   WhiteBackground RoundedEdges Margins">
                     <h4 className="TextFormattingH4">Avatar</h4>
                     <h6 className="TextFormattingH6">
@@ -622,22 +622,22 @@ export default function Quantum() {
                     </h6>
                     <Socials items={socialMocks} />
                   </div>
-                </Col>
-              </article>
+                </article>
+              </Col>
             </Row>
           </Container>
         </section>
         <section>
           <Container className="FlexContainer ColoredBackground PaddingLeftRight Margins Overflow ">
             <Row>
-              <article>
-                <Col
-                  large={6}
-                  medium={4}
-                  small={4}
-                  xmall={2}
-                  className=" RoundedEdges  PaddingLeftRight"
-                >
+              <Col
+                large={6}
+                medium={4}
+                small={4}
+                xmall={2}
+                className=" RoundedEdges  PaddingLeftRight"
+              >
+                <article>
                   <div className="PaddingLeftRight">
                     <div className="PaddingTopBotttom   WhiteBackground RoundedEdges Margins">
                       <h4 className="TextFormattingH4">Checkbox Group</h4>
@@ -671,16 +671,16 @@ export default function Quantum() {
                       <Toggle id="right" />
                     </div>
                   </div>
-                </Col>
-              </article>
-              <article>
-                <Col
-                  large={6}
-                  medium={4}
-                  small={4}
-                  xmall={2}
-                  className=" RoundedEdges  PaddingLeftRight"
-                >
+                </article>
+              </Col>
+              <Col
+                large={6}
+                medium={4}
+                small={4}
+                xmall={2}
+                className=" RoundedEdges  PaddingLeftRight"
+              >
+                <article>
                   <div className="PaddingTopBotttom   WhiteBackground RoundedEdges Margins">
                     <h4 className="TextFormattingH4">Form</h4>
                     <h6 className="TextFormattingH6">
@@ -713,8 +713,8 @@ export default function Quantum() {
                       <Input.Password label="Password" />
                     </Form>
                   </div>
-                </Col>
-              </article>
+                </article>
+              </Col>
             </Row>
           </Container>
         </section>
