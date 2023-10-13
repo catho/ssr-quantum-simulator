@@ -32,28 +32,30 @@ export default function CathoComponentsPage() {
       <main>
         <section>
           <Container className=" ColoredBackground Margins">
-            <h4 className="TextFormattingH4">Headers</h4>
-            <h6>
-              These are responsive Headers for all Catho applications. They
-              follow Catho&apos;s style guide and its needs.
-            </h6>
             <article>
-              <h5 className="TextFormattingH5">Header Responsive</h5>
-              <HeaderResponsive
-                type="B2C"
-                isSubMenuOpen={false}
-                gtmPrefix="next-header-b2c-nosearch"
-                hasSearch
-              />
-            </article>
-            <article>
-              <h5 className="TextFormattingH5">Logged Header Responsive</h5>
-              <HeaderLoggedResponsive
-                userProfile="STATUS_I_PROFISSIONAL"
-                hasSearch
-              />
-              <h5 className="TextFormattingH5">Simple Header</h5>
-              <HeaderSimple gtmPrefix="next" />
+              <h4 className="TextFormattingH4">Headers</h4>
+              <h6>
+                These are responsive Headers for all Catho applications. They
+                follow Catho&apos;s style guide and its needs.
+              </h6>
+              <article>
+                <h5 className="TextFormattingH5">Header Responsive</h5>
+                <HeaderResponsive
+                  type="B2C"
+                  isSubMenuOpen={false}
+                  gtmPrefix="next-header-b2c-nosearch"
+                  hasSearch
+                />
+              </article>
+              <article>
+                <h5 className="TextFormattingH5">Logged Header Responsive</h5>
+                <HeaderLoggedResponsive
+                  userProfile="STATUS_I_PROFISSIONAL"
+                  hasSearch
+                />
+                <h5 className="TextFormattingH5">Simple Header</h5>
+                <HeaderSimple gtmPrefix="next" />
+              </article>
             </article>
           </Container>
           <Container className=" FlexContainer ColoredBackground Margins">
@@ -145,27 +147,27 @@ export default function CathoComponentsPage() {
             </Row>
           </Container>
           <Container className="ColoredBackground Margins">
-            <div>
+            <article>
               <h4 className="TextFormattingH4">Footers</h4>
               <h6>These are footers for all Catho applications.</h6>
-            </div>
-            <div className="Margins">
-              <article>
-                <h5 className="TextFormattingH5">
-                  Complete Footer Version with TagList
-                </h5>
-                <FooterResponsive
-                  gtmPrefix="B2C-google-tag-prefix"
-                  tagsListContent={tagListMocks}
-                />
-              </article>
-            </div>
-            <div className="Margins">
-              <article>
-                <h5 className="TextFormattingH5">Simple Footer Version</h5>
-                <FooterSimple />
-              </article>
-            </div>
+              <div className="Margins">
+                <article>
+                  <h5 className="TextFormattingH5">
+                    Complete Footer Version with TagList
+                  </h5>
+                  <FooterResponsive
+                    gtmPrefix="B2C-google-tag-prefix"
+                    tagsListContent={tagListMocks}
+                  />
+                </article>
+              </div>
+              <div className="Margins">
+                <article>
+                  <h5 className="TextFormattingH5">Simple Footer Version</h5>
+                  <FooterSimple />
+                </article>
+              </div>
+            </article>
           </Container>
         </section>
       </main>
