@@ -1,4 +1,4 @@
-import Document, { Head, Main, NextScript } from 'next/document';
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
 export default class MyDocument extends Document {
@@ -30,7 +30,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <html lang="en">
+      <Html lang="en">
         <Head>
           <link rel="stylesheet" href="/static/quantum.css" />
           <link rel="stylesheet" href="/static/styles_reset.css" />
@@ -48,7 +48,7 @@ export default class MyDocument extends Document {
             <NextScript />
           </main>
         </body>
-      </html>
+      </Html>
     );
   }
 }
