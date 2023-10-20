@@ -234,7 +234,6 @@ a:hover {
     .MobileMenu {
         top: 72px;
         width: 100%;
-        transition: 0.3s; 
         justify-content: end;
 
         text-decoration: none;
@@ -246,9 +245,6 @@ a:hover {
         width: 100%;
         align-items: end;
         padding-right: 32px;
-    }
-    .HiddenMenu {
-        display: none;
     }
 
     .DisplayNoneOnSmallScreen {
@@ -262,5 +258,9 @@ a:hover {
         display: none;
     }
     
+    .HiddenMenuNavigationItem {
+
+        display: none;
+    }
 
 }

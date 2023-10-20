@@ -6,7 +6,7 @@ import { Container, Col, Row } from '@catho/quantum';
 export default class HomePage extends App {
   componentDidMount() {
     const hiddenMenu = document.getElementById('hiddenDesktopMenu');
-    const mobileMenu = document.getElementById('mobileMenu');
+
     const menuButton = document.getElementById('menuSandwichButton');
 
     menuButton.addEventListener('click', showMenu);
@@ -21,12 +21,16 @@ export default class HomePage extends App {
         hiddenMenu.classList.add('HideMenu');
       }
 
-      if (mobileMenu.classList.contains('HideMenu') && showMobileMenu) {
-        mobileMenu.classList.add('ShowMenu');
-        mobileMenu.classList.remove('HideMenu');
-      } else {
-        mobileMenu.classList.add('HideMenu');
-        mobileMenu.classList.remove('ShowMenu');
+      if (hiddenMenu.classList.contains('MobileMenu') && showMobileMenu) {
+        hiddenMenu.classList.add('HideMenu');
+        hiddenMenu.classList.remove('MobileMenu');
+      } else if (hiddenMenu.classList.contains('HideMenu') && showMobileMenu) {
+        hiddenMenu.classList.remove('HideMenu');
+        hiddenMenu.classList.add('MobileMenu');
+      }
+
+      if (showHiddenMenu) {
+        hiddenMenu.classList.remove('MobileMenu');
       }
     }
   }
@@ -85,8 +89,14 @@ export default class HomePage extends App {
                 </nav>
               </Col>
             </Row>
-            <nav id="hiddenDesktopMenu" className="HiddenMenu HideMenu">
+            <nav id="hiddenDesktopMenu" className="HiddenMenu HideMenu ">
               <ul>
+                <li className="HiddenMenuNavigationItem">
+                  <a href="/cathocomponents">Catho Components</a>
+                </li>
+                <li className="HiddenMenuNavigationItem">
+                  <a href="/quantum">Quantum</a>
+                </li>
                 <li>
                   <a href="/render">Simulates renders</a>
                 </li>
@@ -96,23 +106,6 @@ export default class HomePage extends App {
               </ul>
             </nav>
           </Container>
-
-          <nav id="mobileMenu" className="MobileMenu HideMenu">
-            <ul>
-              <li className="HiddenMenuNavigationItem">
-                <a href="/cathocomponents">Catho Components</a>
-              </li>
-              <li className="HiddenMenuNavigationItem">
-                <a href="/quantum">Quantum</a>
-              </li>
-              <li className="HiddenMenuNavigationItem">
-                <a href="/render">Simulates renders</a>
-              </li>
-              <li className="HiddenMenuNavigationItem">
-                <a href="https://github.com/catho">Repositories</a>
-              </li>
-            </ul>
-          </nav>
         </header>
         <Container className="MainContent WhiteBackground">
           <Component {...pageProps} />
