@@ -62,7 +62,7 @@ export default function CathoComponentsPage() {
             <Row>
               <Col
                 large={6}
-                medium={4}
+                medium={6}
                 small={4}
                 xmall={2}
                 className=" RoundedEdges WhiteBackground  PaddingLeftRight"
@@ -78,7 +78,7 @@ export default function CathoComponentsPage() {
               </Col>
               <Col
                 large={6}
-                medium={4}
+                medium={6}
                 small={4}
                 xmall={2}
                 className=" RoundedEdges WhiteBackground  Margins PaddingLeftRight"
@@ -107,7 +107,7 @@ export default function CathoComponentsPage() {
             <Row>
               <Col
                 large={6}
-                medium={4}
+                medium={6}
                 small={4}
                 xmall={2}
                 className="WhiteBackground PaddingLeftRight RoundedEdges "
@@ -117,7 +117,7 @@ export default function CathoComponentsPage() {
                   <JobCard {...jobCardProps} />
                 </article>
               </Col>
-              <Col large={6} medium={4} small={4} xmall={2}>
+              <Col large={6} medium={6} small={4} xmall={2}>
                 <Container className="WhiteBackground RoundedEdges  Margins PaddingTopBotttom PaddingLeftRight">
                   <article>
                     <h4 className="TextFormattingH4">JobNotificationList</h4>
