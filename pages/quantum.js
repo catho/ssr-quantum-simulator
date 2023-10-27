@@ -107,7 +107,7 @@ export default function Quantum() {
             <Row>
               <Col
                 large={6}
-                medium={4}
+                medium={6}
                 small={4}
                 xmall={2}
                 className=" RoundedEdges  PaddingLeftRight"
@@ -145,7 +145,7 @@ export default function Quantum() {
               </Col>
               <Col
                 large={6}
-                medium={4}
+                medium={6}
                 small={4}
                 xmall={2}
                 className=" RoundedEdges  PaddingLeftRight"
@@ -210,7 +210,7 @@ export default function Quantum() {
             <Row>
               <Col
                 large={6}
-                medium={4}
+                medium={6}
                 small={4}
                 xmall={2}
                 className=" RoundedEdges  PaddingLeftRight"
@@ -256,7 +256,7 @@ export default function Quantum() {
               </Col>
               <Col
                 large={6}
-                medium={4}
+                medium={6}
                 small={4}
                 xmall={2}
                 className=" RoundedEdges  PaddingLeftRight"
@@ -313,7 +313,7 @@ export default function Quantum() {
             <Row>
               <Col
                 large={6}
-                medium={4}
+                medium={6}
                 small={4}
                 xmall={2}
                 className=" RoundedEdges  PaddingLeftRight"
@@ -384,7 +384,7 @@ export default function Quantum() {
               </Col>
               <Col
                 large={6}
-                medium={4}
+                medium={6}
                 small={4}
                 xmall={2}
                 className=" RoundedEdges  PaddingLeftRight"
@@ -460,7 +460,7 @@ export default function Quantum() {
             <Row>
               <Col
                 large={6}
-                medium={4}
+                medium={6}
                 small={4}
                 xmall={2}
                 className=" RoundedEdges  PaddingLeftRight"
@@ -489,7 +489,7 @@ export default function Quantum() {
               </Col>
               <Col
                 large={6}
-                medium={4}
+                medium={6}
                 small={4}
                 xmall={2}
                 className=" RoundedEdges  PaddingLeftRight"
@@ -540,7 +540,7 @@ export default function Quantum() {
             <Row>
               <Col
                 large={6}
-                medium={4}
+                medium={6}
                 small={4}
                 xmall={2}
                 className=" RoundedEdges  PaddingLeftRight"
@@ -566,7 +566,7 @@ export default function Quantum() {
               </Col>
               <Col
                 large={6}
-                medium={4}
+                medium={6}
                 small={4}
                 xmall={2}
                 className=" RoundedEdges  PaddingLeftRight"
@@ -599,7 +599,7 @@ export default function Quantum() {
             <Row>
               <Col
                 large={6}
-                medium={4}
+                medium={6}
                 small={4}
                 xmall={2}
                 className=" RoundedEdges  PaddingLeftRight"
@@ -637,7 +637,7 @@ export default function Quantum() {
               </Col>
               <Col
                 large={6}
-                medium={4}
+                medium={6}
                 small={4}
                 xmall={2}
                 className=" RoundedEdges  PaddingLeftRight"
