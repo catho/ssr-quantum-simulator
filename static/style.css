@@ -246,6 +246,10 @@ a:hover {
         display: none;
     }
 
+    .HiddenMenu ul {
+        gap: 0px;
+    }
+
 }
 
 @media(min-width: 1024px) {
