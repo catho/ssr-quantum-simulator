@@ -94,7 +94,6 @@ export default class HomePage extends App {
               </Col>
             </Row>
             <nav
-              aria-hidden="true"
               aria-label="Hidden Navigation Menu"
               id="hiddenDesktopMenu"
               className="HiddenMenu HideMenu"
