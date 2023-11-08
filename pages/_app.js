@@ -52,7 +52,6 @@ export default class HomePage extends App {
           <Container>
             <Row>
               <Col
-                role="banner"
                 medium={4}
                 small={4}
                 xsmall={2}
