@@ -67,7 +67,7 @@ export default class HomePage extends App {
               </Col>
               <Col medium={8} small={4} xsmall={2} large={8}>
                 <nav
-                  aria-label="Navigation Menu"
+                  aria-label="Menu de Navegação"
                   id="visibleDesktopMenu"
                   className="VisibleMenu  FlexEndPositioning"
                 >
@@ -80,9 +80,10 @@ export default class HomePage extends App {
                     </li>
                     <li>
                       <button
+                        aria-haspopup="menu"
                         aria-controls="hiddenDesktopMenu"
                         aria-expanded="false"
-                        aria-label="Sandwich Button"
+                        aria-label="Botão Sanduíche"
                         className="SandwichButton"
                         id="menuSandwichButton"
                       >
@@ -94,7 +95,8 @@ export default class HomePage extends App {
               </Col>
             </Row>
             <nav
-              aria-label="Hidden Navigation Menu"
+              aria-hidden="true"
+              aria-label="Menu de Navegação Retraído"
               id="hiddenDesktopMenu"
               className="HiddenMenu HideMenu"
             >
