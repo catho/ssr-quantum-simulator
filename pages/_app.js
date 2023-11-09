@@ -2,6 +2,7 @@ import App from 'next/app';
 import Head from 'next/head';
 import GlobalStyle from '@catho/quantum/GlobalStyle';
 import { Container, Col, Row } from '@catho/quantum';
+import ScrollUpButton from '../components/ScrollUpButton';
 
 export default class HomePage extends App {
   componentDidMount() {
@@ -122,6 +123,7 @@ export default class HomePage extends App {
             <p>Por designer com mão de android</p>
           </Container>
         </footer>
+        <ScrollUpButton />
       </>
     );
   }
