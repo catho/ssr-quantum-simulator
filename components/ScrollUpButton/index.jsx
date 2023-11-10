@@ -26,7 +26,7 @@ const ScrollUpButton = () => {
       <div className={styles.ScrollUpButton}>
         {scrollUpButton && (
           <Button size="small" onClick={scrollTop}>
-            Topo
+            Voltar ao Topo
           </Button>
         )}
       </div>
