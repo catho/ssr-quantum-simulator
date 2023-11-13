@@ -24,9 +24,7 @@ const ScrollUpButton = () => {
   return (
       <div className={styles.ScrollUpButton}>
         {scrollUpButton && (
-          <Button size="small" onClick={scrollTop}>
-            Voltar ao Topo
-          </Button>
+          <Button size="small" icon="keyboard_arrow_up" onClick={scrollTop} />
         )}
       </div>
   );
