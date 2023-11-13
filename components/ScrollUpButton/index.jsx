@@ -22,7 +22,6 @@ const ScrollUpButton = () => {
   };
 
   return (
-    <>
       <div className={styles.ScrollUpButton}>
         {scrollUpButton && (
           <Button size="small" onClick={scrollTop}>
@@ -30,7 +29,6 @@ const ScrollUpButton = () => {
           </Button>
         )}
       </div>
-    </>
   );
 };
 
