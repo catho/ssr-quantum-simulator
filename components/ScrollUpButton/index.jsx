@@ -5,8 +5,9 @@ import styles from './ScrollUpButton.module.css';
 const ScrollUpButton = () => {
   const [scrollUpButton, setScrollUpButton] = useState(false);
   useEffect(() => {
+    const windowHeight = 75;
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > windowHeight) {
         setScrollUpButton(true);
       } else {
         setScrollUpButton(false);
@@ -17,16 +18,16 @@ const ScrollUpButton = () => {
   const scrollTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'auto',
+      behavior: 'smooth',
     });
   };
 
   return (
-      <div className={styles.ScrollUpButton}>
-        {scrollUpButton && (
-          <Button size="small" icon="keyboard_arrow_up" onClick={scrollTop} />
-        )}
-      </div>
+    <div className={styles.ScrollUpButton}>
+      {scrollUpButton && (
+        <Button size="small" icon="keyboard_arrow_up" onClick={scrollTop} />
+      )}
+    </div>
   );
 };
 
