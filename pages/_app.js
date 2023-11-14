@@ -67,7 +67,7 @@ export default class HomePage extends App {
               </Col>
               <Col medium={8} small={4} xsmall={2} large={8}>
                 <nav
-                  aria-label="Menu de Navegação"
+                  aria-label="Menu Principal"
                   id="visibleDesktopMenu"
                   className="VisibleMenu  FlexEndPositioning"
                 >
