@@ -95,7 +95,7 @@ export default class HomePage extends App {
               </Col>
             </Row>
             <nav
-              aria-label="Menu de Navegação Retraído"
+              aria-label="Menu de opções"
               id="hiddenDesktopMenu"
               className="HiddenMenu HideMenu"
             >
