@@ -83,7 +83,7 @@ export default class HomePage extends App {
                         aria-haspopup="menu"
                         aria-controls="hiddenDesktopMenu"
                         aria-expanded="false"
-                        aria-label="Botão Sanduíche"
+                        aria-label="Menu"
                         className="SandwichButton"
                         id="menuSandwichButton"
                       >
