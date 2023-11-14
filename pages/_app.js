@@ -67,18 +67,23 @@ export default class HomePage extends App {
               </Col>
               <Col medium={8} small={4} xsmall={2} large={8}>
                 <nav
+                  aria-label="Menu Principal"
                   id="visibleDesktopMenu"
                   className="VisibleMenu  FlexEndPositioning"
                 >
-                  <ul className="NavList">
-                    <li className="DisplayNoneOnSmallScreen">
+                  <ul role="menu" className="NavList">
+                    <li role="menuitem" className="DisplayNoneOnSmallScreen">
                       <a href="/cathocomponents">Catho Components</a>
                     </li>
-                    <li className="DisplayNoneOnSmallScreen">
+                    <li role="menuitem" className="DisplayNoneOnSmallScreen">
                       <a href="/quantum">Quantum</a>
                     </li>
                     <li>
                       <button
+                        aria-haspopup="menu"
+                        aria-controls="hiddenDesktopMenu"
+                        aria-expanded="false"
+                        aria-label="Menu"
                         className="SandwichButton"
                         id="menuSandwichButton"
                       >
@@ -89,18 +94,22 @@ export default class HomePage extends App {
                 </nav>
               </Col>
             </Row>
-            <nav id="hiddenDesktopMenu" className="HiddenMenu HideMenu ">
-              <ul>
-                <li className="HiddenMenuNavigationItem">
+            <nav
+              aria-label="Menu de opções"
+              id="hiddenDesktopMenu"
+              className="HiddenMenu HideMenu"
+            >
+              <ul role="menu">
+                <li role="menuitem" className="HiddenMenuNavigationItem">
                   <a href="/cathocomponents">Catho Components</a>
                 </li>
-                <li className="HiddenMenuNavigationItem">
+                <li role="menuitem" className="HiddenMenuNavigationItem">
                   <a href="/quantum">Quantum</a>
                 </li>
-                <li>
+                <li role="menuitem">
                   <a href="/render">Simulates renders</a>
                 </li>
-                <li>
+                <li role="menuitem">
                   <a href="https://github.com/catho">Repositories</a>
                 </li>
               </ul>
