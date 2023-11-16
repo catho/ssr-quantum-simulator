@@ -5,7 +5,7 @@ import styles from './ScrollUpButton.module.css';
 const ScrollUpButton = () => {
   const [scrollUpButton, setScrollUpButton] = useState(false);
   useEffect(() => {
-    const windowHeight = 75;
+    const headerHeight = 75;
     window.addEventListener('scroll', () => {
       if (window.scrollY > windowHeight) {
         setScrollUpButton(true);
