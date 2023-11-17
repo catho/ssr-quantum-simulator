@@ -5,36 +5,36 @@ import { Container, Col, Row } from '@catho/quantum';
 import ScrollUpButton from '../components/ScrollUpButton';
 
 export default class HomePage extends App {
-  componentDidMount() {
-    const hiddenMenu = document.getElementById('hiddenDesktopMenu');
+  // componentDidMount() {
+  //   const hiddenMenu = document.getElementById('hiddenDesktopMenu');
 
-    const menuButton = document.getElementById('menuSandwichButton');
+  //   const menuButton = document.getElementById('menuSandwichButton');
 
-    menuButton.addEventListener('click', showMenu);
-    function showMenu() {
-      const showHiddenMenu = window.innerWidth > 1023;
-      const showMobileMenu = window.innerWidth < 1024;
-      if (hiddenMenu.classList.contains('HideMenu') && showHiddenMenu) {
-        hiddenMenu.classList.add('ShowMenu');
-        hiddenMenu.classList.remove('HideMenu');
-      } else {
-        hiddenMenu.classList.remove('ShowMenu');
-        hiddenMenu.classList.add('HideMenu');
-      }
+  //   menuButton.addEventListener('click', showMenu);
+  //   function showMenu() {
+  //     const showHiddenMenu = window.innerWidth > 1023;
+  //     const showMobileMenu = window.innerWidth < 1024;
+  //     if (hiddenMenu.classList.contains('HideMenu') && showHiddenMenu) {
+  //       hiddenMenu.classList.add('ShowMenu');
+  //       hiddenMenu.classList.remove('HideMenu');
+  //     } else {
+  //       hiddenMenu.classList.remove('ShowMenu');
+  //       hiddenMenu.classList.add('HideMenu');
+  //     }
 
-      if (hiddenMenu.classList.contains('MobileMenu') && showMobileMenu) {
-        hiddenMenu.classList.add('HideMenu');
-        hiddenMenu.classList.remove('MobileMenu');
-      } else if (hiddenMenu.classList.contains('HideMenu') && showMobileMenu) {
-        hiddenMenu.classList.remove('HideMenu');
-        hiddenMenu.classList.add('MobileMenu');
-      }
+  //     if (hiddenMenu.classList.contains('MobileMenu') && showMobileMenu) {
+  //       hiddenMenu.classList.add('HideMenu');
+  //       hiddenMenu.classList.remove('MobileMenu');
+  //     } else if (hiddenMenu.classList.contains('HideMenu') && showMobileMenu) {
+  //       hiddenMenu.classList.remove('HideMenu');
+  //       hiddenMenu.classList.add('MobileMenu');
+  //     }
 
-      if (showHiddenMenu) {
-        hiddenMenu.classList.remove('MobileMenu');
-      }
-    }
-  }
+  //     if (showHiddenMenu) {
+  //       hiddenMenu.classList.remove('MobileMenu');
+  //     }
+  //   }
+  // }
 
   render() {
     const { Component, pageProps } = this.props;
@@ -80,41 +80,50 @@ export default class HomePage extends App {
                       <a href="/quantum">Quantum</a>
                     </li>
                     <li>
-                      <button
-                        aria-haspopup="menu"
+                      <input
+                        type="checkbox"
                         aria-controls="hiddenDesktopMenu"
                         aria-expanded="false"
                         aria-label="Menu"
-                        className="SandwichButton"
                         id="menuSandwichButton"
+                      />
+                      <label
+                        className="SandwichButton"
+                        htmlFor="menuSandwichButton"
                       >
                         &#x2630;
-                      </button>
+                      </label>
+                      <nav
+                        aria-label="Menu de opções"
+                        id="hiddenDesktopMenu"
+                        className="HiddenMenu  "
+                      >
+                        <ul role="menu">
+                          <li
+                            role="menuitem"
+                            className="HiddenMenuNavigationItem"
+                          >
+                            <a href="/cathocomponents">Catho Components</a>
+                          </li>
+                          <li
+                            role="menuitem"
+                            className="HiddenMenuNavigationItem"
+                          >
+                            <a href="/quantum">Quantum</a>
+                          </li>
+                          <li role="menuitem">
+                            <a href="/render">Simulates renders</a>
+                          </li>
+                          <li role="menuitem">
+                            <a href="https://github.com/catho">Repositories</a>
+                          </li>
+                        </ul>
+                      </nav>
                     </li>
                   </ul>
                 </nav>
               </Col>
             </Row>
-            <nav
-              aria-label="Menu de opções"
-              id="hiddenDesktopMenu"
-              className="HiddenMenu HideMenu"
-            >
-              <ul role="menu">
-                <li role="menuitem" className="HiddenMenuNavigationItem">
-                  <a href="/cathocomponents">Catho Components</a>
-                </li>
-                <li role="menuitem" className="HiddenMenuNavigationItem">
-                  <a href="/quantum">Quantum</a>
-                </li>
-                <li role="menuitem">
-                  <a href="/render">Simulates renders</a>
-                </li>
-                <li role="menuitem">
-                  <a href="https://github.com/catho">Repositories</a>
-                </li>
-              </ul>
-            </nav>
           </Container>
         </header>
         <Container className="MainContent WhiteBackground">

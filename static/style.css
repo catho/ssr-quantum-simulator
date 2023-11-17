@@ -101,6 +101,7 @@ body{
     font-weight: bold;
     align-items: center;
     justify-content: flex-end;
+
 }
 
 .HiddenMenu ul {
@@ -257,4 +258,26 @@ a:hover {
         display: none;
     }
 
+}
+
+#hiddenDesktopMenu {
+    display: none;
+    
+}
+
+#menuSandwichButton {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    
+}
+
+
+
+input:checked ~ #hiddenDesktopMenu {
+    display: flex;
+    align-self: flex-end;
+
+    
+    
 }
