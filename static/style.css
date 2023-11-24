@@ -197,6 +197,7 @@ a:hover {
         display: flex;
         flex-direction:column;
         position: relative;
+        gap: 16px;
     }
 
 }
@@ -205,7 +206,7 @@ a:hover {
     .HiddenMenu ul {
         display: flex;
         flex-direction:row;
-        gap: 50px;
+        gap: 48px;
     }
     .HiddenMenuNavigationItem {
         display: none;
