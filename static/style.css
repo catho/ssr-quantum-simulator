@@ -18,10 +18,6 @@ body{
     position: relative;
 }
 
-
-
-
-
 .NavList {
 
     margin: 0;
@@ -29,8 +25,6 @@ body{
     width: 50%;
     display: contents;
 }
-
-
 
 .Footer {
     min-height: 66px;
@@ -51,12 +45,6 @@ body{
 
 }
 
-.CathoLogo {
-    display: flex; 
-    align-items: center;
-
-}
-
 .FlexEndPositioning {
     display: flex;
     justify-content: flex-end;
@@ -70,8 +58,6 @@ body{
     align-items: center;
 }
 
-
-
 .VisibleMenu a {
     color: #BCBF12;
 }
@@ -82,6 +68,7 @@ body{
     color: #BCBF12;
     font-size: 32px;
     font-family: 'Nunito', sans-serif;
+    justify-self: flex-end;
 }
 
 .SandwichButton:hover{
@@ -89,27 +76,22 @@ body{
     cursor: pointer;
 }
 
-.HideMenu{
-    display: none;
-}
-
-.ShowMenu{
-    display: flex;
-}
-
 .HiddenMenu{
     font-weight: bold;
-    align-items: center;
+    display: flex;
+    background-color: black;
+    width: 100%;
     justify-content: flex-end;
+    grid-column: 1 / span 3;
 }
 
 .HiddenMenu ul {
     display: flex;
-    gap: 50px;
-    padding-right: 12px;
 }
 
-
+.HiddenMenu li {
+    padding-right: 12px;
+}
 
 .HiddenMenu a{
     color: #CCCCCC;
@@ -138,11 +120,6 @@ a:hover {
     flex-wrap: wrap;
 }
 
-
-.AlignCenter {
-    display:flex;
-    align-items: center;
-}
 .RoundedEdges {
     border-radius: 8px;
 }
@@ -155,7 +132,6 @@ a:hover {
     background-color: white;
 }
 
-
 .PaddingTopBotttom{
     padding: 8px ;
 }
@@ -164,34 +140,18 @@ a:hover {
     padding: 0 8px;
 }
 
-
 .TextFormattingH4{
     color: #be056b;
     font-weight: 900;
 }
-
 
 .TextFormattingH5{
     color: #d4388e;
     font-weight: 600;
 }
 
-.Width {
-    max-width: 600px;
-    min-width: 400px;
-}
-
-.MarginLeftRight {
-    margin-left: 8px;
-    margin-right: 8px;
-}
-
 .Overflow {
     overflow: auto;
-}
-
-.Height {
-    height: 138px;
 }
 
 .Borders {
@@ -201,12 +161,7 @@ a:hover {
     text-align: center;
 }
 
-.InlineBlock {
-    display: inline-block;
-}
-
 .HiddenMenuNavigationItem {
-    
     display: flex;
     font-weight: bold;
     justify-content: space-between;
@@ -215,7 +170,6 @@ a:hover {
 
 .HiddenMenuNavigationItem a{
     color: #CCCCCC;
-    
 }
 
 .HiddenMenuNavigationItem a:hover {
@@ -223,38 +177,52 @@ a:hover {
     text-decoration: none;
 }
 
-
-
-
-
+.NavigationBar{
+    display: grid ;
+    grid-template-columns: 138px auto 48px;
+    grid-template-rows: 1fr auto;
+    align-items: center;
+}
 
 
 
 @media(max-width: 1023px) {
 
 
-    .MobileMenu ul {
-        color: #CCCCCC;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: end;
-        padding-right: 32px;
-    }
-
     .DisplayNoneOnSmallScreen {
         display: none;
     }
 
     .HiddenMenu ul {
-        gap: 0px;
+        display: flex;
+        flex-direction:column;
+        position: relative;
+        gap: 16px;
     }
 
 }
 
 @media(min-width: 1024px) {
+    .HiddenMenu ul {
+        display: flex;
+        flex-direction:row;
+        gap: 48px;
+    }
     .HiddenMenuNavigationItem {
         display: none;
     }
+}
 
+#hiddenDesktopMenu {
+    display: none;
+}
+
+#menuSandwichButton {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+input:checked ~ #hiddenDesktopMenu {
+    display: flex;
 }
