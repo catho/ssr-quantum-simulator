@@ -224,5 +224,4 @@ a:hover {
 
 input:checked ~ #hiddenDesktopMenu {
     display: flex;
-    align-self: flex-end;
 }
