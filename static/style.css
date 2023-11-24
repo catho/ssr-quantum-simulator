@@ -87,7 +87,6 @@ body{
 
 .HiddenMenu ul {
     display: flex;
-    column-gap: 10px;
 }
 
 .HiddenMenu li {
