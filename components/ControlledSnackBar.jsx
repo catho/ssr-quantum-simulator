@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, SnackBar } from '@catho/quantum';
 
-class ControledSnackBar extends React.Component {
+class ControlledSnackBar extends React.Component {
   constructor() {
     super();
 
@@ -39,4 +39,4 @@ class ControledSnackBar extends React.Component {
   }
 }
 
-export default ControledSnackBar;
+export default ControlledSnackBar;
