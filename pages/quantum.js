@@ -319,7 +319,7 @@ export default function Quantum() {
                 <article>
                   <article className="ComponentContainer WhiteBackground">
                     <h4 className="ComponentTitle">ChargeBar</h4>
-                    <h6 className="WhiteBackground">
+                    <h6>
                       ChargeBar shows the level the user is to be able to
                       complete their stats to the maximum.
                     </h6>
