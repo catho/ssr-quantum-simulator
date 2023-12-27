@@ -112,6 +112,7 @@ a:hover {
     flex: 1;
     margin-bottom: 8em;
     padding-top: 8px;
+    background-color: white;
 }
 
 .Margins {
@@ -128,15 +129,13 @@ a:hover {
     border-radius: 8px;
 }
 
-.ColoredBackground{
+.ColoredContainer{
     background-color:rgb(240, 241, 247);
     margin: 16px 0;
     padding: 8px
 }
 
-.WhiteBackground{
-    background-color: white;
-}
+
 
 .PaddingLeftRight{
     padding: 0 8px;
@@ -234,4 +233,5 @@ input:checked ~ #hiddenDesktopMenu {
     padding: 8px;
     margin: 16px 0;
     border-radius: 8px;
+    background-color: white;
 }

@@ -67,11 +67,11 @@ export default function Quantum() {
       <GlobalStyle />
       <main>
         <section>
-          <Container className="ColoredBackground">
+          <Container className="ColoredContainer">
             <article>
               <Row>
                 <Col className=" RoundedEdges  PaddingLeftRight">
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle ">Breadcrumbs</h4>
                     <h6>
                       Breadcrumbs creates a trail of links to help the user to
@@ -84,7 +84,7 @@ export default function Quantum() {
               </Row>
               <Row>
                 <Col className=" RoundedEdges  PaddingLeftRight">
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle">TabbedView</h4>
                     <h6>
                       TabbedView and Tab are components created to organize
@@ -103,7 +103,7 @@ export default function Quantum() {
           </Container>
         </section>
         <section>
-          <Container className="FlexContainer ColoredBackground">
+          <Container className="FlexContainer ColoredContainer">
             <Row>
               <Col
                 large={6}
@@ -113,7 +113,7 @@ export default function Quantum() {
                 className=" RoundedEdges PaddingLeftRight"
               >
                 <article>
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle">Container</h4>
                     <h6>
                       Containers wrap around contents and can be used in
@@ -121,7 +121,7 @@ export default function Quantum() {
                     </h6>
                     <Container>This is a container.</Container>
                   </article>
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle">Hide</h4>
                     <h6>Hide will suppress an element in small devices.</h6>
                     <Hide xsmall className="Margins PaddingLeftRight">
@@ -131,7 +131,7 @@ export default function Quantum() {
                       </Row>
                     </Hide>
                   </article>
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle">Link</h4>
                     <h6>
                       Link styled according to Catho&apos;s Style Guide. Makes
@@ -149,7 +149,7 @@ export default function Quantum() {
                 className=" RoundedEdges  PaddingLeftRight"
               >
                 <article>
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle">Rows and Colums</h4>
                     <h6>
                       Rows are wrappers for columns. Each column has horizontal
@@ -181,7 +181,7 @@ export default function Quantum() {
                       </Col>
                     </Row>
                   </article>
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle">Lists</h4>
                     <h6>
                       List is a component with continuous, vertical indexes of
@@ -204,7 +204,7 @@ export default function Quantum() {
           </Container>
         </section>
         <section>
-          <Container className="FlexContainer ColoredBackground">
+          <Container className="FlexContainer ColoredContainer">
             <Row>
               <Col
                 large={6}
@@ -214,14 +214,14 @@ export default function Quantum() {
                 className=" RoundedEdges  PaddingLeftRight"
               >
                 <article>
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle">Autocomplete</h4>
                     <h6>
                       Styled input component with autocomplete suggestions
                     </h6>
                     <AutoComplete suggestions={['AutoComplete suggestion']} />
                   </article>
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle">Dropdown</h4>
                     <h6>
                       Styled dropwdown menu component following Catho&apos;s
@@ -229,7 +229,7 @@ export default function Quantum() {
                     </h6>
                     <Dropdown items={dropdownMenuMocks} />
                   </article>
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle">DropdownLight</h4>
                     <h6>
                       Styled dropwdown menu component without the external lib
@@ -238,7 +238,7 @@ export default function Quantum() {
                     </h6>
                     <DropdownLight items={dropdownMenuMocks} />
                   </article>
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle">TextArea</h4>
                     <h6>
                       Styled text area component following Catho&apos;s Style
@@ -260,7 +260,7 @@ export default function Quantum() {
                 className=" RoundedEdges  PaddingLeftRight"
               >
                 <article>
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle">Card</h4>
                     <h6>
                       Cards contain a content and actions about a single
@@ -282,7 +282,7 @@ export default function Quantum() {
                       <Card.Footer>Footer of the Card</Card.Footer>
                     </Card>
                   </article>
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle">Alert</h4>
                     <h6>
                       Alerts are used for items that need to be labeled,
@@ -290,7 +290,7 @@ export default function Quantum() {
                     </h6>
                     <Alert>Alert Test</Alert>
                   </article>
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle">Accordion</h4>
                     <h6>
                       An accordion is a vertical stack of interactive headings
@@ -307,7 +307,7 @@ export default function Quantum() {
           </Container>
         </section>
         <section>
-          <Container className="FlexContainer ColoredBackground">
+          <Container className="FlexContainer ColoredContainer">
             <Row>
               <Col
                 large={6}
@@ -317,7 +317,7 @@ export default function Quantum() {
                 className=" RoundedEdges  PaddingLeftRight"
               >
                 <article>
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle">ChargeBar</h4>
                     <h6>
                       ChargeBar shows the level the user is to be able to
@@ -325,7 +325,7 @@ export default function Quantum() {
                     </h6>
                     <ChargeBar />
                   </article>
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle">RangeSlider</h4>
                     <h6>
                       RangeSlider is a component to select a value from a
@@ -336,7 +336,7 @@ export default function Quantum() {
                     </h6>
                     <RangeSlider />
                   </article>
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle">ProgressBar</h4>
                     <h6>
                       Progress bars are used to give the user a feedback on the
@@ -344,7 +344,7 @@ export default function Quantum() {
                     </h6>
                     <ProgressBar />
                   </article>
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle">Stepper</h4>
                     <h6>
                       The Stepper component is a visual tool to show progress
@@ -353,7 +353,7 @@ export default function Quantum() {
                     <Stepper />
                   </article>
                   <div>
-                    <article className="ComponentContainer WhiteBackground">
+                    <article className="ComponentContainer">
                       <h4 className="ComponentTitle">CircularLoader</h4>
                       <h6>
                         The Stepper component is a visual tool to show progress
@@ -361,7 +361,7 @@ export default function Quantum() {
                       </h6>
                       <CircularLoader />
                     </article>
-                    <article className="ComponentContainer WhiteBackground">
+                    <article className="ComponentContainer">
                       <h4 className="ComponentTitle">Skeleton</h4>
                       <h6>
                         The Skeleton is a component that replaces others while
@@ -370,7 +370,7 @@ export default function Quantum() {
                       <Skeleton />
                     </article>
                   </div>
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle">Pagination</h4>
                     <h6>
                       Add pagination buttons to help splitting up long contents
@@ -388,7 +388,7 @@ export default function Quantum() {
                 className=" RoundedEdges  PaddingLeftRight"
               >
                 <article>
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle">Button</h4>
                     <h6>
                       Buttons express what will happen when the user clicks or
@@ -396,7 +396,7 @@ export default function Quantum() {
                     </h6>
                     <Button>Simple Button</Button>
                   </article>
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle">ControlledDialog</h4>
                     <h6>
                       ControlledDialog is a button that activates a dialog
@@ -406,7 +406,7 @@ export default function Quantum() {
                     </h6>
                     <ControlledDialog />
                   </article>
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle">Hamburger</h4>
                     <h6>
                       Hamburger component is used for opening mobile menu. You
@@ -415,7 +415,7 @@ export default function Quantum() {
                     </h6>
                     <Hamburger inverted />
                   </article>
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle">SegmentedControl</h4>
                     <h6>
                       The Segmented control component is a linear set of two or
@@ -427,7 +427,7 @@ export default function Quantum() {
                       items={segmentedControlMock}
                     />
                   </article>
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle">ControlledModal</h4>
                     <h6>
                       Modals inform users about a task and can contain critical
@@ -437,7 +437,7 @@ export default function Quantum() {
                     </h6>
                     <ControlledModal />
                   </article>
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle">ControlledSnackBar</h4>
                     <h6>
                       SnackBars are used to show an alert about the action that
@@ -454,7 +454,7 @@ export default function Quantum() {
           </Container>
         </section>
         <section>
-          <Container className="FlexContainer ColoredBackground">
+          <Container className="FlexContainer ColoredContainer">
             <Row>
               <Col
                 large={6}
@@ -464,7 +464,7 @@ export default function Quantum() {
                 className=" RoundedEdges  PaddingLeftRight"
               >
                 <article>
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle">Badge</h4>
                     <h6>
                       Badges are used for showing the quantity of something,
@@ -474,7 +474,7 @@ export default function Quantum() {
                       <Tag>Example Badge</Tag>
                     </Badge>
                   </article>
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle">Tag</h4>
                     <h6>
                       Tags are used for items that need to be labeled,
@@ -493,7 +493,7 @@ export default function Quantum() {
                 className=" RoundedEdges  PaddingLeftRight"
               >
                 <article>
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle">Popover</h4>
                     <h6 className="TexdtFormattingH6">
                       Tags are used for items that need to be labeled,
@@ -504,7 +504,7 @@ export default function Quantum() {
                       Example PopOver Trigger
                     </Popover>
                   </article>
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle">Tooltip</h4>
                     <h6>
                       Tooltips provide additional information upon hover or
@@ -521,8 +521,8 @@ export default function Quantum() {
           </Container>
         </section>
         <section>
-          <Container className="ColoredBackground">
-            <article className="ComponentContainer WhiteBackground">
+          <Container className="ColoredContainer">
+            <article className="ComponentContainer">
               <h4 className="ComponentTitle">Carousel</h4>
               <h6>
                 Carousel is a component that align cards with a series of
@@ -534,7 +534,7 @@ export default function Quantum() {
           </Container>
         </section>
         <section>
-          <Container className="FlexContainer ColoredBackground">
+          <Container className="FlexContainer ColoredContainer">
             <Row>
               <Col
                 large={6}
@@ -544,7 +544,7 @@ export default function Quantum() {
                 className=" RoundedEdges  PaddingLeftRight"
               >
                 <article>
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle">Social Button</h4>
                     <h6>
                       These buttons are used to run actions related to their
@@ -556,7 +556,7 @@ export default function Quantum() {
                       <SocialButton provider="google" />
                     </div>
                   </article>
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle">Info Icon</h4>
                     <Icon name="info" />
                   </article>
@@ -570,7 +570,7 @@ export default function Quantum() {
                 className="RoundedEdges PaddingLeftRight"
               >
                 <article>
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle">Avatar</h4>
                     <h6>
                       Avatars are used to display a thumbnail of the u
@@ -580,7 +580,7 @@ export default function Quantum() {
                     </h6>
                     <Avatar />
                   </article>
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle">Socials</h4>
                     <h6>Socials show the icons of respective Social Medias </h6>
                     <Socials items={socialMocks} />
@@ -591,7 +591,7 @@ export default function Quantum() {
           </Container>
         </section>
         <section>
-          <Container className="FlexContainer ColoredBackground PaddingLeftRight Overflow ">
+          <Container className="FlexContainer ColoredContainer PaddingLeftRight Overflow ">
             <Row>
               <Col
                 large={6}
@@ -601,7 +601,7 @@ export default function Quantum() {
                 className="RoundedEdges PaddingLeftRight"
               >
                 <article>
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle">Checkbox Group</h4>
                     <h6>
                       Gets values from a single onChange callback prop and apply
@@ -609,7 +609,7 @@ export default function Quantum() {
                     </h6>
                     <CheckboxGroup error="Some error" options={checkBoxMocks} />
                   </article>
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle">Radio Group</h4>
                     <h6>
                       Radio group is a list of radio buttons that are used when
@@ -621,7 +621,7 @@ export default function Quantum() {
                       options={radioGroupMocks}
                     />
                   </article>
-                  <article className="ComponentContainer WhiteBackground">
+                  <article className="ComponentContainer">
                     <h4 className="ComponentTitle">Toggle</h4>
                     <h6>
                       Toggle is a control that is used to quickly switch between
@@ -638,7 +638,7 @@ export default function Quantum() {
                 xmall={2}
                 className="RoundedEdges PaddingLeftRight"
               >
-                <article className="ComponentContainer WhiteBackground">
+                <article className="ComponentContainer">
                   <h4 className="ComponentTitle">Form</h4>
                   <h6>
                     A Form displays a set of related user input fields in a

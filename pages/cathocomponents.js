@@ -31,7 +31,7 @@ export default function CathoComponentsPage() {
       </Head>
       <main>
         <section>
-          <Container className="ColoredBackground">
+          <Container className="ColoredContainer">
             <article>
               <h4 className="ComponentTitle">Headers</h4>
               <h6>
@@ -58,14 +58,14 @@ export default function CathoComponentsPage() {
               </article>
             </article>
           </Container>
-          <Container className=" FlexContainer ColoredBackground">
+          <Container className=" FlexContainer ColoredContainer">
             <Row>
               <Col
                 large={6}
                 medium={6}
                 small={4}
                 xmall={2}
-                className="ComponentContainer WhiteBackground"
+                className="ComponentContainer"
               >
                 <article>
                   <h4 className="ComponentTitle">Password Field</h4>
@@ -81,7 +81,7 @@ export default function CathoComponentsPage() {
                 medium={6}
                 small={4}
                 xmall={2}
-                className="ComponentContainer WhiteBackground"
+                className="ComponentContainer"
               >
                 <article>
                   <h4 className="ComponentTitle">BarChart</h4>
@@ -94,7 +94,7 @@ export default function CathoComponentsPage() {
               </Col>
             </Row>
           </Container>
-          <Container className="ColoredBackground">
+          <Container className="ColoredContainer">
             <article>
               <h4 className="ComponentTitle">CommentsBox</h4>
               <h6>A simple way of displaying a form or alert.</h6>
@@ -103,14 +103,14 @@ export default function CathoComponentsPage() {
               </CommentsBox>
             </article>
           </Container>
-          <Container className=" ColoredBackground FlexContainer">
+          <Container className=" ColoredContainer FlexContainer">
             <Row>
               <Col
                 large={6}
                 medium={6}
                 small={4}
                 xmall={2}
-                className="ComponentContainer WhiteBackground"
+                className="ComponentContainer"
               >
                 <article>
                   <h4 className="ComponentTitle">JobCard</h4>
@@ -118,7 +118,7 @@ export default function CathoComponentsPage() {
                 </article>
               </Col>
               <Col large={6} medium={6} small={4} xmall={2}>
-                <Container className="ComponentContainer WhiteBackground">
+                <Container className="ComponentContainer">
                   <article>
                     <h4 className="ComponentTitle">JobNotificationList</h4>
                     <h6>A simple list of cards of job notifications.</h6>
@@ -126,7 +126,7 @@ export default function CathoComponentsPage() {
                   </article>
                 </Container>
 
-                <Container className="ComponentContainer WhiteBackground">
+                <Container className="ComponentContainer">
                   <article>
                     <h4 className="ComponentTitle">DayPicker</h4>
                     <h6>
@@ -136,7 +136,7 @@ export default function CathoComponentsPage() {
                     <DayPicker />
                   </article>
                 </Container>
-                <Container className="ComponentContainer WhiteBackground">
+                <Container className="ComponentContainer">
                   <article>
                     <h4 className="ComponentTitle">HorizontalMenu</h4>
                     <h6>A mobile navigation bar with a text and an icon.</h6>
@@ -146,7 +146,7 @@ export default function CathoComponentsPage() {
               </Col>
             </Row>
           </Container>
-          <Container className="ColoredBackground">
+          <Container className="ColoredContainer">
             <article>
               <h4 className="ComponentTitle">Footers</h4>
               <h6>These are footers for all Catho applications.</h6>

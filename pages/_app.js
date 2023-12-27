@@ -71,7 +71,7 @@ export default class HomePage extends App {
             </div>
           </Container>
         </header>
-        <Container className="MainContent WhiteBackground">
+        <Container className="MainContent">
           <Component {...pageProps} />
         </Container>
         <footer className="Footer-wrapper">
