@@ -71,11 +71,11 @@ export default class HomePage extends App {
             </div>
           </Container>
         </header>
-        <Container className="MainContent WhiteBackground">
+        <Container className="MainContent">
           <Component {...pageProps} />
         </Container>
-        <footer className="Footer">
-          <Container>
+        <footer className="Footer-wrapper">
+          <Container className="Footer-text">
             <p>
               Essa tela foi especialmente desenvolvida para a dev.Ela
               maravilhosa da ACME.

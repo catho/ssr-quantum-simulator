@@ -67,13 +67,13 @@ export default function Quantum() {
       <GlobalStyle />
       <main>
         <section>
-          <Container className="Margins ColoredBackground PaddingTopBotttom ">
+          <Container className="ColoredContainer">
             <article>
               <Row>
                 <Col className=" RoundedEdges  PaddingLeftRight">
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges">
-                    <h4 className="TextFormattingH4 ">Breadcrumbs</h4>
-                    <h6 className="TextFormattingH6 ">
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle ">Breadcrumbs</h4>
+                    <h6>
                       Breadcrumbs creates a trail of links to help the user to
                       locate the current page within the website&apos;s
                       hierarchy.
@@ -84,9 +84,9 @@ export default function Quantum() {
               </Row>
               <Row>
                 <Col className=" RoundedEdges  PaddingLeftRight">
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                    <h4 className="TextFormattingH4">TabbedView</h4>
-                    <h6 className="TextFormattingH6">
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle">TabbedView</h4>
+                    <h6>
                       TabbedView and Tab are components created to organize
                       content into separate views where only one view can be
                       visible at a time.
@@ -103,29 +103,27 @@ export default function Quantum() {
           </Container>
         </section>
         <section>
-          <Container className="FlexContainer  ColoredBackground  Margins ">
+          <Container className="FlexContainer ColoredContainer">
             <Row>
               <Col
                 large={6}
                 medium={6}
                 small={4}
                 xmall={2}
-                className=" RoundedEdges  PaddingLeftRight"
+                className=" RoundedEdges PaddingLeftRight"
               >
                 <article>
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                    <h4 className="TextFormattingH4">Container</h4>
-                    <h6 className="TextFormattingH6">
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle">Container</h4>
+                    <h6>
                       Containers wrap around contents and can be used in
                       different ways.
                     </h6>
                     <Container>This is a container.</Container>
                   </article>
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                    <h4 className="TextFormattingH4">Hide</h4>
-                    <h6 className="TextFormattingH6">
-                      Hide will suppress an element in small devices.
-                    </h6>
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle">Hide</h4>
+                    <h6>Hide will suppress an element in small devices.</h6>
                     <Hide xsmall className="Margins PaddingLeftRight">
                       <Row>
                         <Col className="Borders">Reduce the screen size</Col>
@@ -133,9 +131,9 @@ export default function Quantum() {
                       </Row>
                     </Hide>
                   </article>
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                    <h4 className="TextFormattingH4">Link</h4>
-                    <h6 className="TextFormattingH6">
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle">Link</h4>
+                    <h6>
                       Link styled according to Catho&apos;s Style Guide. Makes
                       it easier to style an anchor tag.
                     </h6>
@@ -151,9 +149,9 @@ export default function Quantum() {
                 className=" RoundedEdges  PaddingLeftRight"
               >
                 <article>
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                    <h4 className="TextFormattingH4">Rows and Colums</h4>
-                    <h6 className="TextFormattingH6">
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle">Rows and Colums</h4>
+                    <h6>
                       Rows are wrappers for columns. Each column has horizontal
                       space column gap (called a gutter) for controlling the
                       space between them.
@@ -183,9 +181,9 @@ export default function Quantum() {
                       </Col>
                     </Row>
                   </article>
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                    <h4 className="TextFormattingH4">Lists</h4>
-                    <h6 className="TextFormattingH6">
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle">Lists</h4>
+                    <h6>
                       List is a component with continuous, vertical indexes of
                       texts or icons.
                     </h6>
@@ -206,7 +204,7 @@ export default function Quantum() {
           </Container>
         </section>
         <section>
-          <Container className="FlexContainer  ColoredBackground  Margins">
+          <Container className="FlexContainer ColoredContainer">
             <Row>
               <Col
                 large={6}
@@ -216,33 +214,33 @@ export default function Quantum() {
                 className=" RoundedEdges  PaddingLeftRight"
               >
                 <article>
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                    <h4 className="TextFormattingH4">Autocomplete</h4>
-                    <h6 className="TextFormattingH6">
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle">Autocomplete</h4>
+                    <h6>
                       Styled input component with autocomplete suggestions
                     </h6>
                     <AutoComplete suggestions={['AutoComplete suggestion']} />
                   </article>
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                    <h4 className="TextFormattingH4">Dropdown</h4>
-                    <h6 className="TextFormattingH6">
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle">Dropdown</h4>
+                    <h6>
                       Styled dropwdown menu component following Catho&apos;s
                       Style Guide.
                     </h6>
                     <Dropdown items={dropdownMenuMocks} />
                   </article>
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                    <h4 className="TextFormattingH4">DropdownLight</h4>
-                    <h6 className="TextFormattingH6">
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle">DropdownLight</h4>
+                    <h6>
                       Styled dropwdown menu component without the external lib
                       Downshift; therefore it is lighter than the usual
                       Dropdown.
                     </h6>
                     <DropdownLight items={dropdownMenuMocks} />
                   </article>
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                    <h4 className="TextFormattingH4">TextArea</h4>
-                    <h6 className="TextFormattingH6">
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle">TextArea</h4>
+                    <h6>
                       Styled text area component following Catho&apos;s Style
                       Guide.
                     </h6>
@@ -262,9 +260,9 @@ export default function Quantum() {
                 className=" RoundedEdges  PaddingLeftRight"
               >
                 <article>
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                    <h4 className="TextFormattingH4">Card</h4>
-                    <h6 className="TextFormattingH6">
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle">Card</h4>
+                    <h6>
                       Cards contain a content and actions about a single
                       subject.
                     </h6>
@@ -284,17 +282,17 @@ export default function Quantum() {
                       <Card.Footer>Footer of the Card</Card.Footer>
                     </Card>
                   </article>
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                    <h4 className="TextFormattingH4">Alert</h4>
-                    <h6 className="TextFormattingH6">
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle">Alert</h4>
+                    <h6>
                       Alerts are used for items that need to be labeled,
                       categorized, or organized using keywords.
                     </h6>
                     <Alert>Alert Test</Alert>
                   </article>
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                    <h4 className="TextFormattingH4">Accordion</h4>
-                    <h6 className="TextFormattingH6">
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle">Accordion</h4>
+                    <h6>
                       An accordion is a vertical stack of interactive headings
                       used to toggle the display of further information; each
                       item can be &lsquo;collapsed&rsquo;, with just a short
@@ -309,7 +307,7 @@ export default function Quantum() {
           </Container>
         </section>
         <section>
-          <Container className="FlexContainer ColoredBackground PaddingTopBotttom Margins">
+          <Container className="FlexContainer ColoredContainer">
             <Row>
               <Col
                 large={6}
@@ -319,17 +317,17 @@ export default function Quantum() {
                 className=" RoundedEdges  PaddingLeftRight"
               >
                 <article>
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                    <h4 className="TextFormattingH4">ChargeBar</h4>
-                    <h6 className="TextFormattingH6  WhiteBackground">
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle">ChargeBar</h4>
+                    <h6>
                       ChargeBar shows the level the user is to be able to
                       complete their stats to the maximum.
                     </h6>
                     <ChargeBar />
                   </article>
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                    <h4 className="TextFormattingH4">RangeSlider</h4>
-                    <h6 className="TextFormattingH6">
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle">RangeSlider</h4>
+                    <h6>
                       RangeSlider is a component to select a value from a
                       predefined range. Chaneging the component&apos;s props,
                       it&apos;s possible to set the minimum and maximum values,
@@ -338,43 +336,43 @@ export default function Quantum() {
                     </h6>
                     <RangeSlider />
                   </article>
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                    <h4 className="TextFormattingH4">ProgressBar</h4>
-                    <h6 className="TextFormattingH6">
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle">ProgressBar</h4>
+                    <h6>
                       Progress bars are used to give the user a feedback on the
                       progress of a process or an action.
                     </h6>
                     <ProgressBar />
                   </article>
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                    <h4 className="TextFormattingH4">Stepper</h4>
-                    <h6 className="TextFormattingH6">
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle">Stepper</h4>
+                    <h6>
                       The Stepper component is a visual tool to show progress
                       using logical and numbered steps.
                     </h6>
                     <Stepper />
                   </article>
                   <div>
-                    <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                      <h4 className="TextFormattingH4">CircularLoader</h4>
-                      <h6 className="TextFormattingH6">
+                    <article className="ComponentContainer">
+                      <h4 className="ComponentTitle">CircularLoader</h4>
+                      <h6>
                         The Stepper component is a visual tool to show progress
                         using logical and numbered steps.
                       </h6>
                       <CircularLoader />
                     </article>
-                    <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                      <h4 className="TextFormattingH4">Skeleton</h4>
-                      <h6 className="TextFormattingH6">
+                    <article className="ComponentContainer">
+                      <h4 className="ComponentTitle">Skeleton</h4>
+                      <h6>
                         The Skeleton is a component that replaces others while
                         they are loading or not ready to render.
                       </h6>
                       <Skeleton />
                     </article>
                   </div>
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                    <h4 className="TextFormattingH4">Pagination</h4>
-                    <h6 className="TextFormattingH6">
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle">Pagination</h4>
+                    <h6>
                       Add pagination buttons to help splitting up long contents
                       into shorter, easy to understand blocks.
                     </h6>
@@ -390,17 +388,17 @@ export default function Quantum() {
                 className=" RoundedEdges  PaddingLeftRight"
               >
                 <article>
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                    <h4 className="TextFormattingH4">Button</h4>
-                    <h6 className="TextFormattingH6">
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle">Button</h4>
+                    <h6>
                       Buttons express what will happen when the user clicks or
                       touches it.
                     </h6>
                     <Button>Simple Button</Button>
                   </article>
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                    <h4 className="TextFormattingH4">ControlledDialog</h4>
-                    <h6 className="TextFormattingH6">
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle">ControlledDialog</h4>
+                    <h6>
                       ControlledDialog is a button that activates a dialog
                       window in front of all content. It is commonly used to
                       provide an important information or ask for some user
@@ -408,18 +406,18 @@ export default function Quantum() {
                     </h6>
                     <ControlledDialog />
                   </article>
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                    <h4 className="TextFormattingH4">Hamburger</h4>
-                    <h6 className="TextFormattingH6">
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle">Hamburger</h4>
+                    <h6>
                       Hamburger component is used for opening mobile menu. You
                       can also pass a aria-label description to inform screen
                       readers that there are new notifications.
                     </h6>
                     <Hamburger inverted />
                   </article>
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                    <h4 className="TextFormattingH4">SegmentedControl</h4>
-                    <h6 className="TextFormattingH6">
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle">SegmentedControl</h4>
+                    <h6>
                       The Segmented control component is a linear set of two or
                       more alternation buttons, with all segments with same
                       width.
@@ -429,9 +427,9 @@ export default function Quantum() {
                       items={segmentedControlMock}
                     />
                   </article>
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                    <h4 className="TextFormattingH4">ControlledModal</h4>
-                    <h6 className="TextFormattingH6">
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle">ControlledModal</h4>
+                    <h6>
                       Modals inform users about a task and can contain critical
                       information, require decisions, or involve multiple tasks.
                       A ControlledModal contains control buttons, such as
@@ -439,9 +437,9 @@ export default function Quantum() {
                     </h6>
                     <ControlledModal />
                   </article>
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                    <h4 className="TextFormattingH4">ControlledSnackBar</h4>
-                    <h6 className="TextFormattingH6">
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle">ControlledSnackBar</h4>
+                    <h6>
                       SnackBars are used to show an alert about the action that
                       have just been made: delete or archive content by accident
                       (undo), resend messages that not been sent for some
@@ -456,7 +454,7 @@ export default function Quantum() {
           </Container>
         </section>
         <section>
-          <Container className="FlexContainer ColoredBackground PaddingTopBotttom Margins">
+          <Container className="FlexContainer ColoredContainer">
             <Row>
               <Col
                 large={6}
@@ -466,9 +464,9 @@ export default function Quantum() {
                 className=" RoundedEdges  PaddingLeftRight"
               >
                 <article>
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                    <h4 className="TextFormattingH4">Badge</h4>
-                    <h6 className="TextFormattingH6">
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle">Badge</h4>
+                    <h6>
                       Badges are used for showing the quantity of something,
                       such as warnings, inbox messages and others.
                     </h6>
@@ -476,9 +474,9 @@ export default function Quantum() {
                       <Tag>Example Badge</Tag>
                     </Badge>
                   </article>
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                    <h4 className="TextFormattingH4">Tag</h4>
-                    <h6 className="TextFormattingH6">
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle">Tag</h4>
+                    <h6>
                       Tags are used for items that need to be labeled,
                       categorized, or organized using keywords that describe
                       them.
@@ -495,8 +493,8 @@ export default function Quantum() {
                 className=" RoundedEdges  PaddingLeftRight"
               >
                 <article>
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                    <h4 className="TextFormattingH4">Popover</h4>
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle">Popover</h4>
                     <h6 className="TexdtFormattingH6">
                       Tags are used for items that need to be labeled,
                       categorized, or organized using keywords that describe
@@ -506,9 +504,9 @@ export default function Quantum() {
                       Example PopOver Trigger
                     </Popover>
                   </article>
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                    <h4 className="TextFormattingH4">Tooltip</h4>
-                    <h6 className="TextFormattingH6">
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle">Tooltip</h4>
+                    <h6>
                       Tooltips provide additional information upon hover or
                       focus. They often contain helper text that is contextual
                       to an element.
@@ -523,10 +521,10 @@ export default function Quantum() {
           </Container>
         </section>
         <section>
-          <Container className="ColoredBackground  Margins">
-            <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-              <h4 className="TextFormattingH4">Carousel</h4>
-              <h6 className="TextFormattingH6">
+          <Container className="ColoredContainer">
+            <article className="ComponentContainer">
+              <h4 className="ComponentTitle">Carousel</h4>
+              <h6>
                 Carousel is a component that align cards with a series of
                 content. Works with images, texts, or custom markups. Also
                 includes support for indicators and previous/next controls.
@@ -536,7 +534,7 @@ export default function Quantum() {
           </Container>
         </section>
         <section>
-          <Container className="FlexContainer ColoredBackground PaddingTopBotttom Margins">
+          <Container className="FlexContainer ColoredContainer">
             <Row>
               <Col
                 large={6}
@@ -546,9 +544,9 @@ export default function Quantum() {
                 className=" RoundedEdges  PaddingLeftRight"
               >
                 <article>
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                    <h4 className="TextFormattingH4">Social Button</h4>
-                    <h6 className="TextFormattingH6">
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle">Social Button</h4>
+                    <h6>
                       These buttons are used to run actions related to their
                       respective providers. Example: login with OAuth API from
                       Google.
@@ -558,8 +556,8 @@ export default function Quantum() {
                       <SocialButton provider="google" />
                     </div>
                   </article>
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                    <h4 className="TextFormattingH4">Info Icon</h4>
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle">Info Icon</h4>
                     <Icon name="info" />
                   </article>
                 </article>
@@ -569,12 +567,12 @@ export default function Quantum() {
                 medium={6}
                 small={4}
                 xmall={2}
-                className=" RoundedEdges  PaddingLeftRight"
+                className="RoundedEdges PaddingLeftRight"
               >
                 <article>
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                    <h4 className="TextFormattingH4">Avatar</h4>
-                    <h6 className="TextFormattingH6">
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle">Avatar</h4>
+                    <h6>
                       Avatars are used to display a thumbnail of the u
                       ser&apos;s profile picture or an user icon if the picture
                       is not defined. It can also display a dot to alert that
@@ -582,11 +580,9 @@ export default function Quantum() {
                     </h6>
                     <Avatar />
                   </article>
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                    <h4 className="TextFormattingH4">Socials</h4>
-                    <h6 className="TextFormattingH6">
-                      Socials show the icons of respective Social Medias{' '}
-                    </h6>
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle">Socials</h4>
+                    <h6>Socials show the icons of respective Social Medias </h6>
                     <Socials items={socialMocks} />
                   </article>
                 </article>
@@ -595,27 +591,27 @@ export default function Quantum() {
           </Container>
         </section>
         <section>
-          <Container className="FlexContainer ColoredBackground PaddingLeftRight Margins Overflow ">
+          <Container className="FlexContainer ColoredContainer PaddingLeftRight Overflow ">
             <Row>
               <Col
                 large={6}
                 medium={6}
                 small={4}
                 xmall={2}
-                className=" RoundedEdges  PaddingLeftRight"
+                className="RoundedEdges PaddingLeftRight"
               >
                 <article>
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                    <h4 className="TextFormattingH4">Checkbox Group</h4>
-                    <h6 className="TextFormattingH6">
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle">Checkbox Group</h4>
+                    <h6>
                       Gets values from a single onChange callback prop and apply
                       a single error message to a group of checkboxes.
                     </h6>
                     <CheckboxGroup error="Some error" options={checkBoxMocks} />
                   </article>
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                    <h4 className="TextFormattingH4">Radio Group</h4>
-                    <h6 className="TextFormattingH6">
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle">Radio Group</h4>
+                    <h6>
                       Radio group is a list of radio buttons that are used when
                       a list of two or more options are mutually exclusive,
                       meaning the user must select only one option.
@@ -625,9 +621,9 @@ export default function Quantum() {
                       options={radioGroupMocks}
                     />
                   </article>
-                  <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                    <h4 className="TextFormattingH4">Toggle</h4>
-                    <h6 className="TextFormattingH6">
+                  <article className="ComponentContainer">
+                    <h4 className="ComponentTitle">Toggle</h4>
+                    <h6>
                       Toggle is a control that is used to quickly switch between
                       two possible states.
                     </h6>
@@ -640,11 +636,11 @@ export default function Quantum() {
                 medium={6}
                 small={4}
                 xmall={2}
-                className=" RoundedEdges  PaddingLeftRight"
+                className="RoundedEdges PaddingLeftRight"
               >
-                <article className=" PaddingLeftRight Margins WhiteBackground  RoundedEdges ">
-                  <h4 className="TextFormattingH4">Form</h4>
-                  <h6 className="TextFormattingH6">
+                <article className="ComponentContainer">
+                  <h4 className="ComponentTitle">Form</h4>
+                  <h6>
                     A Form displays a set of related user input fields in a
                     structured way, some other components like validation adds
                     check behavior of the data against a set of criteria before
