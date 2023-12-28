@@ -3,6 +3,7 @@ import Head from 'next/head';
 import GlobalStyle from '@catho/quantum/GlobalStyle';
 import { Container } from '@catho/quantum';
 import ScrollUpButton from '../components/ScrollUpButton';
+import '../static/style.css';
 
 export default class HomePage extends App {
   render() {

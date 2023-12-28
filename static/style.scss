@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300display=swap');
+
+html {
+    min-height: 100%;
+    background-image: url(/static/imgs/background-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+body{
+    font-family: "Dongle", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+    position: relative;
+
+}
+
+.NavList {
+
+    margin: 0;
+    padding-left: 16px;
+    width: 50%;
+    display: contents;
+}
+
+.Footer-wrapper {
+    min-height: 66px;
+    padding-top: 29px;
+    padding-bottom: 37px;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-self: flex-end;
+    position: absolute;
+
+}
+
+
+.Footer-text {
+    font-size: 12px;
+    text-align: center;
+    color: #CCCCCC;
+    line-height: 22px;
+}
+
+.FlexEndPositioning {
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+}
+
+.VisibleMenu {
+    color: #BCBF12;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.VisibleMenu a {
+    color: #BCBF12;
+}
+
+.SandwichButton {
+    border: none;
+    background-color: transparent;
+    color: #BCBF12;
+    font-size: 32px;
+    font-family: 'Nunito', sans-serif;
+    justify-self: flex-end;
+}
+
+.SandwichButton:hover{
+    color: #B83870;
+    cursor: pointer;
+}
+
+.HiddenMenu{
+    font-weight: bold;
+    display: flex;
+    background-color: black;
+    width: 100%;
+    justify-content: flex-end;
+    grid-column: 1 / span 3;
+}
+
+.HiddenMenu ul {
+    display: flex;
+}
+
+.HiddenMenu li {
+    padding-right: 12px;
+}
+
+.HiddenMenu a{
+    color: #CCCCCC;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #B83870;
+    text-decoration: none;
+}
+
+.MainContent{
+    margin: 24px;
+    flex: 1;
+    margin-bottom: 8em;
+    padding-top: 8px;
+    background-color: white;
+}
+
+.Margins {
+    margin: 16px 0;
+}
+
+.FlexContainer{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.RoundedEdges {
+    border-radius: 8px;
+}
+
+.GrayContainer{
+    background-color:rgb(240, 241, 247);
+    margin: 16px 0;
+    padding: 8px
+}
+
+
+
+.PaddingLeftRight{
+    padding: 0 8px;
+}
+
+.ComponentTitle{
+    color: #be056b;
+    font-weight: 900;
+}
+
+.ComponentSubTitle{
+    color: #d4388e;
+    font-weight: 600;
+}
+
+.Overflow {
+    overflow: auto;
+}
+
+.Borders {
+    border-style: solid;
+    border-color: #d4388e;
+    border-width: 2px;
+    text-align: center;
+}
+
+.HiddenMenuNavigationItem {
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.HiddenMenuNavigationItem a{
+    color: #CCCCCC;
+}
+
+.HiddenMenuNavigationItem a:hover {
+    color: #B83870;
+    text-decoration: none;
+}
+
+.NavigationBar{
+    display: grid ;
+    grid-template-columns: 138px auto 48px;
+    grid-template-rows: 1fr auto;
+    align-items: center;
+}
+
+
+
+@media(max-width: 1023px) {
+
+
+    .DisplayNoneOnSmallScreen {
+        display: none;
+    }
+
+    .HiddenMenu ul {
+        display: flex;
+        flex-direction:column;
+        position: relative;
+        gap: 16px;
+    }
+
+}
+
+@media(min-width: 1024px) {
+    .HiddenMenu ul {
+        display: flex;
+        flex-direction:row;
+        gap: 48px;
+    }
+    .HiddenMenuNavigationItem {
+        display: none;
+    }
+}
+
+#hiddenDesktopMenu {
+    display: none;
+}
+
+#menuSandwichButton {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+input:checked ~ #hiddenDesktopMenu {
+    display: flex;
+}
+
+
+.ComponentContainer{
+    padding: 8px;
+    margin: 16px 0;
+    border-radius: 8px;
+    background-color: white;
+}

@@ -31,7 +31,7 @@ export default function CathoComponentsPage() {
       </Head>
       <main>
         <section>
-          <Container className="ColoredContainer">
+          <Container className="GrayContainer">
             <article>
               <h4 className="ComponentTitle">Headers</h4>
               <h6>
@@ -58,7 +58,7 @@ export default function CathoComponentsPage() {
               </article>
             </article>
           </Container>
-          <Container className=" FlexContainer ColoredContainer">
+          <Container className=" FlexContainer GrayContainer">
             <Row>
               <Col
                 large={6}
@@ -94,7 +94,7 @@ export default function CathoComponentsPage() {
               </Col>
             </Row>
           </Container>
-          <Container className="ColoredContainer">
+          <Container className="GrayContainer">
             <article>
               <h4 className="ComponentTitle">CommentsBox</h4>
               <h6>A simple way of displaying a form or alert.</h6>
@@ -103,7 +103,7 @@ export default function CathoComponentsPage() {
               </CommentsBox>
             </article>
           </Container>
-          <Container className=" ColoredContainer FlexContainer">
+          <Container className=" GrayContainer FlexContainer">
             <Row>
               <Col
                 large={6}
@@ -146,7 +146,7 @@ export default function CathoComponentsPage() {
               </Col>
             </Row>
           </Container>
-          <Container className="ColoredContainer">
+          <Container className="GrayContainer">
             <article>
               <h4 className="ComponentTitle">Footers</h4>
               <h6>These are footers for all Catho applications.</h6>

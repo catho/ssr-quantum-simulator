@@ -67,7 +67,7 @@ export default function Quantum() {
       <GlobalStyle />
       <main>
         <section>
-          <Container className="ColoredContainer">
+          <Container className="GrayContainer">
             <article>
               <Row>
                 <Col className=" RoundedEdges  PaddingLeftRight">
@@ -103,7 +103,7 @@ export default function Quantum() {
           </Container>
         </section>
         <section>
-          <Container className="FlexContainer ColoredContainer">
+          <Container className="FlexContainer GrayContainer">
             <Row>
               <Col
                 large={6}
@@ -204,7 +204,7 @@ export default function Quantum() {
           </Container>
         </section>
         <section>
-          <Container className="FlexContainer ColoredContainer">
+          <Container className="FlexContainer GrayContainer">
             <Row>
               <Col
                 large={6}
@@ -307,7 +307,7 @@ export default function Quantum() {
           </Container>
         </section>
         <section>
-          <Container className="FlexContainer ColoredContainer">
+          <Container className="FlexContainer GrayContainer">
             <Row>
               <Col
                 large={6}
@@ -454,7 +454,7 @@ export default function Quantum() {
           </Container>
         </section>
         <section>
-          <Container className="FlexContainer ColoredContainer">
+          <Container className="FlexContainer GrayContainer">
             <Row>
               <Col
                 large={6}
@@ -521,7 +521,7 @@ export default function Quantum() {
           </Container>
         </section>
         <section>
-          <Container className="ColoredContainer">
+          <Container className="GrayContainer">
             <article className="ComponentContainer">
               <h4 className="ComponentTitle">Carousel</h4>
               <h6>
@@ -534,7 +534,7 @@ export default function Quantum() {
           </Container>
         </section>
         <section>
-          <Container className="FlexContainer ColoredContainer">
+          <Container className="FlexContainer GrayContainer">
             <Row>
               <Col
                 large={6}
@@ -591,7 +591,7 @@ export default function Quantum() {
           </Container>
         </section>
         <section>
-          <Container className="FlexContainer ColoredContainer PaddingLeftRight Overflow ">
+          <Container className="FlexContainer GrayContainer PaddingLeftRight Overflow ">
             <Row>
               <Col
                 large={6}

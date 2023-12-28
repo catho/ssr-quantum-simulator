@@ -25,6 +25,7 @@
     "next-images": "^1.1.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "sass": "^1.69.5",
     "styled-components": "5.0.1",
     "yarn": "^1.22.0"
   },
@@ -41,9 +42,9 @@
     "prettier": "^1.15.3"
   },
   "scripts": {
-    "dev": "next",
+    "dev": " node-sass --watch static/ -o static/ & next",
     "build": "next build",
-    "start": "next start",
+    "start": "node-sass static/ -o static/ & next start",
     "analyzer": "ANALYZE=true next",
     "collect": "git checkout yarn.lock && rm -rf node_modules && yarn && yarn analyzer",
     "precommit": "lint-staged",
@@ -53,7 +54,8 @@
     "lint:all": "yarn lint:components && yarn lint:js && yarn lint:pages",
     "lint": "eslint --ext js,jsx --quiet",
     "format": "prettier --write ./**/*.{js,jsx,json}",
-    "prepush": "yarn lint:all"
+    "prepush": "yarn lint:all",
+    "watch:style": "node-sass --watch static/ -o static/"
   },
   "lint-staged": {
     "*.{js,jsx,json}": [
