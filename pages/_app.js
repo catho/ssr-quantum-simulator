@@ -28,7 +28,7 @@ export default class HomePage extends App {
               <nav
                 aria-label="Menu Principal"
                 id="visibleDesktopMenu"
-                className="VisibleMenu  FlexEndPositioning"
+                className="VisibleMenu FlexEndPositioning"
               >
                 <ul role="menu" className="NavList">
                   <li role="menuitem" className="DisplayNoneOnSmallScreen">
@@ -52,7 +52,7 @@ export default class HomePage extends App {
               <nav
                 aria-label="Menu de opções"
                 id="hiddenDesktopMenu"
-                className="HiddenMenu  "
+                className="HiddenMenu"
               >
                 <ul role="menu">
                   <li role="menuitem" className="HiddenMenuNavigationItem">

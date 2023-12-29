@@ -125,7 +125,6 @@ export default function CathoComponentsPage() {
                     <JobNotificationList data={jobNotificationListMock} />
                   </article>
                 </Container>
-
                 <Container className="ComponentContainer">
                   <article>
                     <h4 className="ComponentTitle">DayPicker</h4>
