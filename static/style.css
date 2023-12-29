@@ -4,7 +4,8 @@ html {
   background-image: url(/static/imgs/background-image.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: center center;
+}
 
 body {
   font-family: "Dongle", sans-serif;
@@ -12,13 +13,15 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 32px;
-  position: relative; }
+  position: relative;
+}
 
 .NavList {
   margin: 0;
   padding-left: 16px;
   width: 50%;
-  display: contents; }
+  display: contents;
+}
 
 .Footer-wrapper {
   min-height: 66px;
@@ -31,39 +34,46 @@ body {
   justify-content: center;
   flex-direction: column;
   align-self: flex-end;
-  position: absolute; }
+  position: absolute;
+}
 
 .Footer-text {
   font-size: 12px;
   text-align: center;
   color: #CCCCCC;
-  line-height: 22px; }
+  line-height: 22px;
+}
 
 .FlexEndPositioning {
   display: flex;
   justify-content: flex-end;
-  gap: 50px; }
+  gap: 50px;
+}
 
 .VisibleMenu {
   color: #BCBF12;
   font-weight: bold;
   display: flex;
-  align-items: center; }
+  align-items: center;
+}
 
 .VisibleMenu a {
-  color: #BCBF12; }
+  color: #BCBF12;
+}
 
 .SandwichButton {
   border: none;
   background-color: transparent;
   color: #BCBF12;
   font-size: 32px;
-  font-family: 'Nunito', sans-serif;
-  justify-self: flex-end; }
+  font-family: "Nunito", sans-serif;
+  justify-self: flex-end;
+}
 
 .SandwichButton:hover {
   color: #B83870;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .HiddenMenu {
   font-weight: bold;
@@ -71,114 +81,141 @@ body {
   background-color: black;
   width: 100%;
   justify-content: flex-end;
-  grid-column: 1 / span 3; }
+  grid-column: 1/span 3;
+}
 
 .HiddenMenu ul {
-  display: flex; }
+  display: flex;
+}
 
 .HiddenMenu li {
-  padding-right: 12px; }
+  padding-right: 12px;
+}
 
 .HiddenMenu a {
   color: #CCCCCC;
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 
 a:hover {
   color: #B83870;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .MainContent {
   margin: 24px;
   flex: 1;
   margin-bottom: 8em;
   padding-top: 8px;
-  background-color: white; }
+  background-color: white;
+}
 
 .Margins {
-  margin: 16px 0; }
+  margin: 16px 0;
+}
 
 .FlexContainer {
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+}
 
 .RoundedEdges {
-  border-radius: 8px; }
+  border-radius: 8px;
+}
 
 .GrayContainer {
-  background-color: #f0f1f7;
+  background-color: rgb(240, 241, 247);
   margin: 16px 0;
-  padding: 8px; }
+  padding: 8px;
+}
 
 .PaddingLeftRight {
-  padding: 0 8px; }
+  padding: 0 8px;
+}
 
 .ComponentTitle {
   color: #be056b;
-  font-weight: 900; }
+  font-weight: 900;
+}
 
 .ComponentSubTitle {
   color: #d4388e;
-  font-weight: 600; }
+  font-weight: 600;
+}
 
 .Overflow {
-  overflow: auto; }
+  overflow: auto;
+}
 
 .Borders {
   border-style: solid;
   border-color: #d4388e;
   border-width: 2px;
-  text-align: center; }
+  text-align: center;
+}
 
 .HiddenMenuNavigationItem {
   display: flex;
   font-weight: bold;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+}
 
 .HiddenMenuNavigationItem a {
-  color: #CCCCCC; }
+  color: #CCCCCC;
+}
 
 .HiddenMenuNavigationItem a:hover {
   color: #B83870;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .NavigationBar {
   display: grid;
   grid-template-columns: 138px auto 48px;
   grid-template-rows: 1fr auto;
-  align-items: center; }
+  align-items: center;
+}
 
 @media (max-width: 1023px) {
   .DisplayNoneOnSmallScreen {
-    display: none; }
+    display: none;
+  }
   .HiddenMenu ul {
     display: flex;
     flex-direction: column;
     position: relative;
-    gap: 16px; } }
-
+    gap: 16px;
+  }
+}
 @media (min-width: 1024px) {
   .HiddenMenu ul {
     display: flex;
     flex-direction: row;
-    gap: 48px; }
+    gap: 48px;
+  }
   .HiddenMenuNavigationItem {
-    display: none; } }
-
+    display: none;
+  }
+}
 #hiddenDesktopMenu {
-  display: none; }
+  display: none;
+}
 
 #menuSandwichButton {
   position: absolute;
   opacity: 0;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 input:checked ~ #hiddenDesktopMenu {
-  display: flex; }
+  display: flex;
+}
 
 .ComponentContainer {
   padding: 8px;
   margin: 16px 0;
   border-radius: 8px;
-  background-color: white; }
+  background-color: white;
+}

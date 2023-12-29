@@ -42,7 +42,7 @@
     "prettier": "^1.15.3"
   },
   "scripts": {
-   "dev": "sass --watch --no-source-map static:static & next",
+    "dev": "sass --watch --no-source-map static:static & next",
     "build": "next build",
     "start": "sass --no-source-map static:static && next start",
     "analyzer": "ANALYZE=true next",

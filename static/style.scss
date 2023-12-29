@@ -6,7 +6,6 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-
 }
 
 body{
@@ -16,7 +15,6 @@ body{
     flex-direction: column;
     font-size: 32px;
     position: relative;
-
 }
 
 .NavList {
@@ -39,9 +37,7 @@ body{
     flex-direction: column;
     align-self: flex-end;
     position: absolute;
-
 }
-
 
 .Footer-text {
     font-size: 12px;
@@ -136,8 +132,6 @@ a:hover {
     padding: 8px
 }
 
-
-
 .PaddingLeftRight{
     padding: 0 8px;
 }
@@ -186,10 +180,7 @@ a:hover {
     align-items: center;
 }
 
-
-
 @media(max-width: 1023px) {
-
 
     .DisplayNoneOnSmallScreen {
         display: none;
@@ -201,7 +192,6 @@ a:hover {
         position: relative;
         gap: 16px;
     }
-
 }
 
 @media(min-width: 1024px) {
@@ -228,7 +218,6 @@ a:hover {
 input:checked ~ #hiddenDesktopMenu {
     display: flex;
 }
-
 
 .ComponentContainer{
     padding: 8px;
