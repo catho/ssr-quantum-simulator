@@ -67,12 +67,12 @@ export default function Quantum() {
       <GlobalStyle />
       <main>
         <section>
-          <Container className="ColoredContainer">
+          <Container className="GrayContainer">
             <article>
               <Row>
                 <Col className=" RoundedEdges  PaddingLeftRight">
                   <article className="ComponentContainer">
-                    <h4 className="ComponentTitle ">Breadcrumbs</h4>
+                    <h4 className="ComponentTitle">Breadcrumbs</h4>
                     <h6>
                       Breadcrumbs creates a trail of links to help the user to
                       locate the current page within the website&apos;s
@@ -83,7 +83,7 @@ export default function Quantum() {
                 </Col>
               </Row>
               <Row>
-                <Col className=" RoundedEdges  PaddingLeftRight">
+                <Col className="RoundedEdges PaddingLeftRight">
                   <article className="ComponentContainer">
                     <h4 className="ComponentTitle">TabbedView</h4>
                     <h6>
@@ -103,14 +103,14 @@ export default function Quantum() {
           </Container>
         </section>
         <section>
-          <Container className="FlexContainer ColoredContainer">
+          <Container className="FlexContainer GrayContainer">
             <Row>
               <Col
                 large={6}
                 medium={6}
                 small={4}
                 xmall={2}
-                className=" RoundedEdges PaddingLeftRight"
+                className="RoundedEdges PaddingLeftRight"
               >
                 <article>
                   <article className="ComponentContainer">
@@ -146,7 +146,7 @@ export default function Quantum() {
                 medium={6}
                 small={4}
                 xmall={2}
-                className=" RoundedEdges  PaddingLeftRight"
+                className="RoundedEdges PaddingLeftRight"
               >
                 <article>
                   <article className="ComponentContainer">
@@ -204,14 +204,14 @@ export default function Quantum() {
           </Container>
         </section>
         <section>
-          <Container className="FlexContainer ColoredContainer">
+          <Container className="FlexContainer GrayContainer">
             <Row>
               <Col
                 large={6}
                 medium={6}
                 small={4}
                 xmall={2}
-                className=" RoundedEdges  PaddingLeftRight"
+                className="RoundedEdges PaddingLeftRight"
               >
                 <article>
                   <article className="ComponentContainer">
@@ -257,7 +257,7 @@ export default function Quantum() {
                 medium={6}
                 small={4}
                 xmall={2}
-                className=" RoundedEdges  PaddingLeftRight"
+                className="RoundedEdges PaddingLeftRight"
               >
                 <article>
                   <article className="ComponentContainer">
@@ -307,14 +307,14 @@ export default function Quantum() {
           </Container>
         </section>
         <section>
-          <Container className="FlexContainer ColoredContainer">
+          <Container className="FlexContainer GrayContainer">
             <Row>
               <Col
                 large={6}
                 medium={6}
                 small={4}
                 xmall={2}
-                className=" RoundedEdges  PaddingLeftRight"
+                className="RoundedEdges PaddingLeftRight"
               >
                 <article>
                   <article className="ComponentContainer">
@@ -385,7 +385,7 @@ export default function Quantum() {
                 medium={6}
                 small={4}
                 xmall={2}
-                className=" RoundedEdges  PaddingLeftRight"
+                className="RoundedEdges PaddingLeftRight"
               >
                 <article>
                   <article className="ComponentContainer">
@@ -454,14 +454,14 @@ export default function Quantum() {
           </Container>
         </section>
         <section>
-          <Container className="FlexContainer ColoredContainer">
+          <Container className="FlexContainer GrayContainer">
             <Row>
               <Col
                 large={6}
                 medium={6}
                 small={4}
                 xmall={2}
-                className=" RoundedEdges  PaddingLeftRight"
+                className="RoundedEdges PaddingLeftRight"
               >
                 <article>
                   <article className="ComponentContainer">
@@ -490,7 +490,7 @@ export default function Quantum() {
                 medium={6}
                 small={4}
                 xmall={2}
-                className=" RoundedEdges  PaddingLeftRight"
+                className="RoundedEdges PaddingLeftRight"
               >
                 <article>
                   <article className="ComponentContainer">
@@ -521,7 +521,7 @@ export default function Quantum() {
           </Container>
         </section>
         <section>
-          <Container className="ColoredContainer">
+          <Container className="GrayContainer">
             <article className="ComponentContainer">
               <h4 className="ComponentTitle">Carousel</h4>
               <h6>
@@ -534,14 +534,14 @@ export default function Quantum() {
           </Container>
         </section>
         <section>
-          <Container className="FlexContainer ColoredContainer">
+          <Container className="FlexContainer GrayContainer">
             <Row>
               <Col
                 large={6}
                 medium={6}
                 small={4}
                 xmall={2}
-                className=" RoundedEdges  PaddingLeftRight"
+                className="RoundedEdges PaddingLeftRight"
               >
                 <article>
                   <article className="ComponentContainer">
@@ -591,7 +591,7 @@ export default function Quantum() {
           </Container>
         </section>
         <section>
-          <Container className="FlexContainer ColoredContainer PaddingLeftRight Overflow ">
+          <Container className="FlexContainer GrayContainer PaddingLeftRight Overflow">
             <Row>
               <Col
                 large={6}

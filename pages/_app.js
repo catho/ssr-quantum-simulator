@@ -3,6 +3,7 @@ import Head from 'next/head';
 import GlobalStyle from '@catho/quantum/GlobalStyle';
 import { Container } from '@catho/quantum';
 import ScrollUpButton from '../components/ScrollUpButton';
+import '../static/style.css';
 
 export default class HomePage extends App {
   render() {
@@ -27,7 +28,7 @@ export default class HomePage extends App {
               <nav
                 aria-label="Menu Principal"
                 id="visibleDesktopMenu"
-                className="VisibleMenu  FlexEndPositioning"
+                className="VisibleMenu FlexEndPositioning"
               >
                 <ul role="menu" className="NavList">
                   <li role="menuitem" className="DisplayNoneOnSmallScreen">
@@ -51,7 +52,7 @@ export default class HomePage extends App {
               <nav
                 aria-label="Menu de opções"
                 id="hiddenDesktopMenu"
-                className="HiddenMenu  "
+                className="HiddenMenu"
               >
                 <ul role="menu">
                   <li role="menuitem" className="HiddenMenuNavigationItem">
