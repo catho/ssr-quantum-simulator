@@ -44,7 +44,7 @@
   "scripts": {
     "dev": "sass --watch --no-source-map static:static & next",
     "build": "next build",
-    "start": "sass --no-source-map static:static && next start",
+    "start": "next start",
     "analyzer": "ANALYZE=true next",
     "collect": "git checkout yarn.lock && rm -rf node_modules && yarn && yarn analyzer",
     "precommit": "lint-staged",
