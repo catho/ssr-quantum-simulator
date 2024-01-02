@@ -43,7 +43,7 @@
   },
   "scripts": {
     "dev": "sass --watch --no-source-map static:static & next",
-    "build": "next build",
+    "build": "sass --no-source-map static:static && next build",
     "start": "next start",
     "analyzer": "ANALYZE=true next",
     "collect": "git checkout yarn.lock && rm -rf node_modules && yarn && yarn analyzer",
