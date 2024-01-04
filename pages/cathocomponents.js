@@ -69,8 +69,8 @@ export default function CathoComponentsPage() {
                 className="ComponentContainer"
               >
                 <ComponentViewer
-                  componentName="Password Field"
-                  componentDescription="Password Field is a component used when a password input with validations is needed."
+                  name="Password Field"
+                  description="Password Field is a component used when a password input with validations is needed."
                 >
                   <PasswordField {...passwordProps} />
                 </ComponentViewer>
@@ -83,8 +83,8 @@ export default function CathoComponentsPage() {
                 className="ComponentContainer"
               >
                 <ComponentViewer
-                  componentName="BarChart"
-                  componentDescription="A simplebar chart component. Used to show sorted data in columns."
+                  name="BarChart"
+                  description="A simplebar chart component. Used to show sorted data in columns."
                 >
                   <BarChart data={barCharData} />
                 </ComponentViewer>
@@ -93,8 +93,8 @@ export default function CathoComponentsPage() {
           </Container>
           <Container className="GrayContainer">
             <ComponentViewer
-              componentName="CommentsBox"
-              componentDescription="A simple way of displaying a form or alert."
+              name="CommentsBox"
+              description="A simple way of displaying a form or alert."
             >
               <CommentsBox>
                 <p>This is a test message for the CommentsBox component.</p>
@@ -110,31 +110,31 @@ export default function CathoComponentsPage() {
                 xmall={2}
                 className="ComponentContainer"
               >
-                <ComponentViewer componentName="JobCard">
+                <ComponentViewer name="JobCard">
                   <JobCard {...jobCardProps} />
                 </ComponentViewer>
               </Col>
               <Col large={6} medium={6} small={4} xmall={2}>
                 <Container className="ComponentContainer">
                   <ComponentViewer
-                    componentName="JobNotificationList"
-                    componentDescription="A simple list of cards of job notifications."
+                    name="JobNotificationList"
+                    description="A simple list of cards of job notifications."
                   >
                     <JobNotificationList data={jobNotificationListMock} />
                   </ComponentViewer>
                 </Container>
                 <Container className="ComponentContainer">
                   <ComponentViewer
-                    componentName="DayPicker"
-                    componentDescription="DayPicker allows the user to select a day or a set of days."
+                    name="DayPicker"
+                    description="DayPicker allows the user to select a day or a set of days."
                   >
                     <DayPicker />
                   </ComponentViewer>
                 </Container>
                 <Container className="ComponentContainer">
                   <ComponentViewer
-                    componentName="HorizontalMenu"
-                    componentDescription="A mobile navigation bar with a text and an icon."
+                    name="HorizontalMenu"
+                    description="A mobile navigation bar with a text and an icon."
                   >
                     <HorizontalMenu items={horizontalMenuItems} />
                   </ComponentViewer>

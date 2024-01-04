@@ -4,7 +4,7 @@ import GlobalStyle from '@catho/quantum/GlobalStyle';
 import { Container } from '@catho/quantum';
 import ScrollUpButton from '../components/ScrollUpButton';
 import '../static/style.css';
-import { FooterSSR, HeaderSSR } from '../components';
+import { Footer, Header } from '../components';
 
 export default class HomePage extends App {
   render() {
@@ -21,13 +21,13 @@ export default class HomePage extends App {
         </Head>
         <GlobalStyle />
         <header>
-          <HeaderSSR />
+          <Header />
         </header>
         <Container className="MainContent">
           <Component {...pageProps} />
         </Container>
         <footer className="Footer-wrapper">
-          <FooterSSR />
+          <Footer />
         </footer>
         <ScrollUpButton />
       </>

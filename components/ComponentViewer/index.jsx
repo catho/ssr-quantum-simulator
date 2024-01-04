@@ -1,7 +1,7 @@
-const ComponentViewer = ({ children, componentName, componentDescription }) => (
+const ComponentViewer = ({ children, name, description }) => (
   <article className="ComponentContainer">
-    <h4 className="ComponentTitle">{componentName}</h4>
-    <h6>{componentDescription}</h6>
+    <h4 className="ComponentTitle">{name}</h4>
+    <h6>{description}</h6>
     {children}
   </article>
 );

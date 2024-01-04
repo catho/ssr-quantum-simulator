@@ -1,6 +1,6 @@
 import { Container } from '@catho/quantum';
 
-const FooterSSR = () => (
+const Footer = () => (
   <Container className="Footer-text">
     <p>
       Essa tela foi especialmente desenvolvida para a dev.Ela maravilhosa da
@@ -13,4 +13,4 @@ const FooterSSR = () => (
   </Container>
 );
 
-export default FooterSSR;
+export default Footer;
