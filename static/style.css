@@ -117,7 +117,7 @@ a:hover {
 .FlexContainer {
   display: flex;
   justify-content: space-evenly;
-  
+  flex-wrap: wrap;
 }
 
 .RoundedEdges {
@@ -218,4 +218,11 @@ input:checked ~ #hiddenDesktopMenu {
   margin: 16px 0;
   border-radius: 8px;
   background-color: white;
+}
+
+.ScrollUpButton {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-Index: 97;
 }
