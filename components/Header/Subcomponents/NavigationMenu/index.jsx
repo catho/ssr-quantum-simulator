@@ -1,3 +1,5 @@
+import SandwichButton from '../SandwichButton';
+
 const NavigationMenu = () => (
   <>
     <nav
@@ -14,16 +16,7 @@ const NavigationMenu = () => (
         </li>
       </ul>
     </nav>
-    <input
-      type="checkbox"
-      aria-controls="hiddenDesktopMenu"
-      aria-expanded="false"
-      aria-label="Menu"
-      id="menuSandwichButton"
-    />
-    <label className="SandwichButton" htmlFor="menuSandwichButton">
-      &#x2630;
-    </label>
+    <SandwichButton />
     <nav
       aria-label="Menu de opções"
       id="hiddenDesktopMenu"
