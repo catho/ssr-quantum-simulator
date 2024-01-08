@@ -13,7 +13,7 @@ export {
   ControlledDialog,
   FooterTagsList,
   ScrollUpButton,
-  ComponentViewr,
+  ComponentViewer,
   Header,
   Footer,
 };
