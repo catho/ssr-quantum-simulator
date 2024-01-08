@@ -3,7 +3,7 @@ import ControlledModal from './ControlledModal';
 import FooterTagsList from './FooterTagsList';
 import ControlledDialog from './ControlledDialog';
 import ScrollUpButton from './ScrollUpButton';
-import ComponentViewr from './ComponentViewer';
+import ComponentViewer from './ComponentViewer';
 import Header from './Header';
 import Footer from './Footer';
 
