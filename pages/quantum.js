@@ -43,6 +43,7 @@ import {
 
 import Carousel from '@catho/quantum/Carousel';
 import DropdownLight from '@catho/quantum/DropdownLight';
+import ComponentViewer from '../components/ComponentViewer';
 import {
   breadcrumbsMockItems,
   accordionMock,
@@ -71,32 +72,30 @@ export default function Quantum() {
             <article>
               <Row>
                 <Col className=" RoundedEdges  PaddingLeftRight">
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">Breadcrumbs</h4>
-                    <h6>
-                      Breadcrumbs creates a trail of links to help the user to
-                      locate the current page within the website&apos;s
-                      hierarchy.
-                    </h6>
+                  <ComponentViewer
+                    name="Breadcrumbs"
+                    description="Breadcrumbs creates a trail of links to help the user to
+                      locate the current page within the website's
+                      hierarchy."
+                  >
                     <Breadcrumbs items={breadcrumbsMockItems} />
-                  </article>
+                  </ComponentViewer>
                 </Col>
               </Row>
               <Row>
                 <Col className="RoundedEdges PaddingLeftRight">
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">TabbedView</h4>
-                    <h6>
-                      TabbedView and Tab are components created to organize
-                      content into separate views where only one view can be
-                      visible at a time.
-                    </h6>
+                  <ComponentViewer
+                    name="TabbedView"
+                    description="TabbedView and Tab are components created to organize
+                    content into separate views where only one view can be
+                    visible at a time."
+                  >
                     <TabbedView activeTab="TabTest">
                       <Tab title="TabTest">Tab with TabbedView</Tab>
                       <Tab title="TabTest 2">Second tab with TabbedView</Tab>
                       <Tab title="TabTest 3">Third tab with TabbedView</Tab>
                     </TabbedView>
-                  </article>
+                  </ComponentViewer>
                 </Col>
               </Row>
             </article>
@@ -112,34 +111,31 @@ export default function Quantum() {
                 xmall={2}
                 className="RoundedEdges PaddingLeftRight"
               >
-                <article>
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">Container</h4>
-                    <h6>
-                      Containers wrap around contents and can be used in
-                      different ways.
-                    </h6>
-                    <Container>This is a container.</Container>
-                  </article>
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">Hide</h4>
-                    <h6>Hide will suppress an element in small devices.</h6>
-                    <Hide xsmall className="Margins PaddingLeftRight">
-                      <Row>
-                        <Col className="Borders">Reduce the screen size</Col>
-                        <Col className="Borders">to see Hide working</Col>
-                      </Row>
-                    </Hide>
-                  </article>
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">Link</h4>
-                    <h6>
-                      Link styled according to Catho&apos;s Style Guide. Makes
-                      it easier to style an anchor tag.
-                    </h6>
-                    <Link href="https://www.catho.com.br">Link</Link>
-                  </article>
-                </article>
+                <ComponentViewer
+                  name="Container"
+                  description="Containers wrap around contents and can be used in
+                  different ways."
+                >
+                  <Container>This is a container.</Container>
+                </ComponentViewer>
+                <ComponentViewer
+                  name="Hide"
+                  description="Hide will suppress an element in small devices"
+                >
+                  <Hide xsmall className="Margins PaddingLeftRight">
+                    <Row>
+                      <Col className="Borders">Reduce the screen size</Col>
+                      <Col className="Borders">to see Hide working</Col>
+                    </Row>
+                  </Hide>
+                </ComponentViewer>
+                <ComponentViewer
+                  name="Link"
+                  description="Link styled according to Catho's Style Guide. Makes
+                      it easier to style an anchor tag."
+                >
+                  <Link href="https://www.catho.com.br">Link</Link>
+                </ComponentViewer>
               </Col>
               <Col
                 large={6}
@@ -148,57 +144,52 @@ export default function Quantum() {
                 xmall={2}
                 className="RoundedEdges PaddingLeftRight"
               >
-                <article>
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">Rows and Colums</h4>
-                    <h6>
-                      Rows are wrappers for columns. Each column has horizontal
-                      space column gap (called a gutter) for controlling the
-                      space between them.
-                    </h6>
-                    <Row className="Borders">
-                      <Col className="Borders" xsmall={2} small={12}>
-                        12 Columns Width
-                      </Col>
-                    </Row>
-                    <Row className="Borders">
-                      <Col className="Borders" xsmall={2} small={6}>
-                        6 Columns Width
-                      </Col>
-                      <Col className="Borders" xsmall={2} small={6}>
-                        6 Columns Width
-                      </Col>
-                    </Row>
-                    <Row className="Borders">
-                      <Col className="Borders" xsmall={4} small={4}>
-                        4 Columns Width
-                      </Col>
-                      <Col className="Borders" xsmall={4} small={4}>
-                        4 Columns Width
-                      </Col>
-                      <Col className="Borders" xsmall={4} small={4}>
-                        4 Columns Width
-                      </Col>
-                    </Row>
-                  </article>
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">Lists</h4>
-                    <h6>
-                      List is a component with continuous, vertical indexes of
-                      texts or icons.
-                    </h6>
-                    <List>
-                      <List.Header>List Header</List.Header>
+                <ComponentViewer
+                  name="Rows and Colums"
+                  description="Rows are wrappers for columns. Each column has horizontal
+                    space column gap (called a gutter) for controlling the
+                    space between them."
+                >
+                  <Row className="Borders">
+                    <Col className="Borders" xsmall={2} small={12}>
+                      12 Columns Width
+                    </Col>
+                  </Row>
+                  <Row className="Borders">
+                    <Col className="Borders" xsmall={2} small={6}>
+                      6 Columns Width
+                    </Col>
+                    <Col className="Borders" xsmall={2} small={6}>
+                      6 Columns Width
+                    </Col>
+                  </Row>
+                  <Row className="Borders">
+                    <Col className="Borders" xsmall={4} small={4}>
+                      4 Columns Width
+                    </Col>
+                    <Col className="Borders" xsmall={4} small={4}>
+                      4 Columns Width
+                    </Col>
+                    <Col className="Borders" xsmall={4} small={4}>
+                      4 Columns Width
+                    </Col>
+                  </Row>
+                </ComponentViewer>
+                <ComponentViewer
+                  name="Lists"
+                  description="List is a component with continuous, vertical indexes of texts or icons."
+                >
+                  <List>
+                    <List.Header>List Header</List.Header>
+                    <br />
+                    <List.SubHeader>List Subheaders</List.SubHeader>
+                    <br />
+                    <List.Content>
+                      <List.Item>List</List.Item>
                       <br />
-                      <List.SubHeader>List Subheaders</List.SubHeader>
-                      <br />
-                      <List.Content>
-                        <List.Item>List</List.Item>
-                        <br />
-                      </List.Content>
-                    </List>
-                  </article>
-                </article>
+                    </List.Content>
+                  </List>
+                </ComponentViewer>
               </Col>
             </Row>
           </Container>
@@ -213,44 +204,37 @@ export default function Quantum() {
                 xmall={2}
                 className="RoundedEdges PaddingLeftRight"
               >
-                <article>
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">Autocomplete</h4>
-                    <h6>
-                      Styled input component with autocomplete suggestions
-                    </h6>
-                    <AutoComplete suggestions={['AutoComplete suggestion']} />
-                  </article>
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">Dropdown</h4>
-                    <h6>
-                      Styled dropwdown menu component following Catho&apos;s
-                      Style Guide.
-                    </h6>
-                    <Dropdown items={dropdownMenuMocks} />
-                  </article>
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">DropdownLight</h4>
-                    <h6>
-                      Styled dropwdown menu component without the external lib
+                <ComponentViewer
+                  name="Autocomplete"
+                  description="Styled input component with autocomplete suggestions."
+                >
+                  <AutoComplete suggestions={['AutoComplete suggestion']} />
+                </ComponentViewer>
+                <ComponentViewer
+                  name="Dropdown"
+                  description="Styled dropwdown menu component following Catho's Style Guide."
+                >
+                  <Dropdown items={dropdownMenuMocks} />
+                </ComponentViewer>
+                <ComponentViewer
+                  name="DropdownLight"
+                  description="Styled dropwdown menu component without the external lib
                       Downshift; therefore it is lighter than the usual
-                      Dropdown.
-                    </h6>
-                    <DropdownLight items={dropdownMenuMocks} />
-                  </article>
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">TextArea</h4>
-                    <h6>
-                      Styled text area component following Catho&apos;s Style
-                      Guide.
-                    </h6>
-                    <TextArea
-                      helperText="Some Helper Text"
-                      label="TextArea Label"
-                      error="Error message"
-                    />
-                  </article>
-                </article>
+                      Dropdown."
+                >
+                  <DropdownLight items={dropdownMenuMocks} />
+                </ComponentViewer>
+                <ComponentViewer
+                  name="TextArea"
+                  description="Styled text area component following Catho's Style
+                      Guide."
+                >
+                  <TextArea
+                    helperText="Some Helper Text"
+                    label="TextArea Label"
+                    error="Error message"
+                  />
+                </ComponentViewer>
               </Col>
               <Col
                 large={6}
@@ -259,49 +243,43 @@ export default function Quantum() {
                 xmall={2}
                 className="RoundedEdges PaddingLeftRight"
               >
-                <article>
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">Card</h4>
-                    <h6>
-                      Cards contain a content and actions about a single
-                      subject.
-                    </h6>
-                    <Card>
-                      <Card.Header>
-                        <Card.HeaderText>
-                          <Card.Title>Card Title</Card.Title>
-                          <Card.Description>
-                            Card Description: Proin massa nulla, rhoncus nec
-                            lectus vitae, interdum pharetra est. Etiam sed quam
-                            nec nulla lobortis ultrices.
-                          </Card.Description>
-                        </Card.HeaderText>
-                        <Card.Thumbnail src="#" alt="Alternative" />
-                      </Card.Header>
-                      <Card.Content>Content of the Card</Card.Content>
-                      <Card.Footer>Footer of the Card</Card.Footer>
-                    </Card>
-                  </article>
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">Alert</h4>
-                    <h6>
-                      Alerts are used for items that need to be labeled,
-                      categorized, or organized using keywords.
-                    </h6>
-                    <Alert>Alert Test</Alert>
-                  </article>
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">Accordion</h4>
-                    <h6>
-                      An accordion is a vertical stack of interactive headings
+                <ComponentViewer
+                  name="Card"
+                  description="Cards contain a content and actions about a single subject."
+                >
+                  <Card>
+                    <Card.Header>
+                      <Card.HeaderText>
+                        <Card.Title>Card Title</Card.Title>
+                        <Card.Description>
+                          Card Description: Proin massa nulla, rhoncus nec
+                          lectus vitae, interdum pharetra est. Etiam sed quam
+                          nec nulla lobortis ultrices.
+                        </Card.Description>
+                      </Card.HeaderText>
+                      <Card.Thumbnail src="#" alt="Alternative" />
+                    </Card.Header>
+                    <Card.Content>Content of the Card</Card.Content>
+                    <Card.Footer>Footer of the Card</Card.Footer>
+                  </Card>
+                </ComponentViewer>
+                <ComponentViewer
+                  name="Alert"
+                  description="Alerts are used for items that need to be labeled,
+                      categorized, or organized using keywords."
+                >
+                  <Alert>Alert Test</Alert>
+                </ComponentViewer>
+                <ComponentViewer
+                  name="Accordion"
+                  description="An accordion is a vertical stack of interactive headings
                       used to toggle the display of further information; each
                       item can be &lsquo;collapsed&rsquo;, with just a short
                       label visible, or &lsquo;expanded&rsquo; to show the
-                      complete content.
-                    </h6>
-                    <Accordion items={accordionMock} />
-                  </article>
-                </article>
+                      complete content."
+                >
+                  <Accordion items={accordionMock} />
+                </ComponentViewer>
               </Col>
             </Row>
           </Container>
@@ -316,69 +294,57 @@ export default function Quantum() {
                 xmall={2}
                 className="RoundedEdges PaddingLeftRight"
               >
-                <article>
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">ChargeBar</h4>
-                    <h6>
-                      ChargeBar shows the level the user is to be able to
-                      complete their stats to the maximum.
-                    </h6>
-                    <ChargeBar />
-                  </article>
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">RangeSlider</h4>
-                    <h6>
-                      RangeSlider is a component to select a value from a
-                      predefined range. Chaneging the component&apos;s props,
-                      it&apos;s possible to set the minimum and maximum values,
+                <ComponentViewer
+                  name="ChargeBar"
+                  description="ChargeBar shows the level the user is to be able to
+                    complete their stats to the maximum."
+                >
+                  <ChargeBar />
+                </ComponentViewer>
+                <ComponentViewer
+                  name="RangeSlider"
+                  description="RangeSlider is a component to select a value from a
+                      predefined range. Chaneging the component's props,
+                      it's possible to set the minimum and maximum values,
                       format the tooltip and labels, or disable the component
-                      itself.
-                    </h6>
-                    <RangeSlider />
-                  </article>
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">ProgressBar</h4>
-                    <h6>
-                      Progress bars are used to give the user a feedback on the
-                      progress of a process or an action.
-                    </h6>
-                    <ProgressBar />
-                  </article>
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">Stepper</h4>
-                    <h6>
-                      The Stepper component is a visual tool to show progress
-                      using logical and numbered steps.
-                    </h6>
-                    <Stepper />
-                  </article>
-                  <div>
-                    <article className="ComponentContainer">
-                      <h4 className="ComponentTitle">CircularLoader</h4>
-                      <h6>
-                        The Stepper component is a visual tool to show progress
-                        using logical and numbered steps.
-                      </h6>
-                      <CircularLoader />
-                    </article>
-                    <article className="ComponentContainer">
-                      <h4 className="ComponentTitle">Skeleton</h4>
-                      <h6>
-                        The Skeleton is a component that replaces others while
-                        they are loading or not ready to render.
-                      </h6>
-                      <Skeleton />
-                    </article>
-                  </div>
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">Pagination</h4>
-                    <h6>
-                      Add pagination buttons to help splitting up long contents
-                      into shorter, easy to understand blocks.
-                    </h6>
-                    <Pagination totalPages={4} activePage={1} />
-                  </article>
-                </article>
+                      itself."
+                >
+                  <RangeSlider />
+                </ComponentViewer>
+                <ComponentViewer
+                  name="ProgressBar"
+                  description="Progress bars are used to give the user a feedback on the
+                      progress of a process or an action."
+                >
+                  <ProgressBar />
+                </ComponentViewer>
+                <ComponentViewer
+                  name="Stepper"
+                  description="The Stepper component is a visual tool to show progress
+                      using logical and numbered steps."
+                >
+                  <Stepper />
+                </ComponentViewer>
+                <ComponentViewer
+                  name="CircularLoader"
+                  description="The CircularLoader component is a visual tool to show something is loading."
+                >
+                  <CircularLoader />
+                </ComponentViewer>
+                <ComponentViewer
+                  name="Skeleton"
+                  description="The Skeleton is a component that replaces others while
+                      they are loading or not ready to render."
+                >
+                  <Skeleton />
+                </ComponentViewer>
+                <ComponentViewer
+                  name="Pagination"
+                  description="Add pagination buttons to help splitting up long contents
+                      into shorter, easy to understand blocks."
+                >
+                  <Pagination totalPages={4} activePage={1} />
+                </ComponentViewer>
               </Col>
               <Col
                 large={6}
@@ -387,68 +353,60 @@ export default function Quantum() {
                 xmall={2}
                 className="RoundedEdges PaddingLeftRight"
               >
-                <article>
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">Button</h4>
-                    <h6>
-                      Buttons express what will happen when the user clicks or
-                      touches it.
-                    </h6>
-                    <Button>Simple Button</Button>
-                  </article>
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">ControlledDialog</h4>
-                    <h6>
-                      ControlledDialog is a button that activates a dialog
+                <ComponentViewer
+                  name="Button"
+                  description="Buttons express what will happen when the user clicks or
+                      touches it."
+                >
+                  <Button>Simple Button</Button>
+                </ComponentViewer>
+                <ComponentViewer
+                  name="ControlledDialog"
+                  description="ControlledDialog is a button that activates a dialog
                       window in front of all content. It is commonly used to
                       provide an important information or ask for some user
-                      interaciont.
-                    </h6>
-                    <ControlledDialog />
-                  </article>
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">Hamburger</h4>
-                    <h6>
-                      Hamburger component is used for opening mobile menu. You
+                      interaciont."
+                >
+                  <ControlledDialog />
+                </ComponentViewer>
+                <ComponentViewer
+                  name="Hamburger"
+                  description="Hamburger component is used for opening mobile menu. You
                       can also pass a aria-label description to inform screen
-                      readers that there are new notifications.
-                    </h6>
-                    <Hamburger inverted />
-                  </article>
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">SegmentedControl</h4>
-                    <h6>
-                      The Segmented control component is a linear set of two or
+                      readers that there are new notifications."
+                >
+                  <Hamburger inverted />
+                </ComponentViewer>
+                <ComponentViewer
+                  name="SegmentedControl"
+                  description="The Segmented control component is a linear set of two or
                       more alternation buttons, with all segments with same
-                      width.
-                    </h6>
-                    <SegmentedControl
-                      name="items-text"
-                      items={segmentedControlMock}
-                    />
-                  </article>
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">ControlledModal</h4>
-                    <h6>
-                      Modals inform users about a task and can contain critical
+                      width."
+                >
+                  <SegmentedControl
+                    name="items-text"
+                    items={segmentedControlMock}
+                  />
+                </ComponentViewer>
+                <ComponentViewer
+                  name="ControlledModal"
+                  description="Modals inform users about a task and can contain critical
                       information, require decisions, or involve multiple tasks.
                       A ControlledModal contains control buttons, such as
-                      &lsquo;Cancel&rsquo; and &lsquo;Delete&rsquo;.
-                    </h6>
-                    <ControlledModal />
-                  </article>
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">ControlledSnackBar</h4>
-                    <h6>
-                      SnackBars are used to show an alert about the action that
+                      &lsquo;Cancel&rsquo; and &lsquo;Delete&rsquo;."
+                >
+                  <ControlledModal />
+                </ComponentViewer>
+                <ComponentViewer
+                  name="ControlledSnackBar"
+                  description="SnackBars are used to show an alert about the action that
                       have just been made: delete or archive content by accident
                       (undo), resend messages that not been sent for some
                       reason, or try to reconnect to internet (retry). A
-                      ControlledSnackBar has control buttons.
-                    </h6>
-                    <ControlledSnackBar />
-                  </article>
-                </article>
+                      ControlledSnackBar has control buttons."
+                >
+                  <ControlledSnackBar />
+                </ComponentViewer>
               </Col>
             </Row>
           </Container>
@@ -463,27 +421,23 @@ export default function Quantum() {
                 xmall={2}
                 className="RoundedEdges PaddingLeftRight"
               >
-                <article>
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">Badge</h4>
-                    <h6>
-                      Badges are used for showing the quantity of something,
-                      such as warnings, inbox messages and others.
-                    </h6>
-                    <Badge>
-                      <Tag>Example Badge</Tag>
-                    </Badge>
-                  </article>
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">Tag</h4>
-                    <h6>
-                      Tags are used for items that need to be labeled,
+                <ComponentViewer
+                  name="Badge"
+                  description="Badges are used for showing the quantity of something,
+                      such as warnings, inbox messages and others."
+                >
+                  <Badge>
+                    <Tag>Example Badge</Tag>
+                  </Badge>
+                </ComponentViewer>
+                <ComponentViewer
+                  name="Tag"
+                  description="Tags are used for items that need to be labeled,
                       categorized, or organized using keywords that describe
-                      them.
-                    </h6>
-                    <Tag>Example Tag</Tag>
-                  </article>
-                </article>
+                      them."
+                >
+                  <Tag>Example Tag</Tag>
+                </ComponentViewer>
               </Col>
               <Col
                 large={6}
@@ -492,45 +446,42 @@ export default function Quantum() {
                 xmall={2}
                 className="RoundedEdges PaddingLeftRight"
               >
-                <article>
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">Popover</h4>
-                    <h6 className="TexdtFormattingH6">
-                      Tags are used for items that need to be labeled,
+                <ComponentViewer
+                  name="Popover"
+                  description="Tags are used for items that need to be labeled,
                       categorized, or organized using keywords that describe
-                      them.
-                    </h6>
-                    <Popover trigger="Click Me" onClose={() => {}}>
-                      Example PopOver Trigger
-                    </Popover>
-                  </article>
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">Tooltip</h4>
-                    <h6>
-                      Tooltips provide additional information upon hover or
+                      them."
+                >
+                  <Popover trigger="Click Me" onClose={() => {}}>
+                    Example PopOver Trigger
+                  </Popover>
+                </ComponentViewer>
+                <ComponentViewer
+                  name="Tooltip"
+                  description="Tooltips provide additional information upon hover or
                       focus. They often contain helper text that is contextual
-                      to an element.
-                    </h6>
+                      to an element."
+                >
+                  <article className="ComponentContainer">
                     <Tooltip placement="top" text="Example Tooltip Text">
                       Pass the pointer over me
                     </Tooltip>
                   </article>
-                </article>
+                </ComponentViewer>
               </Col>
             </Row>
           </Container>
         </section>
         <section>
           <Container className="GrayContainer">
-            <article className="ComponentContainer">
-              <h4 className="ComponentTitle">Carousel</h4>
-              <h6>
-                Carousel is a component that align cards with a series of
+            <ComponentViewer
+              name="Carousel"
+              description="Carousel is a component that align cards with a series of
                 content. Works with images, texts, or custom markups. Also
-                includes support for indicators and previous/next controls.
-              </h6>
+                includes support for indicators and previous/next controls."
+            >
               <Carousel cards={cardsMock} />
-            </article>
+            </ComponentViewer>
           </Container>
         </section>
         <section>
@@ -543,24 +494,20 @@ export default function Quantum() {
                 xmall={2}
                 className="RoundedEdges PaddingLeftRight"
               >
-                <article>
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">Social Button</h4>
-                    <h6>
-                      These buttons are used to run actions related to their
+                <ComponentViewer
+                  name="Social Button"
+                  description="These buttons are used to run actions related to their
                       respective providers. Example: login with OAuth API from
-                      Google.
-                    </h6>
-                    <div className="FlexContainer">
-                      <SocialButton provider="facebook" />
-                      <SocialButton provider="google" />
-                    </div>
-                  </article>
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">Info Icon</h4>
-                    <Icon name="info" />
-                  </article>
-                </article>
+                      Google."
+                >
+                  <div className="FlexContainer">
+                    <SocialButton provider="facebook" />
+                    <SocialButton provider="google" />
+                  </div>
+                </ComponentViewer>
+                <ComponentViewer name="Info Icon">
+                  <Icon name="info" />
+                </ComponentViewer>
               </Col>
               <Col
                 large={6}
@@ -569,23 +516,21 @@ export default function Quantum() {
                 xmall={2}
                 className="RoundedEdges PaddingLeftRight"
               >
-                <article>
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">Avatar</h4>
-                    <h6>
-                      Avatars are used to display a thumbnail of the u
-                      ser&apos;s profile picture or an user icon if the picture
+                <ComponentViewer
+                  name="Avatar"
+                  description="Avatars are used to display a thumbnail of the u
+                      ser's profile picture or an user icon if the picture
                       is not defined. It can also display a dot to alert that
-                      there is some notification.
-                    </h6>
-                    <Avatar />
-                  </article>
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">Socials</h4>
-                    <h6>Socials show the icons of respective Social Medias </h6>
-                    <Socials items={socialMocks} />
-                  </article>
-                </article>
+                      there is some notification."
+                >
+                  <Avatar />
+                </ComponentViewer>
+                <ComponentViewer
+                  name="Socials"
+                  description="Socials show the icons of respective Social Medias."
+                >
+                  <Socials items={socialMocks} />
+                </ComponentViewer>
               </Col>
             </Row>
           </Container>
@@ -600,36 +545,31 @@ export default function Quantum() {
                 xmall={2}
                 className="RoundedEdges PaddingLeftRight"
               >
-                <article>
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">Checkbox Group</h4>
-                    <h6>
-                      Gets values from a single onChange callback prop and apply
-                      a single error message to a group of checkboxes.
-                    </h6>
-                    <CheckboxGroup error="Some error" options={checkBoxMocks} />
-                  </article>
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">Radio Group</h4>
-                    <h6>
-                      Radio group is a list of radio buttons that are used when
+                <ComponentViewer
+                  name="Checkbox Group"
+                  description="Gets values from a single onChange callback prop and apply
+                      a single error message to a group of checkboxes."
+                >
+                  <CheckboxGroup error="Some error" options={checkBoxMocks} />
+                </ComponentViewer>
+                <ComponentViewer
+                  name="Radio Group"
+                  description="Radio group is a list of radio buttons that are used when
                       a list of two or more options are mutually exclusive,
-                      meaning the user must select only one option.
-                    </h6>
-                    <RadioGroup
-                      name="Radio Group Example"
-                      options={radioGroupMocks}
-                    />
-                  </article>
-                  <article className="ComponentContainer">
-                    <h4 className="ComponentTitle">Toggle</h4>
-                    <h6>
-                      Toggle is a control that is used to quickly switch between
-                      two possible states.
-                    </h6>
-                    <Toggle id="right" />
-                  </article>
-                </article>
+                      meaning the user must select only one option."
+                >
+                  <RadioGroup
+                    name="Radio Group Example"
+                    options={radioGroupMocks}
+                  />
+                </ComponentViewer>
+                <ComponentViewer
+                  name="Toggle"
+                  description="Toggle is a control that is used to quickly switch between
+                      two possible states."
+                >
+                  <Toggle id="right" />
+                </ComponentViewer>
               </Col>
               <Col
                 large={6}
@@ -638,14 +578,13 @@ export default function Quantum() {
                 xmall={2}
                 className="RoundedEdges PaddingLeftRight"
               >
-                <article className="ComponentContainer">
-                  <h4 className="ComponentTitle">Form</h4>
-                  <h6>
-                    A Form displays a set of related user input fields in a
+                <ComponentViewer
+                  name="Form"
+                  description="A Form displays a set of related user input fields in a
                     structured way, some other components like validation adds
                     check behavior of the data against a set of criteria before
-                    passing it along to the server.{' '}
-                  </h6>
+                    passing it along to the server."
+                >
                   <Form>
                     <Input label="Input With Generic Label" />
                     <Input
@@ -669,7 +608,7 @@ export default function Quantum() {
                     <Input.Phone label="Phone Number" />
                     <Input.Password label="Password" />
                   </Form>
-                </article>
+                </ComponentViewer>
               </Col>
             </Row>
           </Container>

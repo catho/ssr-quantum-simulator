@@ -3,6 +3,9 @@ import ControlledModal from './ControlledModal';
 import FooterTagsList from './FooterTagsList';
 import ControlledDialog from './ControlledDialog';
 import ScrollUpButton from './ScrollUpButton';
+import ComponentViewer from './ComponentViewer';
+import Header from './Header';
+import Footer from './Footer';
 
 export {
   ControlledSnackBar,
@@ -10,4 +13,7 @@ export {
   ControlledDialog,
   FooterTagsList,
   ScrollUpButton,
+  ComponentViewer,
+  Header,
+  Footer,
 };

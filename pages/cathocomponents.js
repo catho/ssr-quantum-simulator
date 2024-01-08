@@ -22,6 +22,7 @@ import {
   passwordProps,
   tagListMocks,
 } from '../mocks/mocks';
+import ComponentViewer from '../components/ComponentViewer';
 
 export default function CathoComponentsPage() {
   return (
@@ -67,14 +68,12 @@ export default function CathoComponentsPage() {
                 xmall={2}
                 className="ComponentContainer"
               >
-                <article>
-                  <h4 className="ComponentTitle">Password Field</h4>
-                  <h6>
-                    Password Field is a component used when a password input
-                    with validations is needed.
-                  </h6>
+                <ComponentViewer
+                  name="Password Field"
+                  description="Password Field is a component used when a password input with validations is needed."
+                >
                   <PasswordField {...passwordProps} />
-                </article>
+                </ComponentViewer>
               </Col>
               <Col
                 large={6}
@@ -83,25 +82,24 @@ export default function CathoComponentsPage() {
                 xmall={2}
                 className="ComponentContainer"
               >
-                <article>
-                  <h4 className="ComponentTitle">BarChart</h4>
-                  <h6>
-                    A simplebar chart component. Used to show sorted data in
-                    columns.
-                  </h6>
+                <ComponentViewer
+                  name="BarChart"
+                  description="A simplebar chart component. Used to show sorted data in columns."
+                >
                   <BarChart data={barCharData} />
-                </article>
+                </ComponentViewer>
               </Col>
             </Row>
           </Container>
           <Container className="GrayContainer">
-            <article>
-              <h4 className="ComponentTitle">CommentsBox</h4>
-              <h6>A simple way of displaying a form or alert.</h6>
+            <ComponentViewer
+              name="CommentsBox"
+              description="A simple way of displaying a form or alert."
+            >
               <CommentsBox>
                 <p>This is a test message for the CommentsBox component.</p>
               </CommentsBox>
-            </article>
+            </ComponentViewer>
           </Container>
           <Container className=" GrayContainer FlexContainer">
             <Row>
@@ -112,35 +110,34 @@ export default function CathoComponentsPage() {
                 xmall={2}
                 className="ComponentContainer"
               >
-                <article>
-                  <h4 className="ComponentTitle">JobCard</h4>
+                <ComponentViewer name="JobCard">
                   <JobCard {...jobCardProps} />
-                </article>
+                </ComponentViewer>
               </Col>
               <Col large={6} medium={6} small={4} xmall={2}>
                 <Container className="ComponentContainer">
-                  <article>
-                    <h4 className="ComponentTitle">JobNotificationList</h4>
-                    <h6>A simple list of cards of job notifications.</h6>
+                  <ComponentViewer
+                    name="JobNotificationList"
+                    description="A simple list of cards of job notifications."
+                  >
                     <JobNotificationList data={jobNotificationListMock} />
-                  </article>
+                  </ComponentViewer>
                 </Container>
                 <Container className="ComponentContainer">
-                  <article>
-                    <h4 className="ComponentTitle">DayPicker</h4>
-                    <h6>
-                      DayPicker allows the user to select a day or a set of
-                      days.
-                    </h6>
+                  <ComponentViewer
+                    name="DayPicker"
+                    description="DayPicker allows the user to select a day or a set of days."
+                  >
                     <DayPicker />
-                  </article>
+                  </ComponentViewer>
                 </Container>
                 <Container className="ComponentContainer">
-                  <article>
-                    <h4 className="ComponentTitle">HorizontalMenu</h4>
-                    <h6>A mobile navigation bar with a text and an icon.</h6>
+                  <ComponentViewer
+                    name="HorizontalMenu"
+                    description="A mobile navigation bar with a text and an icon."
+                  >
                     <HorizontalMenu items={horizontalMenuItems} />
-                  </article>
+                  </ComponentViewer>
                 </Container>
               </Col>
             </Row>
