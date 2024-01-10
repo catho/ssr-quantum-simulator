@@ -226,3 +226,10 @@ input:checked ~ #hiddenDesktopMenu {
   right: 50px;
   z-Index: 97;
 }
+
+.ScrollUpButton {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-Index: 97;
+  }
