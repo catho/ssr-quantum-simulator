@@ -61,7 +61,7 @@
     "format": "prettier --write ./**/*.{js,jsx,json}",
     "prepush": "yarn lint:all",
     "test": "jest",
-    "test:components": "test ./components"
+    "test:components": "yarn test ./components"
   },
   "lint-staged": {
     "*.{js,jsx,json}": [
