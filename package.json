@@ -30,6 +30,8 @@
     "yarn": "^1.22.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "12",
     "babel-eslint": "^10.0.1",
     "babel-plugin-root-import": "^6.4.1",
     "eslint": "^5.15.3",
@@ -39,6 +41,8 @@
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.3",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "prettier": "^1.15.3"
   },
   "scripts": {
@@ -54,12 +58,27 @@
     "lint:all": "yarn lint:components && yarn lint:js && yarn lint:pages",
     "lint": "eslint --ext js,jsx --quiet",
     "format": "prettier --write ./**/*.{js,jsx,json}",
-    "prepush": "yarn lint:all"
+    "prepush": "yarn lint:all",
+    "test": "jest",
+    "test:components": "yarn test ./components"
   },
   "lint-staged": {
     "*.{js,jsx,json}": [
       "yarn format",
       "git add"
     ]
+  },
+  "jest": {
+    "clearMocks": true,
+    "coverageDirectory": "coverage",
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/styleMock.js"
+    },
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest-config.js"
+    ],
+    "testEnvironment": "jsdom",
+    "testTimeout": 30000
   }
 }
