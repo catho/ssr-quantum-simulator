@@ -7,7 +7,11 @@ const SandwichButton = () => (
       aria-label="Menu"
       id="menuSandwichButton"
     />
-    <label className="SandwichButton" htmlFor="menuSandwichButton">
+    <label
+      className="SandwichButton"
+      htmlFor="menuSandwichButton"
+      data-testid="sandwichButton"
+    >
       &#x2630;
     </label>
   </>

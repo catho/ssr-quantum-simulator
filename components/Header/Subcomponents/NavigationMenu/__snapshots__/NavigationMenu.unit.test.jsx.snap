@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match the snapshot 1`] = `
+<div>
+  <nav
+    aria-label="Menu Principal"
+    class="VisibleMenu FlexEndPositioning"
+    id="visibleDesktopMenu"
+  >
+    <ul
+      class="NavList"
+      role="menu"
+    >
+      <li
+        class="DisplayNoneOnSmallScreen"
+        role="menuitem"
+      >
+        <a
+          href="/cathocomponents"
+        >
+          Catho Components
+        </a>
+      </li>
+      <li
+        class="DisplayNoneOnSmallScreen"
+        role="menuitem"
+      >
+        <a
+          href="/quantum"
+        >
+          Quantum
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <input
+    aria-controls="hiddenDesktopMenu"
+    aria-expanded="false"
+    aria-label="Menu"
+    id="menuSandwichButton"
+    type="checkbox"
+  />
+  <label
+    class="SandwichButton"
+    data-testid="sandwichButton"
+    for="menuSandwichButton"
+  >
+    ☰
+  </label>
+  <nav
+    aria-label="Menu de opções"
+    class="HiddenMenu"
+    id="hiddenDesktopMenu"
+  >
+    <ul
+      role="menu"
+    >
+      <li
+        class="HiddenMenuNavigationItem"
+        role="menuitem"
+      >
+        <a
+          href="/cathocomponents"
+        >
+          Catho Components
+        </a>
+      </li>
+      <li
+        class="HiddenMenuNavigationItem"
+        role="menuitem"
+      >
+        <a
+          href="/quantum"
+        >
+          Quantum
+        </a>
+      </li>
+      <li
+        role="menuitem"
+      >
+        <a
+          href="/render"
+        >
+          Simulates renders
+        </a>
+      </li>
+      <li
+        role="menuitem"
+      >
+        <a
+          href="https://github.com/catho"
+        >
+          Repositories
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
