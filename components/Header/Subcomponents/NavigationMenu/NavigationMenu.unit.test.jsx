@@ -18,8 +18,8 @@ it('should render the links and sandwitch button', () => {
   const quantumMobileMenuLink = quantumLinks[1];
 
   const sandwitchBtn = screen.getByTestId('sandwichButton');
-  const simulatesRendersLink = screen.getByText('Simulates renders');
-  const repositoriesLink = screen.getByText('Repositories');
+  const simulatesRendersMenuLink = screen.getByText('Simulates renders');
+  const repositoriesMenuLink = screen.getByText('Repositories');
 
   expect(cathoComponentsVisibleMenuLink).toBeInTheDocument();
   expect(quantumVisibleMenuLink).toBeInTheDocument();
