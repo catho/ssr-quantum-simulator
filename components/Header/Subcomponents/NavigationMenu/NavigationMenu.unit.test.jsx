@@ -24,8 +24,8 @@ it('should render the links and sandwitch button', () => {
   expect(cathoComponentsVisibleMenuLink).toBeInTheDocument();
   expect(quantumVisibleMenuLink).toBeInTheDocument();
   expect(sandwitchBtn).toBeInTheDocument();
-  expect(simulatesRendersLink).toBeInTheDocument();
-  expect(repositoriesLink).toBeInTheDocument();
+  expect(simulatesRendersMenuLink).toBeInTheDocument();
+  expect(repositoriesMenuLink).toBeInTheDocument();
   expect(cathoComponentsMobileMenuLink).toBeInTheDocument();
   expect(quantumMobileMenuLink).toBeInTheDocument();
 });
