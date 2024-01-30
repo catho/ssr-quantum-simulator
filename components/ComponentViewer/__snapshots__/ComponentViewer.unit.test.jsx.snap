@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match the snapshot 1`] = `
+<div>
+  <article
+    class="ComponentContainer"
+  >
+    <h4
+      class="ComponentTitle"
+    >
+      Mock Name
+    </h4>
+    <h6>
+      Mock Description
+    </h6>
+    <article>
+      <p>
+        Lorem ipsum dolor sit amet.
+      </p>
+    </article>
+  </article>
+</div>
+`;
