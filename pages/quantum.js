@@ -868,6 +868,26 @@ export default function Quantum() {
                     </Col>
                   </Row>
                   -- end Nested
+                  <strong
+                    style={{
+                      display: 'flex',
+                      justifyContent: 'center',
+                      width: '100%',
+                    }}
+                  >
+                    ALL PROPS
+                  </strong>
+                  <Row className="Borders">
+                    <Col
+                      className="Borders"
+                      xsmall={2}
+                      small={6}
+                      medium={8}
+                      large={10}
+                    >
+                      Relou uordi!
+                    </Col>
+                  </Row>
                 </ComponentViewer>
                 <ComponentViewer
                   name="Lists"
