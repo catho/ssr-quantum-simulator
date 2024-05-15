@@ -263,6 +263,21 @@ export default function Quantum() {
                   </Row>
                   -- end No-gutter and Offset
                   <br />
+                  -- start Nested
+                  <Row className="Borders">
+                    <Col className="Borders" no-gutters xsmall={4}>
+                      <Row className="B">
+                        <Col style={{ backgroundColor: 'gray' }}>
+                          {' '}
+                          without xsmall
+                        </Col>
+                        <Col xsmall={2} style={{ backgroundColor: 'gray' }}>
+                          xsmall={2}
+                        </Col>
+                      </Row>
+                    </Col>
+                  </Row>
+                  -- end Nested
                   <strong
                     style={{
                       display: 'flex',
@@ -416,7 +431,21 @@ export default function Quantum() {
                       small={2}
                     </Col>
                   </Row>
-                  -- end Offset and no-gutter
+                  -- end Offset and no-gutter -- start Nested
+                  <Row className="Borders">
+                    <Col className="Borders" no-gutters small={8}>
+                      <Row className="B">
+                        <Col style={{ backgroundColor: 'gray' }}>
+                          {' '}
+                          without small
+                        </Col>
+                        <Col small={4} style={{ backgroundColor: 'gray' }}>
+                          small={4}
+                        </Col>
+                      </Row>
+                    </Col>
+                  </Row>
+                  -- end Nested
                   <br />
                   <strong
                     style={{
@@ -613,7 +642,21 @@ export default function Quantum() {
                       medium={2}
                     </Col>
                   </Row>
-                  -- end Offset and no-gutter
+                  -- end Offset and no-gutter -- start Nested
+                  <Row className="Borders">
+                    <Col className="Borders" no-gutters medium={12}>
+                      <Row className="B">
+                        <Col style={{ backgroundColor: 'gray' }}>
+                          {' '}
+                          without medium
+                        </Col>
+                        <Col medium={6} style={{ backgroundColor: 'gray' }}>
+                          medium={6}
+                        </Col>
+                      </Row>
+                    </Col>
+                  </Row>
+                  -- end Nested
                   <br />
                   <strong
                     style={{
@@ -810,7 +853,21 @@ export default function Quantum() {
                       large={2}
                     </Col>
                   </Row>
-                  -- end Offset and no-gutters
+                  -- end Offset and no-gutters -- start Nested
+                  <Row className="Borders">
+                    <Col className="Borders" no-gutters large={12}>
+                      <Row className="B">
+                        <Col style={{ backgroundColor: 'gray' }}>
+                          {' '}
+                          without large
+                        </Col>
+                        <Col large={6} style={{ backgroundColor: 'gray' }}>
+                          large={6}
+                        </Col>
+                      </Row>
+                    </Col>
+                  </Row>
+                  -- end Nested
                 </ComponentViewer>
                 <ComponentViewer
                   name="Lists"
