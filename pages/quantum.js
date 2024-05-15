@@ -150,30 +150,667 @@ export default function Quantum() {
                     space column gap (called a gutter) for controlling the
                     space between them."
                 >
+                  <strong
+                    style={{
+                      display: 'flex',
+                      justifyContent: 'center',
+                      width: '100%',
+                    }}
+                  >
+                    XSMALL
+                  </strong>
+                  <br />
+                  MAX-COLUMNS = 4
+                  <br />
                   <Row className="Borders">
-                    <Col className="Borders" xsmall={2} small={12}>
-                      12 Columns Width
+                    <Col className="Borders" xsmall={2}>
+                      xsmall={2}
                     </Col>
                   </Row>
                   <Row className="Borders">
-                    <Col className="Borders" xsmall={2} small={6}>
-                      6 Columns Width
+                    <Col className="Borders" xsmall={2}>
+                      xsmall={2}
                     </Col>
-                    <Col className="Borders" xsmall={2} small={6}>
-                      6 Columns Width
+                    <Col className="Borders" xsmall={2}>
+                      xsmall={2}
                     </Col>
                   </Row>
                   <Row className="Borders">
-                    <Col className="Borders" xsmall={4} small={4}>
-                      4 Columns Width
+                    <Col className="Borders" xsmall={2}>
+                      xsmall={2}
                     </Col>
-                    <Col className="Borders" xsmall={4} small={4}>
-                      4 Columns Width
+                    <Col className="Borders" xsmall={2}>
+                      xsmall={2}
                     </Col>
-                    <Col className="Borders" xsmall={4} small={4}>
-                      4 Columns Width
+                    <Col className="Borders" xsmall={2}>
+                      xsmall={2}
                     </Col>
                   </Row>
+                  <Row className="Borders">
+                    <Col className="Borders" xsmall={4}>
+                      xsmall={4}
+                    </Col>
+                  </Row>
+                  <Row className="Borders">
+                    <Col className="Borders" xsmall={4}>
+                      xsmall={4}
+                    </Col>
+                    <Col className="Borders" xsmall={4}>
+                      xsmall={4}
+                    </Col>
+                  </Row>
+                  -- start no-gutters
+                  <Row className="Borders">
+                    <Col className="Borders" no-gutters xsmall={2}>
+                      xsmall={2}
+                    </Col>
+                    <Col className="Borders" no-gutters xsmall={2}>
+                      xsmall={2}
+                    </Col>
+                  </Row>
+                  <Row className="Borders">
+                    <Col className="Borders" no-gutters xsmall={4}>
+                      xsmall={4}
+                    </Col>
+                  </Row>
+                  -- end no-gutters
+                  <br />
+                  -- start Offset
+                  <Row className="Borders">
+                    <Col className="Borders" xsmall-offset={1} xsmall={2}>
+                      xsmall={2}
+                    </Col>
+                    <Col className="Borders" xsmall={2}>
+                      xsmall={2}
+                    </Col>
+                  </Row>
+                  <Row className="Borders">
+                    <Col className="Borders" xsmall-offset={2} xsmall={2}>
+                      xsmall={2}
+                    </Col>
+                    <Col className="Borders" xsmall={2}>
+                      xsmall={2}
+                    </Col>
+                  </Row>
+                  -- end Offset
+                  <br />
+                  -- start No-gutter and Offset
+                  <Row className="Borders">
+                    <Col
+                      className="Borders"
+                      no-gutters
+                      xsmall-offset={1}
+                      xsmall={2}
+                    >
+                      xsmall={2}
+                    </Col>
+                    <Col className="Borders" xsmall={2}>
+                      xsmall={2}
+                    </Col>
+                  </Row>
+                  <Row className="Borders">
+                    <Col
+                      className="Borders"
+                      no-gutters
+                      xsmall-offset={2}
+                      xsmall={2}
+                    >
+                      xsmall={2}
+                    </Col>
+                    <Col className="Borders" xsmall={2}>
+                      xsmall={2}
+                    </Col>
+                  </Row>
+                  -- end No-gutter and Offset
+                  <br />
+                  <strong
+                    style={{
+                      display: 'flex',
+                      justifyContent: 'center',
+                      width: '100%',
+                    }}
+                  >
+                    SMALL
+                  </strong>
+                  <br />
+                  MAX-COLUMNS = 8
+                  <br />
+                  <Row className="Borders">
+                    <Col className="Borders" small={2}>
+                      small={2}
+                    </Col>
+                  </Row>
+                  <Row className="Borders">
+                    <Col className="Borders" small={2}>
+                      small={2}
+                    </Col>
+                    <Col className="Borders" small={2}>
+                      small={2}
+                    </Col>
+                    <Col className="Borders" small={2}>
+                      small={2}
+                    </Col>
+                    <Col className="Borders" small={2}>
+                      small={2}
+                    </Col>
+                  </Row>
+                  <Row className="Borders">
+                    <Col className="Borders" small={2}>
+                      small={2}
+                    </Col>
+                    <Col className="Borders" small={2}>
+                      small={2}
+                    </Col>
+                    <Col className="Borders" small={2}>
+                      small={2}
+                    </Col>
+                    <Col className="Borders" small={2}>
+                      small={2}
+                    </Col>
+                    <Col className="Borders" small={2}>
+                      small={2}
+                    </Col>
+                  </Row>
+                  <Row className="Borders">
+                    <Col className="Borders" small={8}>
+                      small={8}
+                    </Col>
+                  </Row>
+                  <Row className="Borders">
+                    <Col className="Borders" small={8}>
+                      small={8}
+                    </Col>
+                    <Col className="Borders" small={8}>
+                      small={8}
+                    </Col>
+                  </Row>
+                  -- start no-gutter
+                  <Row className="Borders">
+                    <Col className="Borders" no-gutters small={2}>
+                      small={2}
+                    </Col>
+                    <Col className="Borders" no-gutters small={2}>
+                      small={2}
+                    </Col>
+                    <Col className="Borders" no-gutters small={2}>
+                      small={2}
+                    </Col>
+                    <Col className="Borders" no-gutters small={2}>
+                      small={2}
+                    </Col>
+                  </Row>
+                  <Row className="Borders">
+                    <Col className="Borders" no-gutters small={8}>
+                      small={8}
+                    </Col>
+                  </Row>
+                  -- end no-gutter
+                  <br />
+                  -- start Offset
+                  <Row className="Borders">
+                    <Col className="Borders" small-offset={1} small={2}>
+                      small={2}
+                    </Col>
+                    <Col className="Borders" small={2}>
+                      small={2}
+                    </Col>
+                    <Col className="Borders" small={2}>
+                      small={2}
+                    </Col>
+                    <Col className="Borders" small={2}>
+                      small={2}
+                    </Col>
+                  </Row>
+                  <Row className="Borders">
+                    <Col className="Borders" small-offset={2} small={2}>
+                      small={2}
+                    </Col>
+                    <Col className="Borders" small={2}>
+                      small={2}
+                    </Col>
+                    <Col className="Borders" small={2}>
+                      small={2}
+                    </Col>
+                    <Col className="Borders" small={2}>
+                      small={2}
+                    </Col>
+                  </Row>
+                  -- end Offset
+                  <br />
+                  -- start Offset and no-gutter
+                  <Row className="Borders">
+                    <Col
+                      className="Borders"
+                      no-gutters
+                      small-offset={1}
+                      small={2}
+                    >
+                      small={2}
+                    </Col>
+                    <Col className="Borders" small={2}>
+                      small={2}
+                    </Col>
+                    <Col className="Borders" small={2}>
+                      small={2}
+                    </Col>
+                    <Col className="Borders" small={2}>
+                      small={2}
+                    </Col>
+                  </Row>
+                  <Row className="Borders">
+                    <Col
+                      className="Borders"
+                      no-gutters
+                      small-offset={2}
+                      small={2}
+                    >
+                      small={2}
+                    </Col>
+                    <Col className="Borders" small={2}>
+                      small={2}
+                    </Col>
+                    <Col className="Borders" small={2}>
+                      small={2}
+                    </Col>
+                    <Col className="Borders" small={2}>
+                      small={2}
+                    </Col>
+                  </Row>
+                  -- end Offset and no-gutter
+                  <br />
+                  <strong
+                    style={{
+                      display: 'flex',
+                      justifyContent: 'center',
+                      width: '100%',
+                    }}
+                  >
+                    MEDIUM
+                  </strong>
+                  <br />
+                  MAX-COLUMNS = 12
+                  <br />
+                  <Row className="Borders">
+                    <Col className="Borders" medium={2}>
+                      medium={2}
+                    </Col>
+                  </Row>
+                  <Row className="Borders">
+                    <Col className="Borders" medium={2}>
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" medium={2}>
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" medium={2}>
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" medium={2}>
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" medium={2}>
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" medium={2}>
+                      medium={2}
+                    </Col>
+                  </Row>
+                  <Row className="Borders">
+                    <Col className="Borders" medium={2}>
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" medium={2}>
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" medium={2}>
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" medium={2}>
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" medium={2}>
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" medium={2}>
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" medium={2}>
+                      medium={2}
+                    </Col>
+                  </Row>
+                  <Row className="Borders">
+                    <Col className="Borders" medium={12}>
+                      medium={12}
+                    </Col>
+                  </Row>
+                  <Row className="Borders">
+                    <Col className="Borders" medium={12}>
+                      medium={12}
+                    </Col>
+                    <Col className="Borders" medium={12}>
+                      medium={12}
+                    </Col>
+                  </Row>
+                  -- start no-gutters
+                  <Row className="Borders">
+                    <Col className="Borders" no-gutters medium={2}>
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" no-gutters medium={2}>
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" no-gutters medium={2}>
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" no-gutters medium={2}>
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" no-gutters medium={2}>
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" no-gutters medium={2}>
+                      medium={2}
+                    </Col>
+                  </Row>
+                  <Row className="Borders">
+                    <Col className="Borders" no-gutters medium={12}>
+                      medium={12}
+                    </Col>
+                  </Row>
+                  -- end no-gutters
+                  <br />
+                  -- start Offset
+                  <Row className="Borders">
+                    <Col className="Borders" medium-offset={1} medium={2}>
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" medium={2}>
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" medium={2}>
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" medium={2}>
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" medium={2}>
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" medium={2}>
+                      medium={2}
+                    </Col>
+                  </Row>
+                  <Row className="Borders">
+                    <Col className="Borders" medium-offset={2} medium={2}>
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" medium={2}>
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" medium={2}>
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" medium={2}>
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" medium={2}>
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" medium={2}>
+                      medium={2}
+                    </Col>
+                  </Row>
+                  -- end Offset
+                  <br />
+                  -- start Offset no-gutter
+                  <Row className="Borders">
+                    <Col
+                      className="Borders"
+                      no-gutters
+                      medium-offset={1}
+                      medium={2}
+                    >
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" medium={2}>
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" medium={2}>
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" medium={2}>
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" medium={2}>
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" medium={2}>
+                      medium={2}
+                    </Col>
+                  </Row>
+                  <Row className="Borders">
+                    <Col
+                      className="Borders"
+                      no-gutters
+                      medium-offset={2}
+                      medium={2}
+                    >
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" medium={2}>
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" medium={2}>
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" medium={2}>
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" medium={2}>
+                      medium={2}
+                    </Col>
+                    <Col className="Borders" medium={2}>
+                      medium={2}
+                    </Col>
+                  </Row>
+                  -- end Offset and no-gutter
+                  <br />
+                  <strong
+                    style={{
+                      display: 'flex',
+                      justifyContent: 'center',
+                      width: '100%',
+                    }}
+                  >
+                    LARGE
+                  </strong>
+                  <br />
+                  MAX-COLUMNS = 12
+                  <br />
+                  <Row className="Borders">
+                    <Col className="Borders" large={2}>
+                      large={2}
+                    </Col>
+                  </Row>
+                  <Row className="Borders">
+                    <Col className="Borders" large={2}>
+                      large={2}
+                    </Col>
+                    <Col className="Borders" large={2}>
+                      large={2}
+                    </Col>
+                    <Col className="Borders" large={2}>
+                      large={2}
+                    </Col>
+                    <Col className="Borders" large={2}>
+                      large={2}
+                    </Col>
+                    <Col className="Borders" large={2}>
+                      large={2}
+                    </Col>
+                    <Col className="Borders" large={2}>
+                      large={2}
+                    </Col>
+                  </Row>
+                  <Row className="Borders">
+                    <Col className="Borders" large={2}>
+                      large={2}
+                    </Col>
+                    <Col className="Borders" large={2}>
+                      large={2}
+                    </Col>
+                    <Col className="Borders" large={2}>
+                      large={2}
+                    </Col>
+                    <Col className="Borders" large={2}>
+                      large={2}
+                    </Col>
+                    <Col className="Borders" large={2}>
+                      large={2}
+                    </Col>
+                    <Col className="Borders" large={2}>
+                      large={2}
+                    </Col>
+                    <Col className="Borders" large={2}>
+                      large={2}
+                    </Col>
+                  </Row>
+                  <Row className="Borders">
+                    <Col className="Borders" large={12}>
+                      large={12}
+                    </Col>
+                  </Row>
+                  <Row className="Borders">
+                    <Col className="Borders" large={12}>
+                      large={12}
+                    </Col>
+                    <Col className="Borders" large={12}>
+                      large={12}
+                    </Col>
+                  </Row>
+                  -- start no-gutters
+                  <Row className="Borders">
+                    <Col className="Borders" no-gutters large={12}>
+                      large={12}
+                    </Col>
+                  </Row>
+                  <Row className="Borders">
+                    <Col className="Borders" no-gutters large={2}>
+                      large={2}
+                    </Col>
+                    <Col className="Borders" no-gutters large={2}>
+                      large={2}
+                    </Col>
+                    <Col className="Borders" no-gutters large={2}>
+                      large={2}
+                    </Col>
+                    <Col className="Borders" no-gutters large={2}>
+                      large={2}
+                    </Col>
+                    <Col className="Borders" no-gutters large={2}>
+                      large={2}
+                    </Col>
+                    <Col className="Borders" no-gutters large={2}>
+                      large={2}
+                    </Col>
+                  </Row>
+                  -- end no-gutters
+                  <br />
+                  -- start Offset
+                  <Row className="Borders">
+                    <Col className="Borders" large-offset={1} large={2}>
+                      large={2}
+                    </Col>
+                    <Col className="Borders" large={2}>
+                      large={2}
+                    </Col>
+                    <Col className="Borders" large={2}>
+                      large={2}
+                    </Col>
+                    <Col className="Borders" large={2}>
+                      large={2}
+                    </Col>
+                    <Col className="Borders" large={2}>
+                      large={2}
+                    </Col>
+                    <Col className="Borders" large={2}>
+                      large={2}
+                    </Col>
+                  </Row>
+                  <Row className="Borders">
+                    <Col className="Borders" large-offset={2} large={2}>
+                      large={2}
+                    </Col>
+                    <Col className="Borders" large={2}>
+                      large={2}
+                    </Col>
+                    <Col className="Borders" large={2}>
+                      large={2}
+                    </Col>
+                    <Col className="Borders" large={2}>
+                      large={2}
+                    </Col>
+                    <Col className="Borders" large={2}>
+                      large={2}
+                    </Col>
+                    <Col className="Borders" large={2}>
+                      large={2}
+                    </Col>
+                  </Row>
+                  -- end Offset
+                  <br />
+                  -- start Offset and no-gutters
+                  <Row className="Borders">
+                    <Col
+                      className="Borders"
+                      no-gutters
+                      large-offset={1}
+                      large={2}
+                    >
+                      large={2}
+                    </Col>
+                    <Col className="Borders" large={2}>
+                      large={2}
+                    </Col>
+                    <Col className="Borders" large={2}>
+                      large={2}
+                    </Col>
+                    <Col className="Borders" large={2}>
+                      large={2}
+                    </Col>
+                    <Col className="Borders" large={2}>
+                      large={2}
+                    </Col>
+                    <Col className="Borders" large={2}>
+                      large={2}
+                    </Col>
+                  </Row>
+                  <Row className="Borders">
+                    <Col
+                      className="Borders"
+                      no-gutters
+                      large-offset={2}
+                      large={2}
+                    >
+                      large={2}
+                    </Col>
+                    <Col className="Borders" large={2}>
+                      large={2}
+                    </Col>
+                    <Col className="Borders" large={2}>
+                      large={2}
+                    </Col>
+                    <Col className="Borders" large={2}>
+                      large={2}
+                    </Col>
+                    <Col className="Borders" large={2}>
+                      large={2}
+                    </Col>
+                    <Col className="Borders" large={2}>
+                      large={2}
+                    </Col>
+                  </Row>
+                  -- end Offset and no-gutters
                 </ComponentViewer>
                 <ComponentViewer
                   name="Lists"
