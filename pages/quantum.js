@@ -28,7 +28,37 @@ export default function Quantum() {
                 >
                   <Hide xsmall className="Margins PaddingLeftRight">
                     <Row>
+                      <strong style={{ gridColumn: 'span 12' }}>
+                        Hide on xsmall
+                      </strong>
                       <Col className="Borders">Reduce the screen size</Col>
+                      <Col className="Borders">to see Hide working</Col>
+                    </Row>
+                  </Hide>
+                  <Hide small className="Margins PaddingLeftRight">
+                    <Row>
+                      <strong style={{ gridColumn: 'span 12' }}>
+                        Hide on small
+                      </strong>
+                      <Col className="Borders">Reduce the screen size</Col>
+                      <Col className="Borders">to see Hide working</Col>
+                    </Row>
+                  </Hide>
+                  <Hide medium className="Margins PaddingLeftRight">
+                    <Row>
+                      <strong style={{ gridColumn: 'span 12' }}>
+                        Hide on medium
+                      </strong>
+                      <Col className="Borders">Reduce the screen size</Col>
+                      <Col className="Borders">to see Hide working</Col>
+                    </Row>
+                  </Hide>
+                  <Hide large className="Margins PaddingLeftRight">
+                    <Row>
+                      <strong style={{ gridColumn: 'span 12' }}>
+                        Hide on large
+                      </strong>
+                      <Col className="Borders">Enlarge the screen size</Col>
                       <Col className="Borders">to see Hide working</Col>
                     </Row>
                   </Hide>
@@ -779,6 +809,37 @@ export default function Quantum() {
                       large={10}
                     >
                       Relou uordi!
+                    </Col>
+                  </Row>
+                  <strong
+                    style={{
+                      display: 'flex',
+                      justifyContent: 'center',
+                      width: '100%',
+                    }}
+                  >
+                    Nested
+                  </strong>
+                  <Row className="Borders">
+                    <Col
+                      className="Borders"
+                      xsmall={4}
+                      small={8}
+                      medium={12}
+                      large={12}
+                    >
+                      <Row>
+                        <Col
+                          className="Borders"
+                          xsmall={2}
+                          small={4}
+                          medium={6}
+                          large={6}
+                        >
+                          Col into Col
+                        </Col>
+                        <Col className="Borders">Col without size</Col>
+                      </Row>
                     </Col>
                   </Row>
                 </ComponentViewer>
