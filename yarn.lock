@@ -454,35 +454,19 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@catho-private/catho-components@6.10.0":
-  version "6.10.0"
-  resolved "https://registry.yarnpkg.com/@catho-private/catho-components/-/catho-components-6.10.0.tgz#1198810cedc82291c520d9eec01bc835b11ac8d0"
-  integrity sha512-f5ussuGYx7Xx7W9IWhSMXNXx3PegCSj2ZqOj2cbzYNvNIAswCiXw9YKfdPqAeBdcOub7gDgJwTJckrYJh+3aBw==
+"@catho-private/catho-components@6.24.0":
+  version "6.24.0"
+  resolved "https://registry.yarnpkg.com/@catho-private/catho-components/-/catho-components-6.24.0.tgz#123cd3618197f34ef9db877a2a146367d333b65d"
+  integrity sha512-TOnw8mHclHYqoIQL8SyNo88tD+iY8hblH3cmhuMLi36fQXt9iyjk8vx3IKQzHvAph0MSwZ2eL7poCTdMdl/0ag==
   dependencies:
-    "@catho/quantum" "^9.14.0"
+    "@catho/quantum" "^9.24.1"
     prop-types "^15.6.2"
     recharts "2.5.0"
 
-"@catho/quantum@9.16.1":
-  version "9.16.1"
-  resolved "https://registry.yarnpkg.com/@catho/quantum/-/quantum-9.16.1.tgz#a7691bacfdf344a2fedfbe3f138bc1ab644865f3"
-  integrity sha512-e14rrmsyVXGZxY3zZUuCxgVGFbzwvEj31HsX3sESNlyVyyIK7bAe1h9dak7tDeCT1ilg0ZOdR9lpl1s/B7I3bg==
-  dependencies:
-    "@emotion/react" "^11.11.1"
-    "@emotion/styled" "^11.11.0"
-    "@mui/icons-material" "^5.11.16"
-    "@mui/material" "^5.13.5"
-    babel-polyfill "^6.26.0"
-    downshift "^3.1.10"
-    prop-types "^15.6.2"
-    react-slick "^0.29.0"
-    react-text-mask "^5.4.3"
-    slugify "^1.3.6"
-
-"@catho/quantum@^9.14.0":
-  version "9.18.0"
-  resolved "https://registry.yarnpkg.com/@catho/quantum/-/quantum-9.18.0.tgz#26d0168015ad10891e88e6adb68f2224f7ff2cfa"
-  integrity sha512-z4k+Qy1KhFUqttGYWW83dwNOSZKiOdZxsaooQg4HQybRgRp/Q81xSA5Ut2hFmPoEsDE2KrsWtpJSDZeM1ygmJA==
+"@catho/quantum@9.30.0", "@catho/quantum@^9.24.1":
+  version "9.30.0"
+  resolved "https://registry.yarnpkg.com/@catho/quantum/-/quantum-9.30.0.tgz#2b35121474903555b56d34aff393431e8c904eee"
+  integrity sha512-NnEdSym0tgyZdaHGS8zxuA6AZ8AYupFG50HpoE6cTKZIKUvVOvFoF4VGtzBj9+XEtL6n28tk3WKkhXoInyi3qA==
   dependencies:
     "@emotion/react" "^11.11.1"
     "@emotion/styled" "^11.11.0"
