@@ -1,4 +1,4 @@
-import { Container } from '@catho/quantum';
+import Container from '@catho/quantum/Grid/sub-components/Container';
 
 const Footer = () => (
   <Container className="Footer-text">

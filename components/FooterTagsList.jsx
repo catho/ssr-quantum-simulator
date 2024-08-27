@@ -1,4 +1,4 @@
-import { FooterResponsive } from '@catho-private/catho-components';
+import FooterResponsive from '@catho-private/catho-components/FooterResponsive';
 
 const contract = [
   {
