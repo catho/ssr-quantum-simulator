@@ -13,7 +13,11 @@ import {
   JobCard,
   JobNotificationList,
 } from '@catho-private/catho-components';
-import { Container, Row, Col } from '@catho/quantum';
+
+import Container from '@catho/quantum/Grid/sub-components/Container';
+import Row from '@catho/quantum/Grid/sub-components/Row';
+import Col from '@catho/quantum/Grid/sub-components/Col';
+
 import {
   barCharData,
   jobNotificationListMock,
@@ -22,6 +26,7 @@ import {
   passwordProps,
   tagListMocks,
 } from '../mocks/mocks';
+
 import ComponentViewer from '../components/ComponentViewer';
 
 export default function CathoComponentsPage() {

@@ -1,5 +1,6 @@
 import { Component } from 'react';
-import { Button, Modal } from '@catho/quantum';
+import Button from '@catho/quantum/Button';
+import Modal from '@catho/quantum/Modal';
 
 class ControlledModal extends Component {
   constructor() {

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Button, SnackBar } from '@catho/quantum';
+import Button from '@catho/quantum/Button';
+import SnackBar from '@catho/quantum/SnackBar';
 
 class ControlledSnackBar extends React.Component {
   constructor() {

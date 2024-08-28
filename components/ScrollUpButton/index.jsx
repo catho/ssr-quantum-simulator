@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Button } from '@catho/quantum';
+import Button from '@catho/quantum/Button';
 
 const ScrollUpButton = () => {
   const [scrollUpButton, setScrollUpButton] = useState(false);
